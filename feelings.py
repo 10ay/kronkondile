@@ -1,59 +1,51 @@
 '''
 From Taylor Hutchison's how-are-you script: https://github.com/aibhleog/how-are-you/blob/main/how-are-you.py
+
+|------|
+| NOTE | 
+|------|
+| Make sure the entries you use are phrases you don't say a lot, otherwise they may 
+| skew your answers.  I used to have 3:"I'm okay" and I had to change it because 
+| that's something I say a lot (regardless of how I'm actually doing) and I was 
+| choosing that answer when I shouldn't.
+
 '''
 
-import os
-import sys
+import numpy as np
+import pandas as pd
 from datetime import datetime as dt
 from pathlib import Path
 
-import pandas as pd
-
 root = Path(__file__).parent
-FEELINGS_FILE = os.path.join(root, 'feelings.txt')
+import os, sys
 
-FEELING_LABELS = {
-    0: "bad",
-    1: "not the best",
-    2: "neutral",
-    3: "satisfactory",
-    4: "good!",
-}
+path = root
+FEELINGS_FILE = os.path.join(path, 'feelings.txt')
 
+# creating date string for today, will look like ex.: 08-Feb-2021
+date = dt.strftime(dt.now(),'%d-%b-%Y')
 
-def today_string():
-    return dt.strftime(dt.now(), '%d-%b-%Y')
+# boolean varible to mark if already run today
+ran = False
 
+# first checking file exists (only necessary the first time you run this)
+if os.path.exists(FEELINGS_FILE) == False:
+    os.system(f'touch {FEELINGS_FILE}') # creates file
+    df = pd.read_csv(FEELINGS_FILE, sep='\t', names=['feel','date']) # specifying columns
+else:
+    # orginally, the df was read in here, but as it grows in size this could slow down 
+    # so I wrote this version instead to just get the tail of the dataset every time for the check
+    tail = os.popen(f'tail {FEELINGS_FILE}').read() # writing output to tail
+    lastdate = tail.split('\n')[-2].split('\t')[1] # accesses the last date
+    
+    if lastdate == date: ran = True # don't need to read in feelings.txt
+    else: df = pd.read_csv(FEELINGS_FILE, sep='\t') # don't need to specify cols as they now exist
 
-def already_logged_today():
-    if not os.path.exists(FEELINGS_FILE) or os.path.getsize(FEELINGS_FILE) == 0:
-        return False
+# checking if this has already been run today
+# if it has, nothing happens
+if ran == False:
 
-    tail = os.popen(f'tail {FEELINGS_FILE}').read()
-    lastdate = tail.split('\n')[-2].split('\t')[1]
-    return lastdate == today_string()
-
-
-def log_feeling(feel, date=None):
-    """Append a mood entry to feelings.txt."""
-    if date is None:
-        date = today_string()
-
-    if not os.path.exists(FEELINGS_FILE):
-        os.system(f'touch {FEELINGS_FILE}')
-        df = pd.read_csv(FEELINGS_FILE, sep='\t', names=['feel', 'date'])
-    else:
-        df = pd.read_csv(FEELINGS_FILE, sep='\t')
-
-    df.loc[len(df)] = [feel, date]
-    df.to_csv(FEELINGS_FILE, sep='\t', index=False)
-
-
-def run_daily_prompt():
-    """Terminal prompt: ask once per day and log the response."""
-    if already_logged_today():
-        return
-
+    # the prompt
     print('''
 ===================================================
 
@@ -68,22 +60,31 @@ def run_daily_prompt():
 ===================================================
     ''')
 
+    # asking for response
     feel = input('Response:  ')
-    try:
-        feel = int(feel)
-    except ValueError:
+    try: feel = int(feel)
+    except: 
         print('Need to input an integer from 0-4.')
-        feel = input('Response:  ')
-        try:
-            feel = int(feel)
-        except ValueError:
+        feel = input('Response:  ' )
+        try: feel = int(feel)
+        except: 
             print('\nKilling script, incorrect entry twice.')
             sys.exit(0)
+    
+    print() # just for spacing
+        
 
-    print()
-    log_feeling(feel)
-    os.system("clear")
+    # logging answer in table
+    # -----------------------
+
+    # appending today's answer to table
+    filler_row = [feel,date]
+    df.loc[len(df)] = filler_row # adds new row with info for each column
+
+    # saving file
+    df.to_csv(FEELINGS_FILE, sep='\t', index=False)
+
+    os.system("clear") # clears terminal, to make it as if it was never there
 
 
-if __name__ == "__main__":
-    run_daily_prompt()
+
