@@ -20,7 +20,7 @@ def main():
     feeling_index, feeling_name = get_feeling()
 
     if feeling_index is None:
-        print("You are an empty, hollow shell of a human. You have no feelings.")
+        print("Why do you have no feelings today?")
         return
     
     recommendations = get_recommendations()

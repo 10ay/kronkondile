@@ -1,14 +1,5 @@
 '''
 From Taylor Hutchison's how-are-you script: https://github.com/aibhleog/how-are-you/blob/main/how-are-you.py
-
-|------|
-| NOTE | 
-|------|
-| Make sure the entries you use are phrases you don't say a lot, otherwise they may 
-| skew your answers.  I used to have 3:"I'm okay" and I had to change it because 
-| that's something I say a lot (regardless of how I'm actually doing) and I was 
-| choosing that answer when I shouldn't.
-
 '''
 
 import numpy as np
@@ -51,11 +42,11 @@ if ran == False:
 
     How are you feeling, today?  Choose 0-4:
 
-    0 : bad
-    1 : not the best
-    2 : neutral
-    3 : satisfactory
-    4 : good!
+    0 : bad / like a kidney stone.
+    1 : not the best / running away to the mountains seems like a good idea.
+    2 : neutral / you feel like that mini therapy horse playing piano.
+    3 : satisfactory / you want to be dipped into some honey.
+    4 : good! / you are ready to go line-dancing.
 
 ===================================================
     ''')

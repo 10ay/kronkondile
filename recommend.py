@@ -33,11 +33,11 @@ def get_feeling():
     Get how you feel today.
     """
     if not os.path.exists(FEELINGS_FILE):
-        print("You feel nothing today. You are empty.")
+        print("Why do you have no feelings today?")
         return None
     df = pd.read_csv(FEELINGS_FILE, sep = '\t', names = ['feeling_scale', 'date'])
     if df.empty:
-        print("You feel nothing at all. You are empty.")
+        print("Why do you have no feelings today?")
         return None
     else:
         feeling_index = int(df.iloc[-1]['feeling_scale'])
@@ -81,7 +81,7 @@ def format_recommendations(recommendations, feeling_name=None):
         lines.append(f"Feeling: {feeling_name}")
     
     if not recommendations:
-        lines.append("You feel no mood today.")
+        lines.append("Mood is a concept you cannot comprehend.")
         return "\n".join(lines)
 
     lines.append("Opened YouTube:\n")
