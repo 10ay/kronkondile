@@ -1,0 +1,2468 @@
+{
+  "Noah Kahan": {
+    "Brenn!": 1.0,
+    "Michael Marcagi": 0.867861,
+    "Mumford & Sons": 0.719031,
+    "Hozier": 0.700606,
+    "Chance Pe\u00f1a": 0.684736,
+    "Maisie Peters": 0.63109,
+    "The Lumineers": 0.613774,
+    "Gregory Alan Isakov": 0.613545,
+    "Lizzy McAlpine": 0.559039,
+    "Caamp": 0.533521,
+    "Dermot Kennedy": 0.528604,
+    "Gigi Perez": 0.52764,
+    "Buffalo Traffic Jam": 0.5236,
+    "Phoebe Bridgers": 0.511242,
+    "Mt. Joy": 0.508576,
+    "Vance Joy": 0.504143,
+    "Richy Mitch & The Coal Miners": 0.49923,
+    "Hans Williams": 0.498078,
+    "John Vincent III": 0.492858,
+    "Mon Rov\u00eea": 0.487774,
+    "Abby Powledge": 0.254232,
+    "Role Model": 0.489625,
+    "Bleachers": 0.300981
+  },
+  "Brenn!": {
+    "Noah Kahan": 1.0
+  },
+  "Michael Marcagi": {
+    "Noah Kahan": 0.867861
+  },
+  "Mumford & Sons": {
+    "Noah Kahan": 0.719031
+  },
+  "Hozier": {
+    "Noah Kahan": 0.700606
+  },
+  "Chance Pe\u00f1a": {
+    "Noah Kahan": 0.684736
+  },
+  "Maisie Peters": {
+    "Noah Kahan": 0.63109,
+    "Gracie Abrams": 0.923438,
+    "Role Model": 0.515629,
+    "Bleachers": 0.364877
+  },
+  "The Lumineers": {
+    "Noah Kahan": 0.613774,
+    "Bleachers": 0.261749
+  },
+  "Gregory Alan Isakov": {
+    "Noah Kahan": 0.613545
+  },
+  "Lizzy McAlpine": {
+    "Noah Kahan": 0.559039,
+    "Abby Powledge": 0.520697,
+    "Gracie Abrams": 0.692412,
+    "Leith Ross": 0.838027,
+    "Role Model": 0.956205
+  },
+  "Caamp": {
+    "Noah Kahan": 0.533521
+  },
+  "Dermot Kennedy": {
+    "Noah Kahan": 0.528604
+  },
+  "Gigi Perez": {
+    "Noah Kahan": 0.52764,
+    "Abby Powledge": 0.238589,
+    "Girl In Red": 0.930781
+  },
+  "Buffalo Traffic Jam": {
+    "Noah Kahan": 0.5236
+  },
+  "Phoebe Bridgers": {
+    "Noah Kahan": 0.511242,
+    "Abby Powledge": 0.261198,
+    "Gracie Abrams": 0.427382,
+    "Mitski": 0.616383,
+    "Leith Ross": 0.660095
+  },
+  "Mt. Joy": {
+    "Noah Kahan": 0.508576
+  },
+  "Vance Joy": {
+    "Noah Kahan": 0.504143
+  },
+  "Richy Mitch & The Coal Miners": {
+    "Noah Kahan": 0.49923
+  },
+  "Hans Williams": {
+    "Noah Kahan": 0.498078
+  },
+  "John Vincent III": {
+    "Noah Kahan": 0.492858
+  },
+  "Mon Rov\u00eea": {
+    "Noah Kahan": 0.487774
+  },
+  "NoSo": {
+    "Hannah Jadagu": 1.0,
+    "Hana Vu": 0.945681,
+    "Miya Folick": 0.943664,
+    "MUNA": 0.844511,
+    "Claud": 0.841732,
+    "Skullcrusher": 0.809675,
+    "Indigo De Souza": 0.6771,
+    "Boyish": 0.664243,
+    "Bel": 0.661459,
+    "Sea Lemon": 0.634672,
+    "Abby Sage": 0.629712,
+    "Etta Marcus": 0.6126,
+    "Leith Ross": 0.606833,
+    "Samia": 0.598014,
+    "Babygirl": 0.590563,
+    "Mini Trees": 0.590077,
+    "girlpuppy": 0.580061,
+    "Sarah Kinsley": 0.569164,
+    "Madeline Kenney": 0.56722,
+    "Eliza Mclamb": 0.560137
+  },
+  "Hannah Jadagu": {
+    "NoSo": 1.0
+  },
+  "Hana Vu": {
+    "NoSo": 0.945681
+  },
+  "Miya Folick": {
+    "NoSo": 0.943664
+  },
+  "MUNA": {
+    "NoSo": 0.844511,
+    "Bleachers": 0.424421
+  },
+  "Claud": {
+    "NoSo": 0.841732,
+    "Girl In Red": 0.532314,
+    "Devon Again": 0.499099
+  },
+  "Skullcrusher": {
+    "NoSo": 0.809675
+  },
+  "Indigo De Souza": {
+    "NoSo": 0.6771,
+    "Mitski": 0.448321
+  },
+  "Boyish": {
+    "NoSo": 0.664243
+  },
+  "Bel": {
+    "NoSo": 0.661459,
+    "Devon Again": 1.0
+  },
+  "Sea Lemon": {
+    "NoSo": 0.634672
+  },
+  "Abby Sage": {
+    "NoSo": 0.629712
+  },
+  "Etta Marcus": {
+    "NoSo": 0.6126,
+    "Devon Again": 0.599931
+  },
+  "Leith Ross": {
+    "NoSo": 0.606833,
+    "Abby Powledge": 0.747448,
+    "Mitski": 0.494753,
+    "Flower Face": 0.37635,
+    "Searows": 1.0,
+    "Delaney Bailey": 0.856819,
+    "Lizzy McAlpine": 0.838027,
+    "Lucy Dacus": 0.73615,
+    "Phoebe Bridgers": 0.660095,
+    "Margot Liotta": 0.595215,
+    "Odie Leigh": 0.579667,
+    "Jake Minch": 0.542303,
+    "quinnie": 0.534596,
+    "Eliza Mclamb": 0.52862,
+    "boygenius": 0.527941,
+    "Adrianne Lenker": 0.524808,
+    "Haley Heynderickx": 0.502281,
+    "Whatever, Dad": 0.491039,
+    "Susannah Joffe": 0.473524,
+    "Lomelda": 0.463065,
+    "Leonie Biney": 0.433492,
+    "Sydney Ross Mitchell": 0.428163,
+    "Haley Blais": 0.416657
+  },
+  "Samia": {
+    "NoSo": 0.598014,
+    "Bleachers": 0.248915
+  },
+  "Babygirl": {
+    "NoSo": 0.590563
+  },
+  "Mini Trees": {
+    "NoSo": 0.590077
+  },
+  "girlpuppy": {
+    "NoSo": 0.580061
+  },
+  "Sarah Kinsley": {
+    "NoSo": 0.569164,
+    "Devon Again": 0.623242
+  },
+  "Madeline Kenney": {
+    "NoSo": 0.56722
+  },
+  "Eliza Mclamb": {
+    "NoSo": 0.560137,
+    "Corook": 0.459718,
+    "Leith Ross": 0.52862
+  },
+  "Abby Powledge": {
+    "Aubory Bugg": 1.0,
+    "Leith Ross": 0.747448,
+    "Lizzy McAlpine": 0.520697,
+    "Jake Minch": 0.493797,
+    "Sydney Ross Mitchell": 0.430228,
+    "Delaney Bailey": 0.426354,
+    "Paige Fish": 0.383384,
+    "Searows": 0.364849,
+    "Grace Gardner": 0.300535,
+    "Shallow Alcove": 0.281713,
+    "Margot Liotta": 0.28044,
+    "Grace Enger": 0.276695,
+    "The Man The Myth The Meatslab": 0.267944,
+    "Phoebe Bridgers": 0.261198,
+    "Noah Kahan": 0.254232,
+    "Matilda Mann": 0.243236,
+    "Gigi Perez": 0.238589,
+    "Annabelle Dinda": 0.211424,
+    "Lucy Dacus": 0.193716,
+    "boygenius": 0.189808
+  },
+  "Aubory Bugg": {
+    "Abby Powledge": 1.0
+  },
+  "Jake Minch": {
+    "Abby Powledge": 0.493797,
+    "Leith Ross": 0.542303
+  },
+  "Sydney Ross Mitchell": {
+    "Abby Powledge": 0.430228,
+    "Leith Ross": 0.428163,
+    "Role Model": 0.471034
+  },
+  "Delaney Bailey": {
+    "Abby Powledge": 0.426354,
+    "Flower Face": 0.440525,
+    "Leith Ross": 0.856819
+  },
+  "Paige Fish": {
+    "Abby Powledge": 0.383384
+  },
+  "Searows": {
+    "Abby Powledge": 0.364849,
+    "Flower Face": 0.406857,
+    "Leith Ross": 1.0,
+    "Nicole Dollanganger": 0.247324,
+    "Esha Tewari": 0.589669
+  },
+  "Grace Gardner": {
+    "Abby Powledge": 0.300535
+  },
+  "Shallow Alcove": {
+    "Abby Powledge": 0.281713
+  },
+  "Margot Liotta": {
+    "Abby Powledge": 0.28044,
+    "Leith Ross": 0.595215
+  },
+  "Grace Enger": {
+    "Abby Powledge": 0.276695
+  },
+  "The Man The Myth The Meatslab": {
+    "Abby Powledge": 0.267944
+  },
+  "Matilda Mann": {
+    "Abby Powledge": 0.243236,
+    "Corook": 0.479143
+  },
+  "Annabelle Dinda": {
+    "Abby Powledge": 0.211424
+  },
+  "Lucy Dacus": {
+    "Abby Powledge": 0.193716,
+    "Mitski": 0.564271,
+    "Leith Ross": 0.73615
+  },
+  "boygenius": {
+    "Abby Powledge": 0.189808,
+    "Mitski": 0.589534,
+    "Girl In Red": 0.616249,
+    "Leith Ross": 0.527941
+  },
+  "Your Mom's Car": {
+    "Askee Art": 1.0,
+    "Clementine's Private Army": 0.076458,
+    "Jeremy Field": 0.043022,
+    "...and today it was you": 0.009643,
+    "Tape Girl": 0.006886,
+    "PersonPlaceThing": 0.006013,
+    "Visions In Blindness": 0.004723,
+    "Iwishiwasraining": 0.003951
+  },
+  "Askee Art": {
+    "Your Mom's Car": 1.0
+  },
+  "Clementine's Private Army": {
+    "Your Mom's Car": 0.076458
+  },
+  "Jeremy Field": {
+    "Your Mom's Car": 0.043022
+  },
+  "...and today it was you": {
+    "Your Mom's Car": 0.009643
+  },
+  "Tape Girl": {
+    "Your Mom's Car": 0.006886
+  },
+  "PersonPlaceThing": {
+    "Your Mom's Car": 0.006013
+  },
+  "Visions In Blindness": {
+    "Your Mom's Car": 0.004723
+  },
+  "Iwishiwasraining": {
+    "Your Mom's Car": 0.003951
+  },
+  "Petey USA, Sir Chloe": {
+    "Petey USA, Owen": 1.0,
+    "Petey, Sir Chloe": 0.970763,
+    "Petey USA, Miya Folick": 0.537349,
+    "EXES, Petey USA": 0.535251,
+    "Portugal. The Man, Sir Chloe": 0.336614,
+    "Luke Wild, Sir Chloe": 0.27083,
+    "Petey USA": 0.222588,
+    "Sir Chloe": 0.216519,
+    "Peach Pit, Sir Chloe": 0.177066,
+    "LOUTA, Zoe Gotusso": 0.138032,
+    "Sam Austins, Sir Chloe": 0.112633,
+    "Cavetown, Pierce The Veil, Vic Fuentes": 0.061603,
+    "Militarie Gun": 0.039222,
+    "Cavetown": 0.038204,
+    "Mat Kerekes": 0.03385
+  },
+  "Petey USA, Owen": {
+    "Petey USA, Sir Chloe": 1.0
+  },
+  "Petey, Sir Chloe": {
+    "Petey USA, Sir Chloe": 0.970763
+  },
+  "Petey USA, Miya Folick": {
+    "Petey USA, Sir Chloe": 0.537349
+  },
+  "EXES, Petey USA": {
+    "Petey USA, Sir Chloe": 0.535251
+  },
+  "Portugal. The Man, Sir Chloe": {
+    "Petey USA, Sir Chloe": 0.336614
+  },
+  "Luke Wild, Sir Chloe": {
+    "Petey USA, Sir Chloe": 0.27083
+  },
+  "Petey USA": {
+    "Petey USA, Sir Chloe": 0.222588
+  },
+  "Sir Chloe": {
+    "Petey USA, Sir Chloe": 0.216519,
+    "Mitski": 0.673078
+  },
+  "Peach Pit, Sir Chloe": {
+    "Petey USA, Sir Chloe": 0.177066
+  },
+  "LOUTA, Zoe Gotusso": {
+    "Petey USA, Sir Chloe": 0.138032
+  },
+  "Sam Austins, Sir Chloe": {
+    "Petey USA, Sir Chloe": 0.112633
+  },
+  "Cavetown, Pierce The Veil, Vic Fuentes": {
+    "Petey USA, Sir Chloe": 0.061603
+  },
+  "Militarie Gun": {
+    "Petey USA, Sir Chloe": 0.039222
+  },
+  "Cavetown": {
+    "Petey USA, Sir Chloe": 0.038204,
+    "Girl In Red": 0.944858,
+    "Corook": 0.432382,
+    "Bears In Trees": 0.682487
+  },
+  "Mat Kerekes": {
+    "Petey USA, Sir Chloe": 0.03385
+  },
+  "Ethel Cain": {
+    "Nicole Dollanganger": 1.0,
+    "Vyva Melinkolya": 0.682648,
+    "Wulven": 0.601151,
+    "Midwife": 0.370984,
+    "1017 ALYX 9SM": 1.0,
+    "Sophie Thatcher": 1.0,
+    "cult friends": 0.598489,
+    "Grouper": 0.22585,
+    "venturing": 0.404389,
+    "Mitski": 0.179552,
+    "Hilary Woods": 0.326154,
+    "Bedlocked": 0.602315,
+    "Flower Face": 0.42075,
+    "Grimes": 0.14935,
+    "Esha Tewari": 0.303458,
+    "Pearly Drops": 0.144115,
+    "Mazzy Star": 0.143492,
+    "Not For Radio": 0.141253,
+    "Sunday (1994)": 0.139138,
+    "Saint Avangeline": 0.129803
+  },
+  "Nicole Dollanganger": {
+    "Ethel Cain": 1.0,
+    "Flower Face": 1.0,
+    "Mercy Necromancy": 0.910166,
+    "Cozy St. Jean": 0.81198,
+    "Rosie Diamond": 0.568404,
+    "Ruby Throat": 0.535463,
+    "Liar, Flower": 0.511266,
+    "Vyva Melinkolya": 0.501553,
+    "Sophie Woodhouse": 0.359182,
+    "Midwife": 0.345903,
+    "Elita": 0.340072,
+    "Chelsea Wolfe": 0.255265,
+    "Searows": 0.247324,
+    "Ha Vay": 0.229239,
+    "Grimes": 0.481315,
+    "Sophie Thatcher": 0.698727,
+    "Sea Oleena": 0.192097,
+    "Solya": 0.181771,
+    "Esha Tewari": 0.360515,
+    "Hope Sandoval & The Warm Inventions": 0.172932,
+    "1017 ALYX 9SM": 0.406008
+  },
+  "Vyva Melinkolya": {
+    "Ethel Cain": 0.682648,
+    "Nicole Dollanganger": 0.501553,
+    "Midwife": 1.0,
+    "Midwife & Vyva Melinkolya": 0.994621,
+    "Wulven": 0.957046,
+    "Air Hunger": 0.513053,
+    "Sister Grotto": 0.3534,
+    "Bedlocked": 0.894584,
+    "Grouper": 0.30391,
+    "Allison Lorenzen": 0.26632,
+    "Good Night & Good Morning": 0.241162,
+    "Miserable": 0.203286,
+    "King Woman": 0.194821,
+    "1017 ALYX 9SM": 0.537734,
+    "Rosie Diamond": 0.185648,
+    "Drowse": 0.184291,
+    "Planning for Burial": 0.165332,
+    "venturing": 0.229464,
+    "Greet Death": 0.134381,
+    "Mojave 3": 0.1317,
+    "Sophie Thatcher": 0.406076
+  },
+  "Wulven": {
+    "Ethel Cain": 0.601151,
+    "Vyva Melinkolya": 0.957046,
+    "cult friends": 1.0,
+    "Midwife": 0.760379,
+    "Sister Grotto": 0.717271,
+    "Drowse": 0.478962,
+    "Planning for Burial": 0.47155,
+    "Blood Estate": 0.440383,
+    "argo nuff": 0.417973,
+    "Good Night & Good Morning": 0.393994,
+    "pallow": 0.374291,
+    "Giles Corey": 0.368595,
+    "Have a Nice Life": 0.364724,
+    "Bedlocked": 0.78729,
+    "Belong": 0.30478,
+    "Grouper": 0.280428,
+    "Knifeplay": 0.254168,
+    "Baby Teeth": 0.232122,
+    "Midwife & Vyva Melinkolya": 0.195609,
+    "Tram": 0.193709,
+    "1017 ALYX 9SM": 0.237205
+  },
+  "Midwife": {
+    "Ethel Cain": 0.370984,
+    "Nicole Dollanganger": 0.345903,
+    "Vyva Melinkolya": 1.0,
+    "Wulven": 0.760379,
+    "Sister Grotto": 0.86572,
+    "Midwife & Vyva Melinkolya": 0.7121,
+    "Drowse": 0.600863,
+    "Allison Lorenzen": 0.569008,
+    "Planning for Burial": 0.505521,
+    "Grouper": 0.456699,
+    "Emma Ruth Rundle": 0.387662,
+    "cult friends": 0.546739,
+    "Good Night & Good Morning": 0.348549,
+    "Miserable": 0.321425,
+    "King Woman": 0.311844,
+    "Matt Jencik & Midwife": 0.309623,
+    "Big Brave": 0.288453,
+    "Giles Corey": 0.280061,
+    "Greet Death": 0.262903,
+    "Hilary Woods": 0.439351,
+    "1017 ALYX 9SM": 0.207518,
+    "venturing": 0.221415,
+    "Bedlocked": 0.602212
+  },
+  "1017 ALYX 9SM": {
+    "Ethel Cain": 1.0,
+    "Vyva Melinkolya": 0.537734,
+    "Nicole Dollanganger": 0.406008,
+    "cult friends": 0.291467,
+    "Flower Face": 0.27664,
+    "Ha Vay": 0.256844,
+    "Wulven": 0.237205,
+    "Lana Del Rey": 0.215618,
+    "Midwife": 0.207518,
+    "The Japanese House": 0.186433,
+    "Temachii": 0.171777,
+    "9Million": 0.169763,
+    "Susannah Joffe": 0.165999,
+    "Ex:Re": 0.165139,
+    "Sophie Woodhouse": 0.160172,
+    "Esha Tewari": 0.159172,
+    "Pearly Drops": 0.15111,
+    "Troye Sivan": 0.148465,
+    "Mazzy Star": 0.148435,
+    "Teezo Touchdown": 0.143972
+  },
+  "Sophie Thatcher": {
+    "Ethel Cain": 1.0,
+    "Nicole Dollanganger": 0.698727,
+    "Esha Tewari": 0.514778,
+    "Remy Bond": 0.51024,
+    "Saint Avangeline": 0.505334,
+    "Vyva Melinkolya": 0.406076,
+    "Pearly Drops": 0.387559,
+    "Flower Face": 0.387013,
+    "Hope Sandoval & The Warm Inventions": 0.369038,
+    "Solya": 0.320583,
+    "Not For Radio": 0.286736,
+    "Mazzy Star": 0.279222,
+    "Cornelia Murr": 0.272914,
+    "NewDad": 0.256723,
+    "Weyes Blood": 0.254051,
+    "Sunday (1994)": 0.250337,
+    "Elita": 0.240064,
+    "The Mar\u00edas": 0.209449,
+    "The Sundays": 0.203387,
+    "Lana Del Rey": 0.201188
+  },
+  "cult friends": {
+    "Ethel Cain": 0.598489,
+    "Wulven": 1.0,
+    "Midwife": 0.546739,
+    "1017 ALYX 9SM": 0.291467,
+    "Sister Grotto": 0.625373,
+    "Grouper": 0.459943,
+    "Bedlocked": 0.666542,
+    "Hilary Woods": 0.3143,
+    "Good Night & Good Morning": 0.263727,
+    "Inca Ore": 0.247692,
+    "Belong": 0.222104,
+    "\u05d0\u05e9\u05de\u05d3\u05d0\u05d9": 0.206039,
+    "argo nuff": 0.189566,
+    "KAVARI": 0.18561,
+    "Drowse": 0.177935,
+    "Matt Jencik & Midwife": 0.165916,
+    "Raum": 0.163472,
+    "Planning for Burial": 0.156229,
+    "Foie Gras": 0.153581,
+    "Teethe": 0.132086
+  },
+  "Grouper": {
+    "Ethel Cain": 0.22585,
+    "Vyva Melinkolya": 0.30391,
+    "Wulven": 0.280428,
+    "Midwife": 0.456699,
+    "cult friends": 0.459943,
+    "Mirrorring": 1.0,
+    "Inca Ore": 0.735609,
+    "Raum": 0.667982,
+    "Tim Hecker": 0.414373,
+    "Stars of the Lid": 0.399953,
+    "Jefre Cantu-Ledesma": 0.394585,
+    "William Basinski": 0.379158,
+    "Julianna Barwick": 0.37912,
+    "Nivhek": 0.368022,
+    "Belong": 0.325043,
+    "Good Night & Good Morning": 0.310391,
+    "Windy & Carl": 0.303564,
+    "Kali Malone": 0.284763,
+    "Natural Snow Buildings": 0.277607,
+    "The Dead Texan": 0.274387,
+    "Celer": 0.265613,
+    "Yellow Swans": 0.253398,
+    "lovesliescrushing": 0.251201,
+    "Sarah Davachi": 0.243501,
+    "Hilary Woods": 0.26404
+  },
+  "venturing": {
+    "Ethel Cain": 0.404389,
+    "Vyva Melinkolya": 0.229464,
+    "quannnic": 1.0,
+    "Weatherday": 0.479756,
+    "feeble little horse": 0.424569,
+    "Asian Glow": 0.404753,
+    "bl4ck m4rket c4rt": 0.399719,
+    "James Ivy": 0.309845,
+    "WillyRodriguezWasTaken": 0.304035,
+    "samlrc": 0.303833,
+    "what is your name?": 0.281371,
+    "Teethe": 0.265297,
+    "Parannoul": 0.26391,
+    "Wednesday": 0.261529,
+    "Julie": 0.25449,
+    "Horse Jumper of Love": 0.248916,
+    "Bedlocked": 0.556552,
+    "They Are Gutting a Body of Water": 0.23532,
+    "Duster": 0.225254,
+    "Midwife": 0.221415
+  },
+  "Mitski": {
+    "Ethel Cain": 0.179552,
+    "Solya": 1.0,
+    "Black Box Recorder": 0.838831,
+    "Fiona Apple": 0.833214,
+    "Susannah Joffe": 0.699184,
+    "Sir Chloe": 0.673078,
+    "Phoebe Bridgers": 0.616383,
+    "boygenius": 0.589534,
+    "Lucy Dacus": 0.564271,
+    "Japanese Breakfast": 0.541335,
+    "Adrianne Lenker": 0.528125,
+    "b\u00f4a": 0.510602,
+    "beabadoobee": 0.499572,
+    "Leith Ross": 0.494753,
+    "Big Thief": 0.467768,
+    "Weyes Blood": 0.463254,
+    "Indigo De Souza": 0.448321,
+    "Alex G": 0.43665,
+    "Lana Del Rey": 0.432479,
+    "Roar": 0.432212,
+    "TV Girl": 0.424688,
+    "Esha Tewari": 0.298595
+  },
+  "Hilary Woods": {
+    "Ethel Cain": 0.326154,
+    "Midwife": 0.439351,
+    "cult friends": 0.3143,
+    "Penelope Trappes": 1.0,
+    "Maria BC": 0.449941,
+    "Emma Ruth Rundle": 0.330851,
+    "Lawrence English": 0.289118,
+    "Abul Mogard": 0.282794,
+    "Lucrecia Dalt": 0.280171,
+    "Julianna Barwick": 0.264815,
+    "Grouper": 0.26404,
+    "Malibu": 0.262394,
+    "Kara-Lis Coverdale": 0.257175,
+    "This Mortal Coil": 0.24597,
+    "Maria Somerville": 0.245528,
+    "Sarah Davachi": 0.23341,
+    "Kaitlyn Aurelia Smith": 0.220887,
+    "Sister Grotto": 0.21542,
+    "Lucy Gooch": 0.214117,
+    "William Basinski": 0.21187
+  },
+  "Bedlocked": {
+    "Ethel Cain": 0.602315,
+    "Vyva Melinkolya": 0.894584,
+    "Wulven": 0.78729,
+    "cult friends": 0.666542,
+    "venturing": 0.556552,
+    "Teethe": 1.0,
+    "Deadharrie": 0.893248,
+    "waveform*": 0.778521,
+    "Knifeplay": 0.762398,
+    "9Million": 0.754858,
+    "A Country Western": 0.709262,
+    "Horse Jumper of Love": 0.705718,
+    "Joyer": 0.692192,
+    "Prize Horse": 0.688505,
+    "All Under Heaven": 0.645943,
+    "Greet Death": 0.618214,
+    "Midwife": 0.602212,
+    "Gleemer": 0.577626,
+    "They Are Gutting a Body of Water": 0.567086,
+    "Whirr": 0.539933
+  },
+  "Flower Face": {
+    "Ethel Cain": 0.42075,
+    "Nicole Dollanganger": 1.0,
+    "Ha Vay": 0.994439,
+    "Honey Gentry": 0.79413,
+    "Ex:Re": 0.573042,
+    "Saint Avangeline": 0.563764,
+    "mehro": 0.53554,
+    "Ghostly Kisses": 0.523304,
+    "aeseaes": 0.504259,
+    "Elita": 0.476516,
+    "Mercy Necromancy": 0.46415,
+    "Delaney Bailey": 0.440525,
+    "Daughter": 0.438678,
+    "Solya": 0.433347,
+    "Esha Tewari": 0.422774,
+    "Searows": 0.406857,
+    "NewDad": 0.401587,
+    "Sofia Isella": 0.389888,
+    "johnny goth": 0.386903,
+    "Leith Ross": 0.37635,
+    "1017 ALYX 9SM": 0.27664,
+    "Sophie Thatcher": 0.387013
+  },
+  "Grimes": {
+    "Ethel Cain": 0.14935,
+    "Nicole Dollanganger": 0.481315,
+    "Grimes & i_o": 1.0,
+    "Eartheater": 0.861291,
+    "Sky Ferreira": 0.814422,
+    "Arca": 0.770833,
+    "FKA twigs": 0.755456,
+    "yeule": 0.716064,
+    "Bj\u00f6rk": 0.701621,
+    "Crystal Castles": 0.661221,
+    "Blood Diamonds": 0.660695,
+    "Charli xcx": 0.632763,
+    "Caroline Polachek": 0.620825,
+    "Alice Glass": 0.606255,
+    "Magdalena Bay": 0.559543,
+    "M.I.A.": 0.558662,
+    "Pearly Drops": 0.55698,
+    "Cecile Believe": 0.473271,
+    "Chairlift": 0.450994,
+    "Slayyyter": 0.442656,
+    "Allie X": 0.395468
+  },
+  "Esha Tewari": {
+    "Ethel Cain": 0.303458,
+    "Flower Face": 0.422774,
+    "Nicole Dollanganger": 0.360515,
+    "1017 ALYX 9SM": 0.159172,
+    "Sophie Thatcher": 0.514778,
+    "Solya": 1.0,
+    "Searows": 0.589669,
+    "Ha Vay": 0.359265,
+    "Chestnut Bakery": 0.349052,
+    "runo plum": 0.330378,
+    "Salvia Palth": 0.299774,
+    "Mitski": 0.298595,
+    "Faye Webster": 0.293471,
+    "Clairo": 0.276631,
+    "Saint Avangeline": 0.271234,
+    "Bubble Tea and Cigarettes": 0.264842,
+    "Mazzy Star": 0.263715,
+    "The Mar\u00edas": 0.259919,
+    "she's green": 0.251611,
+    "Korea Girl": 0.243266,
+    "Hope Sandoval & The Warm Inventions": 0.241049
+  },
+  "Pearly Drops": {
+    "Ethel Cain": 0.144115,
+    "1017 ALYX 9SM": 0.15111,
+    "Sophie Thatcher": 0.387559,
+    "Grimes": 0.55698
+  },
+  "Mazzy Star": {
+    "Ethel Cain": 0.143492,
+    "1017 ALYX 9SM": 0.148435,
+    "Sophie Thatcher": 0.279222,
+    "Esha Tewari": 0.263715
+  },
+  "Not For Radio": {
+    "Ethel Cain": 0.141253,
+    "Sophie Thatcher": 0.286736
+  },
+  "Sunday (1994)": {
+    "Ethel Cain": 0.139138,
+    "Sophie Thatcher": 0.250337
+  },
+  "Saint Avangeline": {
+    "Ethel Cain": 0.129803,
+    "Flower Face": 0.563764,
+    "Sophie Thatcher": 0.505334,
+    "Esha Tewari": 0.271234
+  },
+  "Gracie Abrams": {
+    "Alessi Rose": 1.0,
+    "Maisie Peters": 0.923438,
+    "Lexi Jayde": 0.874287,
+    "Sadie Jean": 0.756108,
+    "Devon Gabriella": 0.739417,
+    "Lizzy McAlpine": 0.692412,
+    "Tate McRae": 0.636753,
+    "Sydney Rose": 0.598878,
+    "Conan Gray": 0.589123,
+    "Taylor Swift": 0.559023,
+    "Audrey Hobert": 0.547082,
+    "Olivia Rodrigo": 0.541759,
+    "Rene\u00e9 Rapp": 0.509855,
+    "Griff": 0.483348,
+    "Sabrina Carpenter": 0.458851,
+    "Holly Humberstone": 0.434454,
+    "Phoebe Bridgers": 0.427382,
+    "Suki Waterhouse": 0.415785,
+    "Jenna Raine": 0.411979,
+    "Madison Beer": 0.389429,
+    "Girl In Red": 0.525346,
+    "Role Model": 1.0
+  },
+  "Alessi Rose": {
+    "Gracie Abrams": 1.0,
+    "Role Model": 0.861592
+  },
+  "Lexi Jayde": {
+    "Gracie Abrams": 0.874287
+  },
+  "Sadie Jean": {
+    "Gracie Abrams": 0.756108
+  },
+  "Devon Gabriella": {
+    "Gracie Abrams": 0.739417,
+    "Role Model": 0.435641
+  },
+  "Tate McRae": {
+    "Gracie Abrams": 0.636753
+  },
+  "Sydney Rose": {
+    "Gracie Abrams": 0.598878
+  },
+  "Conan Gray": {
+    "Gracie Abrams": 0.589123,
+    "Girl In Red": 0.777541,
+    "Role Model": 0.4273
+  },
+  "Taylor Swift": {
+    "Gracie Abrams": 0.559023
+  },
+  "Audrey Hobert": {
+    "Gracie Abrams": 0.547082,
+    "Devon Again": 0.460052,
+    "Role Model": 0.639165
+  },
+  "Olivia Rodrigo": {
+    "Gracie Abrams": 0.541759
+  },
+  "Rene\u00e9 Rapp": {
+    "Gracie Abrams": 0.509855,
+    "Role Model": 0.46236
+  },
+  "Griff": {
+    "Gracie Abrams": 0.483348,
+    "Bleachers": 0.230004
+  },
+  "Sabrina Carpenter": {
+    "Gracie Abrams": 0.458851
+  },
+  "Holly Humberstone": {
+    "Gracie Abrams": 0.434454,
+    "Bleachers": 0.296159
+  },
+  "Suki Waterhouse": {
+    "Gracie Abrams": 0.415785
+  },
+  "Jenna Raine": {
+    "Gracie Abrams": 0.411979
+  },
+  "Madison Beer": {
+    "Gracie Abrams": 0.389429
+  },
+  "Solya": {
+    "Mitski": 1.0,
+    "Flower Face": 0.433347,
+    "Nicole Dollanganger": 0.181771,
+    "Sophie Thatcher": 0.320583,
+    "Esha Tewari": 1.0
+  },
+  "Black Box Recorder": {
+    "Mitski": 0.838831
+  },
+  "Fiona Apple": {
+    "Mitski": 0.833214
+  },
+  "Susannah Joffe": {
+    "Mitski": 0.699184,
+    "Girl In Red": 0.539624,
+    "Leith Ross": 0.473524,
+    "1017 ALYX 9SM": 0.165999
+  },
+  "Japanese Breakfast": {
+    "Mitski": 0.541335
+  },
+  "Adrianne Lenker": {
+    "Mitski": 0.528125,
+    "Leith Ross": 0.524808
+  },
+  "b\u00f4a": {
+    "Mitski": 0.510602
+  },
+  "beabadoobee": {
+    "Mitski": 0.499572
+  },
+  "Big Thief": {
+    "Mitski": 0.467768
+  },
+  "Weyes Blood": {
+    "Mitski": 0.463254,
+    "Sophie Thatcher": 0.254051
+  },
+  "Alex G": {
+    "Mitski": 0.43665
+  },
+  "Lana Del Rey": {
+    "Mitski": 0.432479,
+    "1017 ALYX 9SM": 0.215618,
+    "Sophie Thatcher": 0.201188
+  },
+  "Roar": {
+    "Mitski": 0.432212
+  },
+  "TV Girl": {
+    "Mitski": 0.424688
+  },
+  "Ha Vay": {
+    "Flower Face": 0.994439,
+    "Nicole Dollanganger": 0.229239,
+    "1017 ALYX 9SM": 0.256844,
+    "Esha Tewari": 0.359265
+  },
+  "Honey Gentry": {
+    "Flower Face": 0.79413
+  },
+  "Ex:Re": {
+    "Flower Face": 0.573042,
+    "1017 ALYX 9SM": 0.165139
+  },
+  "mehro": {
+    "Flower Face": 0.53554
+  },
+  "Ghostly Kisses": {
+    "Flower Face": 0.523304
+  },
+  "aeseaes": {
+    "Flower Face": 0.504259
+  },
+  "Elita": {
+    "Flower Face": 0.476516,
+    "Nicole Dollanganger": 0.340072,
+    "Sophie Thatcher": 0.240064
+  },
+  "Mercy Necromancy": {
+    "Flower Face": 0.46415,
+    "Nicole Dollanganger": 0.910166
+  },
+  "Daughter": {
+    "Flower Face": 0.438678
+  },
+  "NewDad": {
+    "Flower Face": 0.401587,
+    "Wolf Alice": 0.450307,
+    "Sophie Thatcher": 0.256723
+  },
+  "Sofia Isella": {
+    "Flower Face": 0.389888
+  },
+  "johnny goth": {
+    "Flower Face": 0.386903
+  },
+  "Girl In Red": {
+    "chloe moriondo": 1.0,
+    "Cavetown": 0.944858,
+    "Frances Forever": 0.944783,
+    "Gigi Perez": 0.930781,
+    "mxmtoon": 0.777928,
+    "Conan Gray": 0.777541,
+    "Towa Bird": 0.688709,
+    "Baby Queen": 0.67579,
+    "King Princess": 0.642147,
+    "Beach Bunny": 0.628034,
+    "boygenius": 0.616249,
+    "Nieve Ella": 0.610799,
+    "Hayley Kiyoko": 0.598675,
+    "Susannah Joffe": 0.539624,
+    "Claud": 0.532314,
+    "Clairo": 0.528785,
+    "Gracie Abrams": 0.525346,
+    "Chappell Roan": 0.512727,
+    "FINNEAS": 0.502442,
+    "awfultune": 0.495098
+  },
+  "chloe moriondo": {
+    "Girl In Red": 1.0,
+    "Devon Again": 0.66943,
+    "Bears In Trees": 0.41207,
+    "Tessa Violet": 0.495408
+  },
+  "Frances Forever": {
+    "Girl In Red": 0.944783,
+    "Corook": 0.447914,
+    "Tessa Violet": 0.490296
+  },
+  "mxmtoon": {
+    "Girl In Red": 0.777928,
+    "Bears In Trees": 0.370541,
+    "Tessa Violet": 0.480615
+  },
+  "Towa Bird": {
+    "Girl In Red": 0.688709,
+    "Corook": 0.501558
+  },
+  "Baby Queen": {
+    "Girl In Red": 0.67579,
+    "Tessa Violet": 0.486544
+  },
+  "King Princess": {
+    "Girl In Red": 0.642147
+  },
+  "Beach Bunny": {
+    "Girl In Red": 0.628034
+  },
+  "Nieve Ella": {
+    "Girl In Red": 0.610799
+  },
+  "Hayley Kiyoko": {
+    "Girl In Red": 0.598675
+  },
+  "Clairo": {
+    "Girl In Red": 0.528785,
+    "Esha Tewari": 0.276631
+  },
+  "Chappell Roan": {
+    "Girl In Red": 0.512727
+  },
+  "FINNEAS": {
+    "Girl In Red": 0.502442
+  },
+  "awfultune": {
+    "Girl In Red": 0.495098
+  },
+  "Wolf Parade": {
+    "Handsome Furs": 1.0,
+    "Sunset Rubdown": 0.898907,
+    "Clap Your Hands Say Yeah": 0.472716,
+    "Tapes 'n Tapes": 0.425141,
+    "Broken Social Scene": 0.361271,
+    "Divine Fits": 0.348934,
+    "The New Pornographers": 0.335694,
+    "TV on the Radio": 0.324209,
+    "Okkervil River": 0.307028,
+    "The Walkmen": 0.301395,
+    "Swan Lake": 0.301355,
+    "Moonface": 0.282866,
+    "Spoon": 0.27941,
+    "Stars": 0.275344,
+    "Kevin Drew": 0.271946,
+    "Modest Mouse": 0.264513,
+    "Destroyer": 0.264437,
+    "Tokyo Police Club": 0.263067,
+    "Arcade Fire": 0.261694,
+    "The Rural Alberta Advantage": 0.257898
+  },
+  "Handsome Furs": {
+    "Wolf Parade": 1.0
+  },
+  "Sunset Rubdown": {
+    "Wolf Parade": 0.898907
+  },
+  "Clap Your Hands Say Yeah": {
+    "Wolf Parade": 0.472716
+  },
+  "Tapes 'n Tapes": {
+    "Wolf Parade": 0.425141
+  },
+  "Broken Social Scene": {
+    "Wolf Parade": 0.361271,
+    "Rostam": 0.477713
+  },
+  "Divine Fits": {
+    "Wolf Parade": 0.348934
+  },
+  "The New Pornographers": {
+    "Wolf Parade": 0.335694,
+    "Rostam": 0.347137
+  },
+  "TV on the Radio": {
+    "Wolf Parade": 0.324209
+  },
+  "Okkervil River": {
+    "Wolf Parade": 0.307028
+  },
+  "The Walkmen": {
+    "Wolf Parade": 0.301395
+  },
+  "Swan Lake": {
+    "Wolf Parade": 0.301355
+  },
+  "Moonface": {
+    "Wolf Parade": 0.282866
+  },
+  "Spoon": {
+    "Wolf Parade": 0.27941
+  },
+  "Stars": {
+    "Wolf Parade": 0.275344
+  },
+  "Kevin Drew": {
+    "Wolf Parade": 0.271946
+  },
+  "Modest Mouse": {
+    "Wolf Parade": 0.264513
+  },
+  "Destroyer": {
+    "Wolf Parade": 0.264437
+  },
+  "Tokyo Police Club": {
+    "Wolf Parade": 0.263067,
+    "Rostam": 0.385838
+  },
+  "Arcade Fire": {
+    "Wolf Parade": 0.261694
+  },
+  "The Rural Alberta Advantage": {
+    "Wolf Parade": 0.257898
+  },
+  "Daniel Radcliffe": {
+    "How To Succeed Orchestra": 1.0,
+    "Gavin Creel": 0.432719,
+    "Tammy Blanchard": 0.409846,
+    "'Ragtime' 2025 Broadway Cast": 0.3769,
+    "Joanna Gleason": 0.341022,
+    "Ari Groover": 0.337159,
+    "Eddie Cooper": 0.320072,
+    "Ben Wright": 0.306126,
+    "Joe Barbara": 0.305916,
+    "Manoel Felciano": 0.303631,
+    "Kingsley Leggs": 0.289669,
+    "Alex Joseph Grayson": 0.288261,
+    "Ragtime Ensemble": 0.273892,
+    "Original Broadway Cast of Into the Woods": 0.272372,
+    "Gracie Lawrence": 0.267295,
+    "Natasha Yvette Williams": 0.263514,
+    "Charlie Webb": 0.260134,
+    "Jonathan B. Wright": 0.253455,
+    "Nichelle Lewis": 0.25269,
+    "Victoria Clark": 0.252654
+  },
+  "How To Succeed Orchestra": {
+    "Daniel Radcliffe": 1.0
+  },
+  "Gavin Creel": {
+    "Daniel Radcliffe": 0.432719
+  },
+  "Tammy Blanchard": {
+    "Daniel Radcliffe": 0.409846
+  },
+  "'Ragtime' 2025 Broadway Cast": {
+    "Daniel Radcliffe": 0.3769
+  },
+  "Joanna Gleason": {
+    "Daniel Radcliffe": 0.341022
+  },
+  "Ari Groover": {
+    "Daniel Radcliffe": 0.337159
+  },
+  "Eddie Cooper": {
+    "Daniel Radcliffe": 0.320072
+  },
+  "Ben Wright": {
+    "Daniel Radcliffe": 0.306126
+  },
+  "Joe Barbara": {
+    "Daniel Radcliffe": 0.305916
+  },
+  "Manoel Felciano": {
+    "Daniel Radcliffe": 0.303631
+  },
+  "Kingsley Leggs": {
+    "Daniel Radcliffe": 0.289669
+  },
+  "Alex Joseph Grayson": {
+    "Daniel Radcliffe": 0.288261
+  },
+  "Ragtime Ensemble": {
+    "Daniel Radcliffe": 0.273892
+  },
+  "Original Broadway Cast of Into the Woods": {
+    "Daniel Radcliffe": 0.272372
+  },
+  "Gracie Lawrence": {
+    "Daniel Radcliffe": 0.267295
+  },
+  "Natasha Yvette Williams": {
+    "Daniel Radcliffe": 0.263514
+  },
+  "Charlie Webb": {
+    "Daniel Radcliffe": 0.260134
+  },
+  "Jonathan B. Wright": {
+    "Daniel Radcliffe": 0.253455
+  },
+  "Nichelle Lewis": {
+    "Daniel Radcliffe": 0.25269
+  },
+  "Victoria Clark": {
+    "Daniel Radcliffe": 0.252654
+  },
+  "Corook": {
+    "Daisy the Great": 1.0,
+    "Joy Oladokun": 0.783365,
+    "Orla Gartland": 0.643378,
+    "Em Beihold": 0.610748,
+    "Carsie Blanton": 0.587306,
+    "Tessa Violet": 0.557958,
+    "Towa Bird": 0.501558,
+    "dodie": 0.486307,
+    "Matilda Mann": 0.479143,
+    "Claire Rosinkranz": 0.466951,
+    "Medium Build": 0.463018,
+    "Eliza Mclamb": 0.459718,
+    "Frances Forever": 0.447914,
+    "Fizz": 0.447639,
+    "Am\u00e9lie Farren": 0.443985,
+    "Sushi Soucy": 0.440782,
+    "Ingrid Michaelson": 0.434526,
+    "Cavetown": 0.432382,
+    "Chloe Slater": 0.428152,
+    "Jensen McRae": 0.427301
+  },
+  "Daisy the Great": {
+    "Corook": 1.0
+  },
+  "Joy Oladokun": {
+    "Corook": 0.783365
+  },
+  "Orla Gartland": {
+    "Corook": 0.643378,
+    "Tessa Violet": 1.0
+  },
+  "Em Beihold": {
+    "Corook": 0.610748,
+    "AJR": 0.729216,
+    "Tessa Violet": 0.645705
+  },
+  "Carsie Blanton": {
+    "Corook": 0.587306
+  },
+  "Tessa Violet": {
+    "Corook": 0.557958,
+    "Orla Gartland": 1.0,
+    "dodie": 0.852282,
+    "Em Beihold": 0.645705,
+    "Kailee Morgue": 0.630272,
+    "GIRLI": 0.607856,
+    "MisterWives": 0.598593,
+    "UPSAHL": 0.55127,
+    "KiNG MALA": 0.533237,
+    "Devon Cole": 0.518086,
+    "Emei": 0.503773,
+    "chloe moriondo": 0.495408,
+    "Frances Forever": 0.490296,
+    "Baby Queen": 0.486544,
+    "mxmtoon": 0.480615,
+    "Madelline": 0.479128,
+    "Brye": 0.469912,
+    "The Regrettes": 0.466484,
+    "Mothica": 0.421933,
+    "Elliot Lee": 0.421648,
+    "Cloudy June": 0.418112
+  },
+  "dodie": {
+    "Corook": 0.486307,
+    "Bears In Trees": 0.430079,
+    "Tessa Violet": 0.852282
+  },
+  "Claire Rosinkranz": {
+    "Corook": 0.466951
+  },
+  "Medium Build": {
+    "Corook": 0.463018
+  },
+  "Fizz": {
+    "Corook": 0.447639
+  },
+  "Am\u00e9lie Farren": {
+    "Corook": 0.443985
+  },
+  "Sushi Soucy": {
+    "Corook": 0.440782
+  },
+  "Ingrid Michaelson": {
+    "Corook": 0.434526
+  },
+  "Chloe Slater": {
+    "Corook": 0.428152
+  },
+  "Jensen McRae": {
+    "Corook": 0.427301
+  },
+  "Devon Again": {
+    "Bel": 1.0,
+    "Keni Titus": 0.97682,
+    "Carol Ades": 0.921272,
+    "Maude Latour": 0.742758,
+    "chloe moriondo": 0.66943,
+    "Sarah Kinsley": 0.623242,
+    "Wallice": 0.613901,
+    "Annie DiRusso": 0.609562,
+    "Dora Jar": 0.604105,
+    "Etta Marcus": 0.599931,
+    "quinnie": 0.577588,
+    "Between Friends": 0.568905,
+    "Remi Wolf": 0.526528,
+    "Claud": 0.499099,
+    "The Army, The Navy": 0.478875,
+    "D\u00e9yyess": 0.478195,
+    "spill tab": 0.476667,
+    "Rachel Chinouriri": 0.474333,
+    "Sophie Holohan": 0.473566,
+    "Audrey Hobert": 0.460052
+  },
+  "Keni Titus": {
+    "Devon Again": 0.97682,
+    "Role Model": 0.400181
+  },
+  "Carol Ades": {
+    "Devon Again": 0.921272
+  },
+  "Maude Latour": {
+    "Devon Again": 0.742758
+  },
+  "Wallice": {
+    "Devon Again": 0.613901
+  },
+  "Annie DiRusso": {
+    "Devon Again": 0.609562
+  },
+  "Dora Jar": {
+    "Devon Again": 0.604105
+  },
+  "quinnie": {
+    "Devon Again": 0.577588,
+    "Leith Ross": 0.534596
+  },
+  "Between Friends": {
+    "Devon Again": 0.568905
+  },
+  "Remi Wolf": {
+    "Devon Again": 0.526528
+  },
+  "The Army, The Navy": {
+    "Devon Again": 0.478875
+  },
+  "D\u00e9yyess": {
+    "Devon Again": 0.478195
+  },
+  "spill tab": {
+    "Devon Again": 0.476667
+  },
+  "Rachel Chinouriri": {
+    "Devon Again": 0.474333
+  },
+  "Sophie Holohan": {
+    "Devon Again": 0.473566
+  },
+  "Paola Bennet": {
+    "lily sevin": 1.0,
+    "Sarah Gross": 0.552747,
+    "Wilma Laverne Miner": 0.457586,
+    "Fire Swimmer": 0.440736,
+    "buffchick": 0.433975,
+    "Olivia Barton": 0.429523,
+    "Jenna Anne": 0.372583,
+    "Izzy Heltai": 0.355046,
+    "Kyle Cox": 0.3466,
+    "Julia Pratt": 0.343401,
+    "Katie Malco": 0.3355,
+    "Chloe Southern": 0.33008,
+    "Blake Rouse": 0.324523,
+    "Joel Faviere": 0.324331,
+    "Maria Kelly": 0.313938,
+    "Laura Zocca": 0.308415,
+    "Flo Perlin": 0.308387,
+    "Mieka Pauley": 0.305519,
+    "Georgia Greene": 0.299228,
+    "Eva Westphal": 0.297595
+  },
+  "lily sevin": {
+    "Paola Bennet": 1.0
+  },
+  "Sarah Gross": {
+    "Paola Bennet": 0.552747
+  },
+  "Wilma Laverne Miner": {
+    "Paola Bennet": 0.457586
+  },
+  "Fire Swimmer": {
+    "Paola Bennet": 0.440736
+  },
+  "buffchick": {
+    "Paola Bennet": 0.433975
+  },
+  "Olivia Barton": {
+    "Paola Bennet": 0.429523
+  },
+  "Jenna Anne": {
+    "Paola Bennet": 0.372583
+  },
+  "Izzy Heltai": {
+    "Paola Bennet": 0.355046
+  },
+  "Kyle Cox": {
+    "Paola Bennet": 0.3466
+  },
+  "Julia Pratt": {
+    "Paola Bennet": 0.343401
+  },
+  "Katie Malco": {
+    "Paola Bennet": 0.3355
+  },
+  "Chloe Southern": {
+    "Paola Bennet": 0.33008
+  },
+  "Blake Rouse": {
+    "Paola Bennet": 0.324523
+  },
+  "Joel Faviere": {
+    "Paola Bennet": 0.324331
+  },
+  "Maria Kelly": {
+    "Paola Bennet": 0.313938
+  },
+  "Laura Zocca": {
+    "Paola Bennet": 0.308415
+  },
+  "Flo Perlin": {
+    "Paola Bennet": 0.308387
+  },
+  "Mieka Pauley": {
+    "Paola Bennet": 0.305519
+  },
+  "Georgia Greene": {
+    "Paola Bennet": 0.299228
+  },
+  "Eva Westphal": {
+    "Paola Bennet": 0.297595
+  },
+  "AJR": {
+    "The Astronomers": 1.0,
+    "BoyWithUke": 0.917499,
+    "American Authors": 0.770673,
+    "Noah Floersch": 0.745212,
+    "Em Beihold": 0.729216,
+    "lovelytheband": 0.665174,
+    "half\u2022alive": 0.653428,
+    "Andy Grammer": 0.61367,
+    "Ryan Mack": 0.603073,
+    "Saint Motel": 0.593175,
+    "Quinn XCII": 0.560948,
+    "Tai Verdes": 0.553889,
+    "Scrawny": 0.529296,
+    "Madilyn Mei": 0.490628,
+    "Air Traffic Controller": 0.48275,
+    "Fitz and the Tantrums": 0.476541,
+    "The Happy Fits": 0.475107,
+    "JVKE": 0.458829,
+    "Cody Fry": 0.447908,
+    "Scotty Sire": 0.436921
+  },
+  "The Astronomers": {
+    "AJR": 1.0
+  },
+  "BoyWithUke": {
+    "AJR": 0.917499
+  },
+  "American Authors": {
+    "AJR": 0.770673
+  },
+  "Noah Floersch": {
+    "AJR": 0.745212,
+    "Bears In Trees": 0.639544
+  },
+  "lovelytheband": {
+    "AJR": 0.665174
+  },
+  "half\u2022alive": {
+    "AJR": 0.653428
+  },
+  "Andy Grammer": {
+    "AJR": 0.61367
+  },
+  "Ryan Mack": {
+    "AJR": 0.603073
+  },
+  "Saint Motel": {
+    "AJR": 0.593175
+  },
+  "Quinn XCII": {
+    "AJR": 0.560948
+  },
+  "Tai Verdes": {
+    "AJR": 0.553889
+  },
+  "Scrawny": {
+    "AJR": 0.529296
+  },
+  "Madilyn Mei": {
+    "AJR": 0.490628,
+    "Bears In Trees": 0.451609
+  },
+  "Air Traffic Controller": {
+    "AJR": 0.48275
+  },
+  "Fitz and the Tantrums": {
+    "AJR": 0.476541
+  },
+  "The Happy Fits": {
+    "AJR": 0.475107
+  },
+  "JVKE": {
+    "AJR": 0.458829
+  },
+  "Cody Fry": {
+    "AJR": 0.447908
+  },
+  "Scotty Sire": {
+    "AJR": 0.436921
+  },
+  "Odie Leigh": {
+    "Leith Ross": 0.579667
+  },
+  "Haley Heynderickx": {
+    "Leith Ross": 0.502281
+  },
+  "Whatever, Dad": {
+    "Leith Ross": 0.491039
+  },
+  "Lomelda": {
+    "Leith Ross": 0.463065
+  },
+  "Leonie Biney": {
+    "Leith Ross": 0.433492
+  },
+  "Haley Blais": {
+    "Leith Ross": 0.416657
+  },
+  "Wolf Alice": {
+    "Wet Leg": 1.0,
+    "The Last Dinner Party": 0.995626,
+    "Black Honey": 0.777348,
+    "The Big Moon": 0.774061,
+    "Sunflower Bean": 0.732727,
+    "Florence Road": 0.703796,
+    "Hayley Williams": 0.583738,
+    "Florence + the Machine": 0.580918,
+    "Blondshell": 0.579275,
+    "Sam Fender": 0.57727,
+    "Inhaler": 0.569392,
+    "HAIM": 0.567484,
+    "Wunderhorse": 0.565783,
+    "Catfish and the Bottlemen": 0.512735,
+    "swim school": 0.502049,
+    "Blossoms": 0.461402,
+    "NewDad": 0.450307,
+    "Lime Garden": 0.449654,
+    "The Maccabees": 0.441749,
+    "Momma": 0.437667
+  },
+  "Wet Leg": {
+    "Wolf Alice": 1.0
+  },
+  "The Last Dinner Party": {
+    "Wolf Alice": 0.995626
+  },
+  "Black Honey": {
+    "Wolf Alice": 0.777348
+  },
+  "The Big Moon": {
+    "Wolf Alice": 0.774061
+  },
+  "Sunflower Bean": {
+    "Wolf Alice": 0.732727
+  },
+  "Florence Road": {
+    "Wolf Alice": 0.703796
+  },
+  "Hayley Williams": {
+    "Wolf Alice": 0.583738
+  },
+  "Florence + the Machine": {
+    "Wolf Alice": 0.580918
+  },
+  "Blondshell": {
+    "Wolf Alice": 0.579275
+  },
+  "Sam Fender": {
+    "Wolf Alice": 0.57727
+  },
+  "Inhaler": {
+    "Wolf Alice": 0.569392,
+    "Role Model": 0.429178
+  },
+  "HAIM": {
+    "Wolf Alice": 0.567484,
+    "Bleachers": 0.316507
+  },
+  "Wunderhorse": {
+    "Wolf Alice": 0.565783
+  },
+  "Catfish and the Bottlemen": {
+    "Wolf Alice": 0.512735,
+    "Wombats": 0.441024
+  },
+  "swim school": {
+    "Wolf Alice": 0.502049
+  },
+  "Blossoms": {
+    "Wolf Alice": 0.461402,
+    "Wombats": 0.41488
+  },
+  "Lime Garden": {
+    "Wolf Alice": 0.449654,
+    "Rostam": 0.356581
+  },
+  "The Maccabees": {
+    "Wolf Alice": 0.441749
+  },
+  "Momma": {
+    "Wolf Alice": 0.437667
+  },
+  "Bears In Trees": {
+    "Ewy": 1.0,
+    "Ricky Jamaraz": 0.717989,
+    "Ricky Montgomery": 0.692282,
+    "Cavetown": 0.682487,
+    "Leanna Firestone": 0.650868,
+    "Noah Floersch": 0.639544,
+    "Seb Lowe": 0.633051,
+    "carpetgarden": 0.573729,
+    "Los Campesinos!": 0.569455,
+    "fredo disco": 0.518304,
+    "Moth\u00e9": 0.516904,
+    "Rory Webley": 0.510753,
+    "Madilyn Mei": 0.451609,
+    "Wild Party": 0.439354,
+    "Kevin Walkman": 0.436727,
+    "dodie": 0.430079,
+    "Mad Tsai": 0.424247,
+    "chloe moriondo": 0.41207,
+    "mxmtoon": 0.370541,
+    "Autoheart": 0.36485
+  },
+  "Ewy": {
+    "Bears In Trees": 1.0
+  },
+  "Ricky Jamaraz": {
+    "Bears In Trees": 0.717989
+  },
+  "Ricky Montgomery": {
+    "Bears In Trees": 0.692282
+  },
+  "Leanna Firestone": {
+    "Bears In Trees": 0.650868
+  },
+  "Seb Lowe": {
+    "Bears In Trees": 0.633051
+  },
+  "carpetgarden": {
+    "Bears In Trees": 0.573729
+  },
+  "Los Campesinos!": {
+    "Bears In Trees": 0.569455
+  },
+  "fredo disco": {
+    "Bears In Trees": 0.518304
+  },
+  "Moth\u00e9": {
+    "Bears In Trees": 0.516904
+  },
+  "Rory Webley": {
+    "Bears In Trees": 0.510753
+  },
+  "Wild Party": {
+    "Bears In Trees": 0.439354
+  },
+  "Kevin Walkman": {
+    "Bears In Trees": 0.436727
+  },
+  "Mad Tsai": {
+    "Bears In Trees": 0.424247
+  },
+  "Autoheart": {
+    "Bears In Trees": 0.36485
+  },
+  "LCD Soundsystem": {
+    "The Juan Maclean": 1.0,
+    "The Rapture": 0.639869,
+    "Hot Chip": 0.600238,
+    "MGMT": 0.575052,
+    "!!!": 0.54511,
+    "Soulwax": 0.520244,
+    "Vampire Weekend": 0.43348,
+    "Cut Copy": 0.430586,
+    "The Flaming Lips": 0.412911,
+    "The Postal Service": 0.392736,
+    "Passion Pit": 0.391035,
+    "The Avalanches": 0.369705,
+    "Stereolab": 0.367097,
+    "Daft Punk": 0.340412,
+    "Caribou": 0.335006,
+    "The Go! Team": 0.319099,
+    "The Faint": 0.314663,
+    "Justice": 0.312249,
+    "Broadcast": 0.308689,
+    "Neon Indian": 0.307078
+  },
+  "The Juan Maclean": {
+    "LCD Soundsystem": 1.0
+  },
+  "The Rapture": {
+    "LCD Soundsystem": 0.639869
+  },
+  "Hot Chip": {
+    "LCD Soundsystem": 0.600238
+  },
+  "MGMT": {
+    "LCD Soundsystem": 0.575052
+  },
+  "!!!": {
+    "LCD Soundsystem": 0.54511
+  },
+  "Soulwax": {
+    "LCD Soundsystem": 0.520244
+  },
+  "Vampire Weekend": {
+    "LCD Soundsystem": 0.43348,
+    "Rostam": 1.0
+  },
+  "Cut Copy": {
+    "LCD Soundsystem": 0.430586
+  },
+  "The Flaming Lips": {
+    "LCD Soundsystem": 0.412911
+  },
+  "The Postal Service": {
+    "LCD Soundsystem": 0.392736
+  },
+  "Passion Pit": {
+    "LCD Soundsystem": 0.391035
+  },
+  "The Avalanches": {
+    "LCD Soundsystem": 0.369705
+  },
+  "Stereolab": {
+    "LCD Soundsystem": 0.367097
+  },
+  "Daft Punk": {
+    "LCD Soundsystem": 0.340412
+  },
+  "Caribou": {
+    "LCD Soundsystem": 0.335006
+  },
+  "The Go! Team": {
+    "LCD Soundsystem": 0.319099
+  },
+  "The Faint": {
+    "LCD Soundsystem": 0.314663
+  },
+  "Justice": {
+    "LCD Soundsystem": 0.312249
+  },
+  "Broadcast": {
+    "LCD Soundsystem": 0.308689
+  },
+  "Neon Indian": {
+    "LCD Soundsystem": 0.307078
+  },
+  "Role Model": {
+    "Gracie Abrams": 1.0,
+    "Lizzy McAlpine": 0.956205,
+    "Alessi Rose": 0.861592,
+    "Del Water Gap": 0.756402,
+    "Audrey Hobert": 0.639165,
+    "Maisie Peters": 0.515629,
+    "Wallows": 0.490508,
+    "Noah Kahan": 0.489625,
+    "Sydney Ross Mitchell": 0.471034,
+    "Rene\u00e9 Rapp": 0.46236,
+    "Devon Gabriella": 0.435641,
+    "Inhaler": 0.429178,
+    "Conan Gray": 0.4273,
+    "Romy Mars": 0.420316,
+    "Dominic Fike": 0.418644,
+    "Harry Styles": 0.41464,
+    "Keni Titus": 0.400181,
+    "Aidan Bissett": 0.391371,
+    "Ruel": 0.390676,
+    "Ryan Beatty": 0.378857
+  },
+  "Del Water Gap": {
+    "Role Model": 0.756402,
+    "Bleachers": 0.308293
+  },
+  "Wallows": {
+    "Role Model": 0.490508
+  },
+  "Romy Mars": {
+    "Role Model": 0.420316
+  },
+  "Dominic Fike": {
+    "Role Model": 0.418644
+  },
+  "Harry Styles": {
+    "Role Model": 0.41464
+  },
+  "Aidan Bissett": {
+    "Role Model": 0.391371
+  },
+  "Ruel": {
+    "Role Model": 0.390676
+  },
+  "Ryan Beatty": {
+    "Role Model": 0.378857
+  },
+  "Kailee Morgue": {
+    "Tessa Violet": 0.630272
+  },
+  "GIRLI": {
+    "Tessa Violet": 0.607856
+  },
+  "MisterWives": {
+    "Tessa Violet": 0.598593
+  },
+  "UPSAHL": {
+    "Tessa Violet": 0.55127
+  },
+  "KiNG MALA": {
+    "Tessa Violet": 0.533237
+  },
+  "Devon Cole": {
+    "Tessa Violet": 0.518086
+  },
+  "Emei": {
+    "Tessa Violet": 0.503773
+  },
+  "Madelline": {
+    "Tessa Violet": 0.479128
+  },
+  "Brye": {
+    "Tessa Violet": 0.469912
+  },
+  "The Regrettes": {
+    "Tessa Violet": 0.466484
+  },
+  "Mothica": {
+    "Tessa Violet": 0.421933
+  },
+  "Elliot Lee": {
+    "Tessa Violet": 0.421648
+  },
+  "Cloudy June": {
+    "Tessa Violet": 0.418112
+  },
+  "Bleachers": {
+    "Steel Train": 1.0,
+    "Red Hearse": 0.693982,
+    "The 1975": 0.471664,
+    "fun.": 0.443489,
+    "MUNA": 0.424421,
+    "The Format": 0.377219,
+    "Maisie Peters": 0.364877,
+    "The Japanese House": 0.361203,
+    "Maggie Rogers": 0.352357,
+    "HAIM": 0.316507,
+    "Del Water Gap": 0.308293,
+    "Walk the Moon": 0.305657,
+    "Noah Kahan": 0.300981,
+    "Holly Humberstone": 0.296159,
+    "Lorde": 0.264711,
+    "The Lumineers": 0.261749,
+    "Hippo Campus": 0.260308,
+    "Samia": 0.248915,
+    "The Killers": 0.232407,
+    "Griff": 0.230004
+  },
+  "Steel Train": {
+    "Bleachers": 1.0
+  },
+  "Red Hearse": {
+    "Bleachers": 0.693982
+  },
+  "The 1975": {
+    "Bleachers": 0.471664
+  },
+  "fun.": {
+    "Bleachers": 0.443489
+  },
+  "The Format": {
+    "Bleachers": 0.377219
+  },
+  "The Japanese House": {
+    "Bleachers": 0.361203,
+    "1017 ALYX 9SM": 0.186433
+  },
+  "Maggie Rogers": {
+    "Bleachers": 0.352357
+  },
+  "Walk the Moon": {
+    "Bleachers": 0.305657
+  },
+  "Lorde": {
+    "Bleachers": 0.264711
+  },
+  "Hippo Campus": {
+    "Bleachers": 0.260308
+  },
+  "The Killers": {
+    "Bleachers": 0.232407
+  },
+  "Rostam": {
+    "Vampire Weekend": 1.0,
+    "Discovery": 0.933425,
+    "Ratboy": 0.611397,
+    "Hamilton Leithauser": 0.550326,
+    "Ra Ra Riot": 0.542137,
+    "Snocaps": 0.508887,
+    "Snail Mail": 0.483096,
+    "Broken Social Scene": 0.477713,
+    "Ed O'Brien": 0.455644,
+    "Whitney": 0.447166,
+    "Witch Post": 0.411098,
+    "Dirty Projectors": 0.402222,
+    "Sylvan Esso": 0.388477,
+    "Tokyo Police Club": 0.385838,
+    "Wild Pink": 0.383401,
+    "Cardinals": 0.371308,
+    "Porches": 0.362125,
+    "Lime Garden": 0.356581,
+    "The New Pornographers": 0.347137,
+    "Rogue Wave": 0.329037
+  },
+  "Discovery": {
+    "Rostam": 0.933425
+  },
+  "Ratboy": {
+    "Rostam": 0.611397
+  },
+  "Hamilton Leithauser": {
+    "Rostam": 0.550326
+  },
+  "Ra Ra Riot": {
+    "Rostam": 0.542137
+  },
+  "Snocaps": {
+    "Rostam": 0.508887
+  },
+  "Snail Mail": {
+    "Rostam": 0.483096
+  },
+  "Ed O'Brien": {
+    "Rostam": 0.455644
+  },
+  "Whitney": {
+    "Rostam": 0.447166
+  },
+  "Witch Post": {
+    "Rostam": 0.411098
+  },
+  "Dirty Projectors": {
+    "Rostam": 0.402222
+  },
+  "Sylvan Esso": {
+    "Rostam": 0.388477
+  },
+  "Wild Pink": {
+    "Rostam": 0.383401
+  },
+  "Cardinals": {
+    "Rostam": 0.371308
+  },
+  "Porches": {
+    "Rostam": 0.362125
+  },
+  "Rogue Wave": {
+    "Rostam": 0.329037
+  },
+  "Wombats": {
+    "Love Fame Tragedy": 1.0,
+    "Circa Waves": 0.637219,
+    "Sea Girls": 0.572863,
+    "The Pigeon Detectives": 0.539806,
+    "The Kooks": 0.443582,
+    "Catfish and the Bottlemen": 0.441024,
+    "The Hunna": 0.432221,
+    "The Courteeners": 0.428663,
+    "Blossoms": 0.41488,
+    "The Vaccines": 0.413392,
+    "Sundara Karma": 0.407902,
+    "Two Door Cinema Club": 0.396806,
+    "Spector": 0.368866,
+    "Kaiser Chiefs": 0.367698,
+    "Viola Beach": 0.360172,
+    "Vistas": 0.338439,
+    "The Snuts": 0.329039,
+    "Razorlight": 0.323107,
+    "Max\u00efmo Park": 0.309305,
+    "The Royston Club": 0.307324
+  },
+  "Love Fame Tragedy": {
+    "Wombats": 1.0
+  },
+  "Circa Waves": {
+    "Wombats": 0.637219
+  },
+  "Sea Girls": {
+    "Wombats": 0.572863
+  },
+  "The Pigeon Detectives": {
+    "Wombats": 0.539806
+  },
+  "The Kooks": {
+    "Wombats": 0.443582
+  },
+  "The Hunna": {
+    "Wombats": 0.432221
+  },
+  "The Courteeners": {
+    "Wombats": 0.428663
+  },
+  "The Vaccines": {
+    "Wombats": 0.413392
+  },
+  "Sundara Karma": {
+    "Wombats": 0.407902
+  },
+  "Two Door Cinema Club": {
+    "Wombats": 0.396806
+  },
+  "Spector": {
+    "Wombats": 0.368866
+  },
+  "Kaiser Chiefs": {
+    "Wombats": 0.367698
+  },
+  "Viola Beach": {
+    "Wombats": 0.360172
+  },
+  "Vistas": {
+    "Wombats": 0.338439
+  },
+  "The Snuts": {
+    "Wombats": 0.329039
+  },
+  "Razorlight": {
+    "Wombats": 0.323107
+  },
+  "Max\u00efmo Park": {
+    "Wombats": 0.309305
+  },
+  "The Royston Club": {
+    "Wombats": 0.307324
+  },
+  "Cozy St. Jean": {
+    "Nicole Dollanganger": 0.81198
+  },
+  "Rosie Diamond": {
+    "Nicole Dollanganger": 0.568404,
+    "Vyva Melinkolya": 0.185648
+  },
+  "Ruby Throat": {
+    "Nicole Dollanganger": 0.535463
+  },
+  "Liar, Flower": {
+    "Nicole Dollanganger": 0.511266
+  },
+  "Sophie Woodhouse": {
+    "Nicole Dollanganger": 0.359182,
+    "1017 ALYX 9SM": 0.160172
+  },
+  "Chelsea Wolfe": {
+    "Nicole Dollanganger": 0.255265
+  },
+  "Sea Oleena": {
+    "Nicole Dollanganger": 0.192097
+  },
+  "Hope Sandoval & The Warm Inventions": {
+    "Nicole Dollanganger": 0.172932,
+    "Sophie Thatcher": 0.369038,
+    "Esha Tewari": 0.241049
+  },
+  "Midwife & Vyva Melinkolya": {
+    "Vyva Melinkolya": 0.994621,
+    "Wulven": 0.195609,
+    "Midwife": 0.7121
+  },
+  "Air Hunger": {
+    "Vyva Melinkolya": 0.513053
+  },
+  "Sister Grotto": {
+    "Vyva Melinkolya": 0.3534,
+    "Wulven": 0.717271,
+    "Midwife": 0.86572,
+    "cult friends": 0.625373,
+    "Hilary Woods": 0.21542
+  },
+  "Allison Lorenzen": {
+    "Vyva Melinkolya": 0.26632,
+    "Midwife": 0.569008
+  },
+  "Good Night & Good Morning": {
+    "Vyva Melinkolya": 0.241162,
+    "Wulven": 0.393994,
+    "Midwife": 0.348549,
+    "cult friends": 0.263727,
+    "Grouper": 0.310391
+  },
+  "Miserable": {
+    "Vyva Melinkolya": 0.203286,
+    "Midwife": 0.321425
+  },
+  "King Woman": {
+    "Vyva Melinkolya": 0.194821,
+    "Midwife": 0.311844
+  },
+  "Drowse": {
+    "Vyva Melinkolya": 0.184291,
+    "Wulven": 0.478962,
+    "Midwife": 0.600863,
+    "cult friends": 0.177935
+  },
+  "Planning for Burial": {
+    "Vyva Melinkolya": 0.165332,
+    "Wulven": 0.47155,
+    "Midwife": 0.505521,
+    "cult friends": 0.156229
+  },
+  "Greet Death": {
+    "Vyva Melinkolya": 0.134381,
+    "Midwife": 0.262903,
+    "Bedlocked": 0.618214
+  },
+  "Mojave 3": {
+    "Vyva Melinkolya": 0.1317
+  },
+  "Blood Estate": {
+    "Wulven": 0.440383
+  },
+  "argo nuff": {
+    "Wulven": 0.417973,
+    "cult friends": 0.189566
+  },
+  "pallow": {
+    "Wulven": 0.374291
+  },
+  "Giles Corey": {
+    "Wulven": 0.368595,
+    "Midwife": 0.280061
+  },
+  "Have a Nice Life": {
+    "Wulven": 0.364724
+  },
+  "Belong": {
+    "Wulven": 0.30478,
+    "cult friends": 0.222104,
+    "Grouper": 0.325043
+  },
+  "Knifeplay": {
+    "Wulven": 0.254168,
+    "Bedlocked": 0.762398
+  },
+  "Baby Teeth": {
+    "Wulven": 0.232122
+  },
+  "Tram": {
+    "Wulven": 0.193709
+  },
+  "Emma Ruth Rundle": {
+    "Midwife": 0.387662,
+    "Hilary Woods": 0.330851
+  },
+  "Matt Jencik & Midwife": {
+    "Midwife": 0.309623,
+    "cult friends": 0.165916
+  },
+  "Big Brave": {
+    "Midwife": 0.288453
+  },
+  "Temachii": {
+    "1017 ALYX 9SM": 0.171777
+  },
+  "9Million": {
+    "1017 ALYX 9SM": 0.169763,
+    "Bedlocked": 0.754858
+  },
+  "Troye Sivan": {
+    "1017 ALYX 9SM": 0.148465
+  },
+  "Teezo Touchdown": {
+    "1017 ALYX 9SM": 0.143972
+  },
+  "Remy Bond": {
+    "Sophie Thatcher": 0.51024
+  },
+  "Cornelia Murr": {
+    "Sophie Thatcher": 0.272914
+  },
+  "The Mar\u00edas": {
+    "Sophie Thatcher": 0.209449,
+    "Esha Tewari": 0.259919
+  },
+  "The Sundays": {
+    "Sophie Thatcher": 0.203387
+  },
+  "Inca Ore": {
+    "cult friends": 0.247692,
+    "Grouper": 0.735609
+  },
+  "\u05d0\u05e9\u05de\u05d3\u05d0\u05d9": {
+    "cult friends": 0.206039
+  },
+  "KAVARI": {
+    "cult friends": 0.18561
+  },
+  "Raum": {
+    "cult friends": 0.163472,
+    "Grouper": 0.667982
+  },
+  "Foie Gras": {
+    "cult friends": 0.153581
+  },
+  "Teethe": {
+    "cult friends": 0.132086,
+    "venturing": 0.265297,
+    "Bedlocked": 1.0
+  },
+  "Mirrorring": {
+    "Grouper": 1.0
+  },
+  "Tim Hecker": {
+    "Grouper": 0.414373
+  },
+  "Stars of the Lid": {
+    "Grouper": 0.399953
+  },
+  "Jefre Cantu-Ledesma": {
+    "Grouper": 0.394585
+  },
+  "William Basinski": {
+    "Grouper": 0.379158,
+    "Hilary Woods": 0.21187
+  },
+  "Julianna Barwick": {
+    "Grouper": 0.37912,
+    "Hilary Woods": 0.264815
+  },
+  "Nivhek": {
+    "Grouper": 0.368022
+  },
+  "Windy & Carl": {
+    "Grouper": 0.303564
+  },
+  "Kali Malone": {
+    "Grouper": 0.284763
+  },
+  "Natural Snow Buildings": {
+    "Grouper": 0.277607
+  },
+  "The Dead Texan": {
+    "Grouper": 0.274387
+  },
+  "Celer": {
+    "Grouper": 0.265613
+  },
+  "Yellow Swans": {
+    "Grouper": 0.253398
+  },
+  "lovesliescrushing": {
+    "Grouper": 0.251201
+  },
+  "Sarah Davachi": {
+    "Grouper": 0.243501,
+    "Hilary Woods": 0.23341
+  },
+  "quannnic": {
+    "venturing": 1.0
+  },
+  "Weatherday": {
+    "venturing": 0.479756
+  },
+  "feeble little horse": {
+    "venturing": 0.424569
+  },
+  "Asian Glow": {
+    "venturing": 0.404753
+  },
+  "bl4ck m4rket c4rt": {
+    "venturing": 0.399719
+  },
+  "James Ivy": {
+    "venturing": 0.309845
+  },
+  "WillyRodriguezWasTaken": {
+    "venturing": 0.304035
+  },
+  "samlrc": {
+    "venturing": 0.303833
+  },
+  "what is your name?": {
+    "venturing": 0.281371
+  },
+  "Parannoul": {
+    "venturing": 0.26391
+  },
+  "Wednesday": {
+    "venturing": 0.261529
+  },
+  "Julie": {
+    "venturing": 0.25449
+  },
+  "Horse Jumper of Love": {
+    "venturing": 0.248916,
+    "Bedlocked": 0.705718
+  },
+  "They Are Gutting a Body of Water": {
+    "venturing": 0.23532,
+    "Bedlocked": 0.567086
+  },
+  "Duster": {
+    "venturing": 0.225254
+  },
+  "Penelope Trappes": {
+    "Hilary Woods": 1.0
+  },
+  "Maria BC": {
+    "Hilary Woods": 0.449941
+  },
+  "Lawrence English": {
+    "Hilary Woods": 0.289118
+  },
+  "Abul Mogard": {
+    "Hilary Woods": 0.282794
+  },
+  "Lucrecia Dalt": {
+    "Hilary Woods": 0.280171
+  },
+  "Malibu": {
+    "Hilary Woods": 0.262394
+  },
+  "Kara-Lis Coverdale": {
+    "Hilary Woods": 0.257175
+  },
+  "This Mortal Coil": {
+    "Hilary Woods": 0.24597
+  },
+  "Maria Somerville": {
+    "Hilary Woods": 0.245528
+  },
+  "Kaitlyn Aurelia Smith": {
+    "Hilary Woods": 0.220887
+  },
+  "Lucy Gooch": {
+    "Hilary Woods": 0.214117
+  },
+  "Deadharrie": {
+    "Bedlocked": 0.893248
+  },
+  "waveform*": {
+    "Bedlocked": 0.778521
+  },
+  "A Country Western": {
+    "Bedlocked": 0.709262
+  },
+  "Joyer": {
+    "Bedlocked": 0.692192
+  },
+  "Prize Horse": {
+    "Bedlocked": 0.688505
+  },
+  "All Under Heaven": {
+    "Bedlocked": 0.645943
+  },
+  "Gleemer": {
+    "Bedlocked": 0.577626
+  },
+  "Whirr": {
+    "Bedlocked": 0.539933
+  },
+  "Grimes & i_o": {
+    "Grimes": 1.0
+  },
+  "Eartheater": {
+    "Grimes": 0.861291
+  },
+  "Sky Ferreira": {
+    "Grimes": 0.814422
+  },
+  "Arca": {
+    "Grimes": 0.770833
+  },
+  "FKA twigs": {
+    "Grimes": 0.755456
+  },
+  "yeule": {
+    "Grimes": 0.716064
+  },
+  "Bj\u00f6rk": {
+    "Grimes": 0.701621
+  },
+  "Crystal Castles": {
+    "Grimes": 0.661221
+  },
+  "Blood Diamonds": {
+    "Grimes": 0.660695
+  },
+  "Charli xcx": {
+    "Grimes": 0.632763
+  },
+  "Caroline Polachek": {
+    "Grimes": 0.620825
+  },
+  "Alice Glass": {
+    "Grimes": 0.606255
+  },
+  "Magdalena Bay": {
+    "Grimes": 0.559543
+  },
+  "M.I.A.": {
+    "Grimes": 0.558662
+  },
+  "Cecile Believe": {
+    "Grimes": 0.473271
+  },
+  "Chairlift": {
+    "Grimes": 0.450994
+  },
+  "Slayyyter": {
+    "Grimes": 0.442656
+  },
+  "Allie X": {
+    "Grimes": 0.395468
+  },
+  "Chestnut Bakery": {
+    "Esha Tewari": 0.349052
+  },
+  "runo plum": {
+    "Esha Tewari": 0.330378
+  },
+  "Salvia Palth": {
+    "Esha Tewari": 0.299774
+  },
+  "Faye Webster": {
+    "Esha Tewari": 0.293471
+  },
+  "Bubble Tea and Cigarettes": {
+    "Esha Tewari": 0.264842
+  },
+  "she's green": {
+    "Esha Tewari": 0.251611
+  },
+  "Korea Girl": {
+    "Esha Tewari": 0.243266
+  }
+}

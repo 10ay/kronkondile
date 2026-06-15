@@ -11,11 +11,12 @@ import os
 from feelings import FEELINGS_FILE
 
 feelings_dictionary = {
-    0 : "bad", 
-    1 : "not the best", 
-    2 : "neutral", 
-    3 : "satisfactory", 
-    4 : "good!"}
+    0 : "bad / like a kidney stone", 
+    1 : "not the best / running away to the mountains seems like a good idea", 
+    2 : "neutral / you feel like that mini therapy horse playing piano", 
+    3 : "satisfactory / you want to be dipped into some honey", 
+    4 : "good! / you are ready to go line-dancing"}
+
 
 from music_library import spotify_bad, spotify_not_the_best, spotify_neutral, spotify_satisfactory, spotify_good
 
@@ -43,33 +44,36 @@ def get_feeling():
         feeling_index = int(df.iloc[-1]['feeling_scale'])
         return feeling_index, feelings_dictionary[feeling_index]
 
-def mood_to_music(feeling_index):
+def mood_to_music(feeling_index, rand_int = True):
     """
     Maps your mood to a music dictionary.
     """
     if feeling_index not in feelings_dictionary:
         raise ValueError()
-    rand_int = random.randint(0, 4)
+    if rand_int == True:
+        rand_int = random.randint(0, 4)
+    else:
+        rand_int = rand_int
     return mood_music_map[feeling_index][rand_int]
 
-def get_recommendations_for_mood(feeling_index):
+def get_recommendations_for_mood(feeling_index, rand_int = True):
     """
     Music recommendations for a given mood.
     """
-    music_terms_to_search = mood_to_music(feeling_index)
+    music_terms_to_search = mood_to_music(feeling_index, rand_int)
     track = open_song_from_dict(music_terms_to_search)
     return [track]
 
     return track_recommendation(music_terms_to_search)
 
-def get_recommendations():
+def get_recommendations(rand_int = True):
     """
     Get music recommendations for today.
     """
     feeling_index, feeling_name = get_feeling()
     if feeling_index is None:
         return []
-    return get_recommendations_for_mood(feeling_index)
+    return get_recommendations_for_mood(feeling_index, rand_int)
 
 
 def format_recommendations(recommendations, feeling_name=None):
