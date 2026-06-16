@@ -42,11 +42,11 @@ if ran == False:
 
     How are you feeling, today?  Choose 0-4:
 
-    0 : bad / like a kidney stone.
-    1 : not the best / running away to the mountains seems like a good idea.
-    2 : neutral / you feel like that mini therapy horse playing piano.
-    3 : satisfactory / you want to be dipped into some honey.
-    4 : good! / you are ready to go line-dancing.
+    0 : Lovesick / I feel unloved, like a kidney stone.
+    1 : Not the best / running away to the mountains sounds good.
+    2 : Silly / You are going to talk to your dog about homosexuality and communism.
+    3 : Happy / as happy as a minion around Gru.
+    4 : I Love Everything! / One in love always wins (ps. I have a crush)
 
 ===================================================
     ''')
@@ -77,5 +77,9 @@ if ran == False:
 
     os.system("clear") # clears terminal, to make it as if it was never there
 
-
-
+feelings_dictionary = {
+    0 : "Lovesick / I feel unloved, like a kidney stone.",
+    1 : "Not the best / running away to the mountains sounds good.",
+    2 : "Silly / You are going to talk to your dog about homosexuality and communism",
+    3 : "Happy / as happy as a minion around Gru.",
+    4 : "I Love Everything! / One in love always wins (ps. I have a crush)"}

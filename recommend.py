@@ -8,25 +8,15 @@ import pandas as pd
 import random
 import os
 
-from feelings import FEELINGS_FILE
-
-feelings_dictionary = {
-    0 : "bad / like a kidney stone", 
-    1 : "not the best / running away to the mountains seems like a good idea", 
-    2 : "neutral / you feel like that mini therapy horse playing piano", 
-    3 : "satisfactory / you want to be dipped into some honey", 
-    4 : "good! / you are ready to go line-dancing"}
-
-
-from music_library import spotify_bad, spotify_not_the_best, spotify_neutral, spotify_satisfactory, spotify_good
-
+from feelings import FEELINGS_FILE, feelings_dictionary
+from music_library import spotify_lovesick, spotify_mountains, spotify_silly, spotify_minions, spotify_love
 
 mood_music_map = {
-    0: spotify_bad,
-    1: spotify_not_the_best,
-    2: spotify_neutral,
-    3: spotify_satisfactory,
-    4: spotify_good
+    0: spotify_lovesick,
+    1: spotify_mountains,
+    2: spotify_silly,
+    3: spotify_minions,
+    4 : spotify_love
 }
 
 def get_feeling():
@@ -44,16 +34,18 @@ def get_feeling():
         feeling_index = int(df.iloc[-1]['feeling_scale'])
         return feeling_index, feelings_dictionary[feeling_index]
 
-def mood_to_music(feeling_index, rand_int = True):
+def mood_to_music(feeling_index, rand_int = False):
     """
     Maps your mood to a music dictionary.
     """
     if feeling_index not in feelings_dictionary:
         raise ValueError()
+    import pdb; pdb.set_trace()
     if rand_int == True:
-        rand_int = random.randint(0, 4)
-    else:
         rand_int = rand_int
+    else:
+        rand_int = random.randint(0, 9)
+    import pdb; pdb.set_trace()
     return mood_music_map[feeling_index][rand_int]
 
 def get_recommendations_for_mood(feeling_index, rand_int = True):

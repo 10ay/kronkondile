@@ -68,15 +68,18 @@ def build():
         print(f"  {name:30} {weight:.2f}")
 
     print(f"\nListen to this music by your desired artist From Your Mood Map!")
+    import pdb; pdb.set_trace()
     recommendations = get_recommendations(rand_int = artist_index)
     feeling_index, feeling_name = get_feeling()
     print(format_recommendations(recommendations, feeling_name=feeling_name))
 
-    print(f"\nI will now expand the graph size. Hold on! Nothing is required of you.")
-
+    
     for name, weight in neighbors:
-        seed_artists.append(name)
+        if name not in seed_artists:
+            seed_artists.append(name)
 
+
+    print(f"\nI will now expand the graph size. Hold on! Nothing is required of you.")
     graph = build_graph_from_seeds(seed_artists, api_key)
     out_path = save_graph(graph, default_graph_path)
 

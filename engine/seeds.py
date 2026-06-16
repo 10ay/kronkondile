@@ -1,4 +1,4 @@
-from music_library import spotify_bad, spotify_not_the_best, spotify_neutral, spotify_satisfactory, spotify_good
+from music_library import spotify_lovesick, spotify_mountains, spotify_silly, spotify_minions, spotify_love
 from recommend import mood_music_map # Maps mood number to an existing set of artists. 
 
 def pull_artist(songs):
