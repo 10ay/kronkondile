@@ -53,7 +53,9 @@
   },
   "MUNA": {
     "NoSo": 0.844511,
-    "Bleachers": 0.424421
+    "Bleachers": 0.424421,
+    "Chappell Roan": 0.353878,
+    "Audrey Hobert": 0.491282
   },
   "Claud": {
     "NoSo": 0.841732,
@@ -118,7 +120,8 @@
     "NoSo": 0.598014,
     "Miya Folick": 0.789447,
     "Bleachers": 0.248915,
-    "Petey USA": 0.280391
+    "Petey USA": 0.280391,
+    "Audrey Hobert": 0.525675
   },
   "Babygirl": {
     "NoSo": 0.590563
@@ -171,7 +174,10 @@
     "Abby Powledge": 0.520697,
     "Noah Kahan": 0.559039,
     "Role Model": 0.956205,
-    "Leith Ross": 0.838027
+    "Leith Ross": 0.838027,
+    "Gracie Abrams": 0.692412,
+    "Conan Gray": 0.696088,
+    "Maisie Peters": 0.392518
   },
   "Jake Minch": {
     "Abby Powledge": 0.493797,
@@ -218,7 +224,8 @@
     "Noah Kahan": 0.511242,
     "Mitski": 0.616383,
     "Leith Ross": 0.660095,
-    "The 1975": 0.608001
+    "The 1975": 0.608001,
+    "Gracie Abrams": 0.427382
   },
   "Noah Kahan": {
     "Abby Powledge": 0.254232,
@@ -253,7 +260,8 @@
   },
   "Gigi Perez": {
     "Abby Powledge": 0.238589,
-    "Noah Kahan": 0.52764
+    "Noah Kahan": 0.52764,
+    "Conan Gray": 0.529661
   },
   "Annabelle Dinda": {
     "Abby Powledge": 0.211424
@@ -275,20 +283,20 @@
   },
   "Olivia Rodrigo": {
     "Sabrina Carpenter": 1.0,
-    "Taylor Swift": 0.923758,
-    "Chappell Roan": 0.705567,
+    "Taylor Swift": 0.975124,
+    "Chappell Roan": 1.0,
     "Harry Styles": 0.689809,
     "Gracie Abrams": 0.64063,
-    "Conan Gray": 0.628359,
-    "Madison Beer": 0.599885,
-    "Ariana Grande": 0.529735,
-    "Billie Eilish": 0.491036,
-    "Lorde": 0.457983,
-    "Tate McRae": 0.425377,
-    "Addison Rae": 0.408667,
-    "Audrey Hobert": 0.343706,
+    "Conan Gray": 0.901986,
+    "Madison Beer": 0.671891,
+    "Ariana Grande": 0.598785,
+    "Billie Eilish": 0.582834,
+    "Lorde": 0.665288,
+    "Tate McRae": 0.505834,
+    "Addison Rae": 0.457472,
+    "Audrey Hobert": 0.447167,
     "Maisie Peters": 0.329484,
-    "Melanie Martinez": 0.326343,
+    "Melanie Martinez": 0.446063,
     "Avril Lavigne": 0.325635,
     "RAYE": 0.318928,
     "Sydney Rose": 0.309863,
@@ -296,76 +304,406 @@
     "Rene\u00e9 Rapp": 0.286414
   },
   "Sabrina Carpenter": {
-    "Olivia Rodrigo": 1.0
+    "Olivia Rodrigo": 1.0,
+    "Taylor Swift": 1.0,
+    "Madison Beer": 1.0,
+    "Ariana Grande": 0.815056,
+    "Tate McRae": 0.793138,
+    "Chappell Roan": 0.856601,
+    "Rene\u00e9 Rapp": 0.572882,
+    "Gracie Abrams": 0.542592,
+    "Zara Larsson": 0.463056,
+    "Addison Rae": 0.502325,
+    "Dove Cameron": 0.431559,
+    "Selena Gomez": 0.420142,
+    "KATSEYE": 0.418887,
+    "Conan Gray": 0.596583,
+    "Harry Styles": 0.399537,
+    "Maisie Peters": 0.394204,
+    "Doja Cat": 0.35361,
+    "Dua Lipa": 0.351129,
+    "RAYE": 0.337973,
+    "Audrey Hobert": 0.438308,
+    "Billie Eilish": 0.305653,
+    "Melanie Martinez": 0.397222
   },
   "Taylor Swift": {
-    "Olivia Rodrigo": 0.923758
+    "Olivia Rodrigo": 0.975124,
+    "Sabrina Carpenter": 1.0,
+    "Gracie Abrams": 0.697803,
+    "Harry Styles": 0.454793,
+    "Maisie Peters": 0.450684,
+    "Chappell Roan": 0.578392,
+    "Kelsea Ballerini": 0.40184,
+    "Selena Gomez": 0.396552,
+    "Lorde": 0.537709,
+    "Conan Gray": 0.514263,
+    "Dua Lipa": 0.375311,
+    "Kacey Musgraves": 0.345791,
+    "Tate McRae": 0.330929,
+    "Ariana Grande": 0.31633,
+    "Madison Beer": 0.313025,
+    "Carly Rae Jepsen": 0.297567,
+    "Addison Rae": 0.293616,
+    "Audrey Hobert": 0.293395,
+    "Lana Del Rey": 0.286706,
+    "Maren Morris": 0.28286
   },
   "Chappell Roan": {
-    "Olivia Rodrigo": 0.705567
+    "Olivia Rodrigo": 1.0,
+    "Sabrina Carpenter": 0.856601,
+    "Taylor Swift": 0.578392,
+    "Lorde": 0.690996,
+    "Rene\u00e9 Rapp": 0.624176,
+    "Conan Gray": 0.602663,
+    "Addison Rae": 0.51834,
+    "Marina": 0.472335,
+    "KATSEYE": 0.460753,
+    "Harry Styles": 0.401836,
+    "Billie Eilish": 0.393282,
+    "girl in red": 0.377617,
+    "Hayley Kiyoko": 0.368019,
+    "Melanie Martinez": 0.367522,
+    "Troye Sivan": 0.364956,
+    "MUNA": 0.353878,
+    "King Princess": 0.343537,
+    "Charli xcx": 0.342698,
+    "Madison Beer": 0.339418,
+    "Gracie Abrams": 0.336423
   },
   "Harry Styles": {
     "Olivia Rodrigo": 0.689809,
     "Role Model": 0.41464,
-    "The 1975": 0.450063
+    "The 1975": 0.450063,
+    "Sabrina Carpenter": 0.399537,
+    "Taylor Swift": 0.454793,
+    "Chappell Roan": 0.401836,
+    "Louis Tomlinson": 1.0,
+    "Niall Horan": 0.725959,
+    "One Direction": 0.714714,
+    "ZAYN": 0.456799,
+    "5 Seconds of Summer": 0.359863,
+    "Luke Hemmings": 0.312337,
+    "Conan Gray": 0.573312,
+    "RAYE": 0.309126,
+    "sombr": 0.241841,
+    "Gracie Abrams": 0.23761,
+    "Audrey Hobert": 0.23633,
+    "Liam Payne": 0.230625,
+    "Lorde": 0.229776,
+    "Troye Sivan": 0.224199,
+    "Jonas Brothers": 0.220871,
+    "Holly Humberstone": 0.20095,
+    "Billie Eilish": 0.305405
   },
   "Gracie Abrams": {
     "Olivia Rodrigo": 0.64063,
-    "Role Model": 1.0
+    "Role Model": 1.0,
+    "Sabrina Carpenter": 0.542592,
+    "Taylor Swift": 0.697803,
+    "Chappell Roan": 0.336423,
+    "Harry Styles": 0.23761,
+    "Alessi Rose": 1.0,
+    "Maisie Peters": 0.923438,
+    "Lexi Jayde": 0.874287,
+    "Sadie Jean": 0.756108,
+    "Devon Gabriella": 0.739417,
+    "Lizzy McAlpine": 0.692412,
+    "Tate McRae": 0.895378,
+    "Sydney Rose": 0.598878,
+    "Conan Gray": 1.0,
+    "Audrey Hobert": 0.841657,
+    "Rene\u00e9 Rapp": 0.509855,
+    "Griff": 0.483348,
+    "Holly Humberstone": 0.434454,
+    "Phoebe Bridgers": 0.427382,
+    "Suki Waterhouse": 0.415785,
+    "Jenna Raine": 0.411979,
+    "Madison Beer": 0.515776,
+    "Billie Eilish": 0.36922
   },
   "Conan Gray": {
-    "Olivia Rodrigo": 0.628359,
-    "Role Model": 0.4273
+    "Olivia Rodrigo": 0.901986,
+    "Role Model": 0.4273,
+    "Sabrina Carpenter": 0.596583,
+    "Taylor Swift": 0.514263,
+    "Chappell Roan": 0.602663,
+    "Harry Styles": 0.573312,
+    "Gracie Abrams": 1.0,
+    "Rene\u00e9 Rapp": 0.913394,
+    "Maisie Peters": 0.858862,
+    "Ricky Montgomery": 0.7308,
+    "Troye Sivan": 0.709365,
+    "Lizzy McAlpine": 0.696088,
+    "sombr": 0.605816,
+    "Alessi Rose": 0.588049,
+    "girl in red": 0.579989,
+    "FINNEAS": 0.57874,
+    "Lexi Jayde": 0.578045,
+    "Baby Queen": 0.569662,
+    "Audrey Hobert": 0.544816,
+    "Gigi Perez": 0.529661,
+    "Kevin Atwater": 0.520168,
+    "Billie Eilish": 0.360138
   },
   "Madison Beer": {
-    "Olivia Rodrigo": 0.599885
+    "Olivia Rodrigo": 0.671891,
+    "Sabrina Carpenter": 1.0,
+    "Taylor Swift": 0.313025,
+    "Chappell Roan": 0.339418,
+    "Gracie Abrams": 0.515776,
+    "Tate McRae": 1.0,
+    "Ariana Grande": 0.915315,
+    "Nessa Barrett": 0.850867,
+    "Zara Larsson": 0.697769,
+    "Maggie Lindemann": 0.630797,
+    "Dove Cameron": 0.582381,
+    "RAYE": 0.533202,
+    "Melanie Martinez": 0.631261,
+    "Rene\u00e9 Rapp": 0.485488,
+    "Bebe Rexha": 0.47104,
+    "Ava Max": 0.470516,
+    "Addison Rae": 0.467685,
+    "Kim Petras": 0.422956,
+    "Camila Cabello": 0.418422,
+    "Halsey": 0.403872,
+    "Leigh-Anne": 0.4009,
+    "Selena Gomez": 0.394163,
+    "Billie Eilish": 0.328367
   },
   "Ariana Grande": {
-    "Olivia Rodrigo": 0.529735
+    "Olivia Rodrigo": 0.598785,
+    "Sabrina Carpenter": 0.815056,
+    "Taylor Swift": 0.31633,
+    "Madison Beer": 0.915315,
+    "Jessie J, Ariana Grande & Nicki Minaj": 1.0,
+    "Cynthia Erivo": 0.855028,
+    "Doja Cat": 0.74446,
+    "The Weeknd & Ariana Grande": 0.668594,
+    "Tate McRae": 0.655165,
+    "Beyonc\u00e9": 0.573704,
+    "SZA": 0.572858,
+    "Rihanna": 0.55061,
+    "Addison Rae": 0.511037,
+    "Zara Larsson": 0.490238,
+    "FLO": 0.478678,
+    "Tyla": 0.468839,
+    "Summer Walker": 0.468424,
+    "Camila Cabello": 0.455311,
+    "Mariah Carey": 0.436997,
+    "Nicki Minaj": 0.435312,
+    "Fifth Harmony": 0.423557,
+    "Billie Eilish": 0.399799,
+    "Melanie Martinez": 0.418399
   },
   "Billie Eilish": {
-    "Olivia Rodrigo": 0.491036
+    "Olivia Rodrigo": 0.582834,
+    "Chappell Roan": 0.393282,
+    "FINNEAS": 1.0,
+    "Melanie Martinez": 0.594159,
+    "Lana Del Rey": 0.406427,
+    "Ariana Grande": 0.399799,
+    "Gracie Abrams": 0.36922,
+    "Conan Gray": 0.360138,
+    "Tate McRae": 0.346796,
+    "Lorde": 0.33845,
+    "Madison Beer": 0.328367,
+    "Rene\u00e9 Rapp": 0.32239,
+    "Sabrina Carpenter": 0.305653,
+    "Harry Styles": 0.305405,
+    "Doja Cat": 0.298609,
+    "girl in red": 0.293243,
+    "Nessa Barrett": 0.279952,
+    "Aurora": 0.270064,
+    "Halsey": 0.269664,
+    "The Neighbourhood": 0.266001
   },
   "Lorde": {
-    "Olivia Rodrigo": 0.457983,
-    "Bleachers": 0.264711
+    "Olivia Rodrigo": 0.665288,
+    "Bleachers": 0.264711,
+    "Taylor Swift": 0.537709,
+    "Chappell Roan": 0.690996,
+    "Harry Styles": 0.229776,
+    "Billie Eilish": 0.33845,
+    "Addison Rae": 1.0,
+    "Charli xcx": 0.965699,
+    "Sky Ferreira": 0.915776,
+    "Caroline Polachek": 0.914521,
+    "Lana Del Rey": 0.759788,
+    "Troye Sivan": 0.749378,
+    "HAIM": 0.745766,
+    "ROSAL\u00cdA": 0.675021,
+    "Marina": 0.620487,
+    "Audrey Hobert": 0.601474,
+    "Florence + the Machine": 0.600447,
+    "Robyn": 0.578954,
+    "Marina & the Diamonds": 0.553255,
+    "Tove Lo": 0.548474,
+    "Halsey": 0.540665,
+    "Slayyyter": 0.525358,
+    "Lily Allen": 0.519257,
+    "Melanie Martinez": 0.426497
   },
   "Tate McRae": {
-    "Olivia Rodrigo": 0.425377
+    "Olivia Rodrigo": 0.505834,
+    "Sabrina Carpenter": 0.793138,
+    "Taylor Swift": 0.330929,
+    "Gracie Abrams": 0.895378,
+    "Madison Beer": 1.0,
+    "Ariana Grande": 0.655165,
+    "Billie Eilish": 0.346796,
+    "Nessa Barrett": 0.900997,
+    "Zara Larsson": 0.674577,
+    "Camila Cabello": 0.673706,
+    "Alessi Rose": 0.646259,
+    "Rene\u00e9 Rapp": 0.630202,
+    "Lexi Jayde": 0.535596,
+    "Addison Rae": 0.51404,
+    "Sadie Jean": 0.513039,
+    "Mimi Webb": 0.511837,
+    "Leah Kate": 0.510362,
+    "Jade LeMac": 0.496388,
+    "Lauren Spencer Smith": 0.489624,
+    "Kylie Cantrall": 0.487541,
+    "Dove Cameron": 0.487416,
+    "Ava Max": 0.483737
   },
   "Addison Rae": {
-    "Olivia Rodrigo": 0.408667
+    "Olivia Rodrigo": 0.457472,
+    "Sabrina Carpenter": 0.502325,
+    "Taylor Swift": 0.293616,
+    "Chappell Roan": 0.51834,
+    "Madison Beer": 0.467685,
+    "Ariana Grande": 0.511037,
+    "Lorde": 1.0,
+    "Tate McRae": 0.51404,
+    "Slayyyter": 1.0,
+    "Charli xcx": 0.934143,
+    "AD\u00c9LA": 0.784006,
+    "Kim Petras": 0.76902,
+    "PinkPantheress": 0.655502,
+    "Zara Larsson": 0.558143,
+    "Sky Ferreira": 0.54803,
+    "Lana Del Rey": 0.494191,
+    "Madonna": 0.482424,
+    "Rose Gray": 0.476383,
+    "Britney Spears": 0.470849,
+    "ROSAL\u00cdA": 0.446341,
+    "Caroline Polachek": 0.422384,
+    "Rebecca Black": 0.418366,
+    "Audrey Hobert": 0.447995,
+    "Melanie Martinez": 0.420556
   },
   "Audrey Hobert": {
-    "Olivia Rodrigo": 0.343706,
+    "Olivia Rodrigo": 0.447167,
     "Devon Again": 0.460052,
-    "Role Model": 0.639165
+    "Role Model": 0.639165,
+    "Sabrina Carpenter": 0.438308,
+    "Taylor Swift": 0.293395,
+    "Harry Styles": 0.23633,
+    "Gracie Abrams": 0.841657,
+    "Conan Gray": 0.544816,
+    "Lorde": 0.601474,
+    "Romy Mars": 1.0,
+    "Alessi Rose": 0.941273,
+    "Maisie Peters": 0.809134,
+    "Holly Humberstone": 0.637337,
+    "Jensen McRae": 0.542675,
+    "Samia": 0.525675,
+    "Rene\u00e9 Rapp": 0.524776,
+    "MUNA": 0.491282,
+    "Katie Gavin": 0.490567,
+    "HAIM": 0.486439,
+    "Avery Cochrane": 0.486403,
+    "Elle Coves": 0.466606,
+    "Lily Allen": 0.461282,
+    "Addison Rae": 0.447995,
+    "AD\u00c9LA": 0.447293
   },
   "Maisie Peters": {
     "Olivia Rodrigo": 0.329484,
     "Noah Kahan": 0.63109,
     "Bleachers": 0.364877,
-    "Role Model": 0.515629
+    "Role Model": 0.515629,
+    "Sabrina Carpenter": 0.394204,
+    "Taylor Swift": 0.450684,
+    "Gracie Abrams": 0.923438,
+    "Conan Gray": 0.858862,
+    "Audrey Hobert": 0.809134,
+    "Cate": 1.0,
+    "Griff": 0.642569,
+    "Gretta Ray": 0.599798,
+    "Kelsea Ballerini": 0.591259,
+    "Holly Humberstone": 0.589726,
+    "Alessi Rose": 0.579623,
+    "Jensen McRae": 0.53498,
+    "Taylor Bickett": 0.466654,
+    "Lexi Jayde": 0.418564,
+    "Lizzy McAlpine": 0.392518,
+    "Rene\u00e9 Rapp": 0.370221,
+    "Jenna Raine": 0.368489,
+    "Baby Queen": 0.362625,
+    "Gatlin": 0.357673,
+    "Mercer Henderson": 0.346319,
+    "Peach PRC": 0.334464
   },
   "Melanie Martinez": {
-    "Olivia Rodrigo": 0.326343
+    "Olivia Rodrigo": 0.446063,
+    "Chappell Roan": 0.367522,
+    "Madison Beer": 0.631261,
+    "Billie Eilish": 0.594159,
+    "Jazmin Bean": 1.0,
+    "Ashnikko": 0.912958,
+    "Lana Del Rey": 0.65608,
+    "Marina": 0.639755,
+    "Bella Poarch": 0.547737,
+    "Halsey": 0.479574,
+    "Kim Petras": 0.455541,
+    "Marina & the Diamonds": 0.427945,
+    "Lorde": 0.426497,
+    "Bea Duarte": 0.426057,
+    "Addison Rae": 0.420556,
+    "Ariana Grande": 0.418399,
+    "Lucy Loone": 0.411196,
+    "Charli xcx": 0.399754,
+    "Sabrina Carpenter": 0.397222,
+    "Ellise": 0.396296,
+    "That Poppy": 0.395732
   },
   "Avril Lavigne": {
     "Olivia Rodrigo": 0.325635
   },
   "RAYE": {
-    "Olivia Rodrigo": 0.318928
+    "Olivia Rodrigo": 0.318928,
+    "Sabrina Carpenter": 0.337973,
+    "Harry Styles": 0.309126,
+    "Madison Beer": 0.533202
   },
   "Sydney Rose": {
-    "Olivia Rodrigo": 0.309863
+    "Olivia Rodrigo": 0.309863,
+    "Gracie Abrams": 0.598878
   },
   "Lana Del Rey": {
     "Olivia Rodrigo": 0.29655,
-    "Mitski": 0.432479
+    "Mitski": 0.432479,
+    "Taylor Swift": 0.286706,
+    "Billie Eilish": 0.406427,
+    "Lorde": 0.759788,
+    "Addison Rae": 0.494191,
+    "Melanie Martinez": 0.65608
   },
   "Rene\u00e9 Rapp": {
     "Olivia Rodrigo": 0.286414,
-    "Role Model": 0.46236
+    "Role Model": 0.46236,
+    "Sabrina Carpenter": 0.572882,
+    "Chappell Roan": 0.624176,
+    "Gracie Abrams": 0.509855,
+    "Conan Gray": 0.913394,
+    "Madison Beer": 0.485488,
+    "Billie Eilish": 0.32239,
+    "Tate McRae": 0.630202,
+    "Audrey Hobert": 0.524776,
+    "Maisie Peters": 0.370221
   },
   "Adrianne Lenker": {
     "Big Thief": 1.0,
@@ -583,7 +921,10 @@
     "awfultune": 0.392001
   },
   "girl in red": {
-    "awfultune": 0.376185
+    "awfultune": 0.376185,
+    "Chappell Roan": 0.377617,
+    "Conan Gray": 0.579989,
+    "Billie Eilish": 0.293243
   },
   "Current Joys": {
     "awfultune": 0.348282
@@ -849,7 +1190,9 @@
   },
   "Baby Queen": {
     "Orla Gartland": 0.278082,
-    "Tessa Violet": 0.486544
+    "Tessa Violet": 0.486544,
+    "Conan Gray": 0.569662,
+    "Maisie Peters": 0.362625
   },
   "chloe moriondo": {
     "Orla Gartland": 0.263288,
@@ -1618,10 +1961,13 @@
   },
   "Jensen McRae": {
     "Miya Folick": 0.559366,
-    "Corook": 0.427301
+    "Corook": 0.427301,
+    "Audrey Hobert": 0.542675,
+    "Maisie Peters": 0.53498
   },
   "Katie Gavin": {
-    "Miya Folick": 0.544314
+    "Miya Folick": 0.544314,
+    "Audrey Hobert": 0.490567
   },
   "Wolf Parade": {
     "Handsome Furs": 1.0,
@@ -1723,383 +2069,64 @@
     "Victoria Clark": 0.252654
   },
   "How To Succeed Orchestra": {
-    "Daniel Radcliffe": 1.0,
-    "Christopher J. Hanke, Daniel Radcliffe & Rose Hemingway": 1.0,
-    "Christopher J. Hanke": 0.941932,
-    "Daniel Radcliffe & How To Succeed Company": 0.886286,
-    "Mary Faber, Rose Hemingway & Daniel Radcliffe": 0.767272,
-    "Ted Sperling": 0.170398,
-    "Andrew Rannells;Josh Gad;Rory O'Malley;Scott Barnhardt;Justin Bohon;Kevin Duda;Clark Johnsen;Benjamin Schrader;Brian Sears;Jason Michael Snow;Lewis Cleale": 0.141671,
-    "Newsies - Original Broadway Cast": 0.135806,
-    "Andrew Rannells;Josh Gad": 0.126102,
-    "Andrew Rannells;Ensemble": 0.116768,
-    "Nikki M. James;Josh Gad": 0.111605,
-    "Andrew Rannells;Michael Potts;Lewis Cleale;Kevin Duda;Brian Tyree Henry;Benjamin Schrader;Maia Nkenge Wilson;Ensemble": 0.108515,
-    "Josh Gad;Company": 0.103677,
-    "Michael Potts;Michael James Scott;Lawrence Stallings;Rema Webb;Maia Nkenge Wilson;Tommar Wilson;Darlesia Cearcy;John Eric Parker;Ta'Rea Campbell;Tyson Jennette;Brian Tyree Henry": 0.098992,
-    "Michael Park": 0.095875,
-    "Jordan Gelber;John Tartaglia": 0.094077,
-    "Paul Gemignani": 0.088839,
-    "Robert Morse": 0.088312,
-    "Edward Strauss": 0.088267,
-    "Bonnie Gruesen": 0.087176
+    "Daniel Radcliffe": 1.0
   },
   "Gavin Creel": {
-    "Daniel Radcliffe": 0.432719,
-    "Will Swenson": 1.0,
-    "Cole Thompson": 0.861701,
-    "\u2018Into The Woods\u2019 2022 Broadway Cast": 0.851522,
-    "David Patrick Kelly": 0.774986,
-    "Allison Case": 0.597801,
-    "Andrew Kober": 0.475891,
-    "Laura Benanti": 0.383859,
-    "Kate Baldwin": 0.356943,
-    "Deidre Goodwin": 0.333069,
-    "Matthew James Thomas": 0.326337,
-    "Steven Pasquale": 0.321426,
-    "A Chorus Line Ensemble (2006)": 0.320644,
-    "Katie Rose Clarke": 0.279831,
-    "Charlotte d'Amboise": 0.276667,
-    "Peter Bartlett": 0.275263,
-    "Michael McGrath": 0.273515,
-    "Kelli O'Hara": 0.268848,
-    "Joanna Gleason": 0.264128,
-    "Molly Gordon": 0.251878,
-    "Tammy Blanchard": 0.131791,
-    "'Ragtime' 2025 Broadway Cast": 0.177228,
-    "Ben Wright": 0.125356,
-    "Ragtime Ensemble": 0.186171,
-    "Original Broadway Cast of Into the Woods": 0.118608
+    "Daniel Radcliffe": 0.432719
   },
   "Tammy Blanchard": {
-    "Daniel Radcliffe": 0.409846,
-    "Ari Groover": 1.0,
-    "Kingsley Leggs": 1.0,
-    "Tom Alan Robbins": 0.915929,
-    "Noah J. Ricketts": 0.170215,
-    "Sara Chase": 0.161412,
-    "Tracie Thoms": 0.158483,
-    "Ben Fankhauser": 0.156233,
-    "Natasha Yvette Williams": 0.154668,
-    "Cole Thompson": 0.153801,
-    "Katie Rose Clarke": 0.150638,
-    "Dariana Mullen": 0.147875,
-    "John Zdrojeski": 0.143053,
-    "'Legally Blonde' Ensemble": 0.142397,
-    "Brad Oscar": 0.136092,
-    "Gavin Creel": 0.131791,
-    "Samantha Pauly": 0.131155,
-    "Gracie Lawrence": 0.178805,
-    "\u2018Into The Woods\u2019 2022 Broadway Cast": 0.127913,
-    "Scott Barnhardt": 0.126987,
-    "Joe Barbara": 0.161561,
-    "Original Broadway Cast of Into the Woods": 0.09797
+    "Daniel Radcliffe": 0.409846
   },
   "'Ragtime' 2025 Broadway Cast": {
-    "Daniel Radcliffe": 0.3769,
-    "Nichelle Lewis": 1.0,
-    "Ragtime Ensemble": 0.514012,
-    "Mark Jacoby": 0.28485,
-    "Marin Mazzie": 0.222488,
-    "Katie Rose Clarke": 0.210195,
-    "Judy Kaye": 0.208976,
-    "Jasmine Amy Rogers": 0.180345,
-    "Gavin Creel": 0.177228,
-    "Charlie Webb": 0.167237,
-    "Cole Thompson": 0.164478,
-    "Jordan Tyson": 0.161795,
-    "Joe Barbara": 0.16044,
-    "Kevin William Paul": 0.158748,
-    "Jennifer Simard": 0.157602,
-    "Brody Grant": 0.155671,
-    "\u2018Into The Woods\u2019 2022 Broadway Cast": 0.154991,
-    "Brent Comer": 0.150938,
-    "2021 London Cast of Cabaret": 0.150813,
-    "Sir Brock Warren": 0.148751,
-    "Gracie Lawrence": 0.153639
+    "Daniel Radcliffe": 0.3769
   },
   "Joanna Gleason": {
-    "Daniel Radcliffe": 0.341022,
-    "Gavin Creel": 0.264128,
-    "Kim Crosby": 1.0,
-    "Ben Wright": 0.99706,
-    "Tom Aldredge": 0.969969,
-    "Robert Westenberg": 0.922756,
-    "Chip Zien": 0.777192,
-    "Danielle Ferland": 0.773414,
-    "Original Broadway Cast of Into the Woods": 0.886537,
-    "Into The Woods Ensemble": 0.213871,
-    "Cole Thompson": 0.190241,
-    "\u2018Into The Woods\u2019 2022 Broadway Cast": 0.176045,
-    "David Patrick Kelly": 0.152162,
-    "Katie Rose Clarke": 0.127819,
-    "Ann Morrison": 0.120121,
-    "Deidre Goodwin": 0.110635,
-    "Sherie Ren\u00e9 Scott": 0.10752,
-    "Paul Gemignani": 0.107292,
-    "A Chorus Line Ensemble (2006)": 0.107151,
-    "Charlotte d'Amboise": 0.102423
+    "Daniel Radcliffe": 0.341022
   },
   "Ari Groover": {
-    "Daniel Radcliffe": 0.337159,
-    "Tammy Blanchard": 1.0,
-    "Kingsley Leggs": 0.999803,
-    "Tom Alan Robbins": 0.972931,
-    "Noah J. Ricketts": 0.144311,
-    "Natasha Yvette Williams": 0.142108,
-    "Cole Thompson": 0.139342,
-    "Ben Fankhauser": 0.139054,
-    "Tracie Thoms": 0.138605,
-    "Sara Chase": 0.138536,
-    "\u2018Into The Woods\u2019 2022 Broadway Cast": 0.135216,
-    "Dariana Mullen": 0.132892,
-    "Brad Oscar": 0.130083,
-    "John Zdrojeski": 0.12949,
-    "David Patrick Kelly": 0.126697,
-    "Katie Rose Clarke": 0.125819,
-    "'Legally Blonde' Ensemble": 0.119563,
-    "Kevin del Aguila": 0.118264,
-    "Benjamin Schrader": 0.11599,
-    "Andrew Keenan-Bolger": 0.114292,
-    "Joe Barbara": 0.104513,
-    "Original Broadway Cast of Into the Woods": 0.097947,
-    "Gracie Lawrence": 0.118614
+    "Daniel Radcliffe": 0.337159
   },
   "Eddie Cooper": {
-    "Daniel Radcliffe": 0.320072,
-    "Manoel Felciano": 1.0,
-    "Alex Joseph Grayson": 0.937691,
-    "Charlie Webb": 0.931315,
-    "Erin Rose Doyle": 0.835983,
-    "Parade Cast": 0.755356,
-    "Sean Allan Krill": 0.485848,
-    "Howard McGillin": 0.353842,
-    "Adam Chanler-Berat": 0.313827,
-    "Paul Alexander Nolan": 0.299767,
-    "Jay Armstrong Johnson": 0.251562,
-    "Brent Carver": 0.176178,
-    "Katie Rose Clarke": 0.15193,
-    "Andrew Durand": 0.14419,
-    "Jaquel Spivey": 0.132348,
-    "David Patrick Kelly": 0.129876,
-    "\u2018Into The Woods\u2019 2022 Broadway Cast": 0.124156,
-    "Cole Thompson": 0.123719,
-    "Victoria Clark": 0.122973,
-    "Original Broadway Cast of Shucked": 0.122523
+    "Daniel Radcliffe": 0.320072
   },
   "Ben Wright": {
-    "Daniel Radcliffe": 0.306126,
-    "Joanna Gleason": 0.99706,
-    "Kim Crosby": 1.0,
-    "Tom Aldredge": 0.996517,
-    "Robert Westenberg": 0.92861,
-    "Original Broadway Cast of Into the Woods": 1.0,
-    "Danielle Ferland": 0.788144,
-    "Chip Zien": 0.700919,
-    "Cole Thompson": 0.217942,
-    "\u2018Into The Woods\u2019 2022 Broadway Cast": 0.182707,
-    "David Patrick Kelly": 0.162396,
-    "Gavin Creel": 0.125356,
-    "Katie Rose Clarke": 0.116988,
-    "Ann Morrison": 0.112657,
-    "A Chorus Line Ensemble (2006)": 0.09829,
-    "Deidre Goodwin": 0.091298,
-    "Marin Mazzie": 0.08984,
-    "Matthew James Thomas": 0.087186,
-    "Brent Carver": 0.084873,
-    "Ragtime Ensemble": 0.084553
+    "Daniel Radcliffe": 0.306126
   },
   "Joe Barbara": {
-    "Daniel Radcliffe": 0.305916,
-    "'Ragtime' 2025 Broadway Cast": 0.16044,
-    "Caesar Samayoa": 1.0,
-    "Gracie Lawrence": 1.0,
-    "Tammy Blanchard": 0.161561,
-    "Katie Rose Clarke": 0.133016,
-    "Kingsley Leggs": 0.118986,
-    "Dariana Mullen": 0.110925,
-    "Noah J. Ricketts": 0.107682,
-    "Tom Alan Robbins": 0.107542,
-    "Ari Groover": 0.104513,
-    "John Zdrojeski": 0.100527,
-    "Sara Chase": 0.099941,
-    "Jasmine Amy Rogers": 0.096651,
-    "Nichelle Lewis": 0.092857,
-    "Ainsley Melham": 0.083818,
-    "Two Strangers (Carry a Cake Across New York)": 0.081523,
-    "Brody Grant": 0.074619,
-    "Sir Brock Warren": 0.070282,
-    "Alex Joseph Grayson": 0.069214
+    "Daniel Radcliffe": 0.305916
   },
   "Manoel Felciano": {
-    "Daniel Radcliffe": 0.303631,
-    "Eddie Cooper": 1.0,
-    "Alex Joseph Grayson": 1.0,
-    "Charlie Webb": 0.869708,
-    "Erin Rose Doyle": 0.834379,
-    "Parade Cast": 0.720677,
-    "Sean Allan Krill": 0.405742,
-    "Howard McGillin": 0.315715,
-    "Paul Alexander Nolan": 0.257998,
-    "Jay Armstrong Johnson": 0.208216,
-    "Brent Carver": 0.1906,
-    "Benjamin Magnuson": 0.160948,
-    "Victoria Clark": 0.126058,
-    "Katie Rose Clarke": 0.124094,
-    "Caroline Innerbichler": 0.122324,
-    "Solea Pfeiffer": 0.113847,
-    "Original Broadway Cast of Shucked": 0.110784,
-    "Jaquel Spivey": 0.106501,
-    "Cole Thompson": 0.105832,
-    "David Patrick Kelly": 0.104927,
-    "\u2018Into The Woods\u2019 2022 Broadway Cast": 0.102361
+    "Daniel Radcliffe": 0.303631
   },
   "Kingsley Leggs": {
-    "Daniel Radcliffe": 0.289669,
-    "Tammy Blanchard": 1.0,
-    "Ari Groover": 0.999803,
-    "Joe Barbara": 0.118986,
-    "Tom Alan Robbins": 0.939127,
-    "Noah J. Ricketts": 0.154654,
-    "Sara Chase": 0.146711,
-    "Dariana Mullen": 0.144602,
-    "Tracie Thoms": 0.142646,
-    "John Zdrojeski": 0.141068,
-    "Natasha Yvette Williams": 0.13157,
-    "'Legally Blonde' Ensemble": 0.130907,
-    "Benjamin Schrader": 0.12497,
-    "Kevin del Aguila": 0.120051,
-    "Brad Oscar": 0.116427,
-    "Scott Barnhardt": 0.115034,
-    "Samantha Pauly": 0.114237,
-    "Rob McClure": 0.11312,
-    "Jennifer Simard": 0.11237,
-    "Cole Thompson": 0.112269,
-    "Rema Webb": 0.11088,
-    "Gracie Lawrence": 0.105628
+    "Daniel Radcliffe": 0.289669
   },
   "Alex Joseph Grayson": {
-    "Daniel Radcliffe": 0.288261,
-    "Eddie Cooper": 0.937691,
-    "Joe Barbara": 0.069214,
-    "Manoel Felciano": 1.0,
-    "Erin Rose Doyle": 0.856543,
-    "Charlie Webb": 0.837237,
-    "Parade Cast": 0.65276,
-    "Sean Allan Krill": 0.384857,
-    "Howard McGillin": 0.295709,
-    "Paul Alexander Nolan": 0.238607,
-    "Jay Armstrong Johnson": 0.210067,
-    "Brent Carver": 0.196609,
-    "Victoria Clark": 0.118167,
-    "Caroline Innerbichler": 0.113312,
-    "Katie Rose Clarke": 0.111403,
-    "Jaquel Spivey": 0.110529,
-    "Original Broadway Cast of Shucked": 0.107784,
-    "Solea Pfeiffer": 0.10705,
-    "Andrew Durand": 0.106889,
-    "Cole Thompson": 0.099404,
-    "Brent Comer": 0.098414,
-    "Brody Grant": 0.098023,
-    "Ragtime Ensemble": 0.155391
+    "Daniel Radcliffe": 0.288261
   },
   "Ragtime Ensemble": {
-    "Daniel Radcliffe": 0.273892,
-    "'Ragtime' 2025 Broadway Cast": 0.514012,
-    "Ben Wright": 0.084553,
-    "Mark Jacoby": 1.0,
-    "Judy Kaye": 0.811952,
-    "Marin Mazzie": 0.751221,
-    "Nichelle Lewis": 0.30453,
-    "Brent Carver": 0.193755,
-    "A Chorus Line Ensemble (2006)": 0.191173,
-    "Gavin Creel": 0.186171,
-    "Damon Daunno": 0.176749,
-    "Katie Rose Clarke": 0.170878,
-    "Deidre Goodwin": 0.170247,
-    "Charlie Webb": 0.164006,
-    "Victoria Clark": 0.155928,
-    "Alex Joseph Grayson": 0.155391,
-    "Charlotte d'Amboise": 0.152902,
-    "Kelli O'Hara": 0.150715,
-    "\u2018Into The Woods\u2019 2022 Broadway Cast": 0.146439,
-    "Cole Thompson": 0.144783,
-    "Ali Stroker": 0.144393
+    "Daniel Radcliffe": 0.273892
   },
   "Original Broadway Cast of Into the Woods": {
-    "Daniel Radcliffe": 0.272372,
-    "Joanna Gleason": 0.886537,
-    "Ben Wright": 1.0,
-    "Tom Aldredge": 0.957931,
-    "Kim Crosby": 0.948043,
-    "Robert Westenberg": 0.875782,
-    "Danielle Ferland": 0.752188,
-    "Chip Zien": 0.687735,
-    "Cole Thompson": 0.200403,
-    "\u2018Into The Woods\u2019 2022 Broadway Cast": 0.184737,
-    "David Patrick Kelly": 0.155694,
-    "A Chorus Line Ensemble (2006)": 0.130963,
-    "Katie Rose Clarke": 0.120985,
-    "Gavin Creel": 0.118608,
-    "Deidre Goodwin": 0.112638,
-    "'Legally Blonde' Ensemble": 0.105576,
-    "Jennifer Simard": 0.098661,
-    "Tammy Blanchard": 0.09797,
-    "Ari Groover": 0.097947,
-    "Marin Mazzie": 0.092421
+    "Daniel Radcliffe": 0.272372
   },
   "Gracie Lawrence": {
-    "Daniel Radcliffe": 0.267295,
-    "Tammy Blanchard": 0.178805,
-    "Joe Barbara": 1.0,
-    "Caesar Samayoa": 0.604849,
-    "'Ragtime' 2025 Broadway Cast": 0.153639,
-    "Katie Rose Clarke": 0.148157,
-    "Sara Chase": 0.125863,
-    "Dariana Mullen": 0.124297,
-    "Noah J. Ricketts": 0.123333,
-    "Jasmine Amy Rogers": 0.121102,
-    "Ari Groover": 0.118614,
-    "John Zdrojeski": 0.110808,
-    "Kingsley Leggs": 0.105628,
-    "Nichelle Lewis": 0.104729,
-    "Tom Alan Robbins": 0.103988,
-    "Two Strangers (Carry a Cake Across New York)": 0.103395,
-    "Jennifer Simard": 0.101176,
-    "Brody Grant": 0.100276,
-    "Jordan Tyson": 0.098782,
-    "Samantha Pauly": 0.098646
+    "Daniel Radcliffe": 0.267295
   },
   "Natasha Yvette Williams": {
-    "Daniel Radcliffe": 0.263514,
-    "Tammy Blanchard": 0.154668,
-    "Ari Groover": 0.142108,
-    "Kingsley Leggs": 0.13157
+    "Daniel Radcliffe": 0.263514
   },
   "Charlie Webb": {
-    "Daniel Radcliffe": 0.260134,
-    "'Ragtime' 2025 Broadway Cast": 0.167237,
-    "Eddie Cooper": 0.931315,
-    "Manoel Felciano": 0.869708,
-    "Alex Joseph Grayson": 0.837237,
-    "Ragtime Ensemble": 0.164006
+    "Daniel Radcliffe": 0.260134
   },
   "Jonathan B. Wright": {
     "Daniel Radcliffe": 0.253455
   },
   "Nichelle Lewis": {
-    "Daniel Radcliffe": 0.25269,
-    "'Ragtime' 2025 Broadway Cast": 1.0,
-    "Joe Barbara": 0.092857,
-    "Ragtime Ensemble": 0.30453,
-    "Gracie Lawrence": 0.104729
+    "Daniel Radcliffe": 0.25269
   },
   "Victoria Clark": {
-    "Daniel Radcliffe": 0.252654,
-    "Eddie Cooper": 0.122973,
-    "Manoel Felciano": 0.126058,
-    "Alex Joseph Grayson": 0.118167,
-    "Ragtime Ensemble": 0.155928
+    "Daniel Radcliffe": 0.252654
   },
   "Corook": {
     "Daisy the Great": 1.0,
@@ -2403,7 +2430,8 @@
     "Bears In Trees": 0.717989
   },
   "Ricky Montgomery": {
-    "Bears In Trees": 0.692282
+    "Bears In Trees": 0.692282,
+    "Conan Gray": 0.7308
   },
   "Leanna Firestone": {
     "Bears In Trees": 0.650868
@@ -2794,17 +2822,25 @@
   "HAIM": {
     "Bleachers": 0.316507,
     "Wolf Alice": 0.567484,
-    "The 1975": 0.473684
+    "The 1975": 0.473684,
+    "Lorde": 0.745766,
+    "Audrey Hobert": 0.486439
   },
   "Walk the Moon": {
     "Bleachers": 0.305657
   },
   "Holly Humberstone": {
-    "Bleachers": 0.296159
+    "Bleachers": 0.296159,
+    "Harry Styles": 0.20095,
+    "Gracie Abrams": 0.434454,
+    "Audrey Hobert": 0.637337,
+    "Maisie Peters": 0.589726
   },
   "Griff": {
     "Bleachers": 0.230004,
-    "Dagny": 0.497061
+    "Dagny": 0.497061,
+    "Gracie Abrams": 0.483348,
+    "Maisie Peters": 0.642569
   },
   "Role Model": {
     "Gracie Abrams": 1.0,
@@ -2829,14 +2865,20 @@
     "Ryan Beatty": 0.378857
   },
   "Alessi Rose": {
-    "Role Model": 0.861592
+    "Role Model": 0.861592,
+    "Gracie Abrams": 1.0,
+    "Conan Gray": 0.588049,
+    "Tate McRae": 0.646259,
+    "Audrey Hobert": 0.941273,
+    "Maisie Peters": 0.579623
   },
   "Wallows": {
     "Role Model": 0.490508,
     "The 1975": 0.645239
   },
   "Devon Gabriella": {
-    "Role Model": 0.435641
+    "Role Model": 0.435641,
+    "Gracie Abrams": 0.739417
   },
   "Inhaler": {
     "Role Model": 0.429178,
@@ -2844,7 +2886,8 @@
     "The 1975": 0.891519
   },
   "Romy Mars": {
-    "Role Model": 0.420316
+    "Role Model": 0.420316,
+    "Audrey Hobert": 1.0
   },
   "Dominic Fike": {
     "Role Model": 0.418644
@@ -2877,7 +2920,8 @@
     "Wolf Alice": 0.583738
   },
   "Florence + the Machine": {
-    "Wolf Alice": 0.580918
+    "Wolf Alice": 0.580918,
+    "Lorde": 0.600447
   },
   "Sam Fender": {
     "Wolf Alice": 0.57727,
@@ -3203,7 +3247,8 @@
     "The 1975": 0.597285
   },
   "The Neighbourhood": {
-    "The 1975": 0.590441
+    "The 1975": 0.590441,
+    "Billie Eilish": 0.266001
   },
   "Coin": {
     "The 1975": 0.547995
@@ -3433,7 +3478,8 @@
     "Dagny": 0.457112
   },
   "Mimi Webb": {
-    "Dagny": 0.410803
+    "Dagny": 0.410803,
+    "Tate McRae": 0.511837
   },
   "Fickle Friends": {
     "Dagny": 0.408111
@@ -3660,413 +3706,301 @@
   "Eva Westphal": {
     "Paola Bennet": 0.297595
   },
-  "Christopher J. Hanke, Daniel Radcliffe & Rose Hemingway": {
-    "How To Succeed Orchestra": 1.0
-  },
-  "Christopher J. Hanke": {
-    "How To Succeed Orchestra": 0.941932
-  },
-  "Daniel Radcliffe & How To Succeed Company": {
-    "How To Succeed Orchestra": 0.886286
+  "Zara Larsson": {
+    "Sabrina Carpenter": 0.463056,
+    "Madison Beer": 0.697769,
+    "Ariana Grande": 0.490238,
+    "Tate McRae": 0.674577,
+    "Addison Rae": 0.558143
+  },
+  "Dove Cameron": {
+    "Sabrina Carpenter": 0.431559,
+    "Madison Beer": 0.582381,
+    "Tate McRae": 0.487416
   },
-  "Mary Faber, Rose Hemingway & Daniel Radcliffe": {
-    "How To Succeed Orchestra": 0.767272
-  },
-  "Ted Sperling": {
-    "How To Succeed Orchestra": 0.170398
-  },
-  "Andrew Rannells;Josh Gad;Rory O'Malley;Scott Barnhardt;Justin Bohon;Kevin Duda;Clark Johnsen;Benjamin Schrader;Brian Sears;Jason Michael Snow;Lewis Cleale": {
-    "How To Succeed Orchestra": 0.141671
-  },
-  "Newsies - Original Broadway Cast": {
-    "How To Succeed Orchestra": 0.135806
-  },
-  "Andrew Rannells;Josh Gad": {
-    "How To Succeed Orchestra": 0.126102
-  },
-  "Andrew Rannells;Ensemble": {
-    "How To Succeed Orchestra": 0.116768
-  },
-  "Nikki M. James;Josh Gad": {
-    "How To Succeed Orchestra": 0.111605
-  },
-  "Andrew Rannells;Michael Potts;Lewis Cleale;Kevin Duda;Brian Tyree Henry;Benjamin Schrader;Maia Nkenge Wilson;Ensemble": {
-    "How To Succeed Orchestra": 0.108515
-  },
-  "Josh Gad;Company": {
-    "How To Succeed Orchestra": 0.103677
-  },
-  "Michael Potts;Michael James Scott;Lawrence Stallings;Rema Webb;Maia Nkenge Wilson;Tommar Wilson;Darlesia Cearcy;John Eric Parker;Ta'Rea Campbell;Tyson Jennette;Brian Tyree Henry": {
-    "How To Succeed Orchestra": 0.098992
-  },
-  "Michael Park": {
-    "How To Succeed Orchestra": 0.095875
-  },
-  "Jordan Gelber;John Tartaglia": {
-    "How To Succeed Orchestra": 0.094077
-  },
-  "Paul Gemignani": {
-    "How To Succeed Orchestra": 0.088839,
-    "Joanna Gleason": 0.107292
-  },
-  "Robert Morse": {
-    "How To Succeed Orchestra": 0.088312
-  },
-  "Edward Strauss": {
-    "How To Succeed Orchestra": 0.088267
-  },
-  "Bonnie Gruesen": {
-    "How To Succeed Orchestra": 0.087176
-  },
-  "Will Swenson": {
-    "Gavin Creel": 1.0
-  },
-  "Cole Thompson": {
-    "Gavin Creel": 0.861701,
-    "Tammy Blanchard": 0.153801,
-    "'Ragtime' 2025 Broadway Cast": 0.164478,
-    "Joanna Gleason": 0.190241,
-    "Ari Groover": 0.139342,
-    "Eddie Cooper": 0.123719,
-    "Ben Wright": 0.217942,
-    "Manoel Felciano": 0.105832,
-    "Kingsley Leggs": 0.112269,
-    "Alex Joseph Grayson": 0.099404,
-    "Ragtime Ensemble": 0.144783,
-    "Original Broadway Cast of Into the Woods": 0.200403
-  },
-  "\u2018Into The Woods\u2019 2022 Broadway Cast": {
-    "Gavin Creel": 0.851522,
-    "Tammy Blanchard": 0.127913,
-    "'Ragtime' 2025 Broadway Cast": 0.154991,
-    "Joanna Gleason": 0.176045,
-    "Ari Groover": 0.135216,
-    "Eddie Cooper": 0.124156,
-    "Ben Wright": 0.182707,
-    "Manoel Felciano": 0.102361,
-    "Ragtime Ensemble": 0.146439,
-    "Original Broadway Cast of Into the Woods": 0.184737
-  },
-  "David Patrick Kelly": {
-    "Gavin Creel": 0.774986,
-    "Joanna Gleason": 0.152162,
-    "Ari Groover": 0.126697,
-    "Eddie Cooper": 0.129876,
-    "Ben Wright": 0.162396,
-    "Manoel Felciano": 0.104927,
-    "Original Broadway Cast of Into the Woods": 0.155694
-  },
-  "Allison Case": {
-    "Gavin Creel": 0.597801
-  },
-  "Andrew Kober": {
-    "Gavin Creel": 0.475891
-  },
-  "Laura Benanti": {
-    "Gavin Creel": 0.383859
-  },
-  "Kate Baldwin": {
-    "Gavin Creel": 0.356943
-  },
-  "Deidre Goodwin": {
-    "Gavin Creel": 0.333069,
-    "Joanna Gleason": 0.110635,
-    "Ben Wright": 0.091298,
-    "Ragtime Ensemble": 0.170247,
-    "Original Broadway Cast of Into the Woods": 0.112638
-  },
-  "Matthew James Thomas": {
-    "Gavin Creel": 0.326337,
-    "Ben Wright": 0.087186
-  },
-  "Steven Pasquale": {
-    "Gavin Creel": 0.321426
-  },
-  "A Chorus Line Ensemble (2006)": {
-    "Gavin Creel": 0.320644,
-    "Joanna Gleason": 0.107151,
-    "Ben Wright": 0.09829,
-    "Ragtime Ensemble": 0.191173,
-    "Original Broadway Cast of Into the Woods": 0.130963
-  },
-  "Katie Rose Clarke": {
-    "Gavin Creel": 0.279831,
-    "Tammy Blanchard": 0.150638,
-    "'Ragtime' 2025 Broadway Cast": 0.210195,
-    "Joanna Gleason": 0.127819,
-    "Ari Groover": 0.125819,
-    "Eddie Cooper": 0.15193,
-    "Ben Wright": 0.116988,
-    "Joe Barbara": 0.133016,
-    "Manoel Felciano": 0.124094,
-    "Alex Joseph Grayson": 0.111403,
-    "Ragtime Ensemble": 0.170878,
-    "Original Broadway Cast of Into the Woods": 0.120985,
-    "Gracie Lawrence": 0.148157
-  },
-  "Charlotte d'Amboise": {
-    "Gavin Creel": 0.276667,
-    "Joanna Gleason": 0.102423,
-    "Ragtime Ensemble": 0.152902
-  },
-  "Peter Bartlett": {
-    "Gavin Creel": 0.275263
-  },
-  "Michael McGrath": {
-    "Gavin Creel": 0.273515
-  },
-  "Kelli O'Hara": {
-    "Gavin Creel": 0.268848,
-    "Ragtime Ensemble": 0.150715
-  },
-  "Molly Gordon": {
-    "Gavin Creel": 0.251878
-  },
-  "Tom Alan Robbins": {
-    "Tammy Blanchard": 0.915929,
-    "Ari Groover": 0.972931,
-    "Joe Barbara": 0.107542,
-    "Kingsley Leggs": 0.939127,
-    "Gracie Lawrence": 0.103988
-  },
-  "Noah J. Ricketts": {
-    "Tammy Blanchard": 0.170215,
-    "Ari Groover": 0.144311,
-    "Joe Barbara": 0.107682,
-    "Kingsley Leggs": 0.154654,
-    "Gracie Lawrence": 0.123333
-  },
-  "Sara Chase": {
-    "Tammy Blanchard": 0.161412,
-    "Ari Groover": 0.138536,
-    "Joe Barbara": 0.099941,
-    "Kingsley Leggs": 0.146711,
-    "Gracie Lawrence": 0.125863
-  },
-  "Tracie Thoms": {
-    "Tammy Blanchard": 0.158483,
-    "Ari Groover": 0.138605,
-    "Kingsley Leggs": 0.142646
-  },
-  "Ben Fankhauser": {
-    "Tammy Blanchard": 0.156233,
-    "Ari Groover": 0.139054
-  },
-  "Dariana Mullen": {
-    "Tammy Blanchard": 0.147875,
-    "Ari Groover": 0.132892,
-    "Joe Barbara": 0.110925,
-    "Kingsley Leggs": 0.144602,
-    "Gracie Lawrence": 0.124297
-  },
-  "John Zdrojeski": {
-    "Tammy Blanchard": 0.143053,
-    "Ari Groover": 0.12949,
-    "Joe Barbara": 0.100527,
-    "Kingsley Leggs": 0.141068,
-    "Gracie Lawrence": 0.110808
-  },
-  "'Legally Blonde' Ensemble": {
-    "Tammy Blanchard": 0.142397,
-    "Ari Groover": 0.119563,
-    "Kingsley Leggs": 0.130907,
-    "Original Broadway Cast of Into the Woods": 0.105576
-  },
-  "Brad Oscar": {
-    "Tammy Blanchard": 0.136092,
-    "Ari Groover": 0.130083,
-    "Kingsley Leggs": 0.116427
-  },
-  "Samantha Pauly": {
-    "Tammy Blanchard": 0.131155,
-    "Kingsley Leggs": 0.114237,
-    "Gracie Lawrence": 0.098646
-  },
-  "Scott Barnhardt": {
-    "Tammy Blanchard": 0.126987,
-    "Kingsley Leggs": 0.115034
-  },
-  "Mark Jacoby": {
-    "'Ragtime' 2025 Broadway Cast": 0.28485,
-    "Ragtime Ensemble": 1.0
-  },
-  "Marin Mazzie": {
-    "'Ragtime' 2025 Broadway Cast": 0.222488,
-    "Ben Wright": 0.08984,
-    "Ragtime Ensemble": 0.751221,
-    "Original Broadway Cast of Into the Woods": 0.092421
-  },
-  "Judy Kaye": {
-    "'Ragtime' 2025 Broadway Cast": 0.208976,
-    "Ragtime Ensemble": 0.811952
-  },
-  "Jasmine Amy Rogers": {
-    "'Ragtime' 2025 Broadway Cast": 0.180345,
-    "Joe Barbara": 0.096651,
-    "Gracie Lawrence": 0.121102
-  },
-  "Jordan Tyson": {
-    "'Ragtime' 2025 Broadway Cast": 0.161795,
-    "Gracie Lawrence": 0.098782
-  },
-  "Kevin William Paul": {
-    "'Ragtime' 2025 Broadway Cast": 0.158748
-  },
-  "Jennifer Simard": {
-    "'Ragtime' 2025 Broadway Cast": 0.157602,
-    "Kingsley Leggs": 0.11237,
-    "Original Broadway Cast of Into the Woods": 0.098661,
-    "Gracie Lawrence": 0.101176
-  },
-  "Brody Grant": {
-    "'Ragtime' 2025 Broadway Cast": 0.155671,
-    "Joe Barbara": 0.074619,
-    "Alex Joseph Grayson": 0.098023,
-    "Gracie Lawrence": 0.100276
-  },
-  "Brent Comer": {
-    "'Ragtime' 2025 Broadway Cast": 0.150938,
-    "Alex Joseph Grayson": 0.098414
-  },
-  "2021 London Cast of Cabaret": {
-    "'Ragtime' 2025 Broadway Cast": 0.150813
-  },
-  "Sir Brock Warren": {
-    "'Ragtime' 2025 Broadway Cast": 0.148751,
-    "Joe Barbara": 0.070282
-  },
-  "Kim Crosby": {
-    "Joanna Gleason": 1.0,
-    "Ben Wright": 1.0,
-    "Original Broadway Cast of Into the Woods": 0.948043
-  },
-  "Tom Aldredge": {
-    "Joanna Gleason": 0.969969,
-    "Ben Wright": 0.996517,
-    "Original Broadway Cast of Into the Woods": 0.957931
-  },
-  "Robert Westenberg": {
-    "Joanna Gleason": 0.922756,
-    "Ben Wright": 0.92861,
-    "Original Broadway Cast of Into the Woods": 0.875782
-  },
-  "Chip Zien": {
-    "Joanna Gleason": 0.777192,
-    "Ben Wright": 0.700919,
-    "Original Broadway Cast of Into the Woods": 0.687735
-  },
-  "Danielle Ferland": {
-    "Joanna Gleason": 0.773414,
-    "Ben Wright": 0.788144,
-    "Original Broadway Cast of Into the Woods": 0.752188
-  },
-  "Into The Woods Ensemble": {
-    "Joanna Gleason": 0.213871
-  },
-  "Ann Morrison": {
-    "Joanna Gleason": 0.120121,
-    "Ben Wright": 0.112657
-  },
-  "Sherie Ren\u00e9 Scott": {
-    "Joanna Gleason": 0.10752
-  },
-  "Kevin del Aguila": {
-    "Ari Groover": 0.118264,
-    "Kingsley Leggs": 0.120051
-  },
-  "Benjamin Schrader": {
-    "Ari Groover": 0.11599,
-    "Kingsley Leggs": 0.12497
-  },
-  "Andrew Keenan-Bolger": {
-    "Ari Groover": 0.114292
-  },
-  "Erin Rose Doyle": {
-    "Eddie Cooper": 0.835983,
-    "Manoel Felciano": 0.834379,
-    "Alex Joseph Grayson": 0.856543
-  },
-  "Parade Cast": {
-    "Eddie Cooper": 0.755356,
-    "Manoel Felciano": 0.720677,
-    "Alex Joseph Grayson": 0.65276
-  },
-  "Sean Allan Krill": {
-    "Eddie Cooper": 0.485848,
-    "Manoel Felciano": 0.405742,
-    "Alex Joseph Grayson": 0.384857
-  },
-  "Howard McGillin": {
-    "Eddie Cooper": 0.353842,
-    "Manoel Felciano": 0.315715,
-    "Alex Joseph Grayson": 0.295709
-  },
-  "Adam Chanler-Berat": {
-    "Eddie Cooper": 0.313827
-  },
-  "Paul Alexander Nolan": {
-    "Eddie Cooper": 0.299767,
-    "Manoel Felciano": 0.257998,
-    "Alex Joseph Grayson": 0.238607
-  },
-  "Jay Armstrong Johnson": {
-    "Eddie Cooper": 0.251562,
-    "Manoel Felciano": 0.208216,
-    "Alex Joseph Grayson": 0.210067
-  },
-  "Brent Carver": {
-    "Eddie Cooper": 0.176178,
-    "Ben Wright": 0.084873,
-    "Manoel Felciano": 0.1906,
-    "Alex Joseph Grayson": 0.196609,
-    "Ragtime Ensemble": 0.193755
-  },
-  "Andrew Durand": {
-    "Eddie Cooper": 0.14419,
-    "Alex Joseph Grayson": 0.106889
-  },
-  "Jaquel Spivey": {
-    "Eddie Cooper": 0.132348,
-    "Manoel Felciano": 0.106501,
-    "Alex Joseph Grayson": 0.110529
-  },
-  "Original Broadway Cast of Shucked": {
-    "Eddie Cooper": 0.122523,
-    "Manoel Felciano": 0.110784,
-    "Alex Joseph Grayson": 0.107784
-  },
-  "Caesar Samayoa": {
-    "Joe Barbara": 1.0,
-    "Gracie Lawrence": 0.604849
-  },
-  "Ainsley Melham": {
-    "Joe Barbara": 0.083818
-  },
-  "Two Strangers (Carry a Cake Across New York)": {
-    "Joe Barbara": 0.081523,
-    "Gracie Lawrence": 0.103395
-  },
-  "Benjamin Magnuson": {
-    "Manoel Felciano": 0.160948
-  },
-  "Caroline Innerbichler": {
-    "Manoel Felciano": 0.122324,
-    "Alex Joseph Grayson": 0.113312
-  },
-  "Solea Pfeiffer": {
-    "Manoel Felciano": 0.113847,
-    "Alex Joseph Grayson": 0.10705
-  },
-  "Rob McClure": {
-    "Kingsley Leggs": 0.11312
-  },
-  "Rema Webb": {
-    "Kingsley Leggs": 0.11088
-  },
-  "Damon Daunno": {
-    "Ragtime Ensemble": 0.176749
-  },
-  "Ali Stroker": {
-    "Ragtime Ensemble": 0.144393
+  "Selena Gomez": {
+    "Sabrina Carpenter": 0.420142,
+    "Taylor Swift": 0.396552,
+    "Madison Beer": 0.394163
+  },
+  "KATSEYE": {
+    "Sabrina Carpenter": 0.418887,
+    "Chappell Roan": 0.460753
+  },
+  "Doja Cat": {
+    "Sabrina Carpenter": 0.35361,
+    "Ariana Grande": 0.74446,
+    "Billie Eilish": 0.298609
+  },
+  "Dua Lipa": {
+    "Sabrina Carpenter": 0.351129,
+    "Taylor Swift": 0.375311
+  },
+  "Kelsea Ballerini": {
+    "Taylor Swift": 0.40184,
+    "Maisie Peters": 0.591259
+  },
+  "Kacey Musgraves": {
+    "Taylor Swift": 0.345791
+  },
+  "Carly Rae Jepsen": {
+    "Taylor Swift": 0.297567
+  },
+  "Maren Morris": {
+    "Taylor Swift": 0.28286
+  },
+  "Marina": {
+    "Chappell Roan": 0.472335,
+    "Lorde": 0.620487,
+    "Melanie Martinez": 0.639755
+  },
+  "Hayley Kiyoko": {
+    "Chappell Roan": 0.368019
+  },
+  "Troye Sivan": {
+    "Chappell Roan": 0.364956,
+    "Harry Styles": 0.224199,
+    "Conan Gray": 0.709365,
+    "Lorde": 0.749378
+  },
+  "King Princess": {
+    "Chappell Roan": 0.343537
+  },
+  "Charli xcx": {
+    "Chappell Roan": 0.342698,
+    "Lorde": 0.965699,
+    "Addison Rae": 0.934143,
+    "Melanie Martinez": 0.399754
+  },
+  "Louis Tomlinson": {
+    "Harry Styles": 1.0
+  },
+  "Niall Horan": {
+    "Harry Styles": 0.725959
+  },
+  "One Direction": {
+    "Harry Styles": 0.714714
+  },
+  "ZAYN": {
+    "Harry Styles": 0.456799
+  },
+  "5 Seconds of Summer": {
+    "Harry Styles": 0.359863
+  },
+  "Luke Hemmings": {
+    "Harry Styles": 0.312337
+  },
+  "sombr": {
+    "Harry Styles": 0.241841,
+    "Conan Gray": 0.605816
+  },
+  "Liam Payne": {
+    "Harry Styles": 0.230625
+  },
+  "Jonas Brothers": {
+    "Harry Styles": 0.220871
+  },
+  "Lexi Jayde": {
+    "Gracie Abrams": 0.874287,
+    "Conan Gray": 0.578045,
+    "Tate McRae": 0.535596,
+    "Maisie Peters": 0.418564
+  },
+  "Sadie Jean": {
+    "Gracie Abrams": 0.756108,
+    "Tate McRae": 0.513039
+  },
+  "Suki Waterhouse": {
+    "Gracie Abrams": 0.415785
+  },
+  "Jenna Raine": {
+    "Gracie Abrams": 0.411979,
+    "Maisie Peters": 0.368489
+  },
+  "FINNEAS": {
+    "Conan Gray": 0.57874,
+    "Billie Eilish": 1.0
+  },
+  "Kevin Atwater": {
+    "Conan Gray": 0.520168
+  },
+  "Nessa Barrett": {
+    "Madison Beer": 0.850867,
+    "Billie Eilish": 0.279952,
+    "Tate McRae": 0.900997
+  },
+  "Maggie Lindemann": {
+    "Madison Beer": 0.630797
+  },
+  "Bebe Rexha": {
+    "Madison Beer": 0.47104
+  },
+  "Ava Max": {
+    "Madison Beer": 0.470516,
+    "Tate McRae": 0.483737
+  },
+  "Kim Petras": {
+    "Madison Beer": 0.422956,
+    "Addison Rae": 0.76902,
+    "Melanie Martinez": 0.455541
+  },
+  "Camila Cabello": {
+    "Madison Beer": 0.418422,
+    "Ariana Grande": 0.455311,
+    "Tate McRae": 0.673706
+  },
+  "Halsey": {
+    "Madison Beer": 0.403872,
+    "Billie Eilish": 0.269664,
+    "Lorde": 0.540665,
+    "Melanie Martinez": 0.479574
+  },
+  "Leigh-Anne": {
+    "Madison Beer": 0.4009
+  },
+  "Jessie J, Ariana Grande & Nicki Minaj": {
+    "Ariana Grande": 1.0
+  },
+  "Cynthia Erivo": {
+    "Ariana Grande": 0.855028
+  },
+  "The Weeknd & Ariana Grande": {
+    "Ariana Grande": 0.668594
+  },
+  "Beyonc\u00e9": {
+    "Ariana Grande": 0.573704
+  },
+  "SZA": {
+    "Ariana Grande": 0.572858
+  },
+  "Rihanna": {
+    "Ariana Grande": 0.55061
+  },
+  "FLO": {
+    "Ariana Grande": 0.478678
+  },
+  "Tyla": {
+    "Ariana Grande": 0.468839
+  },
+  "Summer Walker": {
+    "Ariana Grande": 0.468424
+  },
+  "Mariah Carey": {
+    "Ariana Grande": 0.436997
+  },
+  "Nicki Minaj": {
+    "Ariana Grande": 0.435312
+  },
+  "Fifth Harmony": {
+    "Ariana Grande": 0.423557
+  },
+  "Aurora": {
+    "Billie Eilish": 0.270064
+  },
+  "Sky Ferreira": {
+    "Lorde": 0.915776,
+    "Addison Rae": 0.54803
+  },
+  "Caroline Polachek": {
+    "Lorde": 0.914521,
+    "Addison Rae": 0.422384
+  },
+  "ROSAL\u00cdA": {
+    "Lorde": 0.675021,
+    "Addison Rae": 0.446341
+  },
+  "Robyn": {
+    "Lorde": 0.578954
+  },
+  "Marina & the Diamonds": {
+    "Lorde": 0.553255,
+    "Melanie Martinez": 0.427945
+  },
+  "Tove Lo": {
+    "Lorde": 0.548474
+  },
+  "Slayyyter": {
+    "Lorde": 0.525358,
+    "Addison Rae": 1.0
+  },
+  "Lily Allen": {
+    "Lorde": 0.519257,
+    "Audrey Hobert": 0.461282
+  },
+  "Leah Kate": {
+    "Tate McRae": 0.510362
+  },
+  "Jade LeMac": {
+    "Tate McRae": 0.496388
+  },
+  "Lauren Spencer Smith": {
+    "Tate McRae": 0.489624
+  },
+  "Kylie Cantrall": {
+    "Tate McRae": 0.487541
+  },
+  "AD\u00c9LA": {
+    "Addison Rae": 0.784006,
+    "Audrey Hobert": 0.447293
+  },
+  "PinkPantheress": {
+    "Addison Rae": 0.655502
+  },
+  "Madonna": {
+    "Addison Rae": 0.482424
+  },
+  "Rose Gray": {
+    "Addison Rae": 0.476383
+  },
+  "Britney Spears": {
+    "Addison Rae": 0.470849
+  },
+  "Rebecca Black": {
+    "Addison Rae": 0.418366
+  },
+  "Avery Cochrane": {
+    "Audrey Hobert": 0.486403
+  },
+  "Elle Coves": {
+    "Audrey Hobert": 0.466606
+  },
+  "Cate": {
+    "Maisie Peters": 1.0
+  },
+  "Gretta Ray": {
+    "Maisie Peters": 0.599798
+  },
+  "Taylor Bickett": {
+    "Maisie Peters": 0.466654
+  },
+  "Gatlin": {
+    "Maisie Peters": 0.357673
+  },
+  "Mercer Henderson": {
+    "Maisie Peters": 0.346319
+  },
+  "Peach PRC": {
+    "Maisie Peters": 0.334464
+  },
+  "Jazmin Bean": {
+    "Melanie Martinez": 1.0
+  },
+  "Ashnikko": {
+    "Melanie Martinez": 0.912958
+  },
+  "Bella Poarch": {
+    "Melanie Martinez": 0.547737
+  },
+  "Bea Duarte": {
+    "Melanie Martinez": 0.426057
+  },
+  "Lucy Loone": {
+    "Melanie Martinez": 0.411196
+  },
+  "Ellise": {
+    "Melanie Martinez": 0.396296
+  },
+  "That Poppy": {
+    "Melanie Martinez": 0.395732
   }
 }

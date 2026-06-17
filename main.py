@@ -9,6 +9,7 @@ The name of this package is based on a star I found and a Mummy Joe's video my e
 import subprocess, sys
 from pathlib import Path
 from recommend import format_recommendations, get_recommendations, get_feeling
+from discover import main as discover_main
 
 root = Path(__file__).parent
 
@@ -19,12 +20,18 @@ def main():
     run_feelings()
     feeling_index, feeling_name = get_feeling()
 
-    if feeling_index is None:
+    print(f"What would you like to do today?")
+    print(f"  [1] A quick music recommendation for your mood")
+    print(f"  [2] Discover music and artists based on your mood")
+    input_choice = input("Response: ").strip().lower()
+    if input_choice == "1":
+        recommendations = get_recommendations()
+        print(format_recommendations(recommendations, feeling_name=feeling_name))
+    elif input_choice == "2":
+        discover_main()
+    elif feeling_index is None:
         print("Why do you have no feelings today?")
         return
-    
-    recommendations = get_recommendations()
-    print(format_recommendations(recommendations, feeling_name=feeling_name))
 
 if __name__ == "__main__":
     main()

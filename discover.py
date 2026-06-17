@@ -1,7 +1,7 @@
 from engine.discover import Discover
 from engine.seeds import *
 from recommend import *
-from engine.ratings import log_rating
+from engine.ratings import *
 from scrape_music import *
 
 def open_artist(artist):
@@ -15,18 +15,25 @@ def open_artist(artist):
 
 
 def main():
-    session = Discover.from_file()
     result = get_feeling()
     if result is None:
         return
     mood_index, mood_label = result
+    session = Discover.from_file_with_history(mood_index)
+
     seeds = seed_by_mood()[mood_index]
     #import pdb; pdb.set_trace()
+    
     in_graph = [a for a in seeds if a in session.graph]
     if not in_graph:
         print("No mood seeds found in graph.")
         return
+    available = [a for a in in_graph if a not in session.today_seen]
+    if not available:
+        print("You've already explored all mood seeds today. Try again tomorrow or another mood.")
+        return
     
+    seeds = available
     print(f"\nThis is your latest mood: {mood_label}")
     print(f"\nThese are your artists for this mood: {seeds}")
     artist_desired = input(f"\nWhich artist do you want recommendations for?")
@@ -36,6 +43,7 @@ def main():
         current = random.choice(in_graph)
     else:
         current = artist_desired
+    session.seed_artist = current 
     session.seen.add(current)
 
     print(f"Mood: {mood_label}\n")
@@ -45,7 +53,16 @@ def main():
 
         choice = input("  [l]ike  [d]islike  [u]nknown  [q]uit: ").strip().lower()
         if choice == "q":
-            break
+            print("Would you like to see the artists you liked today?")
+            see_today = input("Type 'y' for yes, 'n' for no: ").strip().lower()
+            if see_today == "y":
+                updated_session = Discover.from_file_with_history(mood_index)
+                print(f"\nThese are the artists you have liked today: {updated_session.artists_today_liked}")
+                #print(f"\nWould you like to add tehse artists as seeds?")
+                #seed_update = input("Type 'y' for yes, 'n' for no: ").strip().lower()
+                #if seed_update == "y":
+                 #   seeds.extend(updated_session.artists_today_liked)
+            #break
         if choice == "l":
             session.rate_artist(current, "like")
             log_rating(current, "like", mood_index)
@@ -54,13 +71,20 @@ def main():
             log_rating(current, "dislike", mood_index)
         elif choice == "u":
             session.rate_artist(current, "unknown")
-            log_rating(current, "unknown", mood_index)
-        else:
-            continue
+            log_rating(current, "unknown", mood_index)            
+            
         current = session.next_artist()
+
         if current is None:
             print("\nNo more recommendations in this session.")
             break
+        print(
+        f"\nSession: {len(session.like)} likes, "
+        f"{len(session.dislike)} dislikes, "
+        f"{len(session.seen)-1} artists seen"
+    )  
+
+
 
 
 if __name__ == "__main__":

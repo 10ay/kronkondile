@@ -42,3 +42,46 @@ def load_ratings():
         })
 
     return rows
+
+def liked_from_history(mood_index = None):
+    likes = set()
+    for row in load_ratings():
+        if row["verdict"] != "like":
+            continue
+        if mood_index is not None and row["mood"] != str(mood_index):
+            continue
+        likes.add(row["artist"])
+    return likes
+
+def disliked_from_history(mood_index = None):
+    dislikes = set()
+    for row in load_ratings():
+        if row["verdict"] != "dislike":
+            continue
+        if mood_index is not None and row["mood"] != str(mood_index):
+            continue
+        dislikes.add(row["artist"])
+    return dislikes
+
+def artists_today(mood_index=None):
+    today = str(date.today())
+    artists = set()
+    for row in load_ratings():
+        if row["date"] != today:
+            continue
+        if mood_index is not None and row["mood"] != str(mood_index):
+            continue
+        artists.add(row["artist"])
+    return artists
+
+def artists_today_liked(mood_index=None):
+    today = str(date.today())
+    artists_liked = set()
+    for row in load_ratings():
+        if row["date"] != today:
+            continue
+        if mood_index is not None and row["mood"] != str(mood_index):
+            continue
+        if row["verdict"] == "like":
+            artists_liked.add(row["artist"])
+    return artists_liked
