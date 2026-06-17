@@ -1,20 +1,20 @@
 '''
 Script used to create table of recently music recommendations.
 '''
+from engine.graph import get_api, fetch_top_track, lastfm_artist_url
 from typing import Any
+from urllib.parse import quote, quote_plus
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+
+
+
 max_recommendations = 10 # Change this for the number of recommendations you want to scrape.
-
 import webbrowser 
-from urllib.parse import quote_plus
-
-import webbrowser
-from urllib.parse import quote_plus
 
 youtube_search_suffix = "music"
 # constant selectors to look up videos on youtube search page. This is how Youtube's HTML is structured in nested elements.
@@ -83,6 +83,46 @@ def open_song_from_dict(song):
         url=song["url"],
         artist=song.get("artist"),
     )
+
+def build_track_search_url(artist, track) -> str:
+    query = f"{artist} {track}".strip()
+    return f"https://www.youtube.com/results?search_query={quote_plus(query)}"
+
+def song_from_library(artist):
+    """First song in music_library whose artist matches."""
+    from music_library import mood_music_map
+    target = artist.strip().lower()
+    for playlist in mood_music_map.values():
+        for song in playlist:
+            if song.get("artist", "").strip().lower() == target:
+                return song
+    return None
+
+def open_artist_on_lastfm(artist):
+
+    url = lastfm_artist_url(artist)
+    webbrowser.open(url)
+    return Tracks(title=artist, artist=artist, url=url, channel="Last.fm")
+
+
+
+
+def open_artist_top_song(artist):
+    song = song_from_library(artist)
+    if song:
+        return open_song_from_dict(song)
+
+    try:
+        track_name = fetch_top_track(artist, get_api(), limit=1)
+    except Exception:
+        track_name = None
+    if track_name:
+        url = build_track_search_url(artist, track_name)
+        webbrowser.open(url)
+        return Tracks(title=track_name, artist=artist, url=url, channel=None)
+
+    return open_search(artist)
+
 
 if __name__ == "__main__":
     recs = track_recommendation(["chill"])

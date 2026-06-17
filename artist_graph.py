@@ -32,6 +32,7 @@ def build():
     """
     
     api_key = get_api()
+    #import pdb; pdb.set_trace()
     
     if load_graph(default_graph_path) is None:
         graph = build_graph_from_seeds(seed_artists, api_key)
@@ -68,7 +69,7 @@ def build():
         print(f"  {name:30} {weight:.2f}")
 
     print(f"\nListen to this music by your desired artist From Your Mood Map!")
-    import pdb; pdb.set_trace()
+    #import pdb; pdb.set_trace()
     recommendations = get_recommendations(rand_int = artist_index)
     feeling_index, feeling_name = get_feeling()
     print(format_recommendations(recommendations, feeling_name=feeling_name))

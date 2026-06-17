@@ -10,14 +10,7 @@ import os
 
 from feelings import FEELINGS_FILE, feelings_dictionary
 from music_library import spotify_lovesick, spotify_mountains, spotify_silly, spotify_minions, spotify_love
-
-mood_music_map = {
-    0: spotify_lovesick,
-    1: spotify_mountains,
-    2: spotify_silly,
-    3: spotify_minions,
-    4 : spotify_love
-}
+from music_library import mood_music_map
 
 def get_feeling():
     """
@@ -34,21 +27,21 @@ def get_feeling():
         feeling_index = int(df.iloc[-1]['feeling_scale'])
         return feeling_index, feelings_dictionary[feeling_index]
 
-def mood_to_music(feeling_index, rand_int = False):
+def mood_to_music(feeling_index, rand_int = -1):
     """
     Maps your mood to a music dictionary.
     """
     if feeling_index not in feelings_dictionary:
         raise ValueError()
-    import pdb; pdb.set_trace()
-    if rand_int == True:
+   # import pdb; pdb.set_trace()
+    if rand_int != -1:
         rand_int = rand_int
     else:
         rand_int = random.randint(0, 9)
-    import pdb; pdb.set_trace()
+    #import pdb; pdb.set_trace()
     return mood_music_map[feeling_index][rand_int]
 
-def get_recommendations_for_mood(feeling_index, rand_int = True):
+def get_recommendations_for_mood(feeling_index, rand_int = -1):
     """
     Music recommendations for a given mood.
     """
@@ -58,7 +51,7 @@ def get_recommendations_for_mood(feeling_index, rand_int = True):
 
     return track_recommendation(music_terms_to_search)
 
-def get_recommendations(rand_int = True):
+def get_recommendations(rand_int = -1):
     """
     Get music recommendations for today.
     """

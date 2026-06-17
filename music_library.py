@@ -1,3 +1,5 @@
+
+
 spotify_lovesick = [
     {"title": "Nara",
      "artist": "NoSo", 
@@ -247,3 +249,11 @@ spotify_love = [
     {"title": "Stuck", 
     "artist": "Paola Bennet",
     "url": "https://www.youtube.com/watch?v=vrF2tfLSbbM&list=RDvrF2tfLSbbM&start_radio=1&pp=ygUSc3R1Y2sgcGF1bGEgYmVuZXR0oAcB"}]
+
+mood_music_map = {
+    0: spotify_lovesick,
+    1: spotify_mountains,
+    2: spotify_silly,
+    3: spotify_minions,
+    4 : spotify_love
+}

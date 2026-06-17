@@ -14,7 +14,6 @@ from __future__ import annotations
 import json, os, time
 from pathlib import Path
 from typing import Any
-from urllib.parse import quote_plus
 import requests
 
 Graph = dict[str, dict[str, float]]
@@ -23,17 +22,6 @@ root = Path(__file__).resolve().parent.parent
 default_graph_path = root / "data" / "artist_graph.json"
 
 lastfm_url = "https://ws.audioscrobbler.com/2.0/"
-
-lastfm_base = "https://www.last.fm"
-
-def lastfm_artist_url(artist: str) -> str:
-    return f"{lastfm_base}/music/{quote_plus(artist)}"
-
-def lastfm_track_url(artist: str, track: str) -> str:
-    return f"{lastfm_base}/music/{quote_plus(artist)}/_/{quote_plus(track)}"
-
-
-
 #LASTFM_API_KEY = "073fc1c531e63f5da28a9d0a755c87a0"
 
 def get_api():
