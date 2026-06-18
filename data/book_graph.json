@@ -1,0 +1,1323 @@
+{
+  "Call Me By Your Name": {
+    "The Great Gatsby": 0.16666666666666666,
+    "Wuthering Heights": 0.16666666666666666,
+    "\u0410\u043d\u043d\u0430 \u041a\u0430\u0440\u0435\u043d\u0438\u043d\u0430": 0.16666666666666666,
+    "A Clockwork Orange": 0.08333333333333333,
+    "A Room with a View": 0.08333333333333333,
+    "Captains Courageous": 0.08333333333333333,
+    "Corinne": 0.08333333333333333,
+    "Das Sexualleben unserer Zeit": 0.08333333333333333,
+    "Dei delitte e delle pene": 0.08333333333333333,
+    "Demian": 0.08333333333333333
+  },
+  "The Great Gatsby": {
+    "Call Me By Your Name": 0.16666666666666666,
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "Wuthering Heights": {
+    "Call Me By Your Name": 0.16666666666666666,
+    "Right Ho, Jeeves": 0.16666666666666666
+  },
+  "\u0410\u043d\u043d\u0430 \u041a\u0430\u0440\u0435\u043d\u0438\u043d\u0430": {
+    "Call Me By Your Name": 0.16666666666666666
+  },
+  "A Clockwork Orange": {
+    "Call Me By Your Name": 0.08333333333333333
+  },
+  "A Room with a View": {
+    "Call Me By Your Name": 0.08333333333333333
+  },
+  "Captains Courageous": {
+    "Call Me By Your Name": 0.08333333333333333
+  },
+  "Corinne": {
+    "Call Me By Your Name": 0.08333333333333333
+  },
+  "Das Sexualleben unserer Zeit": {
+    "Call Me By Your Name": 0.08333333333333333
+  },
+  "Dei delitte e delle pene": {
+    "Call Me By Your Name": 0.08333333333333333
+  },
+  "Demian": {
+    "Call Me By Your Name": 0.08333333333333333
+  },
+  "White Nights": {
+    "Brothers Karamazov": 0.35,
+    "Dostoyevsky. Notes From Underground / White Nights / The Dream of a Ridiculous Man / Selections from The House of the Dead": 0.35,
+    "Noches Blancas": 0.35,
+    "The House of the Dead": 0.35,
+    "White Nights and other stories [7 stories]": 0.35,
+    "\u0411\u0435\u0434\u043d\u044b\u0435 \u043b\u044e\u0434\u0438": 0.35,
+    "\u0411\u0435\u043b\u044b\u0435 \u043d\u043e\u0447\u0438": 0.35,
+    "\u0411\u0440\u0430\u0442\u044c\u044f \u041a\u0430\u0440\u0430\u043c\u0430\u0437\u043e\u0432\u044b": 0.35,
+    "\u0411\u0463\u0441\u044b": 0.35,
+    "\u0412\u0435\u043b\u0438\u043a\u0438\u0439 \u0438\u043d\u043a\u0432\u0438\u0437\u0438\u0442\u043e\u0440": 0.35,
+    "\u0412\u0435\u0447\u043d\u044b\u0439 \u043c\u0443\u0436": 0.35,
+    "\u0414\u0432\u043e\u0439\u043d\u0438\u043a": 0.35,
+    "\u0414\u043d\u0435\u0432\u043d\u0438\u043a \u043f\u0438\u0441\u0430\u0442\u0435\u043b\u044f": 0.35,
+    "\u0417\u0430\u043f\u0438\u0441\u043a\u0438 \u0438\u0437\u044a \u043f\u043e\u0434\u043f\u043e\u043b\u044c\u044f": 0.35,
+    "\u0418\u0433\u0440\u043e\u043a\u044a": 0.35,
+    "\u0418\u0434\u0438\u043e\u0442": 0.35,
+    "\u041f\u043e\u0434\u0440\u043e\u0441\u0442\u043e\u043a": 0.35,
+    "\u041f\u0440\u0435\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u0435 \u0438 \u043d\u0430\u043a\u0430\u0437\u0430\u043d\u0438\u0435": 0.35,
+    "\u0423\u043d\u0438\u0436\u0435\u043d\u043d\u044b\u0435 \u0438 \u043e\u0441\u043a\u043e\u0440\u0431\u043b\u0451\u043d\u043d\u044b\u0435": 0.35
+  },
+  "Brothers Karamazov": {
+    "White Nights": 0.35
+  },
+  "Dostoyevsky. Notes From Underground / White Nights / The Dream of a Ridiculous Man / Selections from The House of the Dead": {
+    "White Nights": 0.35
+  },
+  "Noches Blancas": {
+    "White Nights": 0.35
+  },
+  "The House of the Dead": {
+    "White Nights": 0.35
+  },
+  "White Nights and other stories [7 stories]": {
+    "White Nights": 0.35
+  },
+  "\u0411\u0435\u0434\u043d\u044b\u0435 \u043b\u044e\u0434\u0438": {
+    "White Nights": 0.35
+  },
+  "\u0411\u0435\u043b\u044b\u0435 \u043d\u043e\u0447\u0438": {
+    "White Nights": 0.35
+  },
+  "\u0411\u0440\u0430\u0442\u044c\u044f \u041a\u0430\u0440\u0430\u043c\u0430\u0437\u043e\u0432\u044b": {
+    "White Nights": 0.35
+  },
+  "\u0411\u0463\u0441\u044b": {
+    "White Nights": 0.35
+  },
+  "\u0412\u0435\u043b\u0438\u043a\u0438\u0439 \u0438\u043d\u043a\u0432\u0438\u0437\u0438\u0442\u043e\u0440": {
+    "White Nights": 0.35
+  },
+  "\u0412\u0435\u0447\u043d\u044b\u0439 \u043c\u0443\u0436": {
+    "White Nights": 0.35
+  },
+  "\u0414\u0432\u043e\u0439\u043d\u0438\u043a": {
+    "White Nights": 0.35
+  },
+  "\u0414\u043d\u0435\u0432\u043d\u0438\u043a \u043f\u0438\u0441\u0430\u0442\u0435\u043b\u044f": {
+    "White Nights": 0.35
+  },
+  "\u0417\u0430\u043f\u0438\u0441\u043a\u0438 \u0438\u0437\u044a \u043f\u043e\u0434\u043f\u043e\u043b\u044c\u044f": {
+    "White Nights": 0.35
+  },
+  "\u0418\u0433\u0440\u043e\u043a\u044a": {
+    "White Nights": 0.35
+  },
+  "\u0418\u0434\u0438\u043e\u0442": {
+    "White Nights": 0.35
+  },
+  "\u041f\u043e\u0434\u0440\u043e\u0441\u0442\u043e\u043a": {
+    "White Nights": 0.35
+  },
+  "\u041f\u0440\u0435\u0441\u0442\u0443\u043f\u043b\u0435\u043d\u0438\u0435 \u0438 \u043d\u0430\u043a\u0430\u0437\u0430\u043d\u0438\u0435": {
+    "White Nights": 0.35
+  },
+  "\u0423\u043d\u0438\u0436\u0435\u043d\u043d\u044b\u0435 \u0438 \u043e\u0441\u043a\u043e\u0440\u0431\u043b\u0451\u043d\u043d\u044b\u0435": {
+    "White Nights": 0.35
+  },
+  "Flowers for Algernon": {
+    "Phenylketonuria": 0.16666666666666666,
+    "Asylums": 0.08333333333333333,
+    "Contemporary Nutrition": 0.08333333333333333,
+    "De medicina": 0.08333333333333333,
+    "Edgar Huntley": 0.08333333333333333,
+    "Everything's Eventual. 14 Dark Tales": 0.08333333333333333,
+    "Genetic screening": 0.08333333333333333,
+    "Institutionalizing the Insane in Nineteenth-Century England": 0.08333333333333333,
+    "Kiss Kiss": 0.08333333333333333,
+    "Kokuritsu Kokkai Toshokan shoz\u014d Meijiki kank\u014d tosho maikuro-ban sh\u016bsei": 0.08333333333333333,
+    "Low protein cookery for phenylketonuria": 0.08333333333333333,
+    "Madeleine": 0.08333333333333333,
+    "Mental illness and learning disability since 1850": 0.08333333333333333,
+    "Musicophilia": 0.08333333333333333,
+    "Nightmares & Dreamscapes": 0.08333333333333333,
+    "Phenylketonuria and allied metabolic diseases": 0.08333333333333333,
+    "Phenylketonuria detection in the newborn infant as a routine hospital procedure": 0.08333333333333333,
+    "Pkg": 0.08333333333333333,
+    "Protect from PKU": 0.08333333333333333,
+    "Puzzlemania": 0.08333333333333333
+  },
+  "Phenylketonuria": {
+    "Flowers for Algernon": 0.16666666666666666
+  },
+  "Asylums": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Contemporary Nutrition": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "De medicina": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Edgar Huntley": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Everything's Eventual. 14 Dark Tales": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Genetic screening": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Institutionalizing the Insane in Nineteenth-Century England": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Kiss Kiss": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Kokuritsu Kokkai Toshokan shoz\u014d Meijiki kank\u014d tosho maikuro-ban sh\u016bsei": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Low protein cookery for phenylketonuria": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Madeleine": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Mental illness and learning disability since 1850": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Musicophilia": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Nightmares & Dreamscapes": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Phenylketonuria and allied metabolic diseases": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Phenylketonuria detection in the newborn infant as a routine hospital procedure": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Pkg": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Protect from PKU": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Puzzlemania": {
+    "Flowers for Algernon": 0.08333333333333333
+  },
+  "Blue Is The Warmest Color": {},
+  "Love In The Time of Cholera": {
+    "Cr\u00f3nica de una muerte anunciada": 0.5,
+    "Delirio / Delirium": 0.5,
+    "Detour": 0.5,
+    "Dulce compa\u00f1\u00eda": 0.5,
+    "El Leopardo al Sol": 0.5,
+    "El amor en los tiempos del c\u00f3lera": 0.5,
+    "El coronel no tiene quien le escriba": 0.5,
+    "Novia Oscura, La": 0.5,
+    "Sen\u0303or Vivo and the Coca Lord": 0.5,
+    "White Cargo": 0.5
+  },
+  "Cr\u00f3nica de una muerte anunciada": {
+    "Love In The Time of Cholera": 0.5
+  },
+  "Delirio / Delirium": {
+    "Love In The Time of Cholera": 0.5
+  },
+  "Detour": {
+    "Love In The Time of Cholera": 0.5
+  },
+  "Dulce compa\u00f1\u00eda": {
+    "Love In The Time of Cholera": 0.5
+  },
+  "El Leopardo al Sol": {
+    "Love In The Time of Cholera": 0.5
+  },
+  "El amor en los tiempos del c\u00f3lera": {
+    "Love In The Time of Cholera": 0.5
+  },
+  "El coronel no tiene quien le escriba": {
+    "Love In The Time of Cholera": 0.5
+  },
+  "Novia Oscura, La": {
+    "Love In The Time of Cholera": 0.5
+  },
+  "Sen\u0303or Vivo and the Coca Lord": {
+    "Love In The Time of Cholera": 0.5
+  },
+  "White Cargo": {
+    "Love In The Time of Cholera": 0.5
+  },
+  "Orbital": {
+    "All is song": 0.35,
+    "Amaryllis dreaming": 0.35,
+    "An investigation to examine the patterns of ecstasy use and attitudes towards drug related behaviour": 0.35,
+    "Boy with kite": 0.35,
+    "Coleridge's Responses": 0.35,
+    "Dear Thief": 0.35,
+    "Driftwood Beach": 0.35,
+    "Gown of scarlet": 0.35,
+    "Shapeless Unease": 0.35,
+    "The Wilderness": 0.35,
+    "The distance man": 0.35,
+    "The western wind": 0.35,
+    "Tomorrow'S Lover": 0.35,
+    "Transatlantic Transcendentalism": 0.35,
+    "Transatlantic Transcendentalism Coleridge Emerson And Nature": 0.35
+  },
+  "All is song": {
+    "Orbital": 0.35
+  },
+  "Amaryllis dreaming": {
+    "Orbital": 0.35
+  },
+  "An investigation to examine the patterns of ecstasy use and attitudes towards drug related behaviour": {
+    "Orbital": 0.35
+  },
+  "Boy with kite": {
+    "Orbital": 0.35
+  },
+  "Coleridge's Responses": {
+    "Orbital": 0.35
+  },
+  "Dear Thief": {
+    "Orbital": 0.35
+  },
+  "Driftwood Beach": {
+    "Orbital": 0.35
+  },
+  "Gown of scarlet": {
+    "Orbital": 0.35
+  },
+  "Shapeless Unease": {
+    "Orbital": 0.35
+  },
+  "The Wilderness": {
+    "Orbital": 0.35
+  },
+  "The distance man": {
+    "Orbital": 0.35
+  },
+  "The western wind": {
+    "Orbital": 0.35
+  },
+  "Tomorrow'S Lover": {
+    "Orbital": 0.35
+  },
+  "Transatlantic Transcendentalism": {
+    "Orbital": 0.35
+  },
+  "Transatlantic Transcendentalism Coleridge Emerson And Nature": {
+    "Orbital": 0.35
+  },
+  "I Who Have Never Known Men": {},
+  "Psalm For The Wild-Built": {
+    "Adventures of Huckleberry Finn": 0.25,
+    "The Scarlet Letter": 0.25,
+    "A Christmas Carol": 0.125,
+    "Alice's Adventures in Wonderland": 0.125,
+    "Anne of Green Gables": 0.125,
+    "City": 0.125,
+    "Do Androids Dream of Electric Sheep?": 0.125,
+    "Faust": 0.125,
+    "Foundation": 0.125,
+    "I, Robot": 0.125,
+    "Little Women": 0.125,
+    "Metamorphoses": 0.125,
+    "Pride and Prejudice": 0.125,
+    "R.U.R. and The insect play": 0.125,
+    "Robinson Crusoe": 0.125,
+    "Tanglewood Tales": 0.125,
+    "The Age of Fable": 0.125,
+    "The Call of the Wild": 0.125,
+    "The Caves of Steel": 0.125,
+    "The Cyberiad": 0.125
+  },
+  "Adventures of Huckleberry Finn": {
+    "Psalm For The Wild-Built": 0.25,
+    "Palace of Illusions": 0.4,
+    "Guards! Guards!": 0.08333333333333333,
+    "Right Ho, Jeeves": 0.08333333333333333,
+    "House In The Cerulean Sea": 0.08333333333333333,
+    "Madonna In A Fur Coat": 0.4
+  },
+  "The Scarlet Letter": {
+    "Psalm For The Wild-Built": 0.25,
+    "Palace of Illusions": 0.4,
+    "House In The Cerulean Sea": 0.08333333333333333,
+    "Madonna In A Fur Coat": 0.2
+  },
+  "A Christmas Carol": {
+    "Psalm For The Wild-Built": 0.125,
+    "Palace of Illusions": 0.4,
+    "Guards! Guards!": 0.08333333333333333,
+    "Right Ho, Jeeves": 0.16666666666666666,
+    "Madonna In A Fur Coat": 0.2
+  },
+  "Alice's Adventures in Wonderland": {
+    "Psalm For The Wild-Built": 0.125,
+    "Palace of Illusions": 0.4,
+    "Guards! Guards!": 0.16666666666666666,
+    "Right Ho, Jeeves": 0.16666666666666666,
+    "Project Hail Mary": 0.16666666666666666,
+    "House In The Cerulean Sea": 0.08333333333333333,
+    "Madonna In A Fur Coat": 0.1
+  },
+  "Anne of Green Gables": {
+    "Psalm For The Wild-Built": 0.125,
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "City": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "Do Androids Dream of Electric Sheep?": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "Faust": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "Foundation": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "I, Robot": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "Little Women": {
+    "Psalm For The Wild-Built": 0.125,
+    "House In The Cerulean Sea": 0.08333333333333333,
+    "Madonna In A Fur Coat": 0.2
+  },
+  "Metamorphoses": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "Pride and Prejudice": {
+    "Psalm For The Wild-Built": 0.125,
+    "Palace of Illusions": 0.4,
+    "Guards! Guards!": 0.08333333333333333,
+    "Right Ho, Jeeves": 0.08333333333333333,
+    "Madonna In A Fur Coat": 0.2
+  },
+  "R.U.R. and The insect play": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "Robinson Crusoe": {
+    "Psalm For The Wild-Built": 0.125,
+    "Palace of Illusions": 0.4,
+    "Guards! Guards!": 0.16666666666666666,
+    "Right Ho, Jeeves": 0.16666666666666666
+  },
+  "Tanglewood Tales": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "The Age of Fable": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "The Call of the Wild": {
+    "Psalm For The Wild-Built": 0.125,
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "The Caves of Steel": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "The Cyberiad": {
+    "Psalm For The Wild-Built": 0.125
+  },
+  "The Kite Runner": {},
+  "Palace of Illusions": {
+    "A Christmas Carol": 0.4,
+    "Adventures of Huckleberry Finn": 0.4,
+    "Alice's Adventures in Wonderland": 0.4,
+    "Pride and Prejudice": 0.4,
+    "Robinson Crusoe": 0.4,
+    "The Picture of Dorian Gray": 0.4,
+    "The Scarlet Letter": 0.4,
+    "A Passage to India": 0.2,
+    "Indian Tales": 0.2,
+    "Jurgen": 0.2,
+    "Kim": 0.2,
+    "Les Mis\u00e9rables": 0.2,
+    "Life's handicap, being stories of mine own people": 0.2,
+    "Moby Dick": 0.2,
+    "Oliver Twist": 0.2,
+    "Plain tales from the hills": 0.2,
+    "She": 0.2,
+    "Siddhartha": 0.2,
+    "The Fellowship of the Ring": 0.2,
+    "The Hobbit": 0.2
+  },
+  "The Picture of Dorian Gray": {
+    "Palace of Illusions": 0.4,
+    "Guards! Guards!": 0.08333333333333333,
+    "Madonna In A Fur Coat": 0.2
+  },
+  "A Passage to India": {
+    "Palace of Illusions": 0.2
+  },
+  "Indian Tales": {
+    "Palace of Illusions": 0.2
+  },
+  "Jurgen": {
+    "Palace of Illusions": 0.2
+  },
+  "Kim": {
+    "Palace of Illusions": 0.2
+  },
+  "Les Mis\u00e9rables": {
+    "Palace of Illusions": 0.2
+  },
+  "Life's handicap, being stories of mine own people": {
+    "Palace of Illusions": 0.2
+  },
+  "Moby Dick": {
+    "Palace of Illusions": 0.2
+  },
+  "Oliver Twist": {
+    "Palace of Illusions": 0.2
+  },
+  "Plain tales from the hills": {
+    "Palace of Illusions": 0.2
+  },
+  "She": {
+    "Palace of Illusions": 0.2
+  },
+  "Siddhartha": {
+    "Palace of Illusions": 0.2
+  },
+  "The Fellowship of the Ring": {
+    "Palace of Illusions": 0.2
+  },
+  "The Hobbit": {
+    "Palace of Illusions": 0.2
+  },
+  "Guards! Guards!": {
+    "Alice's Adventures in Wonderland": 0.16666666666666666,
+    "Robinson Crusoe": 0.16666666666666666,
+    "A Christmas Carol": 0.08333333333333333,
+    "A Midsummer Night's Dream": 0.08333333333333333,
+    "Adventures of Huckleberry Finn": 0.08333333333333333,
+    "Die Leiden des jungen Werthers": 0.08333333333333333,
+    "Guards at the Taj": 0.08333333333333333,
+    "Gulliver's Travels": 0.08333333333333333,
+    "Moll Flanders": 0.08333333333333333,
+    "O primo Bas\u00edlio": 0.08333333333333333,
+    "Oto\u00f1o Del Patriarca": 0.08333333333333333,
+    "Pride and Prejudice": 0.08333333333333333,
+    "Protecting The Princess": 0.08333333333333333,
+    "Riding for Caesar": 0.08333333333333333,
+    "Scots Guards 1919-1955": 0.08333333333333333,
+    "Sparkling Cyanide": 0.08333333333333333,
+    "The Guardian's Promise": 0.08333333333333333,
+    "The Once and Future King": 0.08333333333333333,
+    "The Picture of Dorian Gray": 0.08333333333333333,
+    "The Prince": 0.08333333333333333
+  },
+  "A Midsummer Night's Dream": {
+    "Guards! Guards!": 0.08333333333333333,
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Die Leiden des jungen Werthers": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "Guards at the Taj": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "Gulliver's Travels": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "Moll Flanders": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "O primo Bas\u00edlio": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "Oto\u00f1o Del Patriarca": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "Protecting The Princess": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "Riding for Caesar": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "Scots Guards 1919-1955": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "Sparkling Cyanide": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "The Guardian's Promise": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "The Once and Future King": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "The Prince": {
+    "Guards! Guards!": 0.08333333333333333
+  },
+  "Hitchhiker's Guide to the Galaxy": {
+    "Dirk Gently\u2019s Holistic Detective Agency": 0.35,
+    "Hitchhiker's Trilogy (Hitch Hiker's Guide to the Galaxy / Restaurant at the End of the Universe / Life, the Universe, and Everything)": 0.35,
+    "Last Chance to See": 0.35,
+    "Life, the Universe and Everything": 0.35,
+    "Mostly Harmless": 0.35,
+    "Novels (Dirk Gently's Holistic Detective Agency / Long Dark Tea-Time of the Soul)": 0.35,
+    "Novels (Hitch Hiker's Guide to the Galaxy / Restaurant at the End of the Universe / Life, the Universe and Everything / So Long, and Thanks for All the Fish / Mostly Harmless)": 0.35,
+    "Novels (Hitch Hiker's Guide to the Galaxy / Restaurant at the End of the Universe / Life, the Universe and Everything / So Long, and Thanks for All the Fish)": 0.35,
+    "So long, and thanks for all the fish": 0.35,
+    "The Deeper Meaning of Liff": 0.35,
+    "The Hitch Hiker's Guide to the Galaxy": 0.35,
+    "The Long Dark Tea-Time of the Soul": 0.35,
+    "The Original Hitchhiker Radio Scripts": 0.35,
+    "The Restaurant at the End of the Universe": 0.35,
+    "The Salmon of Doubt": 0.35,
+    "The Time Traveller's Almanac": 0.35,
+    "The Ultimate Hitchhiker's Guide to the Galaxy": 0.35,
+    "The meaning of Liff": 0.35,
+    "Works (Hitch Hiker's Guide to the Galaxy / Restaurant at the End of the Universe / Life, the Universe and Everything / So Long, and Thanks for All the Fish / Mostly Harmless / Young Zaphod Plays it Safe)": 0.35,
+    "Works (The Hitch Hiker's Guide to the Galaxy / The Restaurant at the End of the Universe / Life, the Universe and Everything / So Long, and Thanks for All the Fish / Young Zaphod Plays it Safe)": 0.35
+  },
+  "Dirk Gently\u2019s Holistic Detective Agency": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "Hitchhiker's Trilogy (Hitch Hiker's Guide to the Galaxy / Restaurant at the End of the Universe / Life, the Universe, and Everything)": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "Last Chance to See": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "Life, the Universe and Everything": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "Mostly Harmless": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "Novels (Dirk Gently's Holistic Detective Agency / Long Dark Tea-Time of the Soul)": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "Novels (Hitch Hiker's Guide to the Galaxy / Restaurant at the End of the Universe / Life, the Universe and Everything / So Long, and Thanks for All the Fish / Mostly Harmless)": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "Novels (Hitch Hiker's Guide to the Galaxy / Restaurant at the End of the Universe / Life, the Universe and Everything / So Long, and Thanks for All the Fish)": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "So long, and thanks for all the fish": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "The Deeper Meaning of Liff": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "The Hitch Hiker's Guide to the Galaxy": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "The Long Dark Tea-Time of the Soul": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "The Original Hitchhiker Radio Scripts": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "The Restaurant at the End of the Universe": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "The Salmon of Doubt": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "The Time Traveller's Almanac": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "The Ultimate Hitchhiker's Guide to the Galaxy": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "The meaning of Liff": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "Works (Hitch Hiker's Guide to the Galaxy / Restaurant at the End of the Universe / Life, the Universe and Everything / So Long, and Thanks for All the Fish / Mostly Harmless / Young Zaphod Plays it Safe)": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "Works (The Hitch Hiker's Guide to the Galaxy / The Restaurant at the End of the Universe / Life, the Universe and Everything / So Long, and Thanks for All the Fish / Young Zaphod Plays it Safe)": {
+    "Hitchhiker's Guide to the Galaxy": 0.35
+  },
+  "Sirens of Titan": {
+    "A man without a country": 0.35,
+    "Armageddon in Retrospect": 0.35,
+    "Bagombo Snuff Box": 0.35,
+    "Bluebeard": 0.35,
+    "Breakfast of Champions": 0.35,
+    "Cat's Cradle": 0.35,
+    "Deadeye Dick": 0.35,
+    "Fates Worse than Death": 0.35,
+    "Gal\u00e1pagos": 0.35,
+    "God bless you, Mr. Rosewater": 0.35,
+    "Hocus Pocus": 0.35,
+    "Jailbird": 0.35,
+    "Mother Night": 0.35,
+    "Palm Sunday": 0.35,
+    "Player Piano": 0.35,
+    "Slapstick": 0.35,
+    "Slaughterhouse-Five": 0.35,
+    "The Sirens of Titan": 0.35,
+    "Timequake": 0.35,
+    "Welcome to the Monkey House": 0.35
+  },
+  "A man without a country": {
+    "Sirens of Titan": 0.35
+  },
+  "Armageddon in Retrospect": {
+    "Sirens of Titan": 0.35
+  },
+  "Bagombo Snuff Box": {
+    "Sirens of Titan": 0.35
+  },
+  "Bluebeard": {
+    "Sirens of Titan": 0.35
+  },
+  "Breakfast of Champions": {
+    "Sirens of Titan": 0.35
+  },
+  "Cat's Cradle": {
+    "Sirens of Titan": 0.35
+  },
+  "Deadeye Dick": {
+    "Sirens of Titan": 0.35
+  },
+  "Fates Worse than Death": {
+    "Sirens of Titan": 0.35
+  },
+  "Gal\u00e1pagos": {
+    "Sirens of Titan": 0.35
+  },
+  "God bless you, Mr. Rosewater": {
+    "Sirens of Titan": 0.35
+  },
+  "Hocus Pocus": {
+    "Sirens of Titan": 0.35
+  },
+  "Jailbird": {
+    "Sirens of Titan": 0.35
+  },
+  "Mother Night": {
+    "Sirens of Titan": 0.35
+  },
+  "Palm Sunday": {
+    "Sirens of Titan": 0.35
+  },
+  "Player Piano": {
+    "Sirens of Titan": 0.35
+  },
+  "Slapstick": {
+    "Sirens of Titan": 0.35
+  },
+  "Slaughterhouse-Five": {
+    "Sirens of Titan": 0.35
+  },
+  "The Sirens of Titan": {
+    "Sirens of Titan": 0.35
+  },
+  "Timequake": {
+    "Sirens of Titan": 0.35
+  },
+  "Welcome to the Monkey House": {
+    "Sirens of Titan": 0.35
+  },
+  "Canon": {
+    "Another Last Call": 0.35,
+    "Butterflies for Dada": 0.35,
+    "Remembrance": 0.35,
+    "Space Struck": 0.35,
+    "The Mother-in-Law": 0.35,
+    "The Symmetry of Fish": 0.35
+  },
+  "Another Last Call": {
+    "Canon": 0.35
+  },
+  "Butterflies for Dada": {
+    "Canon": 0.35
+  },
+  "Remembrance": {
+    "Canon": 0.35
+  },
+  "Space Struck": {
+    "Canon": 0.35
+  },
+  "The Mother-in-Law": {
+    "Canon": 0.35
+  },
+  "The Symmetry of Fish": {
+    "Canon": 0.35
+  },
+  "Right Ho, Jeeves": {
+    "A Christmas Carol": 0.16666666666666666,
+    "Alice's Adventures in Wonderland": 0.16666666666666666,
+    "Robinson Crusoe": 0.16666666666666666,
+    "Wuthering Heights": 0.16666666666666666,
+    "A Tale of Two Cities": 0.08333333333333333,
+    "Adventures of Huckleberry Finn": 0.08333333333333333,
+    "Carry On, Jeeves": 0.08333333333333333,
+    "Casino Royale": 0.08333333333333333,
+    "Emma": 0.08333333333333333,
+    "From Russia, with love": 0.08333333333333333,
+    "Fuente Ovejuna": 0.08333333333333333,
+    "Goldfinger": 0.08333333333333333,
+    "Hamlet": 0.08333333333333333,
+    "Jeeves in the Offing": 0.08333333333333333,
+    "My Man Jeeves": 0.08333333333333333,
+    "On The Road": 0.08333333333333333,
+    "Pride and Prejudice": 0.08333333333333333,
+    "Ring for Jeeves": 0.08333333333333333,
+    "Sense and Sensibility": 0.08333333333333333,
+    "Thank you, Jeeves": 0.08333333333333333
+  },
+  "A Tale of Two Cities": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Carry On, Jeeves": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Casino Royale": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Emma": {
+    "Right Ho, Jeeves": 0.08333333333333333,
+    "Madonna In A Fur Coat": 0.1
+  },
+  "From Russia, with love": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Fuente Ovejuna": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Goldfinger": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Hamlet": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Jeeves in the Offing": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "My Man Jeeves": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "On The Road": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Ring for Jeeves": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Sense and Sensibility": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Thank you, Jeeves": {
+    "Right Ho, Jeeves": 0.08333333333333333
+  },
+  "Lamb : The Gospel According to Biff, Christ's Childhood Pal": {
+    "A Dirty Job": 0.35,
+    "Bite Me": 0.35,
+    "Bloodsucking Fiends": 0.35,
+    "Coyote Blue": 0.35,
+    "Fluke": 0.35,
+    "Fluke, or, I know why the winged whale sings": 0.35,
+    "Fool": 0.35,
+    "Island of the Sequined Love Nun": 0.35,
+    "Lamb": 0.35,
+    "Practical Demonkeeping": 0.35,
+    "Sacre bleu": 0.35,
+    "Secondhand Souls": 0.35,
+    "Shakespeare for Squirrels": 0.35,
+    "The Lust Lizard of Melancholy Cove": 0.35,
+    "The Serpent of Venice": 0.35,
+    "The Stupidest Angel": 0.35,
+    "You Suck": 0.35
+  },
+  "A Dirty Job": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Bite Me": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Bloodsucking Fiends": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Coyote Blue": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Fluke": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Fluke, or, I know why the winged whale sings": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Fool": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Island of the Sequined Love Nun": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Lamb": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Practical Demonkeeping": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Sacre bleu": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Secondhand Souls": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Shakespeare for Squirrels": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "The Lust Lizard of Melancholy Cove": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "The Serpent of Venice": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "The Stupidest Angel": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "You Suck": {
+    "Lamb : The Gospel According to Biff, Christ's Childhood Pal": 0.35
+  },
+  "Project Hail Mary": {
+    "Alice's Adventures in Wonderland": 0.16666666666666666,
+    "Altered Carbon": 0.08333333333333333,
+    "Artemis": 0.08333333333333333,
+    "Brave New World": 0.08333333333333333,
+    "Broken Stars": 0.08333333333333333,
+    "Companions of the road": 0.08333333333333333,
+    "Death's End (The Three-Body Problem Series Book 3)": 0.08333333333333333,
+    "Dracula": 0.08333333333333333,
+    "Ender's war": 0.08333333333333333,
+    "Frankenstein; or, The Modern Prometheus": 0.08333333333333333,
+    "Harry Potter and the Philosopher's Stone": 0.08333333333333333,
+    "Le petit prince": 0.08333333333333333,
+    "Persepolis rising": 0.08333333333333333,
+    "Peter Pan": 0.08333333333333333,
+    "Ra": 0.08333333333333333,
+    "The Colors of Space": 0.08333333333333333,
+    "The Defiant Agents": 0.08333333333333333,
+    "The Giver": 0.08333333333333333,
+    "The Guns of Avalon": 0.08333333333333333,
+    "The Jewel of Seven Stars": 0.08333333333333333
+  },
+  "Altered Carbon": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Artemis": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Brave New World": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Broken Stars": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Companions of the road": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Death's End (The Three-Body Problem Series Book 3)": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Dracula": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Ender's war": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Frankenstein; or, The Modern Prometheus": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Harry Potter and the Philosopher's Stone": {
+    "Project Hail Mary": 0.08333333333333333,
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "Le petit prince": {
+    "Project Hail Mary": 0.08333333333333333,
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "Persepolis rising": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Peter Pan": {
+    "Project Hail Mary": 0.08333333333333333,
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "Ra": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "The Colors of Space": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "The Defiant Agents": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "The Giver": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "The Guns of Avalon": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "The Jewel of Seven Stars": {
+    "Project Hail Mary": 0.08333333333333333
+  },
+  "Hyperbole and a Half": {
+    "A Grain of Sand": 0.08333333333333333,
+    "Backgammon": 0.08333333333333333,
+    "Body Language": 0.08333333333333333,
+    "Espanois todos": 0.08333333333333333,
+    "How to Rob a Bank in Drag": 0.08333333333333333,
+    "Jujitsuffragettes": 0.08333333333333333,
+    "Paintings, 1949-1960": 0.08333333333333333,
+    "The Selfish Gene": 0.08333333333333333,
+    "Vagina Problems": 0.08333333333333333,
+    "Wendy": 0.08333333333333333
+  },
+  "A Grain of Sand": {
+    "Hyperbole and a Half": 0.08333333333333333
+  },
+  "Backgammon": {
+    "Hyperbole and a Half": 0.08333333333333333
+  },
+  "Body Language": {
+    "Hyperbole and a Half": 0.08333333333333333
+  },
+  "Espanois todos": {
+    "Hyperbole and a Half": 0.08333333333333333
+  },
+  "How to Rob a Bank in Drag": {
+    "Hyperbole and a Half": 0.08333333333333333
+  },
+  "Jujitsuffragettes": {
+    "Hyperbole and a Half": 0.08333333333333333
+  },
+  "Paintings, 1949-1960": {
+    "Hyperbole and a Half": 0.08333333333333333
+  },
+  "The Selfish Gene": {
+    "Hyperbole and a Half": 0.08333333333333333
+  },
+  "Vagina Problems": {
+    "Hyperbole and a Half": 0.08333333333333333
+  },
+  "Wendy": {
+    "Hyperbole and a Half": 0.08333333333333333
+  },
+  "When We Cease To Understand The World": {},
+  "Talk To Strangers": {},
+  "Zom-Fam": {
+    "Melissa": 0.3333333333333333,
+    "A Midsummer Night's Dream": 0.16666666666666666,
+    "Aeneis": 0.16666666666666666,
+    "Beautiful losers": 0.16666666666666666,
+    "Encyclopedia of Lesbian Histories and Cultures": 0.16666666666666666,
+    "Evolution's Rainbow": 0.16666666666666666,
+    "Female Masculinity": 0.16666666666666666,
+    "Flint and feather": 0.16666666666666666,
+    "Footprints": 0.16666666666666666,
+    "Frankissstein": 0.16666666666666666,
+    "Gay American History": 0.16666666666666666,
+    "Gender Reversals and Gender Cultures": 0.16666666666666666,
+    "Giovanni's Room": 0.16666666666666666,
+    "Girlhood": 0.16666666666666666,
+    "Hidden from History": 0.16666666666666666,
+    "It": 0.16666666666666666,
+    "Julian is a mermaid": 0.16666666666666666,
+    "La Divina Commedia": 0.16666666666666666,
+    "Le C\u00f4t\u00e9 de Guermantes": 0.16666666666666666,
+    "Leaves of Grass": 0.16666666666666666
+  },
+  "Melissa": {
+    "Zom-Fam": 0.3333333333333333
+  },
+  "Aeneis": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Beautiful losers": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Encyclopedia of Lesbian Histories and Cultures": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Evolution's Rainbow": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Female Masculinity": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Flint and feather": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Footprints": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Frankissstein": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Gay American History": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Gender Reversals and Gender Cultures": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Giovanni's Room": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Girlhood": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Hidden from History": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "It": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Julian is a mermaid": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "La Divina Commedia": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Le C\u00f4t\u00e9 de Guermantes": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Leaves of Grass": {
+    "Zom-Fam": 0.16666666666666666
+  },
+  "Song Of Achilles": {
+    "Airplanes": 0.35,
+    "Black's Bible Dictionary": 0.35,
+    "Black's Bible dictionary": 0.35,
+    "Bunnies as pets": 0.35,
+    "Circe": 0.35,
+    "Collies as pets": 0.35,
+    "Dachshunds as pets": 0.35,
+    "Encyclopedia of Bible Life": 0.35,
+    "Galatea": 0.35,
+    "Inventions Inspired by Oceanic Animals": 0.35,
+    "Joseph Woods Hancock": 0.35,
+    "Moore's First and Forever Cookbook": 0.35,
+    "The Song of Achilles": 0.35,
+    "Year of the Dragon": 0.35,
+    "joseph woods hancock the life and times of a minnesota pioneer": 0.35
+  },
+  "Airplanes": {
+    "Song Of Achilles": 0.35
+  },
+  "Black's Bible Dictionary": {
+    "Song Of Achilles": 0.35
+  },
+  "Black's Bible dictionary": {
+    "Song Of Achilles": 0.35
+  },
+  "Bunnies as pets": {
+    "Song Of Achilles": 0.35
+  },
+  "Circe": {
+    "Song Of Achilles": 0.35
+  },
+  "Collies as pets": {
+    "Song Of Achilles": 0.35
+  },
+  "Dachshunds as pets": {
+    "Song Of Achilles": 0.35
+  },
+  "Encyclopedia of Bible Life": {
+    "Song Of Achilles": 0.35
+  },
+  "Galatea": {
+    "Song Of Achilles": 0.35
+  },
+  "Inventions Inspired by Oceanic Animals": {
+    "Song Of Achilles": 0.35
+  },
+  "Joseph Woods Hancock": {
+    "Song Of Achilles": 0.35
+  },
+  "Moore's First and Forever Cookbook": {
+    "Song Of Achilles": 0.35
+  },
+  "The Song of Achilles": {
+    "Song Of Achilles": 0.35
+  },
+  "Year of the Dragon": {
+    "Song Of Achilles": 0.35
+  },
+  "joseph woods hancock the life and times of a minnesota pioneer": {
+    "Song Of Achilles": 0.35
+  },
+  "Kitchen": {
+    "Amrita": 0.35,
+    "Asleep": 0.35,
+    "Dead-End Memories": 0.35,
+    "Goodbye Tsugumi": 0.35,
+    "Goodbye, Tsugumi": 0.35,
+    "Hardboiled and Hard Luck": 0.35,
+    "Kitchen (A Black cat book)": 0.35,
+    "Lizard": 0.35,
+    "Lucertola": 0.35,
+    "Lullaby supermarket": 0.35,
+    "Moshi Moshi": 0.35,
+    "N.P": 0.35,
+    "The Lake": 0.35,
+    "Tokage": 0.35,
+    "\u30ad\u30c3\u30c1\u30f3": 0.35,
+    "\u54c0\u3057\u3044\u4e88\u611f": 0.35
+  },
+  "Amrita": {
+    "Kitchen": 0.35
+  },
+  "Asleep": {
+    "Kitchen": 0.35
+  },
+  "Dead-End Memories": {
+    "Kitchen": 0.35
+  },
+  "Goodbye Tsugumi": {
+    "Kitchen": 0.35
+  },
+  "Goodbye, Tsugumi": {
+    "Kitchen": 0.35
+  },
+  "Hardboiled and Hard Luck": {
+    "Kitchen": 0.35
+  },
+  "Kitchen (A Black cat book)": {
+    "Kitchen": 0.35
+  },
+  "Lizard": {
+    "Kitchen": 0.35
+  },
+  "Lucertola": {
+    "Kitchen": 0.35
+  },
+  "Lullaby supermarket": {
+    "Kitchen": 0.35
+  },
+  "Moshi Moshi": {
+    "Kitchen": 0.35
+  },
+  "N.P": {
+    "Kitchen": 0.35
+  },
+  "The Lake": {
+    "Kitchen": 0.35
+  },
+  "Tokage": {
+    "Kitchen": 0.35
+  },
+  "\u30ad\u30c3\u30c1\u30f3": {
+    "Kitchen": 0.35
+  },
+  "\u54c0\u3057\u3044\u4e88\u611f": {
+    "Kitchen": 0.35
+  },
+  "House In The Cerulean Sea": {
+    "Adventures of Huckleberry Finn": 0.08333333333333333,
+    "Alice's Adventures in Wonderland": 0.08333333333333333,
+    "Anne of Green Gables": 0.08333333333333333,
+    "Annie on My Mind": 0.08333333333333333,
+    "Aristotle and Dante discover the secrets of the universe": 0.08333333333333333,
+    "Harry Potter and the Philosopher's Stone": 0.08333333333333333,
+    "Le petit prince": 0.08333333333333333,
+    "Little Women": 0.08333333333333333,
+    "Peter Pan": 0.08333333333333333,
+    "Simon vs. the Homo Sapiens Agenda": 0.08333333333333333,
+    "The Call of the Wild": 0.08333333333333333,
+    "The Great Gatsby": 0.08333333333333333,
+    "The Hammer of Thor": 0.08333333333333333,
+    "The Jungle Book": 0.08333333333333333,
+    "The Marvelous Land of Oz": 0.08333333333333333,
+    "The Night Before Christmas": 0.08333333333333333,
+    "The Scarlet Letter": 0.08333333333333333,
+    "The Secret Garden": 0.08333333333333333,
+    "The Wonderful Wizard of Oz": 0.08333333333333333,
+    "The house in the Cerulean Sea": 0.08333333333333333
+  },
+  "Annie on My Mind": {
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "Aristotle and Dante discover the secrets of the universe": {
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "Simon vs. the Homo Sapiens Agenda": {
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "The Hammer of Thor": {
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "The Jungle Book": {
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "The Marvelous Land of Oz": {
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "The Night Before Christmas": {
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "The Secret Garden": {
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "The Wonderful Wizard of Oz": {
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "The house in the Cerulean Sea": {
+    "House In The Cerulean Sea": 0.08333333333333333
+  },
+  "Madonna In A Fur Coat": {
+    "Adventures of Huckleberry Finn": 0.4,
+    "A Christmas Carol": 0.2,
+    "Great Expectations": 0.2,
+    "Little Women": 0.2,
+    "Pride and Prejudice": 0.2,
+    "The Picture of Dorian Gray": 0.2,
+    "The Scarlet Letter": 0.2,
+    "A thousand years of the Tartars": 0.1,
+    "Alice's Adventures in Wonderland": 0.1,
+    "Candide": 0.1,
+    "David Copperfield": 0.1,
+    "Die Bru\u0308cke vom goldenen Horn": 0.1,
+    "Don Quijote de la Mancha": 0.1,
+    "Dubliners": 0.1,
+    "Emma": 0.1,
+    "Ganz unten": 0.1,
+    "Historical Sketches": 0.1,
+    "Implementation of the Helsinki accords": 0.1,
+    "Jane Eyre": 0.1,
+    "Les Trois Mousquetaires": 0.1
+  },
+  "Great Expectations": {
+    "Madonna In A Fur Coat": 0.2
+  },
+  "A thousand years of the Tartars": {
+    "Madonna In A Fur Coat": 0.1
+  },
+  "Candide": {
+    "Madonna In A Fur Coat": 0.1
+  },
+  "David Copperfield": {
+    "Madonna In A Fur Coat": 0.1
+  },
+  "Die Bru\u0308cke vom goldenen Horn": {
+    "Madonna In A Fur Coat": 0.1
+  },
+  "Don Quijote de la Mancha": {
+    "Madonna In A Fur Coat": 0.1
+  },
+  "Dubliners": {
+    "Madonna In A Fur Coat": 0.1
+  },
+  "Ganz unten": {
+    "Madonna In A Fur Coat": 0.1
+  },
+  "Historical Sketches": {
+    "Madonna In A Fur Coat": 0.1
+  },
+  "Implementation of the Helsinki accords": {
+    "Madonna In A Fur Coat": 0.1
+  },
+  "Jane Eyre": {
+    "Madonna In A Fur Coat": 0.1
+  },
+  "Les Trois Mousquetaires": {
+    "Madonna In A Fur Coat": 0.1
+  }
+}

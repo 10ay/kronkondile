@@ -140,7 +140,13 @@ def load_graph(path):
     """
     if not path.exists():
         raise FileNotFoundError()
-    return json.loads(path.read_text())
+    text = path.read_text(encoding="utf-8").strip()
+    if not text:
+        raise FileNotFoundError()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        raise FileNotFoundError()
 
 def graph_statistics(graph):
     edges = sum(len(neighbors) for neighbors in graph.values()) // 2 # Don't repeat edges.
