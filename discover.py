@@ -34,7 +34,20 @@ def main():
         print("You've already explored all mood seeds today. Try again tomorrow or another mood.")
         return
     
+    all_time_favorites = session.all_time_favorites
+    if all_time_favorites:
+        not_in_available = [a for a in all_time_favorites if a not in available and a not in seed_by_mood()[mood_index]]
+        if len(not_in_available) <= 5 and len(not_in_available) > 0:
+            for i in range(0, len(not_in_available)):
+                not_in_available_to_add = not_in_available[i]
+                available.append(not_in_available_to_add)
+        else:
+            random_integer = random.sample(range(0, len(not_in_available)), 5)
+            for i in range(0, 5):
+                not_in_available_to_add = not_in_available[random_integer[i]]
+                available.append(not_in_available_to_add)
     
+
     seeds = available
     print(f"\nThis is your latest mood: {mood_label}")
     print(f"\nThese are your artists for this mood: {seeds}")
@@ -52,7 +65,7 @@ def main():
     while current:
         print(f"\nArtist: {current}")
         open_artist(current)
-
+        
         choice = input("  [l]ike  [d]islike  [u]nknown  [q]uit: ").strip().lower()
         if choice == "q":
             print("Would you like to see the artists you liked today?")
@@ -60,10 +73,12 @@ def main():
             if see_today == "y":
                 updated_session = Discover.from_file_with_history(mood_index)
                 print(f"\nThese are the artists you have liked today: {updated_session.artists_today_liked}")
-                #print(f"\nWould you like to add tehse artists as seeds?")
-                #seed_update = input("Type 'y' for yes, 'n' for no: ").strip().lower()
-                #if seed_update == "y":
-                 #   seeds.extend(updated_session.artists_today_liked)
+                print(f"\nThese are the artists you have liked in this session: {session.like}")
+                print(f"\n Would you like to add artists from this session to your favorites?")
+                add_to_favorites = input("Type 'y' for yes, 'n' for no: ").strip().lower()
+                if add_to_favorites == "y":
+                    log_all_time_favorites(session.like, mood_index)
+                # Update seeds with add_to_favorites
             break
         if choice == "l":
             session.rate_artist(current, "like")
@@ -80,6 +95,7 @@ def main():
         if current is None:
             print("\nNo more recommendations in this session.")
             break
+
         print(
         f"\nSession: {len(session.like)} likes, "
         f"{len(session.dislike)} dislikes, "

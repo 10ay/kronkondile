@@ -1,0 +1,289 @@
+"""
+Flask app for Kronkondile
+"""
+
+
+from __future__ import annotations
+import random
+import uuid
+from datetime import datetime as dt
+from pathlib import Path
+import pandas as pd
+from flask import Flask, jsonify, request, send_from_directory
+
+
+feelings_file = Path(__file__).parent / "feelings.txt"
+
+feelings_dictionary = {
+    0 : "Lovesick / I feel unloved, like a kidney stone.",
+    1 : "Not the best / running away to the mountains sounds good.",
+    2 : "Silly / You are going to talk to your dog about homosexuality and communism",
+    3 : "Happy / as happy as a minion around Gru.",
+    4 : "I Love Everything! / One in love always wins (ps. I have a crush)"}
+
+feel_prompt = ('''
+===================================================
+
+    How are you feeling, today?  Choose 0-4:
+
+    0 : Lovesick / I feel unloved, like a kidney stone.
+    1 : Not the best / running away to the mountains sounds good.
+    2 : Silly / You are going to talk to your dog about homosexuality and communism.
+    3 : Happy / as happy as a minion around Gru.
+    4 : I Love Everything! / One in love always wins (ps. I have a crush)
+
+===================================================
+    ''').strip("\n")
+
+app = Flask(__name__, static_folder = "static")
+music_sessions, book_sessions = {}, {}
+
+def today_str():
+    return dt.strftime(dt.now(), "%d-%b-%Y")
+
+def logged_today() -> bool:
+    if not feelings_file.exists():
+        return False
+    tail = feelings_file.read_text(encoding="utf-8").strip().splitlines()
+    if not tail:
+        return False
+    last_line = tail[-1]
+    if last_line.startswith("feel"):  # header row
+        return False
+    parts = last_line.split("\t")
+    return len(parts) >= 2 and parts[1] == today_str()
+
+def get_feeling():
+    """
+    Get how you feel today. recommend.get_feeling()
+    """
+    if not feelings_file.exists():
+        print("Why do you have no feelings today?")
+        return None
+    df = pd.read_csv(feelings_file, sep = '\t', names = ['feeling_scale', 'date'])
+    if df.empty:
+        print("Why do you have no feelings today?")
+        return None
+    else:
+        feeling_index = int(df.iloc[-1]['feeling_scale'])
+        return feeling_index, feelings_dictionary[feeling_index]
+
+
+def log_feeling(feel: int) -> bool:
+    """Mirrors feelings.py."""
+    date = today_str()
+    if feelings_file.exists():
+        tail = feelings_file.read_text(encoding="utf-8").strip().splitlines()
+        if tail and tail[-1].split("\t")[1] == date:
+            return False
+        df = pd.read_csv(feelings_file, sep="\t")
+    else:
+        feelings_file.touch()
+        df = pd.read_csv(feelings_file, sep="\t", names=["feel", "date"])
+    df.loc[len(df)] = [feel, date]
+    df.to_csv(feelings_file, sep="\t", index=False)
+    return True
+
+def track_to_dict(track) -> dict:
+    return {
+        "title": getattr(track, "title", None),
+        "artist": getattr(track, "artist", None),
+        "url": getattr(track, "url", None),
+        "channel": getattr(track, "channel", None),
+    }
+
+
+
+def music_available_seeds(session, mood_index):
+    """Same as discover.music_available_seeds() but no webbrowser.open."""
+    from engine.seeds import seed_by_mood
+    seeds = seed_by_mood()[mood_index]
+    in_graph = [a for a in seeds if a in session.graph]
+    available = [a for a in in_graph if a not in session.today_seen]
+    all_time_favorites = session.all_time_favorites
+
+    if all_time_favorites:
+        not_in_available = [a for a in all_time_favorites if a not in available and a not in seed_by_mood()[mood_index]]
+
+        if 0 < len(not_in_available) <= 5:
+            available.extend(not_in_available)
+        elif len(not_in_available) > 5:
+            picks = random.sample(range(len(not_in_available)), 5)
+            available.extend(not_in_available[i] for i in picks)
+
+    return available, in_graph
+
+
+def music_artist_info(artist):
+    from scrape_music import Tracks
+    """Like discover.open_artist() but no webbrowser.open."""
+    from engine.graph import lastfm_artist_url
+    url = lastfm_artist_url(artist)
+    return Tracks(title=artist, artist=artist, url=url, channel="Last.fm")
+
+# A decorator sits above a function and registers that function as the handler for a URL.
+# @app.get("/") is a decorator that registers the index function as the handler for the root URL.
+#@app.get only reads and does not change the state of the server.
+#@app.post sends data to the server.
+
+@app.get("/")
+def index():
+    return send_from_directory(app.static_folder, "index.html")
+
+@app.get("/api/feeling/prompt")
+def api_feeling_prompt():
+    if logged_today():
+        result = get_feeling()
+        if result is None:
+            return jsonify({"ok": False, "need_prompt": True, "prompt": FEELINGS_PROMPT})
+        idx, label = result
+        return jsonify({
+            "ok": True,
+            "need_prompt": False,
+            "mood_index": idx,
+            "mood_label": label,
+        })
+    return jsonify({
+        "ok": True,
+        "need_prompt": True,
+        "prompt": feel_prompt,
+    })
+
+
+@app.get("/api/feeling")
+def api_get_feeling():
+    result = get_feeling()
+    if result is None:
+        return jsonify({"ok": False, "error": "Why do you have no feelings today?"}), 404
+    idx, label = result
+    return jsonify({"ok": True, "mood_index": idx, "mood_label": label})
+
+
+@app.post("/api/feeling")
+def api_log_feeling():
+    feel = int(request.get_json(force=True)["feel"])
+    if feel not in feelings_dictionary:
+        return jsonify({"ok": False, "error": "Choose 0-4"}), 400
+    log_feeling(feel)
+    return jsonify({"ok": True, "mood_index": feel, "mood_label": feelings_dictionary[feel]})
+
+
+@app.post("/api/quick/music")
+def api_quick_music():
+    result = get_feeling()
+    if result is None:
+        return jsonify({"ok": False, "error": "No feeling"}), 404
+    mood_index, mood_label = result
+    from music_library import mood_music_map
+    song = mood_music_map[mood_index][random.randint(0, len(mood_music_map[mood_index]) - 1)]
+    return jsonify({
+        "ok": True,
+        "mood_label": mood_label,
+        "title": song["title"],
+        "artist": song.get("artist"),
+        "url": song["url"],
+    })
+
+@app.get("/api/discover/music/seeds")
+def api_music_seeds():
+    from engine.discover import Discover
+    result = get_feeling()
+    if result is None:
+        return jsonify({"ok": False}), 404
+    mood_index, mood_label = result
+    session = Discover.from_file_with_history(mood_index)
+    available, in_graph = music_available_seeds(session, mood_index)
+    if not in_graph:
+        return jsonify({"ok": False, "error": "No mood seeds found in graph."}), 400
+    if not available:
+        return jsonify({"ok": False, "error": "You've already explored all mood seeds today."}), 400
+    return jsonify({"ok": True, "mood_label": mood_label, "seeds": available})
+
+@app.post("/api/discover/music/start")
+def api_music_start():
+    from engine.discover import Discover
+    result = get_feeling()
+    if result is None:
+        return jsonify({"ok": False}), 404
+    mood_index, mood_label = result
+    data = request.get_json(force=True)
+    seed_artist = data.get("seed_artist")
+    session = Discover.from_file_with_history(mood_index)
+    available, in_graph = music_available_seeds(session, mood_index)
+    if not in_graph:
+        return jsonify({"ok": False, "error": "No mood seeds found in graph."}), 400
+    if not available:
+        return jsonify({"ok": False, "error": "All mood seeds seen today."}), 400
+    if not seed_artist or seed_artist not in available:
+        seed_artist = random.choice(in_graph)
+    session.seed_artist = seed_artist
+    session.seen.add(seed_artist)
+    sid = str(uuid.uuid4())
+    music_sessions[sid] = {"session": session, "mood_index": mood_index}
+    track = music_artist_info(seed_artist)
+    return jsonify({
+        "ok": True,
+        "session_id": sid,
+        "mood_label": mood_label,
+        "seeds": available,
+        "current": seed_artist,
+        "track": track_to_dict(track),
+    })
+
+@app.post("/api/discover/music/step")
+def api_music_step():
+    from engine.discover import Discover
+    from engine.ratings import log_rating, log_all_time_favorites
+    data = request.get_json(force=True)
+    sid = data["session_id"]
+    choice = data["choice"]
+    current = data["current"]
+    add_favorites = data.get("add_favorites", False)
+    if sid not in music_sessions:
+        return jsonify({"ok": False, "error": "Session expired"}), 404
+    bundle = music_sessions[sid]
+    session = bundle["session"]
+    mood_index = bundle["mood_index"]
+    if choice == "q":
+        updated = Discover.from_file_with_history(mood_index)
+        
+        payload = {
+            "ok": True,
+            "done": True,
+            "likes_today": list(updated.artists_today_liked),
+            "likes_session": list(session.like),
+        }
+        
+        if add_favorites:
+            log_all_time_favorites(session.like, mood_index)
+        del music_sessions[sid]
+        return jsonify(payload)
+    if choice == "l":
+        session.rate_artist(current, "like")
+        log_rating(current, "like", mood_index)
+    elif choice == "d":
+        session.rate_artist(current, "dislike")
+        log_rating(current, "dislike", mood_index)
+    elif choice == "u":
+        session.rate_artist(current, "unknown")
+        log_rating(current, "unknown", mood_index)
+    nxt = session.next_artist()
+    if nxt is None:
+        del music_sessions[sid]
+        return jsonify({"ok": True, "done": True, "message": "No more recommendations."})
+    track = music_artist_info(nxt)
+    return jsonify({
+        "ok": True,
+        "done": False,
+        "current": nxt,
+        "track": track_to_dict(track),
+        "stats": {
+            "likes": len(session.like),
+            "dislikes": len(session.dislike),
+            "seen": len(session.seen) - 1,
+        },
+    })
+
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5001)

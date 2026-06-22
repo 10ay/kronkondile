@@ -5,7 +5,7 @@ from engine.seeds import *
 from engine.ratings import *
 
 class Discover:
-    def __init__(self, graph, history_likes = None, history_dislikes = None, today_seen = None, artists_today_liked = None):
+    def __init__(self, graph, history_likes = None, history_dislikes = None, today_seen = None, artists_today_liked = None, all_time_favorites = None):
         self.graph = graph
         self.like = set()
         self.dislike = set()
@@ -13,8 +13,10 @@ class Discover:
         self.history_likes = set(history_likes or [])
         self.history_dislikes = set(history_dislikes or [])
         self.today_seen = set(today_seen or [])
-        self.artists_today_liked = set(artists_today_liked or []),
+        self.artists_today_liked = set(artists_today_liked or [])
         self.seed_artist = None
+        self.all_time_favorites = set(all_time_favorites or [])
+
     @classmethod
     def from_file(cls, path = default_graph_path):
         return cls(load_graph(path))
@@ -26,7 +28,8 @@ class Discover:
         history_likes=liked_from_history(mood_index),
         history_dislikes=disliked_from_history(mood_index),
         today_seen=artists_today(mood_index),
-        artists_today_liked=artists_today_liked(mood_index))
+        artists_today_liked=artists_today_liked(mood_index),
+        all_time_favorites=all_time_favorites(mood_index))
 
     def taste_profile(self):
         "Builds a taste profile based on the liked artists from history"

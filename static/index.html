@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kronkondile</title>
+  <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+  <h1>Kronkondile</h1>
+
+  <section id="feelings-panel">
+    <pre id="feelings-prompt"></pre>
+    <div id="feelings-buttons"></div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu-panel" class="hidden">
+    <h2 id="mood-label"></h2>
+    <p>What would you like to do today?</p>
+    <button onclick="quickMusic()">[1] Quick music recommendation</button>
+    <button onclick="startDiscoverMusic()">[2] Discover music</button>
+    <button onclick="alert('Wire book discover like music in app.py')">[3] Discover books</button>
+  </section>
+
+  <!-- Quick rec -->
+  <section id="quick-panel" class="hidden">
+    <h2>Quick recommendation</h2>
+    <div id="quick-output"></div>
+  </section>
+
+  <!-- Discover music -->
+  <section id="discover-panel" class="hidden">
+    <h2>Discover music</h2>
+    <p id="seed-list"></p>
+    <div class="seed-picker">
+      <label for="seed-select">Pick a starting artist</label>
+      <select id="seed-select"></select>
+      <button id="pick-seed-btn" type="button" onclick="pickSeed()">Start with this artist</button>
+    </div>
+    <hr />
+    <div id="discover-current"></div>
+    <button onclick="rate('l')">Like</button>
+    <button onclick="rate('d')">Dislike</button>
+    <button onclick="rate('u')">Unknown</button>
+    <button onclick="quitDiscover()">Quit</button>
+    <div id="discover-stats" class="discover-stats" aria-live="polite"></div>
+  </section>
+
+  <script>
+    let moodIndex = null;
+    let discoverSessionId = null;
+    let currentArtist = null;
+
+    async function logFeeling(feel) {
+      const res = await fetch("/api/feeling", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ feel }),
+      });
+      const data = await res.json();
+      if (!data.ok) return alert(data.error);
+      moodIndex = data.mood_index;
+      document.getElementById("mood-label").textContent = data.mood_label;
+      document.getElementById("feelings-panel").classList.add("hidden");
+      document.getElementById("menu-panel").classList.remove("hidden");
+    }
+
+    async function loadFeelingsState() {
+    const res = await fetch("/api/feeling/prompt");
+    const data = await res.json();
+    if (!data.ok) return alert(data.error || "Could not load feelings");
+
+    if (!data.need_prompt) {
+        moodIndex = data.mood_index;
+        document.getElementById("mood-label").textContent = data.mood_label;
+        document.getElementById("feelings-panel").classList.add("hidden");
+        document.getElementById("menu-panel").classList.remove("hidden");
+        return;
+    }
+
+    document.getElementById("feelings-prompt").textContent = data.prompt;
+
+    const box = document.getElementById("feelings-buttons");
+    box.innerHTML = "";
+    for (let i = 0; i <= 4; i++) {
+        const btn = document.createElement("button");
+        btn.textContent = String(i);
+        btn.onclick = () => logFeeling(i);
+        box.appendChild(btn);
+    }
+    }
+
+    async function quickMusic() {
+      const res = await fetch("/api/quick/music", { method: "POST" });
+      const data = await res.json();
+      document.getElementById("quick-panel").classList.remove("hidden");
+      document.getElementById("quick-output").innerHTML =
+        `<p>${data.title} — ${data.artist || ""}</p>
+         <a href="${data.url}" target="_blank">Open on YouTube</a>`;
+    }
+
+    async function startDiscoverMusic() {
+      const seedsRes = await fetch("/api/discover/music/seeds");
+      const seedsData = await seedsRes.json();
+      const sel = document.getElementById("seed-select");
+      sel.innerHTML = "";
+      seedsData.seeds.forEach((a) => {
+        const opt = document.createElement("option");
+        opt.value = a;
+        opt.textContent = a;
+        sel.appendChild(opt);
+      });
+      document.getElementById("seed-list").textContent =
+        "Artists for this mood: " + seedsData.seeds.join(", ");
+      document.getElementById("discover-panel").classList.remove("hidden");
+    }
+
+    async function pickSeed() {
+      const seed = document.getElementById("seed-select").value;
+      const res = await fetch("/api/discover/music/start", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ seed_artist: seed }),
+      });
+      const data = await res.json();
+      if (!data.ok) return alert(data.error);
+      discoverSessionId = data.session_id;
+      showArtist(data.current, data.track.url);
+    }
+
+    function showArtist(name, url) {
+      currentArtist = name;
+      document.getElementById("discover-current").innerHTML =
+`<h3>${name}</h3><a href="${url}" target="_blank" rel="noopener">Artist profile here</a>`;    }
+
+    function renderStats(stats) {
+    const el = document.getElementById("discover-stats");
+    if (!stats) {
+        el.innerHTML = "";
+        return;
+    }
+    el.innerHTML = `
+        <div class="stat"><span class="stat-label">Likes</span><span class="stat-value">${stats.likes}</span></div>
+        <div class="stat"><span class="stat-label">Dislikes</span><span class="stat-value">${stats.dislikes}</span></div>
+        <div class="stat"><span class="stat-label">Seen</span><span class="stat-value">${stats.seen}</span></div>
+    `;
+    }
+
+    async function rate(choice) {
+      const res = await fetch("/api/discover/music/step", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          session_id: discoverSessionId,
+          current: currentArtist,
+          choice,
+        }),
+      });
+      const data = await res.json();
+      if (data.done) {
+        alert(data.message || "Session over");
+        return;
+      }
+      showArtist(data.current, data.track.url);
+      renderStats(data.stats);
+
+    }
+
+    async function quitDiscover() {
+      const add = confirm("Add session likes to all-time favorites?");
+      const res = await fetch("/api/discover/music/step", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          session_id: discoverSessionId,
+          current: currentArtist,
+          choice: "q",
+          add_favorites: add,
+        }),
+      });
+      const data = await res.json();
+      alert("Liked today: " + (data.likes_today || []).join(", "));
+    }
+
+    loadFeelingsState(); // skip feelings prompt if already logged today
+  </script>
+</body>
+</html>
