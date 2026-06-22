@@ -6,4 +6,4 @@ After exhausting most healthy coping mechanisms, listening to OR3 and Noah Kahan
 
 Download it and run using 'python main.py'
 
-Alternatively, I'm trying to host the project [here]("https://dexosat.pythonanywhere.com/")
+Alternatively, I'm trying to host the project [here](https://dexosat.pythonanywhere.com/)
