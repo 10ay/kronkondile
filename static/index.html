@@ -51,32 +51,80 @@
     let discoverSessionId = null;
     let currentArtist = null;
 
-    async function logFeeling(feel) {
-      const res = await fetch("/api/feeling", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ feel }),
-      });
-      const data = await res.json();
-      if (!data.ok) return alert(data.error);
-      moodIndex = data.mood_index;
-      document.getElementById("mood-label").textContent = data.mood_label;
+    const feelings_key = "kron_feeling";
+
+    const feelings_labels = {
+      0: "Lovesick / I feel unloved, like a kidney stone.",
+      1: "Not the best / running away to the mountains sounds good.",
+      2: "Silly / You are going to talk to your dog about homosexuality and communism.",
+      3: "Happy / as happy as a minion around Gru.",
+      4: "I Love Everything! / One in love always wins (ps. I have a crush)",
+    };
+
+    function today_str() {
+      return new Date().toLocaleDateString("en-GB", {
+        day: "2-digit", month: "short", year: "numeric",
+      }).replace(/ /g, "-");
+    }
+
+    function get_stored_feeling() {
+      const raw = localStorage.getItem(feelings_key);
+      if (!raw) return null;
+      try {
+        return JSON.parse(raw);
+      } catch {
+        return null;
+      }
+    }
+
+    function logged_today_local() {
+      const row = get_stored_feeling();
+      return row && row.date === today_str();
+    }
+
+    function save_feeling_local(feel) {
+      localStorage.setItem(feelings_key, JSON.stringify({
+        feel: feel,
+        date: today_str(),
+        mood_label: feelings_labels[feel],
+      }));
+    }
+
+    function show_menu(mood_label) {
+      document.getElementById("mood-label").textContent = mood_label;
       document.getElementById("feelings-panel").classList.add("hidden");
       document.getElementById("menu-panel").classList.remove("hidden");
     }
 
+    function require_mood() {
+      if (moodIndex === null && logged_today_local()) {
+        moodIndex = get_stored_feeling().feel;
+      }
+      if (moodIndex === null) {
+        alert("Log how you feel today first.");
+        return false;
+      }
+      return true;
+    }
+
+    function logFeeling(feel) {
+      if (!(feel in feelings_labels)) return alert("Choose 0-4");
+      save_feeling_local(feel);
+      moodIndex = feel;
+      show_menu(feelings_labels[feel]);
+    }
+
     async function loadFeelingsState() {
+    if (logged_today_local()) {
+        const row = get_stored_feeling();
+        moodIndex = row.feel;
+        show_menu(row.mood_label);
+        return;
+    }
+
     const res = await fetch("/api/feeling/prompt");
     const data = await res.json();
     if (!data.ok) return alert(data.error || "Could not load feelings");
-
-    if (!data.need_prompt) {
-        moodIndex = data.mood_index;
-        document.getElementById("mood-label").textContent = data.mood_label;
-        document.getElementById("feelings-panel").classList.add("hidden");
-        document.getElementById("menu-panel").classList.remove("hidden");
-        return;
-    }
 
     document.getElementById("feelings-prompt").textContent = data.prompt;
 
@@ -91,8 +139,14 @@
     }
 
     async function quickMusic() {
-      const res = await fetch("/api/quick/music", { method: "POST" });
+      if (!require_mood()) return;
+      const res = await fetch("/api/quick/music", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ mood_index: moodIndex }),
+      });
       const data = await res.json();
+      if (!data.ok) return alert(data.error || "Could not load music");
       document.getElementById("quick-panel").classList.remove("hidden");
       document.getElementById("quick-output").innerHTML =
         `<p>${data.title} — ${data.artist || ""}</p>
@@ -100,8 +154,11 @@
     }
 
     async function startDiscoverMusic() {
-      const seedsRes = await fetch("/api/discover/music/seeds");
+      if (!require_mood()) return;
+      try {
+      const seedsRes = await fetch(`/api/discover/music/seeds?mood_index=${moodIndex}`);
       const seedsData = await seedsRes.json();
+      if (!seedsData.ok) return alert(seedsData.error || "Could not load seeds");
       const sel = document.getElementById("seed-select");
       sel.innerHTML = "";
       seedsData.seeds.forEach((a) => {
@@ -112,15 +169,23 @@
       });
       document.getElementById("seed-list").textContent =
         "Artists for this mood: " + seedsData.seeds.join(", ");
+      document.getElementById("discover-current").innerHTML = "";
+      document.getElementById("discover-stats").innerHTML = "";
+      discoverSessionId = null;
+      currentArtist = null;
       document.getElementById("discover-panel").classList.remove("hidden");
+      } catch (err) {
+        alert("Discover failed: " + err);
+      }
     }
 
     async function pickSeed() {
+      if (!require_mood()) return;
       const seed = document.getElementById("seed-select").value;
       const res = await fetch("/api/discover/music/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ seed_artist: seed }),
+        body: JSON.stringify({ seed_artist: seed, mood_index: moodIndex }),
       });
       const data = await res.json();
       if (!data.ok) return alert(data.error);
@@ -179,7 +244,7 @@
         }),
       });
       const data = await res.json();
-      alert("Liked today: " + (data.likes_today || []).join(", "));
+      alert("Liked in this session: " + ((data.likes_session || []).join(", ") || "(none)"));
     }
 
     loadFeelingsState(); // skip feelings prompt if already logged today

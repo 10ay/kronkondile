@@ -5,11 +5,26 @@ Flask app for Kronkondile
 
 from __future__ import annotations
 import random
+import sys
+import types
 import uuid
 from datetime import datetime as dt
 from pathlib import Path
 import pandas as pd
 from flask import Flask, jsonify, request, send_from_directory
+
+_root = Path(__file__).resolve().parent
+fake_feelings = types.ModuleType("feelings")
+fake_feelings.FEELINGS_FILE = str(_root / "feelings.txt")
+
+fake_feelings.feelings_dictionary = {
+    0 : "Lovesick / I feel unloved, like a kidney stone.",
+    1 : "Not the best / running away to the mountains sounds good.",
+    2 : "Silly / You are going to talk to your dog about homosexuality and communism",
+    3 : "Happy / as happy as a minion around Gru.",
+    4 : "I Love Everything! / One in love always wins (ps. I have a crush)"}
+
+sys.modules["feelings"] = fake_feelings
 
 
 feelings_file = Path(__file__).parent / "feelings.txt"
@@ -67,6 +82,20 @@ def get_feeling():
     else:
         feeling_index = int(df.iloc[-1]['feeling_scale'])
         return feeling_index, feelings_dictionary[feeling_index]
+
+
+def mood_from_request():
+    """Web users send mood from browser localStorage, not feelings.txt."""
+    data = request.get_json(silent=True) or {}
+    mood_index = data.get("mood_index")
+    if mood_index is None:
+        mood_index = request.args.get("mood_index", type=int)
+    if mood_index is None:
+        return None
+    mood_index = int(mood_index)
+    if mood_index not in feelings_dictionary:
+        return None
+    return mood_index, feelings_dictionary[mood_index]
 
 
 def log_feeling(feel: int) -> bool:
@@ -132,20 +161,8 @@ def index():
 
 @app.get("/api/feeling/prompt")
 def api_feeling_prompt():
-    if logged_today():
-        result = get_feeling()
-        if result is None:
-            return jsonify({"ok": False, "need_prompt": True, "prompt": FEELINGS_PROMPT})
-        idx, label = result
-        return jsonify({
-            "ok": True,
-            "need_prompt": False,
-            "mood_index": idx,
-            "mood_label": label,
-        })
     return jsonify({
         "ok": True,
-        "need_prompt": True,
         "prompt": feel_prompt,
     })
 
@@ -170,9 +187,9 @@ def api_log_feeling():
 
 @app.post("/api/quick/music")
 def api_quick_music():
-    result = get_feeling()
+    result = mood_from_request()
     if result is None:
-        return jsonify({"ok": False, "error": "No feeling"}), 404
+        return jsonify({"ok": False, "error": "No mood sent from browser"}), 400
     mood_index, mood_label = result
     from music_library import mood_music_map
     song = mood_music_map[mood_index][random.randint(0, len(mood_music_map[mood_index]) - 1)]
@@ -187,9 +204,9 @@ def api_quick_music():
 @app.get("/api/discover/music/seeds")
 def api_music_seeds():
     from engine.discover import Discover
-    result = get_feeling()
+    result = mood_from_request()
     if result is None:
-        return jsonify({"ok": False}), 404
+        return jsonify({"ok": False, "error": "No mood sent from browser"}), 400
     mood_index, mood_label = result
     session = Discover.from_file_with_history(mood_index)
     available, in_graph = music_available_seeds(session, mood_index)
@@ -202,9 +219,9 @@ def api_music_seeds():
 @app.post("/api/discover/music/start")
 def api_music_start():
     from engine.discover import Discover
-    result = get_feeling()
+    result = mood_from_request()
     if result is None:
-        return jsonify({"ok": False}), 404
+        return jsonify({"ok": False, "error": "No mood sent from browser"}), 400
     mood_index, mood_label = result
     data = request.get_json(force=True)
     seed_artist = data.get("seed_artist")
@@ -245,12 +262,11 @@ def api_music_step():
     session = bundle["session"]
     mood_index = bundle["mood_index"]
     if choice == "q":
-        updated = Discover.from_file_with_history(mood_index)
-        
+        from engine.ratings import artists_today_liked
         payload = {
             "ok": True,
             "done": True,
-            "likes_today": list(updated.artists_today_liked),
+            "likes_today": list(artists_today_liked(mood_index)),
             "likes_session": list(session.like),
         }
         
