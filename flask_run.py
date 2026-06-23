@@ -19,33 +19,33 @@ fake_feelings.FEELINGS_FILE = str(_root / "feelings.txt")
 
 fake_feelings.feelings_dictionary = {
     0 : "Lovesick / I feel unloved, like a kidney stone.",
-    1 : "Not the best / running away to the mountains sounds good.",
-    2 : "Silly / You are going to talk to your dog about homosexuality and communism",
+    1 : "Average / You are that penguin heading towards the mountains, 70 kilometeres away.",
+    2 : "Silly / You are going to talk to your dog about homosexuality and communism.",
     3 : "Happy / as happy as a minion around Gru.",
-    4 : "I Love Everything! / One in love always wins (ps. I have a crush)"}
+    4 : "I Love Everything! / Life is all rainbows and sunshine."}
 
 sys.modules["feelings"] = fake_feelings
 
 
 feelings_file = Path(__file__).parent / "feelings.txt"
 
-feelings_dictionary = {
+feelings_dictionary = {    
     0 : "Lovesick / I feel unloved, like a kidney stone.",
-    1 : "Not the best / running away to the mountains sounds good.",
-    2 : "Silly / You are going to talk to your dog about homosexuality and communism",
+    1 : "Average / You are that penguin heading towards the mountains, 70 kilometeres away.",
+    2 : "Silly / You are going to talk to your dog about homosexuality and communism.",
     3 : "Happy / as happy as a minion around Gru.",
-    4 : "I Love Everything! / One in love always wins (ps. I have a crush)"}
+    4 : "I Love Everything! / Life is all rainbows and sunshine."}
 
 feel_prompt = ('''
 ===================================================
 
     How are you feeling, today?  Choose 0-4:
-
-    0 : Lovesick / I feel unloved, like a kidney stone.
-    1 : Not the best / running away to the mountains sounds good.
-    2 : Silly / You are going to talk to your dog about homosexuality and communism.
-    3 : Happy / as happy as a minion around Gru.
-    4 : I Love Everything! / One in love always wins (ps. I have a crush)
+    
+    0 : "Lovesick / I feel unloved, like a kidney stone.
+    1 : "Average / You are that penguin heading towards the mountains, 70 kilometeres away.
+    2 : "Silly / You are going to talk to your dog about homosexuality and communism.
+    3 : "Happy / as happy as a minion around Gru.
+    4 : "I Love Everything! / Life is all rainbows and sunshine.
 
 ===================================================
     ''').strip("\n")

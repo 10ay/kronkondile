@@ -20,7 +20,7 @@ path = root
 #FEELINGS_FILE = os.path.join(path, 'feelings.txt')
 # reading in file
 df = pd.read_csv(FEELINGS_FILE,sep='\t')
-feelings = ['Lovesick', 'Not the best', 'Silly', 'Happy', 'I Love Everything!']
+feelings = ['Lovesick', 'Average', 'Silly', 'Happy', 'I Love Everything!']
 
 
 # converting dates to datetime format
