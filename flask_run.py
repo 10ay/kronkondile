@@ -41,11 +41,11 @@ feel_prompt = ('''
 
     How are you feeling, today?  Choose 0-4:
     
-    0 : "Lovesick / I feel unloved, like a kidney stone.
-    1 : "Average / You are that penguin heading towards the mountains, 70 kilometeres away.
-    2 : "Silly / You are going to talk to your dog about homosexuality and communism.
-    3 : "Happy / as happy as a minion around Gru.
-    4 : "I Love Everything! / Life is all rainbows and sunshine.
+    0 : Lovesick / I feel unloved, like a kidney stone.
+    1 : Average / You are that penguin heading towards the mountains, 70 kilometeres away.
+    2 : Silly / You are going to talk to your dog about homosexuality and communism.
+    3 : Happy / as happy as a minion around Gru.
+    4 : I Love Everything! / Life is all rainbows and sunshine.
 
 ===================================================
     ''').strip("\n")
@@ -56,7 +56,7 @@ music_sessions, book_sessions = {}, {}
 def today_str():
     return dt.strftime(dt.now(), "%d-%b-%Y")
 
-def logged_today() -> bool:
+def logged_today():
     if not feelings_file.exists():
         return False
     tail = feelings_file.read_text(encoding="utf-8").strip().splitlines()
@@ -98,7 +98,7 @@ def mood_from_request():
     return mood_index, feelings_dictionary[mood_index]
 
 
-def log_feeling(feel: int) -> bool:
+def log_feeling(feel):
     """Mirrors feelings.py."""
     date = today_str()
     if feelings_file.exists():
@@ -113,13 +113,37 @@ def log_feeling(feel: int) -> bool:
     df.to_csv(feelings_file, sep="\t", index=False)
     return True
 
-def track_to_dict(track) -> dict:
+def track_to_dict(track):
     return {
         "title": getattr(track, "title", None),
         "artist": getattr(track, "artist", None),
         "url": getattr(track, "url", None),
         "channel": getattr(track, "channel", None),
     }
+
+
+def book_to_dict(book):
+    return {
+        "title": book.get("title"),
+        "author": book.get("author"),
+        "url": book.get("url"),
+    }
+
+def book_info(title):
+    from scrape_books import book_from_library
+    from engine.book_graph import goodreads_book_url
+    entry = book_from_library(title)
+    if entry:
+        return {"title": entry["title"], "author": entry.get("author"), "url": entry["url"]}
+    return {"title": title, "author": None, "url": goodreads_book_url(title)}
+
+def book_available_seeds(session, mood_index):
+    """Same logic as discover_books.py main()."""
+    from engine.book_seeds import seed_by_mood
+    seeds = seed_by_mood()[mood_index]
+    in_graph = [b for b in seeds if b in session.graph]
+    available = [b for b in in_graph if b not in session.today_seen]
+    return available, in_graph
 
 
 
@@ -299,7 +323,99 @@ def api_music_step():
             "seen": len(session.seen) - 1,
         },
     })
+@app.get("/api/discover/book/seeds")
+def api_book_seeds():
+    from engine.book_discover import Discover
+    result = mood_from_request()
+    if result is None:
+        return jsonify({"ok": False, "error": "No mood sent from browser"}), 400
+    mood_index, mood_label = result
+    session = Discover.from_file_with_history(mood_index)
+    available, in_graph = book_available_seeds(session, mood_index)
+    if not in_graph:
+        return jsonify({"ok": False, "error": "No mood seeds found in graph."}), 400
+    if not available:
+        return jsonify({"ok": False, "error": "You've already explored all mood seeds today."}), 400
+    return jsonify({"ok": True, "mood_label": mood_label, "seeds": available})
 
+@app.post("/api/discover/book/start")
+def api_book_start():
+    from engine.book_discover import Discover
+    result = mood_from_request()
+    if result is None:
+        return jsonify({"ok": False, "error": "No mood sent from browser"}), 400
+    mood_index, mood_label = result
+    data = request.get_json(force=True)
+    seed_book = data.get("seed_book")
+    session = Discover.from_file_with_history(mood_index)
+    available, in_graph = book_available_seeds(session, mood_index)
+    if not in_graph:
+        return jsonify({"ok": False, "error": "No mood seeds found in graph."}), 400
+    if not available:
+        return jsonify({"ok": False, "error": "All mood seeds seen today."}), 400
+    if not seed_book or seed_book not in available:
+        seed_book = random.choice(in_graph)
+    session.seed_book = seed_book
+    session.seen.add(seed_book)
+    sid = str(uuid.uuid4())
+    book_sessions[sid] = {"session": session, "mood_index": mood_index}
+    book = book_info(seed_book)
+    return jsonify({
+        "ok": True,
+        "session_id": sid,
+        "mood_label": mood_label,
+        "seeds": available,
+        "current": seed_book,
+        "book": book_to_dict(book),
+    })
+
+@app.post("/api/discover/book/step")
+def api_book_step():
+    from engine.book_discover import Discover
+    from engine.book_ratings import log_rating, books_today_liked
+    data = request.get_json(force=True)
+    sid = data["session_id"]
+    choice = data["choice"]
+    current = data["current"]
+    if sid not in book_sessions:
+        return jsonify({"ok": False, "error": "Session expired"}), 404
+    bundle = book_sessions[sid]
+    session = bundle["session"]
+    mood_index = bundle["mood_index"]
+    if choice == "q":
+        payload = {
+            "ok": True,
+            "done": True,
+            "likes_today": list(books_today_liked(mood_index)),
+            "likes_session": list(session.like),
+        }
+        del book_sessions[sid]
+        return jsonify(payload)
+    if choice == "l":
+        session.rate_book(current, "like")
+        log_rating(current, "like", mood_index)
+    elif choice == "d":
+        session.rate_book(current, "dislike")
+        log_rating(current, "dislike", mood_index)
+    elif choice == "u":
+        session.rate_book(current, "unknown")
+        log_rating(current, "unknown", mood_index)
+    nxt = session.next_book()
+    if nxt is None:
+        del book_sessions[sid]
+        return jsonify({"ok": True, "done": True, "message": "No more recommendations."})
+    book = book_info(nxt)
+    return jsonify({
+        "ok": True,
+        "done": False,
+        "current": nxt,
+        "book": book_to_dict(book),
+        "stats": {
+            "likes": len(session.like),
+            "dislikes": len(session.dislike),
+            "seen": len(session.seen) - 1,
+        },
+    })
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

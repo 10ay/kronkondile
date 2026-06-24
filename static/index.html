@@ -19,8 +19,8 @@
     <p>What would you like to do today?</p>
     <button onclick="quickMusic()">[1] Quick music recommendation</button>
     <button onclick="startDiscoverMusic()">[2] Discover music</button>
-    <button onclick="alert('Wire book discover like music in app.py')">[3] Discover books</button>
-  </section>
+    <button onclick="startDiscoverBooks()">[3] Discover books</button>
+    </section>
 
   <!-- Quick rec -->
   <section id="quick-panel" class="hidden">
@@ -46,10 +46,32 @@
     <div id="discover-stats" class="discover-stats" aria-live="polite"></div>
   </section>
 
+  <!-- Discover book -->
+  <section id="discover-book-panel" class="hidden">
+    <h2>Discover books</h2>
+    <p id="book-seed-list"></p>
+    <div class="seed-picker">
+      <label for="book-seed-select">Pick a starting book</label>
+      <select id="book-seed-select"></select>
+      <button id="pick-book-seed-btn" type="button" onclick="pickBookSeed()">Start with this book</button>
+    </div>
+    <hr />
+    <div id="discover-book-current"></div>
+    <div class="rate-buttons">
+      <button onclick="rateBook('l')">Like</button>
+      <button onclick="rateBook('d')">Dislike</button>
+      <button onclick="rateBook('u')">Unknown</button>
+      <button onclick="quitDiscoverBooks()">Quit</button>
+    </div>
+    <div id="discover-book-stats" class="discover-stats" aria-live="polite"></div>
+  </section>
+
   <script>
     let moodIndex = null;
     let discoverSessionId = null;
     let currentArtist = null;
+    let bookDiscoverSessionId = null;
+    let currentBook = null;
 
     const feelings_key = "kron_feeling";
 
@@ -192,7 +214,96 @@
       discoverSessionId = data.session_id;
       showArtist(data.current, data.track.url);
     }
+async function startDiscoverBooks() {
+  if (!require_mood()) return;
+  try {
+    const seedsRes = await fetch(`/api/discover/book/seeds?mood_index=${moodIndex}`);
+    const seedsData = await seedsRes.json();
+    if (!seedsData.ok) return alert(seedsData.error || "Could not load seeds");
+    const sel = document.getElementById("book-seed-select");
+    sel.innerHTML = "";
+    seedsData.seeds.forEach((b) => {
+      const opt = document.createElement("option");
+      opt.value = b;
+      opt.textContent = b;
+      sel.appendChild(opt);
+    });
+    document.getElementById("book-seed-list").textContent =
+      "Books for this mood: " + seedsData.seeds.join(", ");
+    document.getElementById("discover-book-current").innerHTML = "";
+    document.getElementById("discover-book-stats").innerHTML = "";
+    bookDiscoverSessionId = null;
+    currentBook = null;
+    document.getElementById("discover-book-panel").classList.remove("hidden");
+  } catch (err) {
+    alert("Discover failed: " + err);
+  }
+}
 
+async function pickBookSeed() {
+  if (!require_mood()) return;
+  const seed = document.getElementById("book-seed-select").value;
+  const res = await fetch("/api/discover/book/start", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ seed_book: seed, mood_index: moodIndex }),
+  });
+  const data = await res.json();
+  if (!data.ok) return alert(data.error);
+  bookDiscoverSessionId = data.session_id;
+  showBook(data.current, data.book);
+}
+
+function showBook(title, book) {
+  currentBook = title;
+  const author = book.author ? ` — ${book.author}` : "";
+  document.getElementById("discover-book-current").innerHTML =
+    `<h3>${title}${author}</h3>
+     <a href="${book.url}" target="_blank" rel="noopener">Open on Goodreads</a>`;
+}
+
+function renderBookStats(stats) {
+  const el = document.getElementById("discover-book-stats");
+  if (!stats) { el.innerHTML = ""; return; }
+  el.innerHTML = `
+    <div class="stat"><span class="stat-label">Likes</span><span class="stat-value">${stats.likes}</span></div>
+    <div class="stat"><span class="stat-label">Dislikes</span><span class="stat-value">${stats.dislikes}</span></div>
+    <div class="stat"><span class="stat-label">Seen</span><span class="stat-value">${stats.seen}</span></div>
+  `;
+}
+
+async function rateBook(choice) {
+  const res = await fetch("/api/discover/book/step", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      session_id: bookDiscoverSessionId,
+      current: currentBook,
+      choice,
+    }),
+  });
+  const data = await res.json();
+  if (data.done) {
+    alert(data.message || "Session over");
+    return;
+  }
+  showBook(data.current, data.book);
+  renderBookStats(data.stats);
+}
+
+async function quitDiscoverBooks() {
+  const res = await fetch("/api/discover/book/step", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      session_id: bookDiscoverSessionId,
+      current: currentBook,
+      choice: "q",
+    }),
+  });
+  const data = await res.json();
+  alert("Liked in this session: " + ((data.likes_session || []).join(", ") || "(none)"));
+}
     function showArtist(name, url) {
       currentArtist = name;
       document.getElementById("discover-current").innerHTML =

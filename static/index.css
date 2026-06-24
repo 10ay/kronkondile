@@ -232,3 +232,66 @@ a:hover {
   font-weight: 700;
   color: var(--ace-purple);
 }
+
+#book-seed-select {
+  font-size: 1rem;
+  padding: 0.55rem 0.75rem;
+  width: 100%;
+  border: 2px solid var(--ace-black);
+  border-radius: 8px;
+  background-color: var(--ace-white);
+  color: var(--ace-black);
+}
+
+#book-seed-select:focus {
+  outline: 3px solid var(--ace-gray);
+  outline-offset: 1px;
+}
+
+#pick-book-seed-btn {
+  background-color: var(--ace-black);
+  font-size: 1rem;
+  padding: 0.55rem 1rem;
+  width: auto;
+  align-self: flex-start;
+}
+
+#pick-book-seed-btn:hover {
+  background-color: #333;
+}
+
+#book-seed-list {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+#discover-book-current h3 {
+  font-size: 1.35rem;
+  margin: 0.5rem 0 0.35rem;
+  color: var(--ace-purple);
+}
+
+#discover-book-current a {
+  font-size: 1rem;
+  color: var(--ace-purple);
+}
+
+#discover-book-panel .rate-buttons button:nth-child(1) {
+  background-color: var(--ace-purple);
+}
+
+#discover-book-panel .rate-buttons button:nth-child(2) {
+  background-color: var(--ace-white);
+  color: var(--ace-black);
+  border-color: var(--ace-gray);
+}
+
+#discover-book-panel .rate-buttons button:nth-child(3) {
+  background-color: var(--ace-gray);
+  color: var(--ace-black);
+}
+
+#discover-book-panel .rate-buttons button:nth-child(4) {
+  background-color: var(--ace-black);
+}
