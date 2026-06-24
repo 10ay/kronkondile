@@ -20,6 +20,7 @@
     <button onclick="quickMusic()">[1] Quick music recommendation</button>
     <button onclick="startDiscoverMusic()">[2] Discover music</button>
     <button onclick="startDiscoverBooks()">[3] Discover books</button>
+    <button onclick="startDiscoverMovies()">[4] Discover movies</button>
     </section>
 
   <!-- Quick rec -->
@@ -66,12 +67,34 @@
     <div id="discover-book-stats" class="discover-stats" aria-live="polite"></div>
   </section>
 
+  <!-- Discover movie -->
+  <section id="discover-movie-panel" class="hidden">
+    <h2>Discover movies</h2>
+    <p id="movie-seed-list"></p>
+    <div class="seed-picker">
+      <label for="movie-seed-select">Pick a starting film</label>
+      <select id="movie-seed-select"></select>
+      <button id="pick-movie-seed-btn" type="button" onclick="pickMovieSeed()">Start with this film</button>
+    </div>
+    <hr />
+    <div id="discover-movie-current"></div>
+    <div class="rate-buttons">
+      <button onclick="rateMovie('l')">Like</button>
+      <button onclick="rateMovie('d')">Dislike</button>
+      <button onclick="rateMovie('u')">Unknown</button>
+      <button onclick="quitDiscoverMovies()">Quit</button>
+    </div>
+    <div id="discover-movie-stats" class="discover-stats" aria-live="polite"></div>
+  </section>
+
   <script>
     let moodIndex = null;
     let discoverSessionId = null;
     let currentArtist = null;
     let bookDiscoverSessionId = null;
     let currentBook = null;
+    let movieDiscoverSessionId = null;
+    let currentMovie = null;
 
     const feelings_key = "kron_feeling";
 
@@ -298,6 +321,97 @@ async function quitDiscoverBooks() {
     body: JSON.stringify({
       session_id: bookDiscoverSessionId,
       current: currentBook,
+      choice: "q",
+    }),
+  });
+  const data = await res.json();
+  alert("Liked in this session: " + ((data.likes_session || []).join(", ") || "(none)"));
+}
+
+async function startDiscoverMovies() {
+  if (!require_mood()) return;
+  try {
+    const seedsRes = await fetch(`/api/discover/movie/seeds?mood_index=${moodIndex}`);
+    const seedsData = await seedsRes.json();
+    if (!seedsData.ok) return alert(seedsData.error || "Could not load seeds");
+    const sel = document.getElementById("movie-seed-select");
+    sel.innerHTML = "";
+    seedsData.seeds.forEach((m) => {
+      const opt = document.createElement("option");
+      opt.value = m;
+      opt.textContent = m;
+      sel.appendChild(opt);
+    });
+    document.getElementById("movie-seed-list").textContent =
+      "Films for this mood: " + seedsData.seeds.join(", ");
+    document.getElementById("discover-movie-current").innerHTML = "";
+    document.getElementById("discover-movie-stats").innerHTML = "";
+    movieDiscoverSessionId = null;
+    currentMovie = null;
+    document.getElementById("discover-movie-panel").classList.remove("hidden");
+  } catch (err) {
+    alert("Discover failed: " + err);
+  }
+}
+
+async function pickMovieSeed() {
+  if (!require_mood()) return;
+  const seed = document.getElementById("movie-seed-select").value;
+  const res = await fetch("/api/discover/movie/start", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ seed_movie: seed, mood_index: moodIndex }),
+  });
+  const data = await res.json();
+  if (!data.ok) return alert(data.error);
+  movieDiscoverSessionId = data.session_id;
+  showMovie(data.current, data.movie);
+}
+
+function showMovie(title, movie) {
+  currentMovie = title;
+  const year = movie.year ? ` (${movie.year})` : "";
+  document.getElementById("discover-movie-current").innerHTML =
+    `<h3>${title}${year}</h3>
+     <a href="${movie.url}" target="_blank" rel="noopener">Open on TMDB</a>`;
+}
+
+function renderMovieStats(stats) {
+  const el = document.getElementById("discover-movie-stats");
+  if (!stats) { el.innerHTML = ""; return; }
+  el.innerHTML = `
+    <div class="stat"><span class="stat-label">Likes</span><span class="stat-value">${stats.likes}</span></div>
+    <div class="stat"><span class="stat-label">Dislikes</span><span class="stat-value">${stats.dislikes}</span></div>
+    <div class="stat"><span class="stat-label">Seen</span><span class="stat-value">${stats.seen}</span></div>
+  `;
+}
+
+async function rateMovie(choice) {
+  const res = await fetch("/api/discover/movie/step", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      session_id: movieDiscoverSessionId,
+      current: currentMovie,
+      choice,
+    }),
+  });
+  const data = await res.json();
+  if (data.done) {
+    alert(data.message || "Session over");
+    return;
+  }
+  showMovie(data.current, data.movie);
+  renderMovieStats(data.stats);
+}
+
+async function quitDiscoverMovies() {
+  const res = await fetch("/api/discover/movie/step", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      session_id: movieDiscoverSessionId,
+      current: currentMovie,
       choice: "q",
     }),
   });

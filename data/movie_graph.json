@@ -1,0 +1,2122 @@
+{
+  "Call Me By Your Name": {
+    "Wheel of Fortune and Fantasy": 0.7205,
+    "I'm Your Man": 0.6742,
+    "Label Me": 0.5833,
+    "Male Shorts: International V4": 0.5,
+    "Little Peach": 0.6067,
+    "Fujimi Orchestra: Cold Front Conductor": 0.45999999999999996,
+    "Forrest Gump": 0.8465,
+    "American Beauty": 0.7998999999999999,
+    "Metropolis": 0.8099999999999999,
+    "Chorabali": 0.58
+  },
+  "Wheel of Fortune and Fantasy": {
+    "Call Me By Your Name": 0.7205
+  },
+  "I'm Your Man": {
+    "Call Me By Your Name": 0.6742,
+    "Little Miss Sunshine": 0.6742
+  },
+  "Label Me": {
+    "Call Me By Your Name": 0.5833,
+    "Tomboy": 0.5833
+  },
+  "Male Shorts: International V4": {
+    "Call Me By Your Name": 0.5,
+    "Tomboy": 0.5
+  },
+  "Little Peach": {
+    "Call Me By Your Name": 0.6067,
+    "Little Miss Sunshine": 0.6067
+  },
+  "Fujimi Orchestra: Cold Front Conductor": {
+    "Call Me By Your Name": 0.45999999999999996,
+    "Tomboy": 0.45999999999999996
+  },
+  "Forrest Gump": {
+    "Call Me By Your Name": 0.8465,
+    "Little Miss Sunshine": 0.8465
+  },
+  "American Beauty": {
+    "Call Me By Your Name": 0.7998999999999999,
+    "Tomboy": 0.7998999999999999,
+    "Little Miss Sunshine": 0.7998999999999999
+  },
+  "Metropolis": {
+    "Call Me By Your Name": 0.8099999999999999
+  },
+  "Chorabali": {
+    "Call Me By Your Name": 0.58
+  },
+  "Eternal Sunshine of Spotless Mind": {
+    "The Sitdown": 0.5,
+    "Chronicle": 0.6856,
+    "Ask Any Girl": 0.65,
+    "A Man and a Woman: 20 Years Later": 0.5879,
+    "Times Square": 0.65,
+    "Blossoming Into a Family": 0.5,
+    "A Doll's House": 0.7,
+    "Southern Comfort": 0.42000000000000004,
+    "Claudine's Return": 0.4875,
+    "Romantic Comedy": 0.5115000000000001,
+    "Sunny": 0.78,
+    "Skin Deep": 0.55,
+    "Private Road": 0.6071,
+    "Romance": 0.6474,
+    "Cruel Game": 0.3167,
+    "Window Shopping": 0.5,
+    "Urbania": 0.55,
+    "3 A.M.": 0.575,
+    "Ah Aah: Anbe Aaruyire": 0.74,
+    "PALOMA": 0.95
+  },
+  "The Sitdown": {
+    "Eternal Sunshine of Spotless Mind": 0.5
+  },
+  "Chronicle": {
+    "Eternal Sunshine of Spotless Mind": 0.6856
+  },
+  "Ask Any Girl": {
+    "Eternal Sunshine of Spotless Mind": 0.65
+  },
+  "A Man and a Woman: 20 Years Later": {
+    "Eternal Sunshine of Spotless Mind": 0.5879
+  },
+  "Times Square": {
+    "Eternal Sunshine of Spotless Mind": 0.65
+  },
+  "Blossoming Into a Family": {
+    "Eternal Sunshine of Spotless Mind": 0.5
+  },
+  "A Doll's House": {
+    "Eternal Sunshine of Spotless Mind": 0.7
+  },
+  "Southern Comfort": {
+    "Eternal Sunshine of Spotless Mind": 0.42000000000000004
+  },
+  "Claudine's Return": {
+    "Eternal Sunshine of Spotless Mind": 0.4875
+  },
+  "Romantic Comedy": {
+    "Eternal Sunshine of Spotless Mind": 0.5115000000000001
+  },
+  "Sunny": {
+    "Eternal Sunshine of Spotless Mind": 0.78
+  },
+  "Skin Deep": {
+    "Eternal Sunshine of Spotless Mind": 0.55
+  },
+  "Private Road": {
+    "Eternal Sunshine of Spotless Mind": 0.6071
+  },
+  "Romance": {
+    "Eternal Sunshine of Spotless Mind": 0.6474
+  },
+  "Cruel Game": {
+    "Eternal Sunshine of Spotless Mind": 0.3167
+  },
+  "Window Shopping": {
+    "Eternal Sunshine of Spotless Mind": 0.5
+  },
+  "Urbania": {
+    "Eternal Sunshine of Spotless Mind": 0.55
+  },
+  "3 A.M.": {
+    "Eternal Sunshine of Spotless Mind": 0.575
+  },
+  "Ah Aah: Anbe Aaruyire": {
+    "Eternal Sunshine of Spotless Mind": 0.74
+  },
+  "PALOMA": {
+    "Eternal Sunshine of Spotless Mind": 0.95
+  },
+  "Past Lives": {
+    "Peacock Alley": 0.5,
+    "Escapade": 0.575,
+    "Home for the Holidays": 0.6242,
+    "To Wong Foo, Thanks for Everything! Julie Newmar": 0.7432000000000001,
+    "Zoo": 0.525,
+    "Butch Jamie": 0.39380000000000004,
+    "Tazza": 0.5,
+    "The Brady Bunch Movie": 0.6098,
+    "Double Act": 0.5,
+    "The Quest": 0.6195999999999999,
+    "Pariah": 0.45,
+    "Transfiguration": 0.6,
+    "Alone Together": 0.51,
+    "Guncrazy": 0.525,
+    "Mixed Nuts": 0.5378000000000001,
+    "Naked Jane": 0.3,
+    "The Girl Who Played with Fire": 0.6985,
+    "Sifter": 0.5,
+    "C'mon C'mon": 0.7178,
+    "La Musica": 0.5
+  },
+  "Peacock Alley": {
+    "Past Lives": 0.5
+  },
+  "Escapade": {
+    "Past Lives": 0.575,
+    "Wakefield": 0.575,
+    "Slow": 0.575
+  },
+  "Home for the Holidays": {
+    "Past Lives": 0.6242,
+    "Wakefield": 0.6242,
+    "Slow": 0.6242
+  },
+  "To Wong Foo, Thanks for Everything! Julie Newmar": {
+    "Past Lives": 0.7432000000000001,
+    "Wakefield": 0.7432000000000001,
+    "Slow": 0.7432000000000001
+  },
+  "Zoo": {
+    "Past Lives": 0.525,
+    "Wakefield": 0.525,
+    "Slow": 0.525
+  },
+  "Butch Jamie": {
+    "Past Lives": 0.39380000000000004,
+    "Slow": 0.39380000000000004
+  },
+  "Tazza": {
+    "Past Lives": 0.5
+  },
+  "The Brady Bunch Movie": {
+    "Past Lives": 0.6098,
+    "Slow": 0.6098
+  },
+  "Double Act": {
+    "Past Lives": 0.5,
+    "Wakefield": 0.5,
+    "Slow": 0.5
+  },
+  "The Quest": {
+    "Past Lives": 0.6195999999999999
+  },
+  "Pariah": {
+    "Past Lives": 0.45,
+    "Wakefield": 0.45,
+    "Slow": 0.45
+  },
+  "Transfiguration": {
+    "Past Lives": 0.6,
+    "Wakefield": 0.6,
+    "Slow": 0.6
+  },
+  "Alone Together": {
+    "Past Lives": 0.51
+  },
+  "Guncrazy": {
+    "Past Lives": 0.525,
+    "Wakefield": 0.525,
+    "Boyhood": 0.525,
+    "Slow": 0.525
+  },
+  "Mixed Nuts": {
+    "Past Lives": 0.5378000000000001,
+    "Wakefield": 0.5378000000000001,
+    "Slow": 0.5378000000000001
+  },
+  "Naked Jane": {
+    "Past Lives": 0.3,
+    "Wakefield": 0.3,
+    "Slow": 0.3
+  },
+  "The Girl Who Played with Fire": {
+    "Past Lives": 0.6985,
+    "Boyhood": 0.6985
+  },
+  "Sifter": {
+    "Past Lives": 0.5,
+    "Wakefield": 0.5,
+    "Slow": 0.5
+  },
+  "C'mon C'mon": {
+    "Past Lives": 0.7178,
+    "Boyhood": 0.7178,
+    "Blade Runner 2049": 0.7178
+  },
+  "La Musica": {
+    "Past Lives": 0.5,
+    "Wakefield": 0.5,
+    "Slow": 0.5
+  },
+  "Eternity": {
+    "Fools Rush In": 0.65,
+    "The Gift": 0.65,
+    "While You Were Sleeping": 0.7029,
+    "A Lord of Alexander Square": 0.6625,
+    "The Legend of Paul and Paula": 0.5767,
+    "Chasing Amy": 0.6745,
+    "Bros": 0.6653,
+    "Voicemails for Isabelle": 0.8032,
+    "True Beauty: The Movie - Part 2": 1.0,
+    "Earth Girls Are Easy": 0.5599999999999999,
+    "The Rink": 0.6576,
+    "Black current": 0.5,
+    "Last ExMas": 0.625,
+    "Oblitus": 1.0,
+    "Dusk & Dawn": 0.5,
+    "Girls & The Party": 0.5,
+    "The Wedding Planner": 0.5900000000000001,
+    "Bell, Book and Candle": 0.6557999999999999,
+    "Moonstruck": 0.6900000000000001,
+    "Silence in Dreamland": 0.55
+  },
+  "Fools Rush In": {
+    "Eternity": 0.65
+  },
+  "The Gift": {
+    "Eternity": 0.65
+  },
+  "While You Were Sleeping": {
+    "Eternity": 0.7029,
+    "Big Sick": 0.7029
+  },
+  "A Lord of Alexander Square": {
+    "Eternity": 0.6625
+  },
+  "The Legend of Paul and Paula": {
+    "Eternity": 0.5767,
+    "A Ghost Story": 0.5767
+  },
+  "Chasing Amy": {
+    "Eternity": 0.6745,
+    "The Birdcage": 0.6745,
+    "Bottoms": 0.6745
+  },
+  "Bros": {
+    "Eternity": 0.6653,
+    "The Birdcage": 0.6653,
+    "Bottoms": 0.6653
+  },
+  "Voicemails for Isabelle": {
+    "Eternity": 0.8032
+  },
+  "True Beauty: The Movie - Part 2": {
+    "Eternity": 1.0
+  },
+  "Earth Girls Are Easy": {
+    "Eternity": 0.5599999999999999
+  },
+  "The Rink": {
+    "Eternity": 0.6576
+  },
+  "Black current": {
+    "Eternity": 0.5
+  },
+  "Last ExMas": {
+    "Eternity": 0.625,
+    "The Birdcage": 0.625,
+    "Bottoms": 0.625
+  },
+  "Oblitus": {
+    "Eternity": 1.0
+  },
+  "Dusk & Dawn": {
+    "Eternity": 0.5
+  },
+  "Girls & The Party": {
+    "Eternity": 0.5
+  },
+  "The Wedding Planner": {
+    "Eternity": 0.5900000000000001
+  },
+  "Bell, Book and Candle": {
+    "Eternity": 0.6557999999999999
+  },
+  "Moonstruck": {
+    "Eternity": 0.6900000000000001,
+    "Grand Budapest Hotel": 0.6900000000000001
+  },
+  "Silence in Dreamland": {
+    "Eternity": 0.55
+  },
+  "Big Sick": {
+    "The Mongols": 0.75,
+    "Exodus": 0.67,
+    "Nell": 0.6532,
+    "The Elephant Man": 0.8048,
+    "8 Women": 0.6898,
+    "A Mighty Heart": 0.64,
+    "Golden Door": 0.6493,
+    "The Diving Bell and the Butterfly": 0.76,
+    "No Good Deed": 0.5368999999999999,
+    "We Own the Night": 0.6702,
+    "Just Like Home": 0.35,
+    "Addicted to Love": 0.6154,
+    "While You Were Sleeping": 0.7029,
+    "The Whole Nine Yards": 0.6463,
+    "Jailbreak Lovers": 0.51,
+    "The Perfect Storm": 0.6488,
+    "Cop Land": 0.6809000000000001,
+    "Payback": 0.6823,
+    "Me, Myself & Irene": 0.6621,
+    "Relapse": 0.5
+  },
+  "The Mongols": {
+    "Big Sick": 0.75
+  },
+  "Exodus": {
+    "Big Sick": 0.67
+  },
+  "Nell": {
+    "Big Sick": 0.6532
+  },
+  "The Elephant Man": {
+    "Big Sick": 0.8048,
+    "Grand Budapest Hotel": 0.8048
+  },
+  "8 Women": {
+    "Big Sick": 0.6898
+  },
+  "A Mighty Heart": {
+    "Big Sick": 0.64,
+    "A Ghost Story": 0.64
+  },
+  "Golden Door": {
+    "Big Sick": 0.6493
+  },
+  "The Diving Bell and the Butterfly": {
+    "Big Sick": 0.76
+  },
+  "No Good Deed": {
+    "Big Sick": 0.5368999999999999,
+    "Grand Budapest Hotel": 0.5368999999999999
+  },
+  "We Own the Night": {
+    "Big Sick": 0.6702
+  },
+  "Just Like Home": {
+    "Big Sick": 0.35
+  },
+  "Addicted to Love": {
+    "Big Sick": 0.6154
+  },
+  "The Whole Nine Yards": {
+    "Big Sick": 0.6463
+  },
+  "Jailbreak Lovers": {
+    "Big Sick": 0.51
+  },
+  "The Perfect Storm": {
+    "Big Sick": 0.6488
+  },
+  "Cop Land": {
+    "Big Sick": 0.6809000000000001
+  },
+  "Payback": {
+    "Big Sick": 0.6823,
+    "Grand Budapest Hotel": 0.6823
+  },
+  "Me, Myself & Irene": {
+    "Big Sick": 0.6621,
+    "Bottoms": 0.6621,
+    "Grand Budapest Hotel": 0.6621
+  },
+  "Relapse": {
+    "Big Sick": 0.5,
+    "A Ghost Story": 0.5
+  },
+  "A Ghost Story": {
+    "Benny's Video": 0.6923,
+    "A Mighty Heart": 0.64,
+    "In the Bedroom": 0.6949,
+    "Color of Night": 0.576,
+    "Relapse": 0.5,
+    "The Legend of Paul and Paula": 0.5767,
+    "Momo": 0.7,
+    "The Last Mimzy": 0.6357,
+    "The Door at the End of the Hall": 1.0,
+    "Solaris": 0.5953,
+    "Tomboy": 0.49000000000000005,
+    "Death at a Funeral": 0.6929000000000001,
+    "Jacob the Liar": 0.6914,
+    "River": 0.5,
+    "The Mourning Forest": 0.6794,
+    "Pok\u00e9mon the Movie: I Choose You!": 0.7079,
+    "Small Change": 0.71,
+    "Last Days": 0.5583,
+    "Haunting of Mount Gede": 0.65,
+    "Elephant": 0.702,
+    "A Silent Voice": 0.71
+  },
+  "Benny's Video": {
+    "A Ghost Story": 0.6923
+  },
+  "In the Bedroom": {
+    "A Ghost Story": 0.6949
+  },
+  "Color of Night": {
+    "A Ghost Story": 0.576
+  },
+  "Momo": {
+    "A Ghost Story": 0.7
+  },
+  "The Last Mimzy": {
+    "A Ghost Story": 0.6357
+  },
+  "The Door at the End of the Hall": {
+    "A Ghost Story": 1.0
+  },
+  "Solaris": {
+    "A Ghost Story": 0.5953
+  },
+  "Tomboy": {
+    "A Ghost Story": 0.49000000000000005,
+    "Label Me": 0.5833,
+    "Polarized": 0.6285999999999999,
+    "Male Shorts: International V4": 0.5,
+    "Fujimi Orchestra: Cold Front Conductor": 0.45999999999999996,
+    "American Beauty": 0.7998999999999999,
+    "Separate We Come, Separate We Go": 0.65,
+    "Adolescence": 0.6931,
+    "Star Boys": 0.58,
+    "Body Electric": 0.6,
+    "Quantum Love": 0.5709,
+    "Squandered Sunday": 0.6333,
+    "The Island": 0.5,
+    "The Wandering Princess": 0.67,
+    "The Two of Them": 0.61,
+    "Forever a Woman": 0.77,
+    "The Moon Has Risen": 0.6900000000000001,
+    "Whisper": 0.47000000000000003,
+    "Gehenu Lamai": 0.6799999999999999,
+    "Mouth of Hell": 0.65,
+    "The Party": 0.7
+  },
+  "Death at a Funeral": {
+    "A Ghost Story": 0.6929000000000001
+  },
+  "Jacob the Liar": {
+    "A Ghost Story": 0.6914
+  },
+  "River": {
+    "A Ghost Story": 0.5
+  },
+  "The Mourning Forest": {
+    "A Ghost Story": 0.6794
+  },
+  "Pok\u00e9mon the Movie: I Choose You!": {
+    "A Ghost Story": 0.7079
+  },
+  "Small Change": {
+    "A Ghost Story": 0.71
+  },
+  "Last Days": {
+    "A Ghost Story": 0.5583
+  },
+  "Haunting of Mount Gede": {
+    "A Ghost Story": 0.65
+  },
+  "Elephant": {
+    "A Ghost Story": 0.702
+  },
+  "Truman Show": {
+    "Feo pero Sabroso": 0.71,
+    "Lisa Lampanelli: Dirty Girl": 0.7,
+    "Torment": 0.686,
+    "Bride of Re-Animator": 0.6451,
+    "Primetime": 0.5,
+    "The Calling": 0.5,
+    "Dream Lover": 0.6496000000000001,
+    "Alone With Her": 0.5688,
+    "The Perilous Tale of Pirouetta": 0.5,
+    "The Amazing Dr. Clitterhouse": 0.7167,
+    "The Abominable Dr. Phibes": 0.6961,
+    "Don't Ever Change": 0.58,
+    "Tommy Cooper - A Feztival Of Fun With Tommy Cooper": 0.5,
+    "The Cremator": 0.78,
+    "Getting Played": 0.61,
+    "Lesbian Vampire Killers": 0.5199,
+    "All My Friends Hate Me": 0.5928,
+    "The Lost Weekend": 0.76,
+    "Toukokuun taika": 0.6333,
+    "Tales from the Far Side": 0.7133
+  },
+  "Feo pero Sabroso": {
+    "Truman Show": 0.71
+  },
+  "Lisa Lampanelli: Dirty Girl": {
+    "Truman Show": 0.7
+  },
+  "Torment": {
+    "Truman Show": 0.686
+  },
+  "Bride of Re-Animator": {
+    "Truman Show": 0.6451
+  },
+  "Primetime": {
+    "Truman Show": 0.5
+  },
+  "The Calling": {
+    "Truman Show": 0.5
+  },
+  "Dream Lover": {
+    "Truman Show": 0.6496000000000001
+  },
+  "Alone With Her": {
+    "Truman Show": 0.5688
+  },
+  "The Perilous Tale of Pirouetta": {
+    "Truman Show": 0.5
+  },
+  "The Amazing Dr. Clitterhouse": {
+    "Truman Show": 0.7167
+  },
+  "The Abominable Dr. Phibes": {
+    "Truman Show": 0.6961
+  },
+  "Don't Ever Change": {
+    "Truman Show": 0.58
+  },
+  "Tommy Cooper - A Feztival Of Fun With Tommy Cooper": {
+    "Truman Show": 0.5
+  },
+  "The Cremator": {
+    "Truman Show": 0.78
+  },
+  "Getting Played": {
+    "Truman Show": 0.61
+  },
+  "Lesbian Vampire Killers": {
+    "Truman Show": 0.5199,
+    "What We Do In The Shadows": 0.5199
+  },
+  "All My Friends Hate Me": {
+    "Truman Show": 0.5928
+  },
+  "The Lost Weekend": {
+    "Truman Show": 0.76
+  },
+  "Toukokuun taika": {
+    "Truman Show": 0.6333
+  },
+  "Tales from the Far Side": {
+    "Truman Show": 0.7133
+  },
+  "Wakefield": {
+    "Escapade": 0.575,
+    "Home for the Holidays": 0.6242,
+    "To Wong Foo, Thanks for Everything! Julie Newmar": 0.7432000000000001,
+    "Zoo": 0.525,
+    "Double Act": 0.5,
+    "Pariah": 0.45,
+    "Transfiguration": 0.6,
+    "Guncrazy": 0.525,
+    "Mixed Nuts": 0.5378000000000001,
+    "Naked Jane": 0.3,
+    "Sifter": 0.5,
+    "La Musica": 0.5,
+    "Finnegan Begin Again": 0.65,
+    "Fish Tank": 0.6940999999999999,
+    "Kiss and Cry": 0.64,
+    "I Am the Keeper": 0.64,
+    "An Education": 0.6939,
+    "The Northern Kingdom": 0.2,
+    "Under Construction": 0.61,
+    "Wet Bum": 0.67
+  },
+  "Finnegan Begin Again": {
+    "Wakefield": 0.65,
+    "Slow": 0.65
+  },
+  "Fish Tank": {
+    "Wakefield": 0.6940999999999999,
+    "Boyhood": 0.6940999999999999,
+    "Slow": 0.6940999999999999
+  },
+  "Kiss and Cry": {
+    "Wakefield": 0.64,
+    "Slow": 0.64
+  },
+  "I Am the Keeper": {
+    "Wakefield": 0.64
+  },
+  "An Education": {
+    "Wakefield": 0.6939,
+    "Shithouse": 0.6939
+  },
+  "The Northern Kingdom": {
+    "Wakefield": 0.2
+  },
+  "Under Construction": {
+    "Wakefield": 0.61
+  },
+  "Wet Bum": {
+    "Wakefield": 0.67
+  },
+  "Lars and the Real Girl": {
+    "Frank": 0.7201
+  },
+  "Boyhood": {
+    "Una nit a Casa Blanca": 0.9,
+    "Chasing Wonders": 0.47000000000000003,
+    "Escaping Ohio": 1.0,
+    "Double Shift Dad": 0.5,
+    "The Age for Love": 0.9,
+    "Love Story": 0.6799999999999999,
+    "The Craft": 0.6782,
+    "We Believe": 0.5,
+    "Alice J\u00fanior": 0.6402,
+    "Beast": 0.7,
+    "Guncrazy": 0.525,
+    "The Girl Who Played with Fire": 0.6985,
+    "The Perfect Family": 0.5496000000000001,
+    "Believe Me": 0.53,
+    "LIMBS": 0.5,
+    "C'mon C'mon": 0.7178,
+    "How to Blend In": 1.0,
+    "Papochka": 0.5,
+    "I'm on Fire": 0.5,
+    "Fish Tank": 0.6940999999999999
+  },
+  "Una nit a Casa Blanca": {
+    "Boyhood": 0.9,
+    "Shithouse": 0.9
+  },
+  "Chasing Wonders": {
+    "Boyhood": 0.47000000000000003,
+    "Shithouse": 0.47000000000000003
+  },
+  "Escaping Ohio": {
+    "Boyhood": 1.0,
+    "Shithouse": 1.0
+  },
+  "Double Shift Dad": {
+    "Boyhood": 0.5
+  },
+  "The Age for Love": {
+    "Boyhood": 0.9
+  },
+  "Love Story": {
+    "Boyhood": 0.6799999999999999,
+    "Slow": 0.6799999999999999,
+    "Shithouse": 0.6799999999999999
+  },
+  "The Craft": {
+    "Boyhood": 0.6782
+  },
+  "We Believe": {
+    "Boyhood": 0.5,
+    "Shithouse": 0.5
+  },
+  "Alice J\u00fanior": {
+    "Boyhood": 0.6402
+  },
+  "Beast": {
+    "Boyhood": 0.7
+  },
+  "The Perfect Family": {
+    "Boyhood": 0.5496000000000001
+  },
+  "Believe Me": {
+    "Boyhood": 0.53,
+    "Shithouse": 0.53
+  },
+  "LIMBS": {
+    "Boyhood": 0.5,
+    "Shithouse": 0.5
+  },
+  "How to Blend In": {
+    "Boyhood": 1.0
+  },
+  "Papochka": {
+    "Boyhood": 0.5
+  },
+  "I'm on Fire": {
+    "Boyhood": 0.5,
+    "Shithouse": 0.5
+  },
+  "The Birdcage": {
+    "Alexander": 0.5953,
+    "Nothing But Flowers": 0.4,
+    "Totally Blonde": 0.35,
+    "\u00c4lskling p\u00e5 vift": 0.9,
+    "Pure": 0.5,
+    "Chasing Amy": 0.6745,
+    "The Ladies": 0.5,
+    "Bros": 0.6653,
+    "Heartbreak Hotel": 0.49000000000000005,
+    "Alir\u00f3n 2: El descanso": 0.27999999999999997,
+    "Don't Make Grandpa Angry": 0.8,
+    "Lucicreide Goes to Mars": 0.6599999999999999,
+    "Last ExMas": 0.625,
+    "The Bachelor": 0.52,
+    "The Inspector-General": 0.65,
+    "The Lake House": 0.7035,
+    "Shakespeare in Love": 0.6832,
+    "Magdalena Dobromila Rettigov\u00e1": 0.32999999999999996,
+    "Les Biches": 0.6049,
+    "Fried Green Tomatoes": 0.7665
+  },
+  "Alexander": {
+    "The Birdcage": 0.5953
+  },
+  "Nothing But Flowers": {
+    "The Birdcage": 0.4
+  },
+  "Totally Blonde": {
+    "The Birdcage": 0.35
+  },
+  "\u00c4lskling p\u00e5 vift": {
+    "The Birdcage": 0.9
+  },
+  "Pure": {
+    "The Birdcage": 0.5
+  },
+  "The Ladies": {
+    "The Birdcage": 0.5,
+    "Bottoms": 0.5
+  },
+  "Heartbreak Hotel": {
+    "The Birdcage": 0.49000000000000005
+  },
+  "Alir\u00f3n 2: El descanso": {
+    "The Birdcage": 0.27999999999999997,
+    "Bottoms": 0.27999999999999997
+  },
+  "Don't Make Grandpa Angry": {
+    "The Birdcage": 0.8
+  },
+  "Lucicreide Goes to Mars": {
+    "The Birdcage": 0.6599999999999999,
+    "Bottoms": 0.6599999999999999,
+    "Grand Budapest Hotel": 0.6599999999999999
+  },
+  "The Bachelor": {
+    "The Birdcage": 0.52
+  },
+  "The Inspector-General": {
+    "The Birdcage": 0.65
+  },
+  "The Lake House": {
+    "The Birdcage": 0.7035
+  },
+  "Shakespeare in Love": {
+    "The Birdcage": 0.6832
+  },
+  "Magdalena Dobromila Rettigov\u00e1": {
+    "The Birdcage": 0.32999999999999996
+  },
+  "Les Biches": {
+    "The Birdcage": 0.6049
+  },
+  "Fried Green Tomatoes": {
+    "The Birdcage": 0.7665
+  },
+  "Bottoms": {
+    "American Pie": 0.6609,
+    "The Breakfast Club": 0.7721,
+    "Me, Myself & Irene": 0.6621,
+    "Chasing Amy": 0.6745,
+    "The Ladies": 0.5,
+    "Teenage Mutant Ninja Turtles: Mutant Mayhem": 0.72,
+    "Bros": 0.6653,
+    "The First Time": 0.5,
+    "Take A Friend": 1.0,
+    "Rush Hour": 0.708,
+    "Alir\u00f3n 2: El descanso": 0.27999999999999997,
+    "Lucicreide Goes to Mars": 0.6599999999999999,
+    "Last ExMas": 0.625,
+    "The Private Lesson": 0.5408999999999999,
+    "The Lonely Isles": 0.5,
+    "Decamerone '300": 0.4429,
+    "Say Anything...": 0.7,
+    "Easy on the Eyes": 0.529,
+    "Secret Confessions in a Cloistered Convent": 0.48,
+    "Sex-Export aus Amsterdam": 0.5
+  },
+  "American Pie": {
+    "Bottoms": 0.6609
+  },
+  "The Breakfast Club": {
+    "Bottoms": 0.7721,
+    "Grand Budapest Hotel": 0.7721
+  },
+  "Teenage Mutant Ninja Turtles: Mutant Mayhem": {
+    "Bottoms": 0.72,
+    "Rise of the Planet of the Apes": 0.72
+  },
+  "The First Time": {
+    "Bottoms": 0.5
+  },
+  "Take A Friend": {
+    "Bottoms": 1.0
+  },
+  "Rush Hour": {
+    "Bottoms": 0.708,
+    "Grand Budapest Hotel": 0.708,
+    "Rise of the Planet of the Apes": 0.708
+  },
+  "The Private Lesson": {
+    "Bottoms": 0.5408999999999999
+  },
+  "The Lonely Isles": {
+    "Bottoms": 0.5
+  },
+  "Decamerone '300": {
+    "Bottoms": 0.4429
+  },
+  "Say Anything...": {
+    "Bottoms": 0.7
+  },
+  "Easy on the Eyes": {
+    "Bottoms": 0.529
+  },
+  "Secret Confessions in a Cloistered Convent": {
+    "Bottoms": 0.48
+  },
+  "Sex-Export aus Amsterdam": {
+    "Bottoms": 0.5
+  },
+  "Kung Fu Hustle": {
+    "Aptal \u015eampiyon": 0.45,
+    "Trespass Against Us": 0.5777,
+    "In the Blood": 0.5799000000000001,
+    "Taxi 5": 0.5386,
+    "Best. Christmas. Ever!": 0.5382,
+    "Feathers": 0.5828,
+    "Mister America": 0.6333,
+    "Bless Me Father": 0.9199999999999999,
+    "Devil's Tribulation": 0.5,
+    "Conquest": 0.52,
+    "Captive Audience": 0.5,
+    "Z\u00ebiram": 0.62,
+    "Charley Varrick": 0.7352000000000001,
+    "Meatball Machine": 0.5314,
+    "Braddock: Missing in Action III": 0.5727,
+    "Forbidden": 0.6336,
+    "The Doorway to Hell": 0.648,
+    "Wizards of Waverly Place: The Movie": 0.7319,
+    "Force of Evil": 0.6599999999999999,
+    "The Outfit": 0.6771
+  },
+  "Aptal \u015eampiyon": {
+    "Kung Fu Hustle": 0.45
+  },
+  "Trespass Against Us": {
+    "Kung Fu Hustle": 0.5777
+  },
+  "In the Blood": {
+    "Kung Fu Hustle": 0.5799000000000001
+  },
+  "Taxi 5": {
+    "Kung Fu Hustle": 0.5386
+  },
+  "Best. Christmas. Ever!": {
+    "Kung Fu Hustle": 0.5382
+  },
+  "Feathers": {
+    "Kung Fu Hustle": 0.5828
+  },
+  "Mister America": {
+    "Kung Fu Hustle": 0.6333
+  },
+  "Bless Me Father": {
+    "Kung Fu Hustle": 0.9199999999999999
+  },
+  "Devil's Tribulation": {
+    "Kung Fu Hustle": 0.5
+  },
+  "Conquest": {
+    "Kung Fu Hustle": 0.52
+  },
+  "Captive Audience": {
+    "Kung Fu Hustle": 0.5
+  },
+  "Z\u00ebiram": {
+    "Kung Fu Hustle": 0.62
+  },
+  "Charley Varrick": {
+    "Kung Fu Hustle": 0.7352000000000001
+  },
+  "Meatball Machine": {
+    "Kung Fu Hustle": 0.5314
+  },
+  "Braddock: Missing in Action III": {
+    "Kung Fu Hustle": 0.5727
+  },
+  "Forbidden": {
+    "Kung Fu Hustle": 0.6336
+  },
+  "The Doorway to Hell": {
+    "Kung Fu Hustle": 0.648
+  },
+  "Wizards of Waverly Place: The Movie": {
+    "Kung Fu Hustle": 0.7319
+  },
+  "Force of Evil": {
+    "Kung Fu Hustle": 0.6599999999999999
+  },
+  "The Outfit": {
+    "Kung Fu Hustle": 0.6771
+  },
+  "What We Do In The Shadows": {
+    "Cut/Print": 0.54,
+    "Silver Bullet": 0.6635,
+    "Wanted Man": 0.5,
+    "Planet of the Vampires": 0.64,
+    "Fired Up!": 0.6123999999999999,
+    "Spirit vs. Zombie": 1.0,
+    "American Zombie": 0.47000000000000003,
+    "We'll Get Back to You": 0.52,
+    "Dying Breed": 0.5181,
+    "The Dark Hours": 0.568,
+    "Vampire vs. Sorcerer": 0.5,
+    "One Crazy Summer": 0.6,
+    "The Country Bears": 0.4746,
+    "Night at the Museum: Battle of the Smithsonian": 0.6155999999999999,
+    "Drug Garden": 0.5,
+    "Zomboobies!": 0.6,
+    "Midnight Kiss": 0.45,
+    "Brutal Massacre: A Comedy": 0.44000000000000006,
+    "Lesbian Vampire Killers": 0.5199,
+    "The Curse of the Cat People": 0.6228
+  },
+  "Cut/Print": {
+    "What We Do In The Shadows": 0.54
+  },
+  "Silver Bullet": {
+    "What We Do In The Shadows": 0.6635
+  },
+  "Wanted Man": {
+    "What We Do In The Shadows": 0.5
+  },
+  "Planet of the Vampires": {
+    "What We Do In The Shadows": 0.64
+  },
+  "Fired Up!": {
+    "What We Do In The Shadows": 0.6123999999999999
+  },
+  "Spirit vs. Zombie": {
+    "What We Do In The Shadows": 1.0
+  },
+  "American Zombie": {
+    "What We Do In The Shadows": 0.47000000000000003
+  },
+  "We'll Get Back to You": {
+    "What We Do In The Shadows": 0.52
+  },
+  "Dying Breed": {
+    "What We Do In The Shadows": 0.5181
+  },
+  "The Dark Hours": {
+    "What We Do In The Shadows": 0.568
+  },
+  "Vampire vs. Sorcerer": {
+    "What We Do In The Shadows": 0.5
+  },
+  "One Crazy Summer": {
+    "What We Do In The Shadows": 0.6
+  },
+  "The Country Bears": {
+    "What We Do In The Shadows": 0.4746
+  },
+  "Night at the Museum: Battle of the Smithsonian": {
+    "What We Do In The Shadows": 0.6155999999999999
+  },
+  "Drug Garden": {
+    "What We Do In The Shadows": 0.5
+  },
+  "Zomboobies!": {
+    "What We Do In The Shadows": 0.6
+  },
+  "Midnight Kiss": {
+    "What We Do In The Shadows": 0.45
+  },
+  "Brutal Massacre: A Comedy": {
+    "What We Do In The Shadows": 0.44000000000000006
+  },
+  "The Curse of the Cat People": {
+    "What We Do In The Shadows": 0.6228
+  },
+  "Grand Budapest Hotel": {
+    "The Door in the Floor": 0.61,
+    "The Elephant Man": 0.8048,
+    "Secret Sunshine": 0.72,
+    "No Good Deed": 0.5368999999999999,
+    "Holy Lola": 0.5892999999999999,
+    "Mr. Holland's Opus": 0.6964,
+    "Could This Be Love?": 0.6323000000000001,
+    "The Cotton Club": 0.6512,
+    "The Breakfast Club": 0.7721,
+    "Payback": 0.6823,
+    "Me, Myself & Irene": 0.6621,
+    "The Suicide Squad": 0.7458,
+    "Bill Burr: Live at Red Rocks": 0.7299,
+    "Rush Hour": 0.708,
+    "Alice in the Cities": 0.7712,
+    "Evil Bookstore": 1.0,
+    "Lucicreide Goes to Mars": 0.6599999999999999,
+    "Moonstruck": 0.6900000000000001,
+    "4 Months, 3 Weeks and 2 Days": 0.75,
+    "Me and My Sister": 0.5599999999999999
+  },
+  "The Door in the Floor": {
+    "Grand Budapest Hotel": 0.61
+  },
+  "Secret Sunshine": {
+    "Grand Budapest Hotel": 0.72
+  },
+  "Holy Lola": {
+    "Grand Budapest Hotel": 0.5892999999999999
+  },
+  "Mr. Holland's Opus": {
+    "Grand Budapest Hotel": 0.6964,
+    "Rise of the Planet of the Apes": 0.6964
+  },
+  "Could This Be Love?": {
+    "Grand Budapest Hotel": 0.6323000000000001
+  },
+  "The Cotton Club": {
+    "Grand Budapest Hotel": 0.6512
+  },
+  "The Suicide Squad": {
+    "Grand Budapest Hotel": 0.7458
+  },
+  "Bill Burr: Live at Red Rocks": {
+    "Grand Budapest Hotel": 0.7299
+  },
+  "Alice in the Cities": {
+    "Grand Budapest Hotel": 0.7712
+  },
+  "Evil Bookstore": {
+    "Grand Budapest Hotel": 1.0
+  },
+  "4 Months, 3 Weeks and 2 Days": {
+    "Grand Budapest Hotel": 0.75
+  },
+  "Me and My Sister": {
+    "Grand Budapest Hotel": 0.5599999999999999
+  },
+  "Dune": {
+    "The Astronaut Farmer": 0.6271,
+    "Big Brood": 0.8,
+    "Whom the Gods Wish to Destroy": 0.65,
+    "Battlefield Earth": 0.3345,
+    "VIVA": 0.5,
+    "Dead Weekend": 0.3,
+    "RoboCop": 0.7361,
+    "RoboCop 3": 0.4901,
+    "The Fantastic 4: First Steps": 0.6961,
+    "Three Lives": 0.5,
+    "Shrek": 0.7766,
+    "Silent Running": 0.6394,
+    "Gattaca": 0.7569,
+    "Jin-Roh: The Wolf Brigade": 0.7392000000000001,
+    "Forbidden Planet": 0.7242,
+    "This Island Earth": 0.6006,
+    "Dawn of the Dead": 0.749,
+    "Programmed to Kill": 0.37,
+    "Lawrence of Arabia": 0.7997,
+    "Delicatessen": 0.7314
+  },
+  "The Astronaut Farmer": {
+    "Dune": 0.6271,
+    "Project Hail Mary": 0.6271
+  },
+  "Big Brood": {
+    "Dune": 0.8,
+    "Project Hail Mary": 0.8
+  },
+  "Whom the Gods Wish to Destroy": {
+    "Dune": 0.65,
+    "Fellowship of the Ring": 0.65
+  },
+  "Battlefield Earth": {
+    "Dune": 0.3345,
+    "Fellowship of the Ring": 0.3345,
+    "Project Hail Mary": 0.3345
+  },
+  "VIVA": {
+    "Dune": 0.5
+  },
+  "Dead Weekend": {
+    "Dune": 0.3
+  },
+  "RoboCop": {
+    "Dune": 0.7361,
+    "Fellowship of the Ring": 0.7361
+  },
+  "RoboCop 3": {
+    "Dune": 0.4901
+  },
+  "The Fantastic 4: First Steps": {
+    "Dune": 0.6961,
+    "Project Hail Mary": 0.6961
+  },
+  "Three Lives": {
+    "Dune": 0.5,
+    "Fellowship of the Ring": 0.5,
+    "Project Hail Mary": 0.5
+  },
+  "Shrek": {
+    "Dune": 0.7766,
+    "Fellowship of the Ring": 0.7766,
+    "Project Hail Mary": 0.7766
+  },
+  "Silent Running": {
+    "Dune": 0.6394,
+    "Project Hail Mary": 0.6394
+  },
+  "Gattaca": {
+    "Dune": 0.7569,
+    "Project Hail Mary": 0.7569
+  },
+  "Jin-Roh: The Wolf Brigade": {
+    "Dune": 0.7392000000000001,
+    "Project Hail Mary": 0.7392000000000001
+  },
+  "Forbidden Planet": {
+    "Dune": 0.7242,
+    "Project Hail Mary": 0.7242
+  },
+  "This Island Earth": {
+    "Dune": 0.6006,
+    "Project Hail Mary": 0.6006
+  },
+  "Dawn of the Dead": {
+    "Dune": 0.749
+  },
+  "Programmed to Kill": {
+    "Dune": 0.37
+  },
+  "Lawrence of Arabia": {
+    "Dune": 0.7997
+  },
+  "Delicatessen": {
+    "Dune": 0.7314
+  },
+  "Fellowship of the Ring": {
+    "That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea": 0.6714,
+    "Haunted Mansion": 0.6429,
+    "Whom the Gods Wish to Destroy": 0.65,
+    "Whom the Gods Wish to Destroy 2": 0.6471,
+    "Battlefield Earth": 0.3345,
+    "Cherry, Harry & Raquel!": 0.5478,
+    "Deadly Prey": 0.4918,
+    "Black Snake": 0.53,
+    "Sher Mountain Killings Mystery": 0.6,
+    "Beowulf": 0.44000000000000006,
+    "Beowulf & Grendel": 0.5569,
+    "RoboCop": 0.7361,
+    "Returner": 0.6532,
+    "Three Lives": 0.5,
+    "Shrek": 0.7766,
+    "Shrek 2": 0.732,
+    "Aladdin": 0.7654,
+    "Vampyr": 0.73,
+    "Scarface": 0.7403,
+    "Bullitt": 0.7148
+  },
+  "That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea": {
+    "Fellowship of the Ring": 0.6714
+  },
+  "Haunted Mansion": {
+    "Fellowship of the Ring": 0.6429
+  },
+  "Whom the Gods Wish to Destroy 2": {
+    "Fellowship of the Ring": 0.6471
+  },
+  "Cherry, Harry & Raquel!": {
+    "Fellowship of the Ring": 0.5478
+  },
+  "Deadly Prey": {
+    "Fellowship of the Ring": 0.4918
+  },
+  "Black Snake": {
+    "Fellowship of the Ring": 0.53
+  },
+  "Sher Mountain Killings Mystery": {
+    "Fellowship of the Ring": 0.6
+  },
+  "Beowulf": {
+    "Fellowship of the Ring": 0.44000000000000006
+  },
+  "Beowulf & Grendel": {
+    "Fellowship of the Ring": 0.5569
+  },
+  "Returner": {
+    "Fellowship of the Ring": 0.6532
+  },
+  "Shrek 2": {
+    "Fellowship of the Ring": 0.732
+  },
+  "Aladdin": {
+    "Fellowship of the Ring": 0.7654
+  },
+  "Vampyr": {
+    "Fellowship of the Ring": 0.73
+  },
+  "Scarface": {
+    "Fellowship of the Ring": 0.7403
+  },
+  "Bullitt": {
+    "Fellowship of the Ring": 0.7148
+  },
+  "Superman": {
+    "Kamen Rider V3 vs. Destron Mutants": 0.6,
+    "Tank Girl": 0.5504,
+    "Kamen Rider Saber + Kikai Sentai Zenkaiger: Super Hero Chronicles": 0.6,
+    "The Avengers": 0.8047000000000001,
+    "Black Dynamite": 0.7097,
+    "Minor Details": 0.72,
+    "Revice Forward: Kamen Rider Live & Evil & Demons": 0.75,
+    "Pretty Cure All Stars New Stage 3: Eternal Friends": 0.7227,
+    "Sheena": 0.5669,
+    "Virgo and the Sparklings": 0.5563,
+    "Sonic the Hedgehog": 0.7281,
+    "Masters of the Universe": 0.73,
+    "Accident Man": 0.6287,
+    "The Martian": 0.77,
+    "Knights of the Zodiac": 0.63,
+    "Sign Gene": 0.72,
+    "Max Steel": 0.5576,
+    "The Medallion": 0.5616,
+    "Howard the Duck": 0.54,
+    "WALL\u00b7E": 0.8114000000000001
+  },
+  "Kamen Rider V3 vs. Destron Mutants": {
+    "Superman": 0.6
+  },
+  "Tank Girl": {
+    "Superman": 0.5504,
+    "Blade Runner 2049": 0.5504
+  },
+  "Kamen Rider Saber + Kikai Sentai Zenkaiger: Super Hero Chronicles": {
+    "Superman": 0.6
+  },
+  "The Avengers": {
+    "Superman": 0.8047000000000001
+  },
+  "Black Dynamite": {
+    "Superman": 0.7097
+  },
+  "Minor Details": {
+    "Superman": 0.72
+  },
+  "Revice Forward: Kamen Rider Live & Evil & Demons": {
+    "Superman": 0.75
+  },
+  "Pretty Cure All Stars New Stage 3: Eternal Friends": {
+    "Superman": 0.7227
+  },
+  "Sheena": {
+    "Superman": 0.5669
+  },
+  "Virgo and the Sparklings": {
+    "Superman": 0.5563
+  },
+  "Sonic the Hedgehog": {
+    "Superman": 0.7281
+  },
+  "Masters of the Universe": {
+    "Superman": 0.73
+  },
+  "Accident Man": {
+    "Superman": 0.6287
+  },
+  "The Martian": {
+    "Superman": 0.77
+  },
+  "Knights of the Zodiac": {
+    "Superman": 0.63
+  },
+  "Sign Gene": {
+    "Superman": 0.72
+  },
+  "Max Steel": {
+    "Superman": 0.5576
+  },
+  "The Medallion": {
+    "Superman": 0.5616
+  },
+  "Howard the Duck": {
+    "Superman": 0.54
+  },
+  "WALL\u00b7E": {
+    "Superman": 0.8114000000000001
+  },
+  "Rise of the Planet of the Apes": {
+    "Hulk": 0.5584,
+    "eXistenZ": 0.6787,
+    "Zodiac": 0.7532,
+    "Fantastic Four: Rise of the Silver Surfer": 0.5631999999999999,
+    "1984": 0.65,
+    "Death Proof": 0.6839000000000001,
+    "Mr. Holland's Opus": 0.6964,
+    "National Treasure": 0.6652,
+    "Shattered": 0.614,
+    "The Immortal Wars: Dekay's Paradox": 0.5,
+    "The Time Machine": 0.7359,
+    "Final Fantasy: The Spirits Within": 0.6198,
+    "The Silence After": 0.5,
+    "Better Man": 0.76,
+    "Teenage Mutant Ninja Turtles: Mutant Mayhem": 0.72,
+    "Stardust": 0.5,
+    "Rush Hour": 0.708,
+    "Dead Wave": 0.55,
+    "Dystopia: 2013": 0.2,
+    "Ismail Yassine in the House of Ghosts": 0.63
+  },
+  "Hulk": {
+    "Rise of the Planet of the Apes": 0.5584
+  },
+  "eXistenZ": {
+    "Rise of the Planet of the Apes": 0.6787
+  },
+  "Zodiac": {
+    "Rise of the Planet of the Apes": 0.7532
+  },
+  "Fantastic Four: Rise of the Silver Surfer": {
+    "Rise of the Planet of the Apes": 0.5631999999999999
+  },
+  "1984": {
+    "Rise of the Planet of the Apes": 0.65
+  },
+  "Death Proof": {
+    "Rise of the Planet of the Apes": 0.6839000000000001
+  },
+  "National Treasure": {
+    "Rise of the Planet of the Apes": 0.6652
+  },
+  "Shattered": {
+    "Rise of the Planet of the Apes": 0.614
+  },
+  "The Immortal Wars: Dekay's Paradox": {
+    "Rise of the Planet of the Apes": 0.5
+  },
+  "The Time Machine": {
+    "Rise of the Planet of the Apes": 0.7359
+  },
+  "Final Fantasy: The Spirits Within": {
+    "Rise of the Planet of the Apes": 0.6198
+  },
+  "The Silence After": {
+    "Rise of the Planet of the Apes": 0.5
+  },
+  "Better Man": {
+    "Rise of the Planet of the Apes": 0.76
+  },
+  "Stardust": {
+    "Rise of the Planet of the Apes": 0.5
+  },
+  "Dead Wave": {
+    "Rise of the Planet of the Apes": 0.55
+  },
+  "Dystopia: 2013": {
+    "Rise of the Planet of the Apes": 0.2
+  },
+  "Ismail Yassine in the House of Ghosts": {
+    "Rise of the Planet of the Apes": 0.63
+  },
+  "Blade Runner 2049": {
+    "AI Amok": 0.71,
+    "Tank Girl": 0.5504,
+    "Grandma's Ashes": 0.5,
+    "C'mon C'mon": 0.7178,
+    "The Time Traveler's Wife": 0.6942,
+    "Zatoichi Meets the One-Armed Swordsman": 0.6799999999999999,
+    "Harrison Bergeron": 0.6763,
+    "Miracle Mile": 0.6863,
+    "Six-String Samurai": 0.6263,
+    "Operation Napoleon: Tears of the Wolf": 0.5,
+    "Sardinia": 0.77,
+    "Rise from Your Grave": 0.5,
+    "Pitfall": 0.6900000000000001,
+    "When Artificial Intelligence Changes Intelligence": 0.5,
+    "Deadly Dancer": 0.42000000000000004,
+    "Damnation Alley": 0.51,
+    "I Love You, I Kill You": 0.4909,
+    "The Land Before Time VII: The Stone of Cold Fire": 0.6172,
+    "Warlock: The Armageddon": 0.5288999999999999,
+    "Nemesis": 0.544
+  },
+  "AI Amok": {
+    "Blade Runner 2049": 0.71
+  },
+  "Grandma's Ashes": {
+    "Blade Runner 2049": 0.5
+  },
+  "The Time Traveler's Wife": {
+    "Blade Runner 2049": 0.6942
+  },
+  "Zatoichi Meets the One-Armed Swordsman": {
+    "Blade Runner 2049": 0.6799999999999999
+  },
+  "Harrison Bergeron": {
+    "Blade Runner 2049": 0.6763
+  },
+  "Miracle Mile": {
+    "Blade Runner 2049": 0.6863
+  },
+  "Six-String Samurai": {
+    "Blade Runner 2049": 0.6263
+  },
+  "Operation Napoleon: Tears of the Wolf": {
+    "Blade Runner 2049": 0.5
+  },
+  "Sardinia": {
+    "Blade Runner 2049": 0.77
+  },
+  "Rise from Your Grave": {
+    "Blade Runner 2049": 0.5
+  },
+  "Pitfall": {
+    "Blade Runner 2049": 0.6900000000000001
+  },
+  "When Artificial Intelligence Changes Intelligence": {
+    "Blade Runner 2049": 0.5
+  },
+  "Deadly Dancer": {
+    "Blade Runner 2049": 0.42000000000000004
+  },
+  "Damnation Alley": {
+    "Blade Runner 2049": 0.51
+  },
+  "I Love You, I Kill You": {
+    "Blade Runner 2049": 0.4909
+  },
+  "The Land Before Time VII: The Stone of Cold Fire": {
+    "Blade Runner 2049": 0.6172
+  },
+  "Warlock: The Armageddon": {
+    "Blade Runner 2049": 0.5288999999999999
+  },
+  "Nemesis": {
+    "Blade Runner 2049": 0.544
+  },
+  "Slow": {
+    "Escapade": 0.575,
+    "Home for the Holidays": 0.6242,
+    "To Wong Foo, Thanks for Everything! Julie Newmar": 0.7432000000000001,
+    "The Four Feathers": 0.6645,
+    "Zoo": 0.525,
+    "Butch Jamie": 0.39380000000000004,
+    "Love Story": 0.6799999999999999,
+    "The Brady Bunch Movie": 0.6098,
+    "Double Act": 0.5,
+    "Pariah": 0.45,
+    "Transfiguration": 0.6,
+    "Guncrazy": 0.525,
+    "Mixed Nuts": 0.5378000000000001,
+    "Naked Jane": 0.3,
+    "Sifter": 0.5,
+    "La Musica": 0.5,
+    "Finnegan Begin Again": 0.65,
+    "Fish Tank": 0.6940999999999999,
+    "Chasing Papi": 0.6782,
+    "Kiss and Cry": 0.64
+  },
+  "The Four Feathers": {
+    "Slow": 0.6645
+  },
+  "Chasing Papi": {
+    "Slow": 0.6782
+  },
+  "Polarized": {
+    "Tomboy": 0.6285999999999999,
+    "Little Miss Sunshine": 0.6285999999999999
+  },
+  "Separate We Come, Separate We Go": {
+    "Tomboy": 0.65,
+    "Little Miss Sunshine": 0.65
+  },
+  "Adolescence": {
+    "Tomboy": 0.6931,
+    "Little Miss Sunshine": 0.6931
+  },
+  "Star Boys": {
+    "Tomboy": 0.58
+  },
+  "Body Electric": {
+    "Tomboy": 0.6
+  },
+  "Quantum Love": {
+    "Tomboy": 0.5709,
+    "Little Miss Sunshine": 0.5709
+  },
+  "Squandered Sunday": {
+    "Tomboy": 0.6333,
+    "Little Miss Sunshine": 0.6333
+  },
+  "The Island": {
+    "Tomboy": 0.5,
+    "Little Miss Sunshine": 0.5
+  },
+  "The Wandering Princess": {
+    "Tomboy": 0.67,
+    "Little Miss Sunshine": 0.67
+  },
+  "The Two of Them": {
+    "Tomboy": 0.61,
+    "Little Miss Sunshine": 0.61
+  },
+  "Forever a Woman": {
+    "Tomboy": 0.77,
+    "Little Miss Sunshine": 0.77
+  },
+  "The Moon Has Risen": {
+    "Tomboy": 0.6900000000000001,
+    "Little Miss Sunshine": 0.6900000000000001
+  },
+  "Whisper": {
+    "Tomboy": 0.47000000000000003
+  },
+  "Gehenu Lamai": {
+    "Tomboy": 0.6799999999999999,
+    "Little Miss Sunshine": 0.6799999999999999
+  },
+  "Mouth of Hell": {
+    "Tomboy": 0.65
+  },
+  "The Party": {
+    "Tomboy": 0.7,
+    "Little Miss Sunshine": 0.7
+  },
+  "Shithouse": {
+    "Una nit a Casa Blanca": 0.9,
+    "Chasing Wonders": 0.47000000000000003,
+    "Escaping Ohio": 1.0,
+    "Didn't Think I'd See You Here": 0.5,
+    "Strange Justice": 0.6333,
+    "Love Story": 0.6799999999999999,
+    "Regular Guys": 0.5865,
+    "We Believe": 0.5,
+    "Believe Me": 0.53,
+    "LIMBS": 0.5,
+    "I'm on Fire": 0.5,
+    "Ramona": 0.6833,
+    "An Education": 0.6939,
+    "A Far Off Place": 0.62,
+    "Head Over Heels": 0.5736,
+    "Confetti Harvest": 0.63,
+    "Spin Me Round": 0.48929999999999996,
+    "Agnes Joy": 0.52,
+    "Borstal Boy": 0.62,
+    "Beatles": 0.6
+  },
+  "Didn't Think I'd See You Here": {
+    "Shithouse": 0.5
+  },
+  "Strange Justice": {
+    "Shithouse": 0.6333
+  },
+  "Regular Guys": {
+    "Shithouse": 0.5865
+  },
+  "Ramona": {
+    "Shithouse": 0.6833
+  },
+  "A Far Off Place": {
+    "Shithouse": 0.62
+  },
+  "Head Over Heels": {
+    "Shithouse": 0.5736
+  },
+  "Confetti Harvest": {
+    "Shithouse": 0.63
+  },
+  "Spin Me Round": {
+    "Shithouse": 0.48929999999999996
+  },
+  "Agnes Joy": {
+    "Shithouse": 0.52
+  },
+  "Borstal Boy": {
+    "Shithouse": 0.62
+  },
+  "Beatles": {
+    "Shithouse": 0.6
+  },
+  "Frank": {
+    "National Treasure: Book of Secrets": 0.6378,
+    "Vampire's Kiss": 0.5938,
+    "The Electrical Life of Louis Wain": 0.6887,
+    "Military Wives": 0.65,
+    "The Other Lamb": 0.5688,
+    "Lars and the Real Girl": 0.7201,
+    "The Afterlife Club": 0.5,
+    "Vienna": 0.525,
+    "Rebound": 0.5636,
+    "11:11": 0.5,
+    "Spice World": 0.49160000000000004,
+    "Alvin and the Chipmunks": 0.5839000000000001,
+    "Delivery Health": 1.0,
+    "Plan B": 1.0,
+    "The Snow Sister": 0.6789,
+    "I Am Legend": 0.7217,
+    "Life": 0.67,
+    "The Suite": 0.5,
+    "Dona Lurdes: O Filme": 0.73,
+    "Beautiful Boxer": 0.6593
+  },
+  "National Treasure: Book of Secrets": {
+    "Frank": 0.6378
+  },
+  "Vampire's Kiss": {
+    "Frank": 0.5938
+  },
+  "The Electrical Life of Louis Wain": {
+    "Frank": 0.6887
+  },
+  "Military Wives": {
+    "Frank": 0.65
+  },
+  "The Other Lamb": {
+    "Frank": 0.5688
+  },
+  "The Afterlife Club": {
+    "Frank": 0.5
+  },
+  "Vienna": {
+    "Frank": 0.525
+  },
+  "Rebound": {
+    "Frank": 0.5636
+  },
+  "11:11": {
+    "Frank": 0.5
+  },
+  "Spice World": {
+    "Frank": 0.49160000000000004
+  },
+  "Alvin and the Chipmunks": {
+    "Frank": 0.5839000000000001
+  },
+  "Delivery Health": {
+    "Frank": 1.0
+  },
+  "Plan B": {
+    "Frank": 1.0
+  },
+  "The Snow Sister": {
+    "Frank": 0.6789
+  },
+  "I Am Legend": {
+    "Frank": 0.7217
+  },
+  "Life": {
+    "Frank": 0.67
+  },
+  "The Suite": {
+    "Frank": 0.5
+  },
+  "Dona Lurdes: O Filme": {
+    "Frank": 0.73
+  },
+  "Beautiful Boxer": {
+    "Frank": 0.6593
+  },
+  "Swiss Army Man": {
+    "Vishudhan": 0.42000000000000004,
+    "The Possession of Hannah Grace": 0.5637,
+    "Out of the Depths": 0.7,
+    "Muscle Beach Party": 0.5700000000000001,
+    "Children of Nature": 0.6,
+    "Blue Island": 0.3536,
+    "Splatter Beach": 0.33999999999999997,
+    "The Other Guys": 0.6334,
+    "Klipy #goofy2025": 1.0,
+    "Psycho Beach Party": 0.5700000000000001,
+    "The Last Supper": 1.0,
+    "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train": 0.8215,
+    "Radio Days": 0.705,
+    "Lost on a Mountain in Maine": 0.6867,
+    "Pollyanna": 0.6967,
+    "Against the Ice": 0.6768,
+    "This Night I'll Possess Your Corpse": 0.7,
+    "Toxic Shark": 0.5585,
+    "Company: A Musical Comedy": 0.76,
+    "I Just Want to Dance with You": 0.5
+  },
+  "Vishudhan": {
+    "Swiss Army Man": 0.42000000000000004
+  },
+  "The Possession of Hannah Grace": {
+    "Swiss Army Man": 0.5637
+  },
+  "Out of the Depths": {
+    "Swiss Army Man": 0.7
+  },
+  "Muscle Beach Party": {
+    "Swiss Army Man": 0.5700000000000001
+  },
+  "Children of Nature": {
+    "Swiss Army Man": 0.6
+  },
+  "Blue Island": {
+    "Swiss Army Man": 0.3536
+  },
+  "Splatter Beach": {
+    "Swiss Army Man": 0.33999999999999997
+  },
+  "The Other Guys": {
+    "Swiss Army Man": 0.6334
+  },
+  "Klipy #goofy2025": {
+    "Swiss Army Man": 1.0
+  },
+  "Psycho Beach Party": {
+    "Swiss Army Man": 0.5700000000000001
+  },
+  "The Last Supper": {
+    "Swiss Army Man": 1.0
+  },
+  "Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train": {
+    "Swiss Army Man": 0.8215
+  },
+  "Radio Days": {
+    "Swiss Army Man": 0.705
+  },
+  "Lost on a Mountain in Maine": {
+    "Swiss Army Man": 0.6867
+  },
+  "Pollyanna": {
+    "Swiss Army Man": 0.6967
+  },
+  "Against the Ice": {
+    "Swiss Army Man": 0.6768
+  },
+  "This Night I'll Possess Your Corpse": {
+    "Swiss Army Man": 0.7
+  },
+  "Toxic Shark": {
+    "Swiss Army Man": 0.5585
+  },
+  "Company: A Musical Comedy": {
+    "Swiss Army Man": 0.76
+  },
+  "I Just Want to Dance with You": {
+    "Swiss Army Man": 0.5
+  },
+  "Everything Everywhere All At Once": {
+    "The Champions": 0.6900000000000001,
+    "Wuliang": 0.76,
+    "Crazy Horse & Intelligent Monkey": 0.5333,
+    "Mad, Mad, Mad Swords": 0.65,
+    "The Secret Rivals 3": 0.6,
+    "Syndicate": 0.7,
+    "Lesbian Space Princess": 0.4337,
+    "The Brave Lion": 0.475,
+    "Spicy Beauty Queen of Bangkok": 0.6125,
+    "Rurouni Kenshin: The Final": 0.77,
+    "Underdog Kids": 0.54,
+    "The Dynamite Shaolin Heroes": 0.49000000000000005,
+    "Satan Stole Our Hot Dogs!": 0.73,
+    "Loose Cannons": 0.5,
+    "Shaolin Invincible Guys": 0.45999999999999996,
+    "Mothernet": 0.75,
+    "Interpol": 0.4333,
+    "Killers on Wheels": 0.6833,
+    "Fight to Win": 0.55,
+    "Free Ride": 0.5352
+  },
+  "The Champions": {
+    "Everything Everywhere All At Once": 0.6900000000000001
+  },
+  "Wuliang": {
+    "Everything Everywhere All At Once": 0.76
+  },
+  "Crazy Horse & Intelligent Monkey": {
+    "Everything Everywhere All At Once": 0.5333
+  },
+  "Mad, Mad, Mad Swords": {
+    "Everything Everywhere All At Once": 0.65
+  },
+  "The Secret Rivals 3": {
+    "Everything Everywhere All At Once": 0.6
+  },
+  "Syndicate": {
+    "Everything Everywhere All At Once": 0.7
+  },
+  "Lesbian Space Princess": {
+    "Everything Everywhere All At Once": 0.4337
+  },
+  "The Brave Lion": {
+    "Everything Everywhere All At Once": 0.475
+  },
+  "Spicy Beauty Queen of Bangkok": {
+    "Everything Everywhere All At Once": 0.6125
+  },
+  "Rurouni Kenshin: The Final": {
+    "Everything Everywhere All At Once": 0.77
+  },
+  "Underdog Kids": {
+    "Everything Everywhere All At Once": 0.54
+  },
+  "The Dynamite Shaolin Heroes": {
+    "Everything Everywhere All At Once": 0.49000000000000005
+  },
+  "Satan Stole Our Hot Dogs!": {
+    "Everything Everywhere All At Once": 0.73
+  },
+  "Loose Cannons": {
+    "Everything Everywhere All At Once": 0.5
+  },
+  "Shaolin Invincible Guys": {
+    "Everything Everywhere All At Once": 0.45999999999999996
+  },
+  "Mothernet": {
+    "Everything Everywhere All At Once": 0.75
+  },
+  "Interpol": {
+    "Everything Everywhere All At Once": 0.4333
+  },
+  "Killers on Wheels": {
+    "Everything Everywhere All At Once": 0.6833
+  },
+  "Fight to Win": {
+    "Everything Everywhere All At Once": 0.55
+  },
+  "Free Ride": {
+    "Everything Everywhere All At Once": 0.5352
+  },
+  "Little Miss Sunshine": {
+    "I'm Your Man": 0.6742,
+    "Polarized": 0.6285999999999999,
+    "Wayward": 0.61,
+    "Little Peach": 0.6067,
+    "Four Rooms": 0.5907,
+    "Forrest Gump": 0.8465,
+    "American Beauty": 0.7998999999999999,
+    "Separate We Come, Separate We Go": 0.65,
+    "Adolescence": 0.6931,
+    "Quantum Love": 0.5709,
+    "Squandered Sunday": 0.6333,
+    "The Island": 0.5,
+    "Vampie": 0.5,
+    "Kanchana Sita": 0.65,
+    "The Wandering Princess": 0.67,
+    "The Two of Them": 0.61,
+    "Forever a Woman": 0.77,
+    "The Moon Has Risen": 0.6900000000000001,
+    "Gehenu Lamai": 0.6799999999999999,
+    "The Party": 0.7
+  },
+  "Wayward": {
+    "Little Miss Sunshine": 0.61
+  },
+  "Four Rooms": {
+    "Little Miss Sunshine": 0.5907
+  },
+  "Vampie": {
+    "Little Miss Sunshine": 0.5
+  },
+  "Kanchana Sita": {
+    "Little Miss Sunshine": 0.65
+  },
+  "Interstellar": {
+    "Cubit": 0.5,
+    "Mariana 627": 0.7,
+    "Doctor Who: The Daleks": 0.73,
+    "The Stronghold": 0.7158,
+    "Meet Mr. Daddy": 0.45999999999999996,
+    "The Blonde Captive": 0.45,
+    "Despicable Me 2": 0.6900000000000001,
+    "Junior G-Men": 0.65,
+    "The Lost Prince": 0.5697,
+    "Dystopia": 0.52,
+    "Picking Up & Dropping Off": 0.5633,
+    "Doom: Annihilation": 0.4925,
+    "The Mysterious Island": 0.55,
+    "Sioux Rapids": 0.9800000000000001,
+    "Symphony of Six Million": 0.5667,
+    "Top of the Heap": 0.5900000000000001,
+    "Superintelligence": 0.5889,
+    "CTRL Z": 0.7235,
+    "Deadly Harvest": 0.47140000000000004,
+    "Abducted by the Daleks": 0.3154
+  },
+  "Cubit": {
+    "Interstellar": 0.5
+  },
+  "Mariana 627": {
+    "Interstellar": 0.7
+  },
+  "Doctor Who: The Daleks": {
+    "Interstellar": 0.73
+  },
+  "The Stronghold": {
+    "Interstellar": 0.7158
+  },
+  "Meet Mr. Daddy": {
+    "Interstellar": 0.45999999999999996
+  },
+  "The Blonde Captive": {
+    "Interstellar": 0.45
+  },
+  "Despicable Me 2": {
+    "Interstellar": 0.6900000000000001
+  },
+  "Junior G-Men": {
+    "Interstellar": 0.65
+  },
+  "The Lost Prince": {
+    "Interstellar": 0.5697
+  },
+  "Dystopia": {
+    "Interstellar": 0.52
+  },
+  "Picking Up & Dropping Off": {
+    "Interstellar": 0.5633
+  },
+  "Doom: Annihilation": {
+    "Interstellar": 0.4925
+  },
+  "The Mysterious Island": {
+    "Interstellar": 0.55
+  },
+  "Sioux Rapids": {
+    "Interstellar": 0.9800000000000001
+  },
+  "Symphony of Six Million": {
+    "Interstellar": 0.5667
+  },
+  "Top of the Heap": {
+    "Interstellar": 0.5900000000000001
+  },
+  "Superintelligence": {
+    "Interstellar": 0.5889
+  },
+  "CTRL Z": {
+    "Interstellar": 0.7235
+  },
+  "Deadly Harvest": {
+    "Interstellar": 0.47140000000000004
+  },
+  "Abducted by the Daleks": {
+    "Interstellar": 0.3154
+  },
+  "Project Hail Mary": {
+    "The Astronaut Farmer": 0.6271,
+    "Big Brood": 0.8,
+    "Battlefield Earth": 0.3345,
+    "Road to the Stars": 0.5900000000000001,
+    "Science Friction": 0.2,
+    "Space Probe Taurus": 0.425,
+    "Biohazard": 0.3375,
+    "Space Cowboys": 0.6397999999999999,
+    "Live Is Life": 0.6717,
+    "The Fantastic 4: First Steps": 0.6961,
+    "Orpheus Song": 0.55,
+    "Three Lives": 0.5,
+    "Shrek": 0.7766,
+    "Silent Running": 0.6394,
+    "Gattaca": 0.7569,
+    "Hook": 0.6799999999999999,
+    "Jin-Roh: The Wolf Brigade": 0.7392000000000001,
+    "Forbidden Planet": 0.7242,
+    "This Island Earth": 0.6006,
+    "Cars": 0.7034
+  },
+  "Road to the Stars": {
+    "Project Hail Mary": 0.5900000000000001
+  },
+  "Science Friction": {
+    "Project Hail Mary": 0.2
+  },
+  "Space Probe Taurus": {
+    "Project Hail Mary": 0.425
+  },
+  "Biohazard": {
+    "Project Hail Mary": 0.3375
+  },
+  "Space Cowboys": {
+    "Project Hail Mary": 0.6397999999999999
+  },
+  "Live Is Life": {
+    "Project Hail Mary": 0.6717
+  },
+  "Orpheus Song": {
+    "Project Hail Mary": 0.55
+  },
+  "Hook": {
+    "Project Hail Mary": 0.6799999999999999
+  },
+  "Cars": {
+    "Project Hail Mary": 0.7034
+  },
+  "A Silent Voice": {
+    "A Ghost Story": 0.71,
+    "The Chaplin Revue": 0.7388,
+    "Still/Born": 0.5822,
+    "In Your Eyes": 0.71,
+    "Stir of Echoes": 0.6685,
+    "The Dark and the Wicked": 0.6148,
+    "The Messenger": 0.6761999999999999,
+    "The Cut": 0.5894999999999999,
+    "Running on Empty": 0.74,
+    "Nocturne": 0.5848,
+    "Scanners": 0.6716,
+    "The Possession": 0.6038,
+    "The Black Pirate": 0.67,
+    "The In Between": 0.7329,
+    "The Ghost and Mrs. Muir": 0.7542,
+    "The Sheik": 0.6,
+    "Switch": 0.5900000000000001,
+    "The Silence": 0.6017,
+    "Brand Upon the Brain!": 0.6599999999999999,
+    "The Changeling": 0.6971
+  },
+  "The Chaplin Revue": {
+    "A Silent Voice": 0.7388
+  },
+  "Still/Born": {
+    "A Silent Voice": 0.5822
+  },
+  "In Your Eyes": {
+    "A Silent Voice": 0.71
+  },
+  "Stir of Echoes": {
+    "A Silent Voice": 0.6685
+  },
+  "The Dark and the Wicked": {
+    "A Silent Voice": 0.6148
+  },
+  "The Messenger": {
+    "A Silent Voice": 0.6761999999999999
+  },
+  "The Cut": {
+    "A Silent Voice": 0.5894999999999999
+  },
+  "Running on Empty": {
+    "A Silent Voice": 0.74
+  },
+  "Nocturne": {
+    "A Silent Voice": 0.5848
+  },
+  "Scanners": {
+    "A Silent Voice": 0.6716
+  },
+  "The Possession": {
+    "A Silent Voice": 0.6038
+  },
+  "The Black Pirate": {
+    "A Silent Voice": 0.67
+  },
+  "The In Between": {
+    "A Silent Voice": 0.7329
+  },
+  "The Ghost and Mrs. Muir": {
+    "A Silent Voice": 0.7542
+  },
+  "The Sheik": {
+    "A Silent Voice": 0.6
+  },
+  "Switch": {
+    "A Silent Voice": 0.5900000000000001
+  },
+  "The Silence": {
+    "A Silent Voice": 0.6017
+  },
+  "Brand Upon the Brain!": {
+    "A Silent Voice": 0.6599999999999999
+  },
+  "The Changeling": {
+    "A Silent Voice": 0.6971
+  }
+}

@@ -51,7 +51,7 @@ feel_prompt = ('''
     ''').strip("\n")
 
 app = Flask(__name__, static_folder = "static")
-music_sessions, book_sessions = {}, {}
+music_sessions, book_sessions, movie_sessions = {}, {}, {}
 
 def today_str():
     return dt.strftime(dt.now(), "%d-%b-%Y")
@@ -146,6 +146,33 @@ def book_available_seeds(session, mood_index):
     return available, in_graph
 
 
+def movie_to_dict(movie):
+    return {
+        "title": movie.get("title"),
+        "year": movie.get("year"),
+        "url": movie.get("url"),
+    }
+
+def movie_info(title):
+    from scrape_movies import movie_from_library
+    from engine.movie_graph import tmdb_search_url
+    entry = movie_from_library(title)
+    if entry:
+        return {"title": entry["title"], "year": entry.get("year"), "url": entry["url"]}
+    return {"title": title, "year": None, "url": tmdb_search_url(title)}
+
+def movie_available_seeds(session, mood_index):
+    """Same logic as discover_movies.py main()."""
+    from engine.movie_seeds import seed_by_mood
+    seeds = seed_by_mood()[mood_index]
+    in_graph = [m for m in seeds if m in session.graph]
+    available = [m for m in in_graph if m not in session.today_seen]
+    return available, in_graph
+
+
+def movie_discover_session(mood_index):
+    from engine.movie_discover import Discover
+    return Discover.from_file_with_history(mood_index)
 
 def music_available_seeds(session, mood_index):
     """Same as discover.music_available_seeds() but no webbrowser.open."""
@@ -410,6 +437,103 @@ def api_book_step():
         "done": False,
         "current": nxt,
         "book": book_to_dict(book),
+        "stats": {
+            "likes": len(session.like),
+            "dislikes": len(session.dislike),
+            "seen": len(session.seen) - 1,
+        },
+    })
+
+@app.get("/api/discover/movie/seeds")
+def api_movie_seeds():
+    result = mood_from_request()
+    if result is None:
+        return jsonify({"ok": False, "error": "No mood sent from browser"}), 400
+    mood_index, mood_label = result
+    try:
+        session = movie_discover_session(mood_index)
+    except RuntimeError as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 500
+    available, in_graph = movie_available_seeds(session, mood_index)
+    if not in_graph:
+        return jsonify({"ok": False, "error": "No mood seeds found in graph."}), 400
+    if not available:
+        return jsonify({"ok": False, "error": "You've already explored all mood seeds today."}), 400
+    return jsonify({"ok": True, "mood_label": mood_label, "seeds": available})
+
+@app.post("/api/discover/movie/start")
+def api_movie_start():
+    result = mood_from_request()
+    if result is None:
+        return jsonify({"ok": False, "error": "No mood sent from browser"}), 400
+    mood_index, mood_label = result
+    data = request.get_json(force=True)
+    seed_movie = data.get("seed_movie")
+    try:
+        session = movie_discover_session(mood_index)
+    except RuntimeError as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 500
+    available, in_graph = movie_available_seeds(session, mood_index)
+    if not in_graph:
+        return jsonify({"ok": False, "error": "No mood seeds found in graph."}), 400
+    if not available:
+        return jsonify({"ok": False, "error": "All mood seeds seen today."}), 400
+    if not seed_movie or seed_movie not in available:
+        seed_movie = random.choice(in_graph)
+    session.seed_movie = seed_movie
+    session.seen.add(seed_movie)
+    sid = str(uuid.uuid4())
+    movie_sessions[sid] = {"session": session, "mood_index": mood_index}
+    movie = movie_info(seed_movie)
+    return jsonify({
+        "ok": True,
+        "session_id": sid,
+        "mood_label": mood_label,
+        "seeds": available,
+        "current": seed_movie,
+        "movie": movie_to_dict(movie),
+    })
+
+@app.post("/api/discover/movie/step")
+def api_movie_step():
+    from engine.movie_ratings import log_rating, movies_today_liked
+    data = request.get_json(force=True)
+    sid = data["session_id"]
+    choice = data["choice"]
+    current = data["current"]
+    if sid not in movie_sessions:
+        return jsonify({"ok": False, "error": "Session expired"}), 404
+    bundle = movie_sessions[sid]
+    session = bundle["session"]
+    mood_index = bundle["mood_index"]
+    if choice == "q":
+        payload = {
+            "ok": True,
+            "done": True,
+            "likes_today": list(movies_today_liked(mood_index)),
+            "likes_session": list(session.like),
+        }
+        del movie_sessions[sid]
+        return jsonify(payload)
+    if choice == "l":
+        session.rate_movie(current, "like")
+        log_rating(current, "like", mood_index)
+    elif choice == "d":
+        session.rate_movie(current, "dislike")
+        log_rating(current, "dislike", mood_index)
+    elif choice == "u":
+        session.rate_movie(current, "unknown")
+        log_rating(current, "unknown", mood_index)
+    nxt = session.next_movie()
+    if nxt is None:
+        del movie_sessions[sid]
+        return jsonify({"ok": True, "done": True, "message": "No more recommendations."})
+    movie = movie_info(nxt)
+    return jsonify({
+        "ok": True,
+        "done": False,
+        "current": nxt,
+        "movie": movie_to_dict(movie),
         "stats": {
             "likes": len(session.like),
             "dislikes": len(session.dislike),

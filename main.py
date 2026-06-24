@@ -11,6 +11,7 @@ from pathlib import Path
 from recommend import format_recommendations, get_recommendations, get_feeling
 from discover import main as discover_main
 from discover_books import main as discover_books_main
+from discover_movies import main as discover_movies_main
 
 root = Path(__file__).parent
 
@@ -25,6 +26,7 @@ def main():
     print(f"  [1] A quick music recommendation for your mood")
     print(f"  [2] Discover music and artists based on your mood")
     print(f"  [3] Discover books based on your mood (This is slow because books are slow to call)")
+    print(f"  [4] Discover movies based on your mood")
     input_choice = input("Response: ").strip().lower()
     if input_choice == "1":
         recommendations = get_recommendations()
@@ -33,6 +35,8 @@ def main():
         discover_main()
     elif input_choice == "3":
         discover_books_main()
+    elif input_choice == "4":
+        discover_movies_main()
     elif feeling_index is None:
         print("Why do you have no feelings today?")
         return

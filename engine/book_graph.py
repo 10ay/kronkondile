@@ -37,7 +37,7 @@ def get_api():
 def cache_path():
     return root / "data" / "openlibrary_cache.json"
 
-def cache_key(book: str) -> str:
+def cache_key(book):
     return book.strip().lower()
 
 def load_cache():
