@@ -358,3 +358,78 @@ a:hover {
 #discover-movie-panel .rate-buttons button:nth-child(4) {
   background-color: var(--ace-black);
 }
+
+#session-summary-intro {
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.session-summary-empty {
+  color: #555;
+  font-style: italic;
+  margin: 0.5rem 0 0;
+}
+
+.session-summary-items {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+  line-height: 1.6;
+}
+
+.session-summary-items li {
+  margin-bottom: 0.35rem;
+}
+
+#session-summary-panel button {
+  background-color: var(--ace-purple);
+}
+
+#session-minion-panel {
+  text-align: center;
+  padding: 1rem 1.35rem 1.5rem;
+}
+
+.minion-banana-wrap {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.banana-rainbow {
+  position: absolute;
+  top: 0.35rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: clamp(1.75rem, 8vw, 2.5rem);
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  white-space: nowrap;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    #e40303,
+    #ff8c00,
+    #ffed00,
+    #008026,
+    #24408e,
+    #732982
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.35);
+  paint-order: stroke fill;
+  filter: drop-shadow(0 2px 2px rgba(255, 255, 255, 0.85));
+}
+
+.minion-image {
+  display: block;
+  max-width: min(100%, 320px);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid var(--ace-black);
+}

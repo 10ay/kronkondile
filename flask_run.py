@@ -337,7 +337,12 @@ def api_music_step():
     nxt = session.next_artist()
     if nxt is None:
         del music_sessions[sid]
-        return jsonify({"ok": True, "done": True, "message": "No more recommendations."})
+        return jsonify({
+            "ok": True,
+            "done": True,
+            "message": "No more recommendations.",
+            "likes_session": list(session.like),
+        })
     track = music_artist_info(nxt)
     return jsonify({
         "ok": True,
@@ -430,7 +435,12 @@ def api_book_step():
     nxt = session.next_book()
     if nxt is None:
         del book_sessions[sid]
-        return jsonify({"ok": True, "done": True, "message": "No more recommendations."})
+        return jsonify({
+            "ok": True,
+            "done": True,
+            "message": "No more recommendations.",
+            "likes_session": list(session.like),
+        })
     book = book_info(nxt)
     return jsonify({
         "ok": True,
@@ -527,7 +537,12 @@ def api_movie_step():
     nxt = session.next_movie()
     if nxt is None:
         del movie_sessions[sid]
-        return jsonify({"ok": True, "done": True, "message": "No more recommendations."})
+        return jsonify({
+            "ok": True,
+            "done": True,
+            "message": "No more recommendations.",
+            "likes_session": list(session.like),
+        })
     movie = movie_info(nxt)
     return jsonify({
         "ok": True,

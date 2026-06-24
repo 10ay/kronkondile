@@ -87,6 +87,21 @@
     <div id="discover-movie-stats" class="discover-stats" aria-live="polite"></div>
   </section>
 
+  <!-- Session likes summary (replaces discover panel after quit or session end) -->
+  <section id="session-summary-panel" class="hidden">
+    <h2 id="session-summary-title">Session favorites</h2>
+    <p id="session-summary-intro"></p>
+    <div id="session-summary-list"></div>
+    <button type="button" onclick="backToMenu()">Back to menu</button>
+  </section>
+
+  <section id="session-minion-panel" class="hidden">
+    <div class="minion-banana-wrap">
+      <p class="banana-rainbow" aria-hidden="true">BANANA</p>
+      <img src="/static/minion.png" alt="Minion" class="minion-image" />
+    </div>
+  </section>
+
   <script>
     let moodIndex = null;
     let discoverSessionId = null;
@@ -139,6 +154,58 @@
       document.getElementById("mood-label").textContent = mood_label;
       document.getElementById("feelings-panel").classList.add("hidden");
       document.getElementById("menu-panel").classList.remove("hidden");
+    }
+
+    function hideDiscoverPanels() {
+      document.getElementById("discover-panel").classList.add("hidden");
+      document.getElementById("discover-book-panel").classList.add("hidden");
+      document.getElementById("discover-movie-panel").classList.add("hidden");
+      document.getElementById("session-summary-panel").classList.add("hidden");
+      document.getElementById("session-minion-panel").classList.add("hidden");
+    }
+
+    function showSessionSummary(panel_to_hide, kind, likes, message) {
+      document.getElementById(panel_to_hide).classList.add("hidden");
+      document.getElementById("session-summary-title").textContent =
+        "These are your favorites from this session";
+      document.getElementById("session-summary-intro").textContent =
+        message || "These are the things you liked in this session:";
+      const list_el = document.getElementById("session-summary-list");
+      list_el.innerHTML = "";
+      if (!likes || likes.length === 0) {
+        const empty = document.createElement("p");
+        empty.className = "session-summary-empty";
+        empty.textContent = "You didn't like anything boo!!";
+        list_el.appendChild(empty);
+      } else {
+        const ul = document.createElement("ul");
+        ul.className = "session-summary-items";
+        likes.forEach((item) => {
+          const li = document.createElement("li");
+          li.textContent = item;
+          ul.appendChild(li);
+        });
+        list_el.appendChild(ul);
+      }
+      document.getElementById("session-summary-panel").classList.remove("hidden");
+      document.getElementById("session-minion-panel").classList.remove("hidden");
+    }
+
+    function backToMenu() {
+      hideDiscoverPanels();
+      document.getElementById("menu-panel").classList.remove("hidden");
+    }
+
+    function finishDiscoverSession(panel_to_hide, kind, data) {
+      showSessionSummary(
+        panel_to_hide,
+        kind,
+        data.likes_session || [],
+        data.message || null
+      );
+      discoverSessionId = null;
+      bookDiscoverSessionId = null;
+      movieDiscoverSessionId = null;
     }
 
     function require_mood() {
@@ -218,6 +285,7 @@
       document.getElementById("discover-stats").innerHTML = "";
       discoverSessionId = null;
       currentArtist = null;
+      hideDiscoverPanels();
       document.getElementById("discover-panel").classList.remove("hidden");
       } catch (err) {
         alert("Discover failed: " + err);
@@ -257,6 +325,7 @@ async function startDiscoverBooks() {
     document.getElementById("discover-book-stats").innerHTML = "";
     bookDiscoverSessionId = null;
     currentBook = null;
+    hideDiscoverPanels();
     document.getElementById("discover-book-panel").classList.remove("hidden");
   } catch (err) {
     alert("Discover failed: " + err);
@@ -307,7 +376,7 @@ async function rateBook(choice) {
   });
   const data = await res.json();
   if (data.done) {
-    alert(data.message || "Session over");
+    finishDiscoverSession("discover-book-panel", "book", data);
     return;
   }
   showBook(data.current, data.book);
@@ -325,7 +394,8 @@ async function quitDiscoverBooks() {
     }),
   });
   const data = await res.json();
-  alert("Liked in this session: " + ((data.likes_session || []).join(", ") || "(none)"));
+  if (!data.ok) return alert(data.error || "Could not end session");
+  finishDiscoverSession("discover-book-panel", "book", data);
 }
 
 async function startDiscoverMovies() {
@@ -348,6 +418,7 @@ async function startDiscoverMovies() {
     document.getElementById("discover-movie-stats").innerHTML = "";
     movieDiscoverSessionId = null;
     currentMovie = null;
+    hideDiscoverPanels();
     document.getElementById("discover-movie-panel").classList.remove("hidden");
   } catch (err) {
     alert("Discover failed: " + err);
@@ -398,7 +469,7 @@ async function rateMovie(choice) {
   });
   const data = await res.json();
   if (data.done) {
-    alert(data.message || "Session over");
+    finishDiscoverSession("discover-movie-panel", "movie", data);
     return;
   }
   showMovie(data.current, data.movie);
@@ -416,7 +487,8 @@ async function quitDiscoverMovies() {
     }),
   });
   const data = await res.json();
-  alert("Liked in this session: " + ((data.likes_session || []).join(", ") || "(none)"));
+  if (!data.ok) return alert(data.error || "Could not end session");
+  finishDiscoverSession("discover-movie-panel", "movie", data);
 }
     function showArtist(name, url) {
       currentArtist = name;
@@ -448,7 +520,7 @@ async function quitDiscoverMovies() {
       });
       const data = await res.json();
       if (data.done) {
-        alert(data.message || "Session over");
+        finishDiscoverSession("discover-panel", "music", data);
         return;
       }
       showArtist(data.current, data.track.url);
@@ -469,7 +541,8 @@ async function quitDiscoverMovies() {
         }),
       });
       const data = await res.json();
-      alert("Liked in this session: " + ((data.likes_session || []).join(", ") || "(none)"));
+      if (!data.ok) return alert(data.error || "Could not end session");
+      finishDiscoverSession("discover-panel", "music", data);
     }
 
     loadFeelingsState(); // skip feelings prompt if already logged today
