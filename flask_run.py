@@ -167,6 +167,19 @@ def movie_available_seeds(session, mood_index):
     seeds = seed_by_mood()[mood_index]
     in_graph = [m for m in seeds if m in session.graph]
     available = [m for m in in_graph if m not in session.today_seen]
+    favorites = session.all_time_favorites
+
+    if favorites:
+        not_in_available = [
+            m for m in favorites
+            if m not in available and m not in seed_by_mood()[mood_index]
+        ]
+        if 0 < len(not_in_available) <= 5:
+            available.extend(not_in_available)
+        elif len(not_in_available) > 5:
+            picks = random.sample(range(len(not_in_available)), 5)
+            available.extend(not_in_available[i] for i in picks)
+
     return available, in_graph
 
 
@@ -506,11 +519,12 @@ def api_movie_start():
 
 @app.post("/api/discover/movie/step")
 def api_movie_step():
-    from engine.movie_ratings import log_rating, movies_today_liked
+    from engine.movie_ratings import log_rating, log_all_time_favorites, movies_today_liked
     data = request.get_json(force=True)
     sid = data["session_id"]
     choice = data["choice"]
     current = data["current"]
+    add_favorites = data.get("add_favorites", False)
     if sid not in movie_sessions:
         return jsonify({"ok": False, "error": "Session expired"}), 404
     bundle = movie_sessions[sid]
@@ -523,6 +537,8 @@ def api_movie_step():
             "likes_today": list(movies_today_liked(mood_index)),
             "likes_session": list(session.like),
         }
+        if add_favorites:
+            log_all_time_favorites(session.like, mood_index)
         del movie_sessions[sid]
         return jsonify(payload)
     if choice == "l":

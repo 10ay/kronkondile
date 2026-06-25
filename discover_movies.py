@@ -35,6 +35,21 @@ def main():
         print("You've already explored all mood seeds today. Try again tomorrow or another mood.")
         return
 
+    all_time_favorites = session.all_time_favorites
+    if all_time_favorites:
+        not_in_available = [a for a in all_time_favorites if a not in available and a not in seed_by_mood()[mood_index]]
+        if len(not_in_available) <= 5 and len(not_in_available) > 0:
+            for i in range(0, len(not_in_available)):
+                not_in_available_to_add = not_in_available[i]
+                available.append(not_in_available_to_add)
+        else:
+            random_integer = random.sample(range(0, len(not_in_available)), 5)
+            for i in range(0, 5):
+                not_in_available_to_add = not_in_available[random_integer[i]]
+                available.append(not_in_available_to_add)
+    
+
+
     seeds = available
     print(f"\nThis is your latest mood: {mood_label}")
     print(f"\nThese are your films for this mood: {seeds}")
@@ -59,7 +74,13 @@ def main():
             print("Would you like to see the films you liked today?")
             see_today = input("Type 'y' for yes, 'n' for no: ").strip().lower()
             if see_today == "y":
-                print(f"\nFilms you liked today: {movies_today_liked(mood_index)}")
+                updated_session = Discover.from_file_with_history(mood_index)
+                print(f"\nThese are the movies you have liked today: {updated_session.movies_today_liked}")
+                print(f"\nThese are the movies you have liked in this session: {session.like}")
+                print(f"\n Would you like to add movies from this session to your favorites?")
+                add_to_favorites = input("Type 'y' for yes, 'n' for no: ").strip().lower()
+                if add_to_favorites == "y":
+                    log_all_time_favorites(session.like, mood_index)
             break
         if choice == "l":
             session.rate_movie(current, "like")

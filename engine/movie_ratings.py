@@ -4,6 +4,7 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parent.parent
 ratings_path = root / "data" / "movie_ratings.tsv"
+all_time_favorites_path = root / "data" / "all_time_favorites_movies.tsv"
 
 def log_rating(movie, verdict, mood_index):
     ratings_path.parent.mkdir(parents=True, exist_ok=True)
@@ -33,6 +34,59 @@ def load_ratings():
             "mood": parts[3] if len(parts) > 3 else None,
         })
     return rows
+
+def load_all_time_favorites():
+    if not all_time_favorites_path.exists():
+        return []
+
+    rows: list[dict] = []
+    lines = all_time_favorites_path.read_text(encoding="utf-8").splitlines()
+
+    if not lines:
+        return []
+
+    start = 1 if lines[0].startswith("date\t") else 0
+    for line in lines[start:]:
+        parts = line.split("\t")
+        if len(parts) >= 3:
+            row_date = parts[0]
+            title = parts[1]
+            mood = parts[2]
+        elif len(parts) == 2:
+            row_date = ""
+            title = parts[0]
+            mood = parts[1]
+        elif len(parts) == 1 and parts[0].strip():
+            row_date = ""
+            title = parts[0].strip()
+            mood = None
+        else:
+            continue
+        rows.append({
+            "date": row_date,
+            "title": title,
+            "mood": mood,
+        })
+
+    return rows
+
+def log_all_time_favorites(titles, mood_index):
+    all_time_favorites_path.parent.mkdir(parents=True, exist_ok=True)
+    mood = "" if mood_index is None else str(mood_index)
+
+    existing = {row["title"] for row in load_all_time_favorites()}
+    write_header = (
+        not all_time_favorites_path.exists()
+        or all_time_favorites_path.stat().st_size == 0
+    )
+
+    with all_time_favorites_path.open("a", encoding="utf-8") as f:
+        for title in titles:
+            if title in existing:
+                continue
+            f.write(f"{date.today()}\t{title}\t{mood}\n")
+            existing.add(title)
+
 
 def liked_from_history(mood_index=None):
     likes = set()
@@ -76,3 +130,11 @@ def movies_today_liked(mood_index=None):
         if row["verdict"] == "like":
             liked.add(row["movie"])
     return liked
+
+def all_time_favorites(mood_index = None):
+    movies_favorite = set()
+    for row in load_all_time_favorites():
+        if mood_index is not None and row["mood"] != str(mood_index):
+            continue
+        movies_favorite.add(row["title"])
+    return movies_favorite

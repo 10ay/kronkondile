@@ -477,6 +477,7 @@ async function rateMovie(choice) {
 }
 
 async function quitDiscoverMovies() {
+  const add = confirm("Add session likes to all-time favorites?");
   const res = await fetch("/api/discover/movie/step", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -484,6 +485,7 @@ async function quitDiscoverMovies() {
       session_id: movieDiscoverSessionId,
       current: currentMovie,
       choice: "q",
+      add_favorites: add,
     }),
   });
   const data = await res.json();

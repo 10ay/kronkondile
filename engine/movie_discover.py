@@ -6,7 +6,7 @@ from engine.movie_ratings import *
 
 class Discover:
     def __init__(self, graph, history_likes=None, history_dislikes=None,
-                 today_seen=None, movies_today_liked_set=None):
+                 today_seen=None, movies_today_liked_set=None, all_time_favorites=None):
         self.graph = graph
         self.like = set()
         self.dislike = set()
@@ -15,6 +15,7 @@ class Discover:
         self.history_dislikes = set(history_dislikes or [])
         self.today_seen = set(today_seen or [])
         self.movies_today_liked = set(movies_today_liked_set or [])
+        self.all_time_favorites = set(all_time_favorites or [])
         self.seed_movie = None
 
     @classmethod
@@ -30,6 +31,7 @@ class Discover:
             history_dislikes=disliked_from_history(mood_index),
             today_seen=movies_today(mood_index),
             movies_today_liked_set=movies_today_liked(mood_index),
+            all_time_favorites = all_time_favorites(mood_index),
         )
 
     def taste_profile(self):
