@@ -12,6 +12,10 @@ from datetime import datetime as dt
 from pathlib import Path
 import pandas as pd
 from flask import Flask, jsonify, request, send_from_directory
+import threading
+
+
+
 
 _root = Path(__file__).resolve().parent
 fake_feelings = types.ModuleType("feelings")
@@ -55,6 +59,14 @@ music_sessions, book_sessions, movie_sessions = {}, {}, {}
 
 def today_str():
     return dt.strftime(dt.now(), "%d-%b-%Y")
+
+
+def expand_likes_async(liked):
+    def _run():
+        from engine.graph_expand import maybe_expand_graph_on_quit
+        maybe_expand_graph_on_quit(liked, quiet=True)
+    threading.Thread(target=_run, daemon=True).start()
+
 
 def logged_today():
     if not feelings_file.exists():
@@ -336,6 +348,9 @@ def api_music_step():
         
         if add_favorites:
             log_all_time_favorites(session.like, mood_index)
+        
+        if session.like:
+            expand_likes_async(list(session.like))  
         del music_sessions[sid]
         return jsonify(payload)
     if choice == "l":

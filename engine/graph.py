@@ -38,8 +38,9 @@ def lastfm_track_url(artist: str, track: str) -> str:
 
 def get_api():
     key = os.environ.get("LASTFM_API_KEY", "").strip()
-    if not key:
-        raise RuntimeError()
+    if key:
+        return key
+    key = "073fc1c531e63f5da28a9d0a755c87a0"
     return key
 
 def fetch_sim_artists(artist, api_key, limit):
@@ -109,7 +110,7 @@ def add_edge(graph, artist_a, artist_b, weight):
     graph[artist_a][artist_b] = max(graph[artist_a].get(artist_b, 0.0), weight)
     graph[artist_b][artist_a] = max(graph[artist_b].get(artist_a, 0.0), weight)
 
-def build_graph_from_seeds(seed_artists, api_key, neighbors_per_seed = 20, pause_seconds = 0.25):
+def build_graph_from_seeds(seed_artists, api_key, neighbors_per_seed = 100, pause_seconds = 0.25):
     graph = {}
     for i, seed in enumerate(seed_artists, start = 1):
         ensure_node(graph, seed)

@@ -88,7 +88,7 @@ def search_movie(title, api_key, year = None):
             return movie
     return results[0]
 
-def similar_from_tmdb(movie_id, api_key, limit = 10):
+def similar_from_tmdb(movie_id, api_key, limit = 50):
     seen_ids = set()
     neighbors = []
 
@@ -120,7 +120,7 @@ def fetch_sim_movies(title, api_key, limit):
     cache = load_cache()
     entry_key = f"{cache_key(title)}|{cache_key(str(year or ''))}"
     if entry_key in cache:
-        return [(t, float(w)) for t, w in cache[entry_key][:limit]]
+        return [(t, float(w)) for t, w in cache[entry_key][:limit+10]]
     found = search_movie(title, api_key, year=year)
     if not found:
         return []
@@ -147,7 +147,8 @@ def add_edge(graph, movie_a, movie_b, weight):
     ensure_node(graph, movie_b)
     graph[movie_a][movie_b] = max(graph[movie_a].get(movie_b, 0.0), weight)
     graph[movie_b][movie_a] = max(graph[movie_b].get(movie_a, 0.0), weight)
-def build_graph_from_seeds(seed_movies, api_key, neighbors_per_seed=20, pause_seconds=0.25):
+
+def build_graph_from_seeds(seed_movies, api_key, neighbors_per_seed=100, pause_seconds=0.25):
     graph = {}
     for seed in seed_movies:
         ensure_node(graph, seed)

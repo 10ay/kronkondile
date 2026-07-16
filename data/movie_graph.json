@@ -235,8 +235,7 @@
   },
   "C'mon C'mon": {
     "Past Lives": 0.7178,
-    "Boyhood": 0.7178,
-    "Blade Runner 2049": 0.7178
+    "Boyhood": 0.7178
   },
   "La Musica": {
     "Past Lives": 0.5,
@@ -837,8 +836,7 @@
     "Grand Budapest Hotel": 0.7721
   },
   "Teenage Mutant Ninja Turtles: Mutant Mayhem": {
-    "Bottoms": 0.72,
-    "Rise of the Planet of the Apes": 0.72
+    "Bottoms": 0.72
   },
   "The First Time": {
     "Bottoms": 0.5
@@ -848,8 +846,7 @@
   },
   "Rush Hour": {
     "Bottoms": 0.708,
-    "Grand Budapest Hotel": 0.708,
-    "Rise of the Planet of the Apes": 0.708
+    "Grand Budapest Hotel": 0.708
   },
   "The Private Lesson": {
     "Bottoms": 0.5408999999999999
@@ -1065,8 +1062,7 @@
     "Grand Budapest Hotel": 0.5892999999999999
   },
   "Mr. Holland's Opus": {
-    "Grand Budapest Hotel": 0.6964,
-    "Rise of the Planet of the Apes": 0.6964
+    "Grand Budapest Hotel": 0.6964
   },
   "Could This Be Love?": {
     "Grand Budapest Hotel": 0.6323000000000001
@@ -1091,403 +1087,6 @@
   },
   "Me and My Sister": {
     "Grand Budapest Hotel": 0.5599999999999999
-  },
-  "Dune": {
-    "The Astronaut Farmer": 0.6271,
-    "Big Brood": 0.8,
-    "Whom the Gods Wish to Destroy": 0.65,
-    "Battlefield Earth": 0.3345,
-    "VIVA": 0.5,
-    "Dead Weekend": 0.3,
-    "RoboCop": 0.7361,
-    "RoboCop 3": 0.4901,
-    "The Fantastic 4: First Steps": 0.6961,
-    "Three Lives": 0.5,
-    "Shrek": 0.7766,
-    "Silent Running": 0.6394,
-    "Gattaca": 0.7569,
-    "Jin-Roh: The Wolf Brigade": 0.7392000000000001,
-    "Forbidden Planet": 0.7242,
-    "This Island Earth": 0.6006,
-    "Dawn of the Dead": 0.749,
-    "Programmed to Kill": 0.37,
-    "Lawrence of Arabia": 0.7997,
-    "Delicatessen": 0.7314
-  },
-  "The Astronaut Farmer": {
-    "Dune": 0.6271,
-    "Project Hail Mary": 0.6271
-  },
-  "Big Brood": {
-    "Dune": 0.8,
-    "Project Hail Mary": 0.8
-  },
-  "Whom the Gods Wish to Destroy": {
-    "Dune": 0.65,
-    "Fellowship of the Ring": 0.65
-  },
-  "Battlefield Earth": {
-    "Dune": 0.3345,
-    "Fellowship of the Ring": 0.3345,
-    "Project Hail Mary": 0.3345
-  },
-  "VIVA": {
-    "Dune": 0.5
-  },
-  "Dead Weekend": {
-    "Dune": 0.3
-  },
-  "RoboCop": {
-    "Dune": 0.7361,
-    "Fellowship of the Ring": 0.7361
-  },
-  "RoboCop 3": {
-    "Dune": 0.4901
-  },
-  "The Fantastic 4: First Steps": {
-    "Dune": 0.6961,
-    "Project Hail Mary": 0.6961
-  },
-  "Three Lives": {
-    "Dune": 0.5,
-    "Fellowship of the Ring": 0.5,
-    "Project Hail Mary": 0.5
-  },
-  "Shrek": {
-    "Dune": 0.7766,
-    "Fellowship of the Ring": 0.7766,
-    "Project Hail Mary": 0.7766
-  },
-  "Silent Running": {
-    "Dune": 0.6394,
-    "Project Hail Mary": 0.6394
-  },
-  "Gattaca": {
-    "Dune": 0.7569,
-    "Project Hail Mary": 0.7569
-  },
-  "Jin-Roh: The Wolf Brigade": {
-    "Dune": 0.7392000000000001,
-    "Project Hail Mary": 0.7392000000000001
-  },
-  "Forbidden Planet": {
-    "Dune": 0.7242,
-    "Project Hail Mary": 0.7242
-  },
-  "This Island Earth": {
-    "Dune": 0.6006,
-    "Project Hail Mary": 0.6006
-  },
-  "Dawn of the Dead": {
-    "Dune": 0.749
-  },
-  "Programmed to Kill": {
-    "Dune": 0.37
-  },
-  "Lawrence of Arabia": {
-    "Dune": 0.7997
-  },
-  "Delicatessen": {
-    "Dune": 0.7314
-  },
-  "Fellowship of the Ring": {
-    "That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea": 0.6714,
-    "Haunted Mansion": 0.6429,
-    "Whom the Gods Wish to Destroy": 0.65,
-    "Whom the Gods Wish to Destroy 2": 0.6471,
-    "Battlefield Earth": 0.3345,
-    "Cherry, Harry & Raquel!": 0.5478,
-    "Deadly Prey": 0.4918,
-    "Black Snake": 0.53,
-    "Sher Mountain Killings Mystery": 0.6,
-    "Beowulf": 0.44000000000000006,
-    "Beowulf & Grendel": 0.5569,
-    "RoboCop": 0.7361,
-    "Returner": 0.6532,
-    "Three Lives": 0.5,
-    "Shrek": 0.7766,
-    "Shrek 2": 0.732,
-    "Aladdin": 0.7654,
-    "Vampyr": 0.73,
-    "Scarface": 0.7403,
-    "Bullitt": 0.7148
-  },
-  "That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea": {
-    "Fellowship of the Ring": 0.6714
-  },
-  "Haunted Mansion": {
-    "Fellowship of the Ring": 0.6429
-  },
-  "Whom the Gods Wish to Destroy 2": {
-    "Fellowship of the Ring": 0.6471
-  },
-  "Cherry, Harry & Raquel!": {
-    "Fellowship of the Ring": 0.5478
-  },
-  "Deadly Prey": {
-    "Fellowship of the Ring": 0.4918
-  },
-  "Black Snake": {
-    "Fellowship of the Ring": 0.53
-  },
-  "Sher Mountain Killings Mystery": {
-    "Fellowship of the Ring": 0.6
-  },
-  "Beowulf": {
-    "Fellowship of the Ring": 0.44000000000000006
-  },
-  "Beowulf & Grendel": {
-    "Fellowship of the Ring": 0.5569
-  },
-  "Returner": {
-    "Fellowship of the Ring": 0.6532
-  },
-  "Shrek 2": {
-    "Fellowship of the Ring": 0.732
-  },
-  "Aladdin": {
-    "Fellowship of the Ring": 0.7654
-  },
-  "Vampyr": {
-    "Fellowship of the Ring": 0.73
-  },
-  "Scarface": {
-    "Fellowship of the Ring": 0.7403
-  },
-  "Bullitt": {
-    "Fellowship of the Ring": 0.7148
-  },
-  "Superman": {
-    "Kamen Rider V3 vs. Destron Mutants": 0.6,
-    "Tank Girl": 0.5504,
-    "Kamen Rider Saber + Kikai Sentai Zenkaiger: Super Hero Chronicles": 0.6,
-    "The Avengers": 0.8047000000000001,
-    "Black Dynamite": 0.7097,
-    "Minor Details": 0.72,
-    "Revice Forward: Kamen Rider Live & Evil & Demons": 0.75,
-    "Pretty Cure All Stars New Stage 3: Eternal Friends": 0.7227,
-    "Sheena": 0.5669,
-    "Virgo and the Sparklings": 0.5563,
-    "Sonic the Hedgehog": 0.7281,
-    "Masters of the Universe": 0.73,
-    "Accident Man": 0.6287,
-    "The Martian": 0.77,
-    "Knights of the Zodiac": 0.63,
-    "Sign Gene": 0.72,
-    "Max Steel": 0.5576,
-    "The Medallion": 0.5616,
-    "Howard the Duck": 0.54,
-    "WALL\u00b7E": 0.8114000000000001
-  },
-  "Kamen Rider V3 vs. Destron Mutants": {
-    "Superman": 0.6
-  },
-  "Tank Girl": {
-    "Superman": 0.5504,
-    "Blade Runner 2049": 0.5504
-  },
-  "Kamen Rider Saber + Kikai Sentai Zenkaiger: Super Hero Chronicles": {
-    "Superman": 0.6
-  },
-  "The Avengers": {
-    "Superman": 0.8047000000000001
-  },
-  "Black Dynamite": {
-    "Superman": 0.7097
-  },
-  "Minor Details": {
-    "Superman": 0.72
-  },
-  "Revice Forward: Kamen Rider Live & Evil & Demons": {
-    "Superman": 0.75
-  },
-  "Pretty Cure All Stars New Stage 3: Eternal Friends": {
-    "Superman": 0.7227
-  },
-  "Sheena": {
-    "Superman": 0.5669
-  },
-  "Virgo and the Sparklings": {
-    "Superman": 0.5563
-  },
-  "Sonic the Hedgehog": {
-    "Superman": 0.7281
-  },
-  "Masters of the Universe": {
-    "Superman": 0.73
-  },
-  "Accident Man": {
-    "Superman": 0.6287
-  },
-  "The Martian": {
-    "Superman": 0.77
-  },
-  "Knights of the Zodiac": {
-    "Superman": 0.63
-  },
-  "Sign Gene": {
-    "Superman": 0.72
-  },
-  "Max Steel": {
-    "Superman": 0.5576
-  },
-  "The Medallion": {
-    "Superman": 0.5616
-  },
-  "Howard the Duck": {
-    "Superman": 0.54
-  },
-  "WALL\u00b7E": {
-    "Superman": 0.8114000000000001
-  },
-  "Rise of the Planet of the Apes": {
-    "Hulk": 0.5584,
-    "eXistenZ": 0.6787,
-    "Zodiac": 0.7532,
-    "Fantastic Four: Rise of the Silver Surfer": 0.5631999999999999,
-    "1984": 0.65,
-    "Death Proof": 0.6839000000000001,
-    "Mr. Holland's Opus": 0.6964,
-    "National Treasure": 0.6652,
-    "Shattered": 0.614,
-    "The Immortal Wars: Dekay's Paradox": 0.5,
-    "The Time Machine": 0.7359,
-    "Final Fantasy: The Spirits Within": 0.6198,
-    "The Silence After": 0.5,
-    "Better Man": 0.76,
-    "Teenage Mutant Ninja Turtles: Mutant Mayhem": 0.72,
-    "Stardust": 0.5,
-    "Rush Hour": 0.708,
-    "Dead Wave": 0.55,
-    "Dystopia: 2013": 0.2,
-    "Ismail Yassine in the House of Ghosts": 0.63
-  },
-  "Hulk": {
-    "Rise of the Planet of the Apes": 0.5584
-  },
-  "eXistenZ": {
-    "Rise of the Planet of the Apes": 0.6787
-  },
-  "Zodiac": {
-    "Rise of the Planet of the Apes": 0.7532
-  },
-  "Fantastic Four: Rise of the Silver Surfer": {
-    "Rise of the Planet of the Apes": 0.5631999999999999
-  },
-  "1984": {
-    "Rise of the Planet of the Apes": 0.65
-  },
-  "Death Proof": {
-    "Rise of the Planet of the Apes": 0.6839000000000001
-  },
-  "National Treasure": {
-    "Rise of the Planet of the Apes": 0.6652
-  },
-  "Shattered": {
-    "Rise of the Planet of the Apes": 0.614
-  },
-  "The Immortal Wars: Dekay's Paradox": {
-    "Rise of the Planet of the Apes": 0.5
-  },
-  "The Time Machine": {
-    "Rise of the Planet of the Apes": 0.7359
-  },
-  "Final Fantasy: The Spirits Within": {
-    "Rise of the Planet of the Apes": 0.6198
-  },
-  "The Silence After": {
-    "Rise of the Planet of the Apes": 0.5
-  },
-  "Better Man": {
-    "Rise of the Planet of the Apes": 0.76
-  },
-  "Stardust": {
-    "Rise of the Planet of the Apes": 0.5
-  },
-  "Dead Wave": {
-    "Rise of the Planet of the Apes": 0.55
-  },
-  "Dystopia: 2013": {
-    "Rise of the Planet of the Apes": 0.2
-  },
-  "Ismail Yassine in the House of Ghosts": {
-    "Rise of the Planet of the Apes": 0.63
-  },
-  "Blade Runner 2049": {
-    "AI Amok": 0.71,
-    "Tank Girl": 0.5504,
-    "Grandma's Ashes": 0.5,
-    "C'mon C'mon": 0.7178,
-    "The Time Traveler's Wife": 0.6942,
-    "Zatoichi Meets the One-Armed Swordsman": 0.6799999999999999,
-    "Harrison Bergeron": 0.6763,
-    "Miracle Mile": 0.6863,
-    "Six-String Samurai": 0.6263,
-    "Operation Napoleon: Tears of the Wolf": 0.5,
-    "Sardinia": 0.77,
-    "Rise from Your Grave": 0.5,
-    "Pitfall": 0.6900000000000001,
-    "When Artificial Intelligence Changes Intelligence": 0.5,
-    "Deadly Dancer": 0.42000000000000004,
-    "Damnation Alley": 0.51,
-    "I Love You, I Kill You": 0.4909,
-    "The Land Before Time VII: The Stone of Cold Fire": 0.6172,
-    "Warlock: The Armageddon": 0.5288999999999999,
-    "Nemesis": 0.544
-  },
-  "AI Amok": {
-    "Blade Runner 2049": 0.71
-  },
-  "Grandma's Ashes": {
-    "Blade Runner 2049": 0.5
-  },
-  "The Time Traveler's Wife": {
-    "Blade Runner 2049": 0.6942
-  },
-  "Zatoichi Meets the One-Armed Swordsman": {
-    "Blade Runner 2049": 0.6799999999999999
-  },
-  "Harrison Bergeron": {
-    "Blade Runner 2049": 0.6763
-  },
-  "Miracle Mile": {
-    "Blade Runner 2049": 0.6863
-  },
-  "Six-String Samurai": {
-    "Blade Runner 2049": 0.6263
-  },
-  "Operation Napoleon: Tears of the Wolf": {
-    "Blade Runner 2049": 0.5
-  },
-  "Sardinia": {
-    "Blade Runner 2049": 0.77
-  },
-  "Rise from Your Grave": {
-    "Blade Runner 2049": 0.5
-  },
-  "Pitfall": {
-    "Blade Runner 2049": 0.6900000000000001
-  },
-  "When Artificial Intelligence Changes Intelligence": {
-    "Blade Runner 2049": 0.5
-  },
-  "Deadly Dancer": {
-    "Blade Runner 2049": 0.42000000000000004
-  },
-  "Damnation Alley": {
-    "Blade Runner 2049": 0.51
-  },
-  "I Love You, I Kill You": {
-    "Blade Runner 2049": 0.4909
-  },
-  "The Land Before Time VII: The Stone of Cold Fire": {
-    "Blade Runner 2049": 0.6172
-  },
-  "Warlock: The Armageddon": {
-    "Blade Runner 2049": 0.5288999999999999
-  },
-  "Nemesis": {
-    "Blade Runner 2049": 0.544
   },
   "Slow": {
     "Escapade": 0.575,
@@ -2013,6 +1612,15 @@
     "This Island Earth": 0.6006,
     "Cars": 0.7034
   },
+  "The Astronaut Farmer": {
+    "Project Hail Mary": 0.6271
+  },
+  "Big Brood": {
+    "Project Hail Mary": 0.8
+  },
+  "Battlefield Earth": {
+    "Project Hail Mary": 0.3345
+  },
   "Road to the Stars": {
     "Project Hail Mary": 0.5900000000000001
   },
@@ -2031,11 +1639,35 @@
   "Live Is Life": {
     "Project Hail Mary": 0.6717
   },
+  "The Fantastic 4: First Steps": {
+    "Project Hail Mary": 0.6961
+  },
   "Orpheus Song": {
     "Project Hail Mary": 0.55
   },
+  "Three Lives": {
+    "Project Hail Mary": 0.5
+  },
+  "Shrek": {
+    "Project Hail Mary": 0.7766
+  },
+  "Silent Running": {
+    "Project Hail Mary": 0.6394
+  },
+  "Gattaca": {
+    "Project Hail Mary": 0.7569
+  },
   "Hook": {
     "Project Hail Mary": 0.6799999999999999
+  },
+  "Jin-Roh: The Wolf Brigade": {
+    "Project Hail Mary": 0.7392000000000001
+  },
+  "Forbidden Planet": {
+    "Project Hail Mary": 0.7242
+  },
+  "This Island Earth": {
+    "Project Hail Mary": 0.6006
   },
   "Cars": {
     "Project Hail Mary": 0.7034

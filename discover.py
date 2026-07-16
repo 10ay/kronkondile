@@ -4,6 +4,7 @@ from engine.seeds import *
 from recommend import *
 from engine.ratings import *
 from scrape_music import *
+from engine.graph_expand import *
 
 def open_artist(artist):
     #track = open_artist_top_song(artist)
@@ -14,6 +15,16 @@ def open_artist(artist):
     print(f"  → {track.url}")
     return track
 
+
+def expand_favorites_on_quit(session, quiet):
+    result = maybe_expand_graph_on_quit(session.like, quiet)
+    if not result:
+        return
+    if result["expanded"]:
+        s = result["stats"]
+        print(f"\nGraph updated: {s['artists']} artists, {s['edges']} edges")
+    if result["failed"]:
+        print(f"Could not expand: {', '.join(result['failed'])}")
 
 def main():
     result = get_feeling()
@@ -78,6 +89,7 @@ def main():
                 add_to_favorites = input("Type 'y' for yes, 'n' for no: ").strip().lower()
                 if add_to_favorites == "y":
                     log_all_time_favorites(session.like, mood_index)
+                    expand_favorites_on_quit(session, quiet=False)
                 # Update seeds with add_to_favorites
             break
         if choice == "l":
