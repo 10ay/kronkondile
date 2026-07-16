@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Mood Playlist</title>
+  <style>
+    :root {
+      --bg: #2a3140;
+      --card: #3a4252;
+      --text: #f2f4f7;
+      --muted: #c8ced8;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 24px;
+    }
+    h1 { font-size: 1.25rem; font-weight: 600; margin: 0 0 8px; }
+    .meta { color: var(--muted); margin-bottom: 20px; font-size: 0.9rem; }
+    .list { display: flex; flex-direction: column; gap: 10px; max-width: 720px; }
+    .track {
+      display: grid;
+      grid-template-columns: 56px 1fr auto;
+      gap: 14px;
+      align-items: center;
+      background: var(--card);
+      border-radius: 10px;
+      padding: 10px 14px;
+      min-height: 72px;
+    }
+    .art {
+      width: 56px; height: 56px;
+      border-radius: 8px;
+      background: #555c6a;
+    }
+    .info { min-width: 0; }
+    .title {
+      font-weight: 700;
+      font-size: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .artist {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 2px;
+    }
+    .actions a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      border: 1px solid #6a7385;
+      border-radius: 999px;
+      padding: 4px 10px;
+    }
+    .actions a:hover { color: #fff; border-color: #fff; }
+  </style>
+</head>
+<body>
+  <h1><!--MOOD_LABEL--></h1>
+  <p class="meta"><!--META--></p>
+  <div class="list">
+    <!--TRACKS-->
+  </div>
+</body>
+</html>

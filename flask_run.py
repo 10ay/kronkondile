@@ -348,9 +348,8 @@ def api_music_step():
         
         if add_favorites:
             log_all_time_favorites(session.like, mood_index)
-        
-        if session.like:
-            expand_likes_async(list(session.like))  
+            if session.like:
+                expand_likes_async(list(session.like))
         del music_sessions[sid]
         return jsonify(payload)
     if choice == "l":
@@ -586,6 +585,61 @@ def api_movie_step():
             "seen": len(session.seen) - 1,
         },
     })
+
+
+@app.get("/api/mood-playlist/options")
+def api_mood_playlist_options():
+    from engine.mood_playlist import activity_list, acitivity_default_tempo, genres
+    return jsonify({
+        "ok": True,
+        "activities": activity_list,
+        "genres": genres,
+        "tempo_defaults": acitivity_default_tempo,
+        "tempos": ["slow", "fast"],
+    })
+
+
+@app.post("/api/mood-playlist/generate")
+def api_mood_playlist_generate():
+    from engine.mood_playlist import generate_mood_playlist, songs_from_artists
+    mood = mood_from_request()
+    if mood is None:
+        return jsonify({"ok": False, "error": "mood_index required (0-4)"}), 400
+    mood_index, mood_label = mood
+
+    data = request.get_json(force=True) or {}
+    activity = data.get("activity", "Focus")
+    genre = data.get("genre", "any")
+    tempo = data.get("tempo", "slow")
+    try:
+        length = int(data.get("length", 20))
+    except (TypeError, ValueError):
+        length = 20
+    length = max(5, min(length, 40))
+
+    result = generate_mood_playlist(
+        mood_index,
+        activity=activity,
+        genre=genre,
+        tempo=tempo,
+        length=length,
+    )
+    if result.get("error"):
+        return jsonify({"ok": False, "error": result["error"]}), 400
+    if not result["artists"]:
+        return jsonify({"ok": False, "error": "No artists found for this mood."}), 400
+
+    tracks = [t for t in songs_from_artists(result["artists"]) if t]
+    return jsonify({
+        "ok": True,
+        "mood_index": mood_index,
+        "mood_label": mood_label,
+        "activity": result["activity"],
+        "genre": result["genre"],
+        "tempo": result["tempo"],
+        "tracks": tracks,
+    })
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

@@ -21,6 +21,7 @@
     <button onclick="startDiscoverMusic()">[2] Discover music</button>
     <button onclick="startDiscoverBooks()">[3] Discover books</button>
     <button onclick="startDiscoverMovies()">[4] Discover movies</button>
+    <button onclick="startMoodPlaylist()">[5] Generate a mood playlist</button>
     </section>
 
   <!-- Quick rec -->
@@ -85,6 +86,29 @@
       <button onclick="quitDiscoverMovies()">Quit</button>
     </div>
     <div id="discover-movie-stats" class="discover-stats" aria-live="polite"></div>
+  </section>
+
+  <!-- Mood playlist (Chosic-style song cards → Last.fm) -->
+  <section id="mood-playlist-panel" class="hidden">
+    <h2>Mood playlist</h2>
+    <p id="mood-playlist-mood"></p>
+    <div class="mood-playlist-controls">
+      <label for="mp-activity">Activity</label>
+      <select id="mp-activity"></select>
+      <label for="mp-genre">Genre</label>
+      <select id="mp-genre"></select>
+      <label for="mp-tempo">Tempo</label>
+      <select id="mp-tempo">
+        <option value="slow">slow</option>
+        <option value="fast">fast</option>
+      </select>
+      <label for="mp-length">Tracks</label>
+      <input id="mp-length" type="number" min="5" max="40" value="20" />
+      <button type="button" onclick="generateMoodPlaylist()">Generate</button>
+      <button type="button" onclick="backToMenu()">Back</button>
+    </div>
+    <p id="mood-playlist-meta" class="discover-stats"></p>
+    <div id="mood-playlist-list" class="mood-playlist-list"></div>
   </section>
 
   <!-- Session likes summary (replaces discover panel after quit or session end) -->
@@ -160,6 +184,7 @@
       document.getElementById("discover-panel").classList.add("hidden");
       document.getElementById("discover-book-panel").classList.add("hidden");
       document.getElementById("discover-movie-panel").classList.add("hidden");
+      document.getElementById("mood-playlist-panel").classList.add("hidden");
       document.getElementById("session-summary-panel").classList.add("hidden");
       document.getElementById("session-minion-panel").classList.add("hidden");
     }
@@ -545,6 +570,97 @@ async function quitDiscoverMovies() {
       const data = await res.json();
       if (!data.ok) return alert(data.error || "Could not end session");
       finishDiscoverSession("discover-panel", "music", data);
+    }
+
+
+    let moodPlaylistTempoDefaults = {};
+
+    async function startMoodPlaylist() {
+      if (!require_mood()) return;
+      document.getElementById("menu-panel").classList.add("hidden");
+      hideDiscoverPanels();
+      document.getElementById("mood-playlist-panel").classList.remove("hidden");
+      document.getElementById("mood-playlist-mood").textContent =
+        feelings_labels[moodIndex] || "";
+      document.getElementById("mood-playlist-meta").textContent = "";
+      document.getElementById("mood-playlist-list").innerHTML = "";
+
+      const res = await fetch("/api/mood-playlist/options");
+      const data = await res.json();
+      if (!data.ok) return alert(data.error || "Could not load options");
+
+      moodPlaylistTempoDefaults = data.tempo_defaults || {};
+      const act = document.getElementById("mp-activity");
+      const gen = document.getElementById("mp-genre");
+      act.innerHTML = "";
+      gen.innerHTML = "";
+      (data.activities || []).forEach((name) => {
+        const opt = document.createElement("option");
+        opt.value = name;
+        opt.textContent = name;
+        act.appendChild(opt);
+      });
+      (data.genres || []).forEach((name) => {
+        const opt = document.createElement("option");
+        opt.value = name;
+        opt.textContent = name;
+        gen.appendChild(opt);
+      });
+      act.onchange = () => {
+        const suggested = moodPlaylistTempoDefaults[act.value] || "slow";
+        document.getElementById("mp-tempo").value = suggested;
+      };
+      if (act.options.length) act.onchange();
+    }
+
+    async function generateMoodPlaylist() {
+      if (!require_mood()) return;
+      const activity = document.getElementById("mp-activity").value;
+      const genre = document.getElementById("mp-genre").value;
+      const tempo = document.getElementById("mp-tempo").value;
+      const length = document.getElementById("mp-length").value || 20;
+      const meta = document.getElementById("mood-playlist-meta");
+      const list = document.getElementById("mood-playlist-list");
+      meta.textContent = "Building playlist…";
+      list.innerHTML = "";
+
+      const res = await fetch("/api/mood-playlist/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          mood_index: moodIndex,
+          activity,
+          genre,
+          tempo,
+          length: Number(length),
+        }),
+      });
+      const data = await res.json();
+      if (!data.ok) {
+        meta.textContent = "";
+        return alert(data.error || "Could not build playlist");
+      }
+
+      meta.textContent =
+        `${data.tracks.length} tracks · activity=${data.activity} · genre=${data.genre} · tempo=${data.tempo}`;
+      list.innerHTML = "";
+      (data.tracks || []).forEach((t) => {
+        const card = document.createElement("article");
+        card.className = "mood-track";
+        card.innerHTML = `
+          <div class="mood-track-art" aria-hidden="true"></div>
+          <div class="mood-track-info">
+            <div class="mood-track-title"></div>
+            <div class="mood-track-artist"></div>
+          </div>
+          <div class="mood-track-actions">
+            <a class="mood-track-lastfm" target="_blank" rel="noopener">Last.fm</a>
+          </div>`;
+        card.querySelector(".mood-track-title").textContent = t.title;
+        card.querySelector(".mood-track-artist").textContent = t.artist;
+        card.querySelector(".mood-track-lastfm").href = t.lastfm_url;
+        list.appendChild(card);
+      });
     }
 
     loadFeelingsState(); // skip feelings prompt if already logged today
