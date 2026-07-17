@@ -215,26 +215,6 @@ def wait_for_spotify_click(timeout_seconds=300):
     elif not spotify_state["done"]:
         print("Timed out waiting for Spotify click.")
 
-
-def pick_mood(default_index=None):
-    print("\nMood:")
-    for i, label in feelings_dictionary.items():
-        mark = "  ← today" if default_index is not None and i == default_index else ""
-        print(f"  [{i}] {label}{mark}")
-    default = default_index if default_index is not None else 3
-    raw = input(f"Mood 0-4 [{default}]: ").strip()
-
-    if not raw:
-        return default
-
-    try:
-        mood = int(raw)
-    except ValueError:
-        return default
-
-    return mood if mood in feelings_dictionary else default
-
-
 def pick_activity():
     print("\nActivity:")
     for i, name in enumerate(activity_list):
