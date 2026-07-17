@@ -5,10 +5,11 @@
   <title>Mood Playlist</title>
   <style>
     :root {
-      --bg: #2a3140;
-      --card: #3a4252;
-      --text: #f2f4f7;
-      --muted: #c8ced8;
+      --bg: #1a1424;
+      --card: #810081;
+      --text: #ffffff;
+      --muted: #e8d4f0;
+      --btn: #a4a4a4;
     }
     body {
       margin: 0;
@@ -22,23 +23,19 @@
     .list { display: flex; flex-direction: column; gap: 10px; max-width: 720px; }
     .track {
       display: grid;
-      grid-template-columns: 56px 1fr auto;
+      grid-template-columns: 1fr auto;
       gap: 14px;
       align-items: center;
       background: var(--card);
-      border-radius: 10px;
-      padding: 10px 14px;
-      min-height: 72px;
-    }
-    .art {
-      width: 56px; height: 56px;
-      border-radius: 8px;
-      background: #555c6a;
+      border-radius: 12px;
+      padding: 12px 16px;
+      min-height: 64px;
     }
     .info { min-width: 0; }
     .title {
       font-weight: 700;
       font-size: 1rem;
+      color: var(--text);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -50,75 +47,139 @@
       margin-top: 2px;
     }
     .actions a {
-      color: var(--muted);
+      display: inline-block;
+      color: #fff;
+      background: var(--btn);
       text-decoration: none;
-      font-size: 0.8rem;
-      border: 1px solid #6a7385;
-      border-radius: 999px;
-      padding: 4px 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      white-space: nowrap;
     }
-    .actions a:hover { color: #fff; border-color: #fff; }
+    .actions a:hover {
+      background: #c0c0c0;
+      color: #111;
+    }
+    .spotify-save {
+      display: inline-block;
+      background: #1db954;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 10px 18px;
+      margin-bottom: 16px;
+    }
+    .spotify-save:hover { background: #1ed760; }
   </style>
 </head>
 <body>
   <h1>Lovesick / I feel unloved, like a kidney stone.</h1>
-  <p class="meta">5 tracks · activity=Party · genre=rock · tempo=fast</p>
+  <p class="meta">10 tracks · activity=Relax · genre=pop · tempo=slow</p>
+  <p><a class="spotify-save" href="/save">Save on Spotify</a></p>
   <div class="list">
     
-<article class="track">
-  <div class="art" aria-hidden="true"></div>
-  <div class="info">
-    <div class="title">Sometime Around Midnight</div>
-    <div class="artist">Airborne Toxic Event</div>
-  </div>
-  <div class="actions">
-    <a href="https://www.last.fm/music/Airborne+Toxic+Event/_/Sometime+Around+Midnight" target="_blank" rel="noopener">Last.fm</a>
-  </div>
-</article>
+                <article class="track">
+                <div class="info">
+                    <div class="title">Sometime Around Midnight</div>
+                    <div class="artist">Airborne Toxic Event</div>
+                </div>
+                <div class="actions">
+                    <a href="https://www.last.fm/music/Airborne+Toxic+Event/_/Sometime+Around+Midnight" target="_blank" rel="noopener">Last.fm</a>
+                </div>
+                </article>
 
-<article class="track">
-  <div class="art" aria-hidden="true"></div>
-  <div class="info">
-    <div class="title">Heather</div>
-    <div class="artist">Conan Gray</div>
-  </div>
-  <div class="actions">
-    <a href="https://www.last.fm/music/Conan+Gray/_/Heather" target="_blank" rel="noopener">Last.fm</a>
-  </div>
-</article>
+                <article class="track">
+                <div class="info">
+                    <div class="title">friends?</div>
+                    <div class="artist">Aubory Bugg</div>
+                </div>
+                <div class="actions">
+                    <a href="https://www.last.fm/music/Aubory+Bugg/_/friends%3F" target="_blank" rel="noopener">Last.fm</a>
+                </div>
+                </article>
 
-<article class="track">
-  <div class="art" aria-hidden="true"></div>
-  <div class="info">
-    <div class="title">Birthday Suit</div>
-    <div class="artist">Cosmo Sheldrake</div>
-  </div>
-  <div class="actions">
-    <a href="https://www.last.fm/music/Cosmo+Sheldrake/_/Birthday+Suit" target="_blank" rel="noopener">Last.fm</a>
-  </div>
-</article>
+                <article class="track">
+                <div class="info">
+                    <div class="title">Soft Spot</div>
+                    <div class="artist">Claud</div>
+                </div>
+                <div class="actions">
+                    <a href="https://www.last.fm/music/Claud/_/Soft+Spot" target="_blank" rel="noopener">Last.fm</a>
+                </div>
+                </article>
 
-<article class="track">
-  <div class="art" aria-hidden="true"></div>
-  <div class="info">
-    <div class="title">I Just Needed You To Know</div>
-    <div class="artist">Girl Scout</div>
-  </div>
-  <div class="actions">
-    <a href="https://www.last.fm/music/Girl+Scout/_/I+Just+Needed+You+To+Know" target="_blank" rel="noopener">Last.fm</a>
-  </div>
-</article>
+                <article class="track">
+                <div class="info">
+                    <div class="title">Heather</div>
+                    <div class="artist">Conan Gray</div>
+                </div>
+                <div class="actions">
+                    <a href="https://www.last.fm/music/Conan+Gray/_/Heather" target="_blank" rel="noopener">Last.fm</a>
+                </div>
+                </article>
 
-<article class="track">
-  <div class="art" aria-hidden="true"></div>
-  <div class="info">
-    <div class="title">Drive</div>
-    <div class="artist">Gretel</div>
-  </div>
-  <div class="actions">
-    <a href="https://www.last.fm/music/Gretel/_/Drive" target="_blank" rel="noopener">Last.fm</a>
-  </div>
-</article>
+                <article class="track">
+                <div class="info">
+                    <div class="title">Some Kind of Angel</div>
+                    <div class="artist">Georgia Gets By</div>
+                </div>
+                <div class="actions">
+                    <a href="https://www.last.fm/music/Georgia+Gets+By/_/Some+Kind+of+Angel" target="_blank" rel="noopener">Last.fm</a>
+                </div>
+                </article>
+
+                <article class="track">
+                <div class="info">
+                    <div class="title">That’s So True</div>
+                    <div class="artist">Gracie Abrams</div>
+                </div>
+                <div class="actions">
+                    <a href="https://www.last.fm/music/Gracie+Abrams/_/That%E2%80%99s+So+True" target="_blank" rel="noopener">Last.fm</a>
+                </div>
+                </article>
+
+                <article class="track">
+                <div class="info">
+                    <div class="title">Drive</div>
+                    <div class="artist">Gretel</div>
+                </div>
+                <div class="actions">
+                    <a href="https://www.last.fm/music/Gretel/_/Drive" target="_blank" rel="noopener">Last.fm</a>
+                </div>
+                </article>
+
+                <article class="track">
+                <div class="info">
+                    <div class="title">As It Was</div>
+                    <div class="artist">Harry Styles</div>
+                </div>
+                <div class="actions">
+                    <a href="https://www.last.fm/music/Harry+Styles/_/As+It+Was" target="_blank" rel="noopener">Last.fm</a>
+                </div>
+                </article>
+
+                <article class="track">
+                <div class="info">
+                    <div class="title">handgun</div>
+                    <div class="artist">Jake Minch</div>
+                </div>
+                <div class="actions">
+                    <a href="https://www.last.fm/music/Jake+Minch/_/handgun" target="_blank" rel="noopener">Last.fm</a>
+                </div>
+                </article>
+
+                <article class="track">
+                <div class="info">
+                    <div class="title">Pressure To Party</div>
+                    <div class="artist">Julia Jacklin</div>
+                </div>
+                <div class="actions">
+                    <a href="https://www.last.fm/music/Julia+Jacklin/_/Pressure+To+Party" target="_blank" rel="noopener">Last.fm</a>
+                </div>
+                </article>
   </div>
 </body>
 </html>

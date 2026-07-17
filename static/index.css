@@ -468,21 +468,14 @@ a:hover {
 
 .mood-track {
   display: grid;
-  grid-template-columns: 48px 1fr auto;
+  grid-template-columns: 1fr auto;
   gap: 0.75rem;
   align-items: center;
-  background: #2a3140;
+  background: var(--ace-purple);
   color: #f2f4f7;
   border-radius: 10px;
   padding: 0.65rem 0.85rem;
   min-height: 64px;
-}
-
-.mood-track-art {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  background: #555c6a;
 }
 
 .mood-track-title {
@@ -500,13 +493,13 @@ a:hover {
 }
 
 .mood-track-lastfm {
-  color: #c8ced8;
-  text-decoration: none;
-  font-size: 0.8rem;
-  border: 1px solid #6a7385;
-  border-radius: 999px;
-  padding: 0.25rem 0.65rem;
+  background: var(--ace-gray);
+  color: var(--ace-white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.45rem 0.9rem;
 }
+
 
 .mood-track-lastfm:hover {
   color: #fff;

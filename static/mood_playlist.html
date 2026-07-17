@@ -5,10 +5,11 @@
   <title>Mood Playlist</title>
   <style>
     :root {
-      --bg: #2a3140;
-      --card: #3a4252;
-      --text: #f2f4f7;
-      --muted: #c8ced8;
+      --bg: #1a1424;
+      --card: #810081;
+      --text: #ffffff;
+      --muted: #e8d4f0;
+      --btn: #a4a4a4;
     }
     body {
       margin: 0;
@@ -22,23 +23,19 @@
     .list { display: flex; flex-direction: column; gap: 10px; max-width: 720px; }
     .track {
       display: grid;
-      grid-template-columns: 56px 1fr auto;
+      grid-template-columns: 1fr auto;
       gap: 14px;
       align-items: center;
       background: var(--card);
-      border-radius: 10px;
-      padding: 10px 14px;
-      min-height: 72px;
-    }
-    .art {
-      width: 56px; height: 56px;
-      border-radius: 8px;
-      background: #555c6a;
+      border-radius: 12px;
+      padding: 12px 16px;
+      min-height: 64px;
     }
     .info { min-width: 0; }
     .title {
       font-weight: 700;
       font-size: 1rem;
+      color: var(--text);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -50,19 +47,38 @@
       margin-top: 2px;
     }
     .actions a {
-      color: var(--muted);
+      display: inline-block;
+      color: #fff;
+      background: var(--btn);
       text-decoration: none;
-      font-size: 0.8rem;
-      border: 1px solid #6a7385;
-      border-radius: 999px;
-      padding: 4px 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      white-space: nowrap;
     }
-    .actions a:hover { color: #fff; border-color: #fff; }
+    .actions a:hover {
+      background: #c0c0c0;
+      color: #111;
+    }
+    .spotify-save {
+      display: inline-block;
+      background: #1db954;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 10px 18px;
+      margin-bottom: 16px;
+    }
+    .spotify-save:hover { background: #1ed760; }
   </style>
 </head>
 <body>
   <h1><!--MOOD_LABEL--></h1>
   <p class="meta"><!--META--></p>
+  <p><!--SPOTIFY--></p>
   <div class="list">
     <!--TRACKS-->
   </div>
