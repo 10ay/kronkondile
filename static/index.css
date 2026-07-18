@@ -505,3 +505,36 @@ a:hover {
   color: #fff;
   border-color: #fff;
 }
+
+.mood-playlist-spotify {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+  max-width: 420px;
+}
+
+.mood-playlist-spotify input,
+.mood-playlist-spotify textarea {
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--ace-gray);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.mood-playlist-spotify textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.mood-playlist-spotify button {
+  background: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  font-weight: 700;
+}
+
+.mood-playlist-spotify button:hover {
+  background: #1ed760;
+}

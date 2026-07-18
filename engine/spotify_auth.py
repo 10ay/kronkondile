@@ -49,14 +49,20 @@ def pkce_pair():
     return verifier, challenge
 
 
-def authorize_url():
-    verifier, challenge = pkce_pair()
-    pkce_path.parent.mkdir(parents=True, exist_ok=True)
-    pkce_path.write_text(json.dumps({"verifier": verifier}), encoding="utf-8")
+def authorize_url(redirect=redirect_uri, verifier=None):
+    if verifier is None:
+        # CLI flow: one login at a time, keep the verifier on disk.
+        verifier, challenge = pkce_pair()
+        pkce_path.parent.mkdir(parents=True, exist_ok=True)
+        pkce_path.write_text(json.dumps({"verifier": verifier}), encoding="utf-8")
+    else:
+        # Web flow: caller keeps the verifier (many users may log in at once).
+        digest = hashlib.sha256(verifier.encode("ascii")).digest()
+        challenge = base64.urlsafe_b64encode(digest).decode("ascii").rstrip("=")
     params = {
         "client_id": client_id,
         "response_type": "code",
-        "redirect_uri": redirect_uri,
+        "redirect_uri": redirect,
         "scope": scopes,
         "code_challenge_method": "S256",
         "code_challenge": challenge,
@@ -82,14 +88,15 @@ def token_request(data):
     return tokens["access_token"]
 
 
-def exchange_code(code):
-    if not pkce_path.exists():
-        raise RuntimeError("Missing login state — click Save on Spotify again.")
-    verifier = json.loads(pkce_path.read_text(encoding="utf-8"))["verifier"]
+def exchange_code(code, redirect=redirect_uri, verifier=None):
+    if verifier is None:
+        if not pkce_path.exists():
+            raise RuntimeError("Missing login state — click Save on Spotify again.")
+        verifier = json.loads(pkce_path.read_text(encoding="utf-8"))["verifier"]
     token = token_request({
         "grant_type": "authorization_code",
         "code": code,
-        "redirect_uri": redirect_uri,
+        "redirect_uri": redirect,
         "client_id": client_id,
         "code_verifier": verifier,
     })

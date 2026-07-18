@@ -109,6 +109,15 @@
     </div>
     <p id="mood-playlist-meta" class="discover-stats"></p>
     <div id="mood-playlist-list" class="mood-playlist-list"></div>
+    <div id="mood-playlist-spotify" class="mood-playlist-spotify hidden">
+      <h3>Save on Spotify</h3>
+      <label for="mp-spotify-name">Playlist name</label>
+      <input id="mp-spotify-name" type="text" />
+      <label for="mp-spotify-description">Description</label>
+      <textarea id="mp-spotify-description"></textarea>
+      <button type="button" onclick="saveOnSpotify()">Continue to Spotify</button>
+      <p id="mp-spotify-status" class="discover-stats"></p>
+    </div>
   </section>
 
   <!-- Session likes summary (replaces discover panel after quit or session end) -->
@@ -574,6 +583,7 @@ async function quitDiscoverMovies() {
 
 
     let moodPlaylistTempoDefaults = {};
+    let moodPlaylistTracks = [];
 
     async function startMoodPlaylist() {
       if (!require_mood()) return;
@@ -584,6 +594,8 @@ async function quitDiscoverMovies() {
         feelings_labels[moodIndex] || "";
       document.getElementById("mood-playlist-meta").textContent = "";
       document.getElementById("mood-playlist-list").innerHTML = "";
+      document.getElementById("mood-playlist-spotify").classList.add("hidden");
+      moodPlaylistTracks = [];
 
       const res = await fetch("/api/mood-playlist/options");
       const data = await res.json();
@@ -660,6 +672,36 @@ async function quitDiscoverMovies() {
         card.querySelector(".mood-track-lastfm").href = t.lastfm_url;
         list.appendChild(card);
       });
+
+      moodPlaylistTracks = data.tracks || [];
+      document.getElementById("mp-spotify-name").value = "";
+      document.getElementById("mp-spotify-description").value = "";
+      document.getElementById("mp-spotify-status").textContent = "";
+      document.getElementById("mood-playlist-spotify").classList.toggle("hidden", moodPlaylistTracks.length === 0);
+    }
+
+    async function saveOnSpotify() {
+      const name = document.getElementById("mp-spotify-name").value.trim();
+      const description = document.getElementById("mp-spotify-description").value.trim();
+      const status = document.getElementById("mp-spotify-status");
+      if (!name || !description) {
+        return alert("Playlist name and description are required.");
+      }
+      if (!moodPlaylistTracks.length) {
+        return alert("Generate a playlist first.");
+      }
+      status.textContent = "Opening Spotify login…";
+      const res = await fetch("/api/spotify/save", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, description, tracks: moodPlaylistTracks }),
+      });
+      const data = await res.json();
+      if (!data.ok) {
+        status.textContent = "";
+        return alert(data.error || "Could not start Spotify save");
+      }
+      window.location.href = data.authorize_url;
     }
 
     loadFeelingsState(); // skip feelings prompt if already logged today

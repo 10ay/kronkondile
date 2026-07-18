@@ -11,7 +11,7 @@ import uuid
 from datetime import datetime as dt
 from pathlib import Path
 import pandas as pd
-from flask import Flask, jsonify, request, send_from_directory
+from flask import Flask, jsonify, redirect, request, send_from_directory
 import threading
 
 
@@ -56,6 +56,17 @@ feel_prompt = ('''
 
 app = Flask(__name__, static_folder = "static")
 music_sessions, book_sessions, movie_sessions = {}, {}, {}
+
+# Pending "Save on Spotify" playlists, keyed by a state id that
+# rides through the Spotify login and comes back on /spotify/callback.
+spotify_pending = {}
+
+
+def spotify_redirect():
+    """Works locally (http://127.0.0.1:5001) and hosted (https://dexosat.pythonanywhere.com)."""
+    host = request.host
+    scheme = "http" if host.startswith(("127.0.0.1", "localhost")) else "https"
+    return f"{scheme}://{host}/spotify/callback"
 
 def today_str():
     return dt.strftime(dt.now(), "%d-%b-%Y")
@@ -639,6 +650,66 @@ def api_mood_playlist_generate():
         "tempo": result["tempo"],
         "tracks": tracks,
     })
+
+
+@app.post("/api/spotify/save")
+def api_spotify_save():
+    """Stash the playlist, send the user to Spotify login. Mirrors mood_playlist.start_login()."""
+    from engine.spotify_auth import authorize_url, pkce_pair
+    data = request.get_json(force=True)
+    name = (data.get("name") or "").strip()
+    description = (data.get("description") or "").strip()
+    tracks = data.get("tracks") or []
+    if not name or not description:
+        return jsonify({"ok": False, "error": "Playlist name and description are required."}), 400
+    if not tracks:
+        return jsonify({"ok": False, "error": "Generate a playlist first."}), 400
+
+    # Verifier lives here, not in data/spotify_pkce.json —
+    # several people can be mid-login at once on a hosted server.
+    verifier, _ = pkce_pair()
+    state = str(uuid.uuid4())
+    spotify_pending[state] = {
+        "name": name,
+        "description": description,
+        "tracks": tracks,
+        "verifier": verifier,
+        "redirect": spotify_redirect(),
+    }
+
+    print(f"Playlist name: {name!r}")
+    print("Opening Spotify login...")
+    url = authorize_url(redirect=spotify_pending[state]["redirect"], verifier=verifier) + f"&state={state}"
+    return jsonify({"ok": True, "authorize_url": url})
+
+
+@app.get("/spotify/callback")
+def spotify_callback():
+    """Spotify sends the user back here. Mirrors mood_playlist.handle_callback()."""
+    from engine.spotify_auth import exchange_code, clear_tokens
+    from engine.spotify_playlist import publish_mood_playlist
+    code = request.args.get("code")
+    state = request.args.get("state")
+    pending = spotify_pending.pop(state, None)
+    if not code or pending is None:
+        return "<h1>Spotify login cancelled</h1>", 400
+
+    try:
+        token = exchange_code(code, redirect=pending["redirect"], verifier=pending["verifier"])
+        print(f"Building Spotify playlist: {pending['name']!r}")
+        url = publish_mood_playlist(
+            token,
+            pending["tracks"],
+            pending["name"],
+            description=pending["description"],
+        )
+    finally:
+        clear_tokens()
+
+    if url is None:
+        return "<h1>No tracks matched on Spotify</h1>"
+    print(f"Playlist created: {url}")
+    return redirect(url)
 
 
 if __name__ == "__main__":
