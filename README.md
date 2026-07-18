@@ -1,6 +1,6 @@
 # Kronkondile
 
-I think this app is my version of Ben Wyatt's Claymation video from Parks and Rec
+I think this app is my version of Ben Wyatt's Claymation video from Parks and Rec. The name 'kronkondile' comes from a star I found at work ![Logo](https://arxiv.org/abs/2605.08340?context=astro-ph.EP), and from a Mummy Joe's video my ex sent me. 
 
 
 Download it and run using 'python main.py.' Right now, clicking [5] after running 'main.py' allows you to save these mood-based playlists. I am working on adding this feature to the atlernate webpage where I host the project. 
