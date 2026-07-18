@@ -14,11 +14,11 @@ for name, w in fetch_sim_movies('Call Me by Your Name', get_api(), 10):
 from __future__ import annotations
 import json, os, re, time
 from pathlib import Path
-from typing import Any
+from typing import Any, Dict
 from urllib.parse import quote_plus
 import requests
 
-Graph = dict[str, dict[str, float]]
+Graph = Dict[str, Dict[str, float]]
 
 root = Path(__file__).resolve().parent.parent
 default_graph_path = root / "data" / "movie_graph.json"

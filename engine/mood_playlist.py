@@ -145,10 +145,8 @@ def generate_mood_playlist(mood_index, activity = "none", genre = "any", tempo =
         graph = load_graph(default_graph_path)
 
     activity_raw = (activity or "none").strip()
-    matched = next(
-        (a for a in activity_list if a.lower() == activity_raw.lower()),
-        None,
-    )
+    matched = next(a for a in activity_list if a.lower() == activity_raw.lower())
+    
     activity = matched if matched is not None else "none"
 
     genre = (genre or "any").strip().lower()

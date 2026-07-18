@@ -13,11 +13,11 @@ for name, weight in fetch_sim_artists('Noah Kahan', get_api(), limit=15):
 from __future__ import annotations
 import json, os, time
 from pathlib import Path
-from typing import Any
+from typing import Any, Dict
 from urllib.parse import quote_plus
 import requests
 
-Graph = dict[str, dict[str, float]]
+Graph = Dict[str, Dict[str, float]]
 
 root = Path(__file__).resolve().parent.parent
 default_graph_path = root / "data" / "artist_graph.json"
