@@ -5,6 +5,10 @@ python movie_graph.py --inspect "Carol"
 """
 
 import argparse
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from engine.movie_seeds import movie_for_each_seed, seed_by_mood
 from engine.movie_graph import *
 from frontend.recommend import *

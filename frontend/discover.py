@@ -1,5 +1,9 @@
 from re import I
 import random
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from engine.discover import Discover
 from engine.seeds import *
 from frontend.recommend import *

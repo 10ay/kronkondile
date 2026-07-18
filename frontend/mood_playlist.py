@@ -5,11 +5,14 @@ Mood playlist
 from __future__ import annotations
 
 import html
+import sys
 import threading
 import time
 import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from urllib.parse import parse_qs, urlparse
 
 from frontend.feelings import feelings_dictionary

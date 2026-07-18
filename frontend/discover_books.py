@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from engine.book_discover import Discover
 from engine.book_seeds import *
 from frontend.recommend import *

@@ -3,6 +3,10 @@ The graph.py is run through here using seeds.py and recommend.py.
 """
 
 import argparse
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from engine.seeds import artist_for_each_seed, seed_by_mood
 from engine.graph import *
 from frontend.recommend import *

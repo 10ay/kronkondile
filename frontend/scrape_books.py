@@ -1,6 +1,10 @@
 '''
 Script used to create table of recently book recommendations.
 '''
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from engine.book_graph import goodreads_book_url
 from typing import Any
 from urllib.parse import quote_plus

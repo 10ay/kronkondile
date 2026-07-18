@@ -2,6 +2,10 @@
 Turn today's mood into a list of music recommendations.
 """
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from frontend.scrape_music import Tracks, track_recommendation, open_song_from_dict
 
 import random

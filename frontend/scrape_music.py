@@ -1,6 +1,10 @@
 '''
 Script used to create table of recently music recommendations.
 '''
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from engine.graph import get_api, fetch_top_track, lastfm_artist_url
 from typing import Any
 from urllib.parse import quote, quote_plus

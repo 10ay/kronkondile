@@ -25,9 +25,11 @@ spotify_lovesick = [
     "artist": "awfultune",
     "url": "https://www.youtube.com/watch?v=T6bkootB3A0&list=RDT6bkootB3A0&start_radio=1"},
 
-    {"title": "drag",
-    "artist": "Ratbag",
-    "url": "https://www.youtube.com/watch?v=HJtSd9Bwe0o&list=RDHJtSd9Bwe0o&start_radio=1"},
+
+    {"title": "Right Now", 
+    "artist": "Rosi Golan",
+    "url": "https://www.youtube.com/watch?v=6vZFbX50Ck4&list=RD6vZFbX50Ck4&start_radio=1"},
+    
 
     {"title": "Sometime Around Midnight",
     "artist": "Airborne Toxic Event",
@@ -37,9 +39,10 @@ spotify_lovesick = [
     "artist": "Orla Gartland",
     "url": "https://www.youtube.com/watch?v=6iP8_HvpcJg&list=RD6iP8_HvpcJg&start_radio=1"},
 
-    {"title": "Slow Paddle",
-    "artist": "Yellow Ostritch",
-    "url": "https://www.youtube.com/watch?v=9WL0LjGgH7g&list=RD9WL0LjGgH7g&start_radio=1"},
+    {"title": "Does It Still Mean Something?",
+    "artist": "Kevin Kraemer",
+    "url": "https://www.youtube.com/watch?v=3vbcTwm3MzY&list=RD3vbcTwm3MzY&start_radio=1"},
+
     ]
     
 spotify_mountains = [
@@ -63,10 +66,6 @@ spotify_mountains = [
     "artist": "Noah Kahan", 
     "url": "https://www.youtube.com/watch?v=ZviTSGV2HxY&list=RDZviTSGV2HxY&start_radio=1"},
 
-    {"title": "The Boy with The Arab Strap", 
-    "artist": "Belle and Sebastian", 
-    "url": "https://www.youtube.com/watch?v=dN1iW-ee5I8&list=RDdN1iW-ee5I8&start_radio=1"},
-
     {"title": "Instead of Here", 
     "artist": "Mitski", 
     "url": "https://www.youtube.com/watch?v=DVHXiU8oufg&list=RDDVHXiU8oufg&start_radio=1"},
@@ -81,52 +80,13 @@ spotify_mountains = [
 
     {"title": "Alaska", 
     "artist": "Miya Folick",
-    "url": "https://www.youtube.com/watch?v=dStinGDI4SE&list=RDdStinGDI4SE&start_radio=1"}
+    "url": "https://www.youtube.com/watch?v=dStinGDI4SE&list=RDdStinGDI4SE&start_radio=1"},
+    
+    {"title": "I Never See Her",
+    "artist": "Spacey Janes",
+    "url": "https://www.youtube.com/watch?v=q6tyEMN5haA&list=RDq6tyEMN5haA&start_radio=1"}
     ]
 
-
-
-spotify_mountains = [
-    {"title": "song i made up to stop myself from having a panic attack just now (ft. rich)",
-    "artist": "field medic", 
-    "url": "https://www.youtube.com/watch?v=2rSUnHAIGnI&list=RD2rSUnHAIGnI&start_radio=1"},
-
-    {"title": "Be Kind",
-    "artist": "NewDad", 
-    "url": "https://www.youtube.com/watch?v=ebW_H_9D-cE&list=RDebW_H_9D-cE&start_radio=1"},
-
-    {"title": "Jupiter",
-    "artist": "Flower Face", 
-    "url": "https://www.youtube.com/watch?v=UZzampsjTLo&list=RDUZzampsjTLo&start_radio=1&pp=ygUTanVwaXRlciBmbG93ZXIgZmFjZaAHAQ%3D%3D"},
-
-    {"title": "I am Warm and Powerful", 
-    "artist": "Someone Still Loves You Boris Yelstin", 
-    "url": "https://www.youtube.com/watch?v=0TVdf1VUjwI&list=RD0TVdf1VUjwI&start_radio=1"},
-
-    {"title": "Haircut", 
-    "artist": "Noah Kahan", 
-    "url": "https://www.youtube.com/watch?v=ZviTSGV2HxY&list=RDZviTSGV2HxY&start_radio=1"},
-
-    {"title": "The Boy with The Arab Strap", 
-    "artist": "Belle and Sebastian", 
-    "url": "https://www.youtube.com/watch?v=dN1iW-ee5I8&list=RDdN1iW-ee5I8&start_radio=1"},
-
-    {"title": "Instead of Here", 
-    "artist": "Mitski", 
-    "url": "https://www.youtube.com/watch?v=DVHXiU8oufg&list=RDDVHXiU8oufg&start_radio=1"},
-
-    {"title": "Mission to Mars", 
-    "artist": "Rainbow Kitten Surprise", 
-    "url": "https://www.youtube.com/watch?v=ddLHFz4z0k0&list=RDddLHFz4z0k0&start_radio=1"},
-
-    {"title": "Bloom", 
-    "artist": "Sjowgren", 
-    "url": "https://www.youtube.com/watch?v=lEbvq_j48ok&list=RDlEbvq_j48ok&start_radio=1"},
-
-    {"title": "Alaska", 
-    "artist": "Miya Folick",
-    "url": "https://www.youtube.com/watch?v=dStinGDI4SE&list=RDdStinGDI4SE&start_radio=1"}
-    ]
 
 spotify_silly = [
     {"title": "I'll Believe In Anything", 
@@ -141,9 +101,9 @@ spotify_silly = [
     "artist": "Corook",
     "url": "https://www.youtube.com/watch?v=8Z-0iwV940s&list=RD8Z-0iwV940s&start_radio=1&pp=ygUOaXQncyBvayBjb3Jvb2ugBwE%3D"},
 
-    {"title": "Skittles", 
-    "artist": "Devon Again",
-    "url": "https://www.youtube.com/watch?v=ZQYoI5JvFmI&list=RDZQYoI5JvFmI&start_radio=1&pp=ygUIc2tpdHRsZXOgBwE%3D"},
+    {"title": "drag",
+    "artist": "Ratbag",
+    "url": "https://www.youtube.com/watch?v=HJtSd9Bwe0o&list=RDHJtSd9Bwe0o&start_radio=1"},
 
     {"title": "Ginger Crouton", 
     "artist": "The Soronprfbs",
@@ -161,13 +121,16 @@ spotify_silly = [
     "artist": "LCD Soundsystem",
     "url": "https://www.youtube.com/watch?v=9ZNkPA_zUd4&list=RD9ZNkPA_zUd4&start_radio=1&pp=ygUUZGFuY2UgeW91cnNlbGYgY2xlYW6gBwE%3D"},
     
-    {"title": "Right Now", 
-    "artist": "Rosi Golan",
-    "url": "https://www.youtube.com/watch?v=6vZFbX50Ck4&list=RD6vZFbX50Ck4&start_radio=1"},
 
     {"title": "kinky", 
     "artist": "bby",
-    "url": "https://www.youtube.com/watch?v=4Y3jlgA0UD8&list=RD4Y3jlgA0UD8&start_radio=1"}
+    "url": "https://www.youtube.com/watch?v=4Y3jlgA0UD8&list=RD4Y3jlgA0UD8&start_radio=1"},
+
+    {"title": "Why Am I Anxious?", 
+    "artist": "Tom Cardy",
+    "url": "https://www.youtube.com/watch?v=GbmP2c6TGKc&list=RDGbmP2c6TGKc&start_radio=1&pp=ygUQd2h5IGFtIEkgYW54aW91c6AHAQ%3D%3D"},
+
+
    ]
 
 
@@ -180,6 +143,13 @@ spotify_minions = [
     "artist": "Tessa Violet",
     "url": "https://www.youtube.com/watch?v=bU_-OhxcFVI&list=RDbU_-OhxcFVI&start_radio=1&pp=ygUUa25vd2luZyB0ZXNzYSB2aW9sZXSgBwHSBwkJOQsBhyohjO8%3D"},
 
+    {"title": "Gap Tooth Smile", 
+    "artist": "Djo",
+    "url": "https://www.youtube.com/watch?v=rKmxcOCHsCk&list=RDrKmxcOCHsCk&start_radio=1&pp=ygUPZ2FwIHRvb3RoIHNtaWxloAcB"},
+
+    {"title": "Playground", 
+    "artist": "flipturn",
+    "url": "https://www.youtube.com/watch?v=TyMHeSHH7wI"},
 
     {"title": "Modern Girl", 
     "artist": "Bleachers",
