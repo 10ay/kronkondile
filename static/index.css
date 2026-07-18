@@ -526,6 +526,27 @@ a:hover {
   resize: vertical;
 }
 
+.mood-playlist-spotify details {
+  border: 1px solid var(--ace-gray);
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.mood-playlist-spotify summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.spotify-callback {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.spotify-callback input {
+  min-width: 0;
+  flex: 1;
+}
+
 .mood-playlist-spotify button {
   background: #1db954;
   color: #fff;

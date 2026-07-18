@@ -111,6 +111,21 @@
     <div id="mood-playlist-list" class="mood-playlist-list"></div>
     <div id="mood-playlist-spotify" class="mood-playlist-spotify hidden">
       <h3>Save on Spotify</h3>
+      <details>
+        <summary>One-time Spotify setup</summary>
+        <ol>
+          <li>Get Spotify Premium.</li>
+          <li><a href="https://developer.spotify.com/dashboard" target="_blank" rel="noopener">Create a Spotify app</a>.</li>
+          <li>Add this Redirect URI to the app:</li>
+        </ol>
+        <div class="spotify-callback">
+          <input id="mp-spotify-callback" type="text" readonly />
+          <button type="button" onclick="copySpotifyCallback()">Copy</button>
+        </div>
+        <p>Paste the app's Client ID below. Kronkondile remembers it only in this browser.</p>
+      </details>
+      <label for="mp-spotify-client-id">Spotify Client ID</label>
+      <input id="mp-spotify-client-id" type="text" maxlength="32" autocomplete="off" />
       <label for="mp-spotify-name">Playlist name</label>
       <input id="mp-spotify-name" type="text" />
       <label for="mp-spotify-description">Description</label>
@@ -674,6 +689,8 @@ async function quitDiscoverMovies() {
       });
 
       moodPlaylistTracks = data.tracks || [];
+      document.getElementById("mp-spotify-client-id").value =
+        localStorage.getItem("kron_spotify_client_id") || "";
       document.getElementById("mp-spotify-name").value = "";
       document.getElementById("mp-spotify-description").value = "";
       document.getElementById("mp-spotify-status").textContent = "";
@@ -681,20 +698,30 @@ async function quitDiscoverMovies() {
     }
 
     async function saveOnSpotify() {
+      const clientId = document.getElementById("mp-spotify-client-id").value.trim();
       const name = document.getElementById("mp-spotify-name").value.trim();
       const description = document.getElementById("mp-spotify-description").value.trim();
       const status = document.getElementById("mp-spotify-status");
       if (!name || !description) {
         return alert("Playlist name and description are required.");
       }
+      if (!/^[a-f0-9]{32}$/i.test(clientId)) {
+        return alert("Enter the 32-character Client ID from your Spotify app.");
+      }
       if (!moodPlaylistTracks.length) {
         return alert("Generate a playlist first.");
       }
+      localStorage.setItem("kron_spotify_client_id", clientId);
       status.textContent = "Opening Spotify login…";
       const res = await fetch("/api/spotify/save", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, description, tracks: moodPlaylistTracks }),
+        body: JSON.stringify({
+          client_id: clientId,
+          name,
+          description,
+          tracks: moodPlaylistTracks,
+        }),
       });
       const data = await res.json();
       if (!data.ok) {
@@ -703,6 +730,14 @@ async function quitDiscoverMovies() {
       }
       window.location.href = data.authorize_url;
     }
+
+    async function copySpotifyCallback() {
+      const callback = document.getElementById("mp-spotify-callback").value;
+      await navigator.clipboard.writeText(callback);
+    }
+
+    document.getElementById("mp-spotify-callback").value =
+      `${window.location.origin}/spotify/callback`;
 
     loadFeelingsState(); // skip feelings prompt if already logged today
   </script>

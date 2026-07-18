@@ -16,6 +16,7 @@ def headers(token):
 
 
 def search_track(token, title, artist):
+    failed = None
     for query in (f"track:{title} artist:{artist}", f"{title} {artist}"):
         response = requests.get(
             f"{api}/search",
@@ -24,10 +25,16 @@ def search_track(token, title, artist):
             timeout=10,
         )
         if response.status_code != 200:
+            print(f"Spotify search {response.status_code} for {title!r}: {response.text[:200]}")
+            failed = response
             continue
         items = response.json().get("tracks", {}).get("items", [])
         if items:
             return items[0]["uri"]
+    # A real "no match" returns None; an API error (401/403/429) should not
+    # be mistaken for one.
+    if failed is not None:
+        failed.raise_for_status()
     return None
 
 

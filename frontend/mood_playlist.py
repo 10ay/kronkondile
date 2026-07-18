@@ -5,25 +5,36 @@ Mood playlist
 from __future__ import annotations
 
 import html
-import sys
 import threading
 import time
 import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from urllib.parse import parse_qs, urlparse
 
 from frontend.feelings import feelings_dictionary
 from frontend.recommend import get_feeling
-from engine.mood_playlist import *
-from engine.spotify_auth import *
-from engine.spotify_playlist import *
+from engine.mood_playlist import (
+    acitivity_default_tempo,
+    activity_list,
+    generate_mood_playlist,
+    genres,
+    songs_from_artists,
+)
+from engine.spotify_auth import (
+    authorize_url,
+    exchange_code,
+    load_client_id,
+    new_verifier,
+    save_client_id,
+    valid_client_id,
+)
+from engine.spotify_playlist import publish_mood_playlist
 
 
 root = Path(__file__).resolve().parent.parent
 template_path = root / "static" / "mood_playlist.html"
+spotify_form_path = root / "static" / "spotify_form.html"
 out_path = root / "data" / "mood_playlist.html"
 
 server_port = 8888
@@ -32,6 +43,8 @@ spotify_state = {
     "tracks": [],
     "name": "",
     "description": "",
+    "client_id": "",
+    "verifier": "",
     "url": None,
     "done": False,
     "page": "",
@@ -72,34 +85,13 @@ def render_playlist_html(tracks, mood_label, meta, out_path, spotify_button=""):
 
 
 def name_form_html(error=""):
-    err = f"<p style='color:#ff8a8a'>{html.escape(error)}</p>" if error else ""
-    return f"""<!DOCTYPE html>
-<html><head><meta charset="utf-8"/><title>Playlist name</title>
-<style>
-  body {{ margin:0; font-family:system-ui,sans-serif; background:#1a1424; color:#fff; padding:40px 24px; }}
-  label {{ display:block; margin:14px 0 6px; }}
-  input, textarea {{
-    width:min(420px,100%); padding:10px 12px; border:none; border-radius:8px;
-    font-size:1rem; box-sizing:border-box; font-family:inherit;
-  }}
-  textarea {{ min-height:80px; resize:vertical; }}
-  button {{
-    margin-top:14px; background:#1db954; color:#fff; border:none; border-radius:999px;
-    padding:10px 18px; font-weight:700;
-  }}
-  a {{ color:#e8d4f0; }}
-</style></head><body>
-  <h1>Name your Spotify playlist</h1>
-  {err}
-  <form method="POST" action="/save">
-    <label for="name">Playlist name</label>
-    <input id="name" name="name" type="text" required autofocus />
-    <label for="description">Description</label>
-    <textarea id="description" name="description" required></textarea>
-    <div><button type="submit">Continue to Spotify</button></div>
-  </form>
-  <p><a href="/">Back to playlist</a></p>
-</body></html>"""
+    saved_client_id = load_client_id()
+    page = spotify_form_path.read_text(encoding="utf-8")
+    error_message = f'<p class="error">{html.escape(error)}</p>' if error else ""
+    page = page.replace("<!--ERROR-->", error_message)
+    page = page.replace("<!--SETUP_OPEN-->", "" if saved_client_id else "open")
+    page = page.replace("<!--CLIENT_ID-->", html.escape(saved_client_id))
+    return page
 
 
 class SpotifyClickHandler(BaseHTTPRequestHandler):
@@ -124,9 +116,13 @@ class SpotifyClickHandler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def start_login(self):
-        clear_tokens()
+        verifier = new_verifier()
+        spotify_state["verifier"] = verifier
         print("Opening Spotify login...")
-        self.redirect(authorize_url())
+        self.redirect(authorize_url(
+            spotify_state["client_id"],
+            verifier,
+        ))
 
     def publish(self, token):
         name = (spotify_state.get("name") or "").strip()
@@ -143,7 +139,6 @@ class SpotifyClickHandler(BaseHTTPRequestHandler):
         )
         spotify_state["url"] = url
         spotify_state["done"] = True
-        clear_tokens()
         if url:
             print(f"Playlist created: {url}")
             self.redirect(url)
@@ -163,7 +158,11 @@ class SpotifyClickHandler(BaseHTTPRequestHandler):
 
         try:
             print("Spotify login OK")
-            self.publish(exchange_code(code))
+            self.publish(exchange_code(
+                code,
+                spotify_state["client_id"],
+                spotify_state["verifier"],
+            ))
         except Exception:
             with spotify_lock:
                 spotify_state["publishing"] = False
@@ -206,11 +205,17 @@ class SpotifyClickHandler(BaseHTTPRequestHandler):
             fields = parse_qs(raw)
             name = (fields.get("name", [""])[0] or "").strip()
             description = (fields.get("description", [""])[0] or "").strip()
+            client_id = (fields.get("client_id", [""])[0] or "").strip()
             if not name or not description:
                 self.send_html(200, name_form_html("Playlist name and description are required."))
                 return
+            if not valid_client_id(client_id):
+                self.send_html(200, name_form_html("Enter the 32-character Client ID from your Spotify app."))
+                return
+            save_client_id(client_id)
             spotify_state["name"] = name
             spotify_state["description"] = description
+            spotify_state["client_id"] = client_id
             print(f"Playlist name: {name!r}")
             print(f"Playlist description: {description!r}")
             self.start_login()
@@ -302,7 +307,7 @@ def main():
     print("\nBuilding playlist...")
     print(f"Mood: {feeling_name}")
     result = generate_mood_playlist(mood, activity, genre, tempo, length)
-    
+
     if result.get("error"):
         print(result["error"])
         return
@@ -321,6 +326,8 @@ def main():
     spotify_state["tracks"] = tracks
     spotify_state["name"] = ""
     spotify_state["description"] = ""
+    spotify_state["client_id"] = ""
+    spotify_state["verifier"] = ""
     spotify_state["url"] = None
     spotify_state["done"] = False
     spotify_state["publishing"] = False
