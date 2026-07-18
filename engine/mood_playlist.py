@@ -1,7 +1,7 @@
 from engine.graph import *
 from engine.seeds import *
 from engine.ratings import *
-from scrape_music import song_from_library
+from frontend.scrape_music import song_from_library
 import random
 
 lastfm_url = "https://ws.audioscrobbler.com/2.0/"

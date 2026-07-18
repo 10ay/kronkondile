@@ -1,5 +1,4 @@
-from music_library import spotify_lovesick, spotify_mountains, spotify_silly, spotify_minions, spotify_love
-from recommend import mood_music_map # Maps mood number to an existing set of artists. 
+from frontend.music_library import mood_music_map
 
 def pull_artist(songs):
     """Pull an artist. Unique artist """

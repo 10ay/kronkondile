@@ -52,7 +52,7 @@ def save_cache(cache):
     path.write_text(json.dumps(cache, indent=2))
 
 def year_for_movie(title):
-    from movie_library import mood_movie_map
+    from frontend.movie_library import mood_movie_map
     target = title.strip().lower()
     for movies in mood_movie_map.values():
         for entry in movies:

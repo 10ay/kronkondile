@@ -52,7 +52,7 @@ def save_cache(cache):
     path.write_text(json.dumps(cache, indent=2))
 
 def author_for_book(book):
-    from book_library import mood_book_map
+    from frontend.book_library import mood_book_map
     target = book.strip().lower()
     for playlist in mood_book_map.values():
         for entry in playlist:

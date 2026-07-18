@@ -8,16 +8,16 @@ The name of this package is based on a star I found and a Mummy Joe's video my e
 
 import subprocess, sys
 from pathlib import Path
-from recommend import format_recommendations, get_recommendations, get_feeling
-from discover import main as discover_main
-from discover_books import main as discover_books_main
-from discover_movies import main as discover_movies_main
-from mood_playlist import main as mood_playlist_main
+from frontend.recommend import format_recommendations, get_recommendations, get_feeling
+from frontend.discover import main as discover_main
+from frontend.discover_books import main as discover_books_main
+from frontend.discover_movies import main as discover_movies_main
+from frontend.mood_playlist import main as mood_playlist_main
 
 root = Path(__file__).parent
 
 def run_feelings():
-    subprocess.run([sys.executable, str(root / "feelings.py")], check=False)
+    subprocess.run([sys.executable, str(root / "frontend" / "feelings.py")], check=False)
 
 def main():
     run_feelings()

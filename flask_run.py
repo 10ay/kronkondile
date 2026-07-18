@@ -19,7 +19,7 @@ import threading
 
 _root = Path(__file__).resolve().parent
 fake_feelings = types.ModuleType("feelings")
-fake_feelings.FEELINGS_FILE = str(_root / "feelings.txt")
+fake_feelings.FEELINGS_FILE = str(_root / "frontend" / "feelings.txt")
 
 fake_feelings.feelings_dictionary = {
     0 : "Lovesick / I feel unloved, like a kidney stone.",
@@ -31,7 +31,7 @@ fake_feelings.feelings_dictionary = {
 sys.modules["feelings"] = fake_feelings
 
 
-feelings_file = Path(__file__).parent / "feelings.txt"
+feelings_file = Path(__file__).parent / "frontend" / "feelings.txt"
 
 feelings_dictionary = {    
     0 : "Lovesick / I feel unloved, like a kidney stone.",
@@ -142,7 +142,7 @@ def book_to_dict(book):
     }
 
 def book_info(title):
-    from scrape_books import book_from_library
+    from frontend.scrape_books import book_from_library
     from engine.book_graph import goodreads_book_url
     entry = book_from_library(title)
     if entry:
@@ -166,7 +166,7 @@ def movie_to_dict(movie):
     }
 
 def movie_info(title):
-    from scrape_movies import movie_from_library
+    from frontend.scrape_movies import movie_from_library
     from engine.movie_graph import tmdb_search_url
     entry = movie_from_library(title)
     if entry:
@@ -220,7 +220,7 @@ def music_available_seeds(session, mood_index):
 
 
 def music_artist_info(artist):
-    from scrape_music import Tracks
+    from frontend.scrape_music import Tracks
     """Like discover.open_artist() but no webbrowser.open."""
     from engine.graph import lastfm_artist_url
     url = lastfm_artist_url(artist)
@@ -267,7 +267,7 @@ def api_quick_music():
     if result is None:
         return jsonify({"ok": False, "error": "No mood sent from browser"}), 400
     mood_index, mood_label = result
-    from music_library import mood_music_map
+    from frontend.music_library import mood_music_map
     song = mood_music_map[mood_index][random.randint(0, len(mood_music_map[mood_index]) - 1)]
     return jsonify({
         "ok": True,

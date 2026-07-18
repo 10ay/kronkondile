@@ -53,7 +53,7 @@ def add_tracks(token, playlist_id, uris):
     response.raise_for_status()
 
 
-def publish_mood_playlist(token, tracks, name):
+def publish_mood_playlist(token, tracks, name, description=""):
     uris = []
     for t in tracks:
         uri = search_track(token, t["title"], t["artist"])
@@ -62,6 +62,6 @@ def publish_mood_playlist(token, tracks, name):
     print(f"Found {len(uris)}/{len(tracks)} tracks on Spotify")
     if not uris:
         return None
-    playlist_id, url = create_playlist(token, name, description="Made by Kronkondile")
+    playlist_id, url = create_playlist(token, name, description=description)
     add_tracks(token, playlist_id, uris)
     return url

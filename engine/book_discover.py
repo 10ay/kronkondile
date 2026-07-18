@@ -1,6 +1,5 @@
 from __future__ import annotations
 from engine.book_graph import Graph, load_graph, default_graph_path
-from recommend import *
 from engine.book_seeds import *
 from engine.book_ratings import *
 
